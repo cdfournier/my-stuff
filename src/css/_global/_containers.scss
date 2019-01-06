@@ -1,0 +1,32 @@
+// MAX-WIDTHS
+.xs {max-width: 16rem;}
+
+.sm {max-width: 24rem;}
+
+.md {max-width: 32rem;}
+
+.lg {max-width: 40rem;}
+
+.xs, .sm, .md, .lg {margin: 0 auto;}
+
+
+// TEXT
+.text {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 2rem 0;
+}
+
+.text.center {text-align: center;}
+
+
+// FORM CONTAINER
+.form-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 2rem 0;
+}

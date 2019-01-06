@@ -1,0 +1,66 @@
+@import "mixins";
+@import "colors";
+@import "fonts";
+
+$thin: "nowaythin", sans-serif;
+$light: "nowaylight", sans-serif;
+$regular: "nowayregular", sans-serif;
+$medium: "nowaymedium", sans-serif;
+$bold: "nowaybold", sans-serif;
+$icon: "noway_icons";
+
+html {
+  font-family: $regular;
+  font-size: calc(1rem + 6 * ((100vw - 32rem) / 680));
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+  color: $black;
+}
+
+body, .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $red;
+}
+
+::selection {
+  color: $white;
+  background: $red;
+}
+
+a {
+  text-decoration: none;
+  @include transition(all, 0.25s, ease);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}

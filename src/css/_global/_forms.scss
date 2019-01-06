@@ -1,0 +1,161 @@
+// INPUT RESETS
+input[type="password"],
+input[type="checkbox"],
+input[type="select"],
+input[type="search"],
+input[type="radio"],
+input[type="email"],
+input[type="file"],
+input[type="text"],
+input[type="tel"],
+input[type="url"] {
+  font-family: $regular;
+  font-size: 1rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  @include appearance(none);
+}
+
+
+// FORMS
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+fieldset {
+  position: relative;
+  width: 100%;
+  margin: 0 0 2rem;
+  padding: 0;
+  border: none;
+  @include transition(all, 0.2s, ease-in-out);
+}
+
+fieldset:last-of-type {margin: 0;}
+
+fieldset.half {width: 50%;}
+
+legend {display: none;}
+
+label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  font-family: $medium;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+label.checkbox {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+}
+
+label.checkbox span a {
+  font-family: $bold;
+  color: $blue;
+}
+
+input {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid $black;
+  border-radius: 0;
+  line-height: 3;
+  background-color: transparent;
+  cursor: text;
+}
+
+input:placeholder-shown {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: text;
+  transform-origin: left bottom;
+  white-space: nowrap;
+}
+
+input::placeholder {
+  opacity: 1;
+  @include transition(all, 0.2s, ease-in-out);
+}
+
+input:focus::placeholder {opacity: 0;}
+
+input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  border: 1px solid $black;
+  background-color: $white;
+  cursor: pointer;
+  @include appearance(none);
+  @include transition(all, 0.25s, ease-in-out);
+}
+
+input[type="checkbox"]:checked:before {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0;
+  font-family: "LineAwesome";
+  font-size: 1rem;
+  color: $white;
+  content: '\f17b';
+}
+
+input[type="checkbox"]:checked:not(:disabled) {background-color: $black;}
+
+
+// SHOW/HIDE PASSWORD
+.show-hide-password {
+  display: block;
+  position: absolute;
+  top: 1.75rem;
+  right: 0;
+  z-index: 10;
+  width: auto;
+  height: 1.75rem;
+  font-size: 1.5rem;
+  color: $black;
+  cursor: pointer;
+  @include transition(all, 0.2s, ease-in-out);
+}
+
+
+// FORM ERRORS
+span.error-message {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0 0;
+  font-family: $medium;
+  color: $red;
+  opacity: 0;
+  @include transition(all, 0.2s, ease-in-out);
+}
+
+fieldset.error label,
+fieldset.error input,
+fieldset.error input::placeholder {
+  color: $red;
+}
+
+fieldset.error input {border-color: $red;}
+
+fieldset.error span.error-message {opacity: 1;}
