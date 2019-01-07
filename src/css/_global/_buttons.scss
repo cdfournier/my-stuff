@@ -2,8 +2,10 @@
 .button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   width: auto;
   max-width: 100%;
+  min-width: 7.5rem;
   min-height: 2.75rem;
   max-height: 2.75rem;
   overflow: hidden;
@@ -96,8 +98,10 @@
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 1rem 0 0;
+  padding: 0;
 }
+
+.text .button-box {padding: 1rem 0 0;}
 
 .button-box.row {flex-direction: row;}
 

@@ -37,7 +37,10 @@ body, .body {
 }
 
 a {
+  font-weight: 700;
   text-decoration: none;
+  color: $green;
+  cursor: pointer;
   @include transition(all, 0.25s, ease);
 }
 
@@ -51,6 +54,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
+  position: relative;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;

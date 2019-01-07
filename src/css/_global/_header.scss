@@ -8,6 +8,7 @@ header {
   width: 100%;
   margin: 0;
   padding: 2rem 2rem 0;
+  opacity: 0;
 }
 
 header .logo {
@@ -15,3 +16,5 @@ header .logo {
   max-width: 12rem;
   margin: auto;
 }
+
+header .logo.blue {fill: $blue;}

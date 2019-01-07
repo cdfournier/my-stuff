@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="../../../src/css/main.css">
   </head>
-  <body>
+  <body class="animated">
     <main>
       <section id="loading" class="loading">
         <div class="logo animated fadeInUp">
@@ -24,7 +24,7 @@
           <h1>Welcome to My Stuff</h1>
           <p>A new service designed to make it wicked easy to catalog the important details of all of your stuff.</p>
           <div class="button-box">
-            <a href="#!" class="button blue"><span class="button-label">Log In Now</span></a>
+            <a class="login-button button blue"><span class="button-label">Log In Now</span></a>
             <a href="#!" class="button secondary blue"><span class="button-label">Create An Account</span></a>
           </div>
         </div>
@@ -38,8 +38,25 @@
     <script>
       window.setTimeout(function(){
         $('.loading').addClass('loaded')
-        $('.welcome').addClass(' fadeInDown')
+        $('.welcome').addClass(' fadeInRight')
       },4000);
+    </script>
+    <script>
+      $(document).ready(function() {
+    
+        $("a.login-button").click(function(event){
+          event.preventDefault();
+          redirectLink = this.href;
+          $("body").addClass(' fadeOutLeft');
+          setTimeout(function(){
+            redirectToLink(redirectLink);
+          }, 800);
+        });
+    
+        function redirectToLink(url) {
+          window.location = "../login/index.html";
+        }
+      });
     </script>
   </body>
 </html>

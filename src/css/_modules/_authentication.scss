@@ -1,0 +1,24 @@
+// LOG IN
+.login {width: 100%;}
+
+.carousel.authentication.progressive.flickity-enabled {
+  opacity: 1;
+  @include transition(opacity, 0.2s, ease-in-out);
+}
+
+.carousel.authentication.progressive.flickity-enabled.animated.flip {opacity: 0;}
+
+
+// CREATE NEW ACCOUNT
+.create-account {
+  position: absolute;
+  opacity: 0;
+  @include transition(opacity, 0.2s, ease-in-out);
+}
+
+.create-account.animated {opacity: 1;}
+
+.create-account.animated ~ .carousel.authentication.progressive.flickity-enabled {opacity: 0;}
+
+.create-account ~ .carousel.authentication.progressive.flickity-enabled,
+.create-account ~ .carousel.authentication.progressive.flickity-enabled.animated.flip {opacity: 1;}
