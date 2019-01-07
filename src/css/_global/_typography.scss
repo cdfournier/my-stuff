@@ -9,14 +9,14 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-family: $medium;
   font-size: 1.953rem;
+  font-weight: 500;
   text-transform: capitalize;
 }
 
 h2, h3 {
-  font-family: $medium;
   font-size: 1.563rem;
+  font-weight: 500;
   text-transform: capitalize;
 }
 
@@ -35,8 +35,8 @@ p:last-of-type {padding: 0.8rem 0 0;}
 small {font-size: 0.8rem;}
 
 strong, em, b {
-  font-family: $bold;
   font-style: normal;
+  font-weight: 700;
 }
 
 h1.center, h2.center, h3.center, p.center, strong.center, em.center, small.center {text-align: center;}

@@ -1,19 +1,11 @@
 @import "mixins";
 @import "colors";
-@import "fonts";
-
-$thin: "nowaythin", sans-serif;
-$light: "nowaylight", sans-serif;
-$regular: "nowayregular", sans-serif;
-$medium: "nowaymedium", sans-serif;
-$bold: "nowaybold", sans-serif;
-$icon: "noway_icons";
 
 html {
-  font-family: $regular;
+  font-family: "Montserrat", sans-serif;
   font-size: calc(1rem + 6 * ((100vw - 32rem) / 680));
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.2;
   color: $black;
 }

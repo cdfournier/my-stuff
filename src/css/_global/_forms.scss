@@ -9,7 +9,6 @@ input[type="file"],
 input[type="text"],
 input[type="tel"],
 input[type="url"] {
-  font-family: $regular;
   font-size: 1rem;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -49,7 +48,6 @@ label {
   position: relative;
   width: 100%;
   margin: 0;
-  font-family: $medium;
   text-align: left;
   text-transform: uppercase;
 }
@@ -62,7 +60,6 @@ label.checkbox {
 }
 
 label.checkbox span a {
-  font-family: $bold;
   color: $blue;
 }
 
@@ -90,7 +87,7 @@ input::placeholder {
   @include transition(all, 0.2s, ease-in-out);
 }
 
-input:focus::placeholder {opacity: 0;}
+input:focus::placeholder {opacity: 0.5;}
 
 input[type="checkbox"] {
   position: absolute;
@@ -144,7 +141,6 @@ span.error-message {
   display: block;
   width: 100%;
   padding: 0.6rem 0 0;
-  font-family: $medium;
   color: $red;
   opacity: 0;
   @include transition(all, 0.2s, ease-in-out);
