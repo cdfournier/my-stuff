@@ -2,23 +2,27 @@
 .login {width: 100%;}
 
 .carousel.authentication.progressive.flickity-enabled {
+  position: absolute;
   opacity: 1;
   @include transition(opacity, 0.2s, ease-in-out);
 }
 
-.carousel.authentication.progressive.flickity-enabled.animated.flip {opacity: 0;}
+.carousel.authentication.progressive.flickity-enabled.hide {
+  display: none;
+  opacity: 0;
+}
 
 
 // CREATE NEW ACCOUNT
 .create-account {
+  display: none;
   position: absolute;
   opacity: 0;
   @include transition(opacity, 0.2s, ease-in-out);
 }
 
-.create-account.animated {opacity: 1;}
-
-.create-account.animated ~ .carousel.authentication.progressive.flickity-enabled {opacity: 0;}
-
-.create-account ~ .carousel.authentication.progressive.flickity-enabled,
-.create-account ~ .carousel.authentication.progressive.flickity-enabled.animated.flip {opacity: 1;}
+.create-account.animated.flipInY,
+.create-account.show {
+  display: block;
+  opacity: 1;
+}

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="../../../src/css/main.css">
   </head>
   <body class="animated">
@@ -33,7 +32,6 @@
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../../assets/scripts/mystuff.js"></script>
     <script>
       window.setTimeout(function(){
@@ -42,20 +40,30 @@
       },4000);
     </script>
     <script>
-      $(document).ready(function() {
-    
-        $("a.login-button").click(function(event){
-          event.preventDefault();
-          redirectLink = this.href;
-          $("body").addClass(' fadeOutLeft');
-          setTimeout(function(){
-            redirectToLink(redirectLink);
-          }, 800);
+      $(function() {
+        
+        var animationName = 'animated fadeOutLeft';
+
+        var animationEnd = (function(el) {
+          var animations = {
+            animation: 'animationend',
+            OAnimation: 'oAnimationEnd',
+            MozAnimation: 'mozAnimationEnd',
+            WebkitAnimation: 'webkitAnimationEnd',
+          };
+        
+          for (var t in animations) {
+            if (el.style[t] !== undefined) {
+              return animations[t];
+            }
+          }
+        })(document.createElement('div'));
+
+        $('.login-button').click(function() {
+          $('body').addClass(animationName).one(animationEnd, function() {
+            $(location).attr('href', '../login/index.html');
+          });
         });
-    
-        function redirectToLink(url) {
-          window.location = "../login/index.html";
-        }
       });
     </script>
   </body>

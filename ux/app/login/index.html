@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="../../../src/css/main.css">
   </head>
   <body>
@@ -20,98 +19,101 @@
       </div>
     </header>
     <main>
-      <section id="create-account" class="create-account">
-        <div class="text sm">
-          <h1>Create An Account</h1>
-          <p>Looking to take advantage of advanced features? Just drop a little information here.</p>
+      <div class="authentication animated fadeInRight fast">
+        <div class="carousel authentication progressive animated flipInY">
+          <div class="carousel-cell">
+            <section id="login" class="login">
+              <div class="text sm">
+                <h1>Welcome</h1>
+                <p>Please log in to continue.</p>
+              </div>
+              <div class="form-container sm">
+                <form>
+                  <fieldset>
+                    <legend>Email Address</legend>
+                    <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Password</legend>
+                    <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password"></label>
+                    <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Remember Me</legend>
+                    <label for="remember" class="checkbox">Remember Me<input type="checkbox" name="remember" id="remember"><span><a class="button--next">Forgot Password?</a></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a href="#!" class="button blue"><span class="button-label">Log In</span></a>
+                  </div>
+                </form>
+                <p><small>Don't have an account? <a id="create-new-account">Create one now</a>.</small></p>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-cell">
+            <section id="forgot-password" class="forgot-password">
+              <div class="text">
+                <h1>Reset Your Password</h1>
+                <p>Enter your email address and we'll send you a link to reset your password.</p>
+              </div>
+              <div class="form-container sm">
+                <form>
+                  <fieldset>
+                    <legend>Email Address</legend>
+                    <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a href="#!" class="button blue"><span class="button-label">Reset Password</span></a>
+                  </div>
+                </form>
+                <p><small>Return to <a class="button--previous">Log In</a>.</small></p>
+              </div>
+            </section>
+          </div>
         </div>
-        <div class="form-container sm">
-          <form>
-            <fieldset>
-              <legend>Email Address</legend>
-              <label for="new-email-address">Email Address&#42;<input type="email" name="new-email-address" class="email-address" placeholder="Enter your email address"></label>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <fieldset>
-              <legend>Password</legend>
-              <label for="new-password">Password&#42;<input type="password" name="new-password" id="password" placeholder="Enter your password"></label>
-              <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <div class="button-box left">
-              <a href="#!" class="button blue"><span class="button-label">Create Account</span></a>
-            </div>
-            <p><small>By creating an account you agree to our <a href="#!">Terms &amp; Conditions</a>.</small></p>
-            <p><small>Change your mind? Return to <a id="return-to-login">Log In</a>.</small></p>
-          </form>
-        </div>
-      </section>
-      <div class="carousel authentication progressive">
-        <div class="carousel-cell">
-          <section id="login" class="login animated fadeInRight fast">
-            <div class="text sm">
-              <h1>Welcome</h1>
-              <p>Please log in to continue.</p>
-            </div>
-            <div class="form-container sm">
-              <form>
-                <fieldset>
-                  <legend>Email Address</legend>
-                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <fieldset>
-                  <legend>Password</legend>
-                  <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password"></label>
-                  <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <fieldset>
-                  <legend>Remember Me</legend>
-                  <label for="remember" class="checkbox">Remember Me<input type="checkbox" name="remember" id="remember"><span><a class="button--next">Forgot Password?</a></span></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <div class="button-box left">
-                  <a href="#!" class="button blue"><span class="button-label">Log In</span></a>
-                </div>
-              </form>
-              <p><small>Don't have an account? <a id="create-new-account">Create one now</a>.</small></p>
-            </div>
-          </section>
-        </div>
-        <div class="carousel-cell">
-          <section id="forgot-password" class="forgot-password">
-            <div class="text">
-              <h1>Reset Your Password</h1>
-              <p>Enter your email address and we'll send you a link to reset your password.</p>
-            </div>
-            <div class="form-container sm">
-              <form>
-                <fieldset>
-                  <legend>Email Address</legend>
-                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <div class="button-box left">
-                  <a href="#!" class="button blue"><span class="button-label">Reset Password</span></a>
-                </div>
-              </form>
-              <p><small>Return to <a class="button--previous">Log In</a>.</small></p>
-            </div>
-          </section>
-        </div>
+        <section id="create-account" class="create-account">
+          <div class="text sm">
+            <h1>Create An Account</h1>
+            <p>Looking to take advantage of advanced features? Just drop a little information here.</p>
+          </div>
+          <div class="form-container sm">
+            <form>
+              <fieldset>
+                <legend>Email Address</legend>
+                <label for="new-email-address">Email Address&#42;<input type="email" name="new-email-address" class="email-address" placeholder="Enter your email address"></label>
+                <span class="error-message">This is where the error message goes</span>
+              </fieldset>
+              <fieldset>
+                <legend>Password</legend>
+                <label for="new-password">Password&#42;<input type="password" name="new-password" id="password" placeholder="Enter your password"></label>
+                <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                <span class="error-message">This is where the error message goes</span>
+              </fieldset>
+              <div class="button-box row left">
+                <a href="#!" class="button blue"><span class="button-label">Create Account</span></a>
+                <a id="return-to-login" class="button secondary blue"><span class="button-label">Cancel</span></a>
+              </div>
+              <p><small>By creating an account you agree to our <a href="#!">Terms &amp; Conditions</a>.</small></p>
+            </form>
+          </div>
+        </section>
       </div>
     </main>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../../assets/scripts/mystuff.js"></script>
     <script>
       $(function() {
         
         var animationName = 'animated flip';
+        var flipOut = 'animated flipOutY';
+        var flipIns = 'animated flipInY';
 
         var animationEnd = (function(el) {
           var animations = {
@@ -120,31 +122,30 @@
             MozAnimation: 'mozAnimationEnd',
             WebkitAnimation: 'webkitAnimationEnd',
           };
-        
+
           for (var t in animations) {
             if (el.style[t] !== undefined) {
               return animations[t];
             }
           }
         })(document.createElement('div'));
-        
+
         $('#create-new-account').click(function() {
-          $('.carousel.authentication.progressive.flickity-enabled').addClass(animationName).one(animationEnd, function() {
-            $('.carousel.authentication.progressive.flickity-enabled').removeClass(animationName);
-            $('.create-account').addClass(animationName).one(animationEnd, function() {
-              $('.create-account').removeClass('flip');
-            })
+          $('.carousel.authentication.progressive.flickity-enabled').removeClass(flipIns).addClass(flipOut).one(animationEnd, function() {
+            $('.carousel.authentication.progressive.flickity-enabled').addClass('hide').removeClass(flipOut);
+            $('.create-account').addClass(flipIns).one(animationEnd, function() {
+              $('.create-account').addClass('show').removeClass(flipIns);
+            });
           });
         });
         
         $('#return-to-login').click(function() {
-          $('.create-account').addClass('flip').one(animationEnd, function() {
-            $('.create-account').removeClass(animationName);
-            $('.carousel.authentication.progressive.flickity-enabled').addClass(animationName).one(animationEnd, function() {
-              $('.carousel.authentication.progressive.flickity-enabled').removeClass(animationName);
-            })
+          $('.create-account').addClass(flipOut).one(animationEnd, function() {
+            $('.create-account').removeClass('show').removeClass(flipOut);
+            $('.carousel.authentication.progressive.flickity-enabled').addClass(flipIns).removeClass('hide');
           });
         });
+
       });
     </script>
     <script>
