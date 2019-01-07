@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | Log In</title>
+    <title>My Stuff | Create An Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -20,7 +20,33 @@
     </header>
     <main>
       <div class="authentication animated fadeInRight fast">
-        <div class="carousel authentication progressive animated flipInY">
+        <section id="start-create-account" class="start-new-account animated flipInY">
+          <div class="text sm">
+            <h1>Create An Account</h1>
+            <p>Looking to take advantage of advanced features? Just drop a little information here.</p>
+          </div>
+          <div class="form-container sm">
+            <form>
+              <fieldset>
+                <legend>Email Address</legend>
+                <label for="new-email-address">Email Address&#42;<input type="email" name="new-email-address" class="email-address" placeholder="Enter your email address"></label>
+                <span class="error-message">This is where the error message goes</span>
+              </fieldset>
+              <fieldset>
+                <legend>Password</legend>
+                <label for="new-password">Password&#42;<input type="password" name="new-password" id="password" placeholder="Enter your password"></label>
+                <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                <span class="error-message">This is where the error message goes</span>
+              </fieldset>
+              <div class="button-box row left">
+                <a href="#!" class="button blue"><span class="button-label">Create Account</span></a>
+              </div>
+            </form>
+            <p><small>By creating an account you agree to our <a href="#!">Terms &amp; Conditions</a>.</small></p>
+            <p><small><a id="log-in">Log In</a> instead?</small></p>
+          </div>
+        </section>
+        <div class="carousel new-account progressive">
           <div class="carousel-cell">
             <section id="login" class="login">
               <div class="text sm">
@@ -75,32 +101,6 @@
             </section>
           </div>
         </div>
-        <section id="create-account" class="create-account">
-          <div class="text sm">
-            <h1>Create An Account</h1>
-            <p>Looking to take advantage of advanced features? Just drop a little information here.</p>
-          </div>
-          <div class="form-container sm">
-            <form>
-              <fieldset>
-                <legend>Email Address</legend>
-                <label for="new-email-address">Email Address&#42;<input type="email" name="new-email-address" class="email-address" placeholder="Enter your email address"></label>
-                <span class="error-message">This is where the error message goes</span>
-              </fieldset>
-              <fieldset>
-                <legend>Password</legend>
-                <label for="new-password">Password&#42;<input type="password" name="new-password" id="password" placeholder="Enter your password"></label>
-                <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
-                <span class="error-message">This is where the error message goes</span>
-              </fieldset>
-              <div class="button-box row left">
-                <a href="#!" class="button blue"><span class="button-label">Create Account</span></a>
-                <a id="return-to-login" class="button secondary blue"><span class="button-label">Cancel</span></a>
-              </div>
-              <p><small>By creating an account you agree to our <a href="#!">Terms &amp; Conditions</a>.</small></p>
-            </form>
-          </div>
-        </section>
       </div>
     </main>
     <!-- scripts -->
@@ -129,19 +129,19 @@
           }
         })(document.createElement('div'));
 
-        $('#create-new-account').click(function() {
-          $('.carousel.authentication.progressive.flickity-enabled').removeClass(flipIns).addClass(flipOut).one(animationEnd, function() {
-            $('.carousel.authentication.progressive.flickity-enabled').addClass('hide').removeClass(flipOut);
-            $('.create-account').addClass(flipIns).one(animationEnd, function() {
-              $('.create-account').addClass('show').removeClass(flipIns);
+        $('#log-in').click(function() {
+          $('.start-new-account').removeClass(flipIns).addClass(flipOut).one(animationEnd, function() {
+            $('.start-new-account').addClass('hide').removeClass(flipOut);
+            $('.carousel.new-account.progressive.flickity-enabled').addClass(flipIns).one(animationEnd, function() {
+              $('.carousel.new-account.progressive.flickity-enabled').addClass('show').removeClass(flipIns);
             });
           });
         });
         
-        $('#return-to-login').click(function() {
-          $('.create-account').addClass(flipOut).one(animationEnd, function() {
-            $('.create-account').removeClass('show').removeClass(flipOut);
-            $('.carousel.authentication.progressive.flickity-enabled').addClass(flipIns).removeClass('hide');
+        $('#create-new-account').click(function() {
+          $('.carousel.new-account.progressive.flickity-enabled').addClass(flipOut).one(animationEnd, function() {
+            $('.carousel.new-account.progressive.flickity-enabled').removeClass('show').removeClass(flipOut);
+            $('.start-new-account').addClass(flipIns).removeClass('hide');
           });
         });
 

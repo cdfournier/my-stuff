@@ -24,7 +24,7 @@
           <p>A new service designed to make it wicked easy to catalog the important details of all of your stuff.</p>
           <div class="button-box">
             <a class="login-button button blue"><span class="button-label">Log In Now</span></a>
-            <a href="#!" class="button secondary blue"><span class="button-label">Create An Account</span></a>
+            <a class="create-an-account button secondary blue"><span class="button-label">Create An Account</span></a>
           </div>
         </div>
       </section>
@@ -62,6 +62,12 @@
         $('.login-button').click(function() {
           $('body').addClass(animationName).one(animationEnd, function() {
             $(location).attr('href', '../login/index.html');
+          });
+        });
+
+        $('.create-an-account').click(function() {
+          $('body').addClass(animationName).one(animationEnd, function() {
+            $(location).attr('href', '../create-account/index.html');
           });
         });
       });

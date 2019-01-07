@@ -4,7 +4,7 @@
 .sm {max-width: 24rem;}
 .md {max-width: 32rem;}
 .lg {max-width: 40rem;}
-.xs, .sm, .md, .lg {margin: 0 auto;}}
+.xs, .sm, .md, .lg {margin: 0;}}
 
 
 // TEXT
@@ -12,7 +12,7 @@
   display: block;
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem 2rem 0;
 }
 

@@ -269,13 +269,13 @@ footer {
   .lg {
     max-width: 40rem; }
   .xs, .sm, .md, .lg {
-    margin: 0 auto; } }
+    margin: 0; } }
 
 .text {
   display: block;
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem 2rem 0; }
 
 .text.center {
@@ -492,6 +492,33 @@ fieldset.error span.error-message {
 
 .create-account.animated.flipInY,
 .create-account.show {
+  display: block;
+  opacity: 1; }
+
+.start-new-account {
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out 0s;
+  -moz-transition: opacity 0.2s ease-in-out 0s;
+  -ms-transition: opacity 0.2s ease-in-out 0s;
+  -o-transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease-in-out 0s; }
+
+.start-new-account.hide {
+  display: none;
+  opacity: 0; }
+
+.carousel.new-account.progressive.flickity-enabled {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out 0s;
+  -moz-transition: opacity 0.2s ease-in-out 0s;
+  -ms-transition: opacity 0.2s ease-in-out 0s;
+  -o-transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease-in-out 0s; }
+
+.carousel.new-account.progressive.flickity-enabled.flipInY,
+.carousel.new-account.progressive.flickity-enabled.show {
   display: block;
   opacity: 1; }
 
