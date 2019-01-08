@@ -40,6 +40,7 @@
 
 .carousel.new-account.progressive.flickity-enabled {
   position: absolute;
+  visibility: hidden;
   opacity: 0;
   @include transition(opacity, 0.2s, ease-in-out);
 }
@@ -47,5 +48,6 @@
 .carousel.new-account.progressive.flickity-enabled.flipInY,
 .carousel.new-account.progressive.flickity-enabled.show {
   display: block;
+  visibility: visible;
   opacity: 1;
 }

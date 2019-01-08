@@ -510,6 +510,7 @@ fieldset.error span.error-message {
 
 .carousel.new-account.progressive.flickity-enabled {
   position: absolute;
+  visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out 0s;
   -moz-transition: opacity 0.2s ease-in-out 0s;
@@ -520,6 +521,7 @@ fieldset.error span.error-message {
 .carousel.new-account.progressive.flickity-enabled.flipInY,
 .carousel.new-account.progressive.flickity-enabled.show {
   display: block;
+  visibility: visible;
   opacity: 1; }
 
 .carousel.progressive {
