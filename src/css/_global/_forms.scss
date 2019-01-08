@@ -43,7 +43,7 @@ label {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  width: auto;
   margin: 0;
   font-size: 0.8rem;
   font-weight: 500;
@@ -60,6 +60,7 @@ input {
   padding: 1rem;
   border: 0;
   border: 1px solid $medium-gray;
+  font-weight: 500;
   -webkit-border-radius: 0.125rem;
   -moz-border-radius: 0.125rem;
   border-radius: 0.125rem;
@@ -80,6 +81,8 @@ input::placeholder {
 }
 
 input:focus::placeholder {opacity: 0.5;}
+
+input[type="password"] {padding: 1rem 3rem 1rem 1rem;}
 
 
 // CHECKBOX
@@ -102,7 +105,7 @@ input[type="checkbox"] {
   height: 1.325rem;
   margin: 0;
   border: 1px solid $black;
-  border-radius: 100%;
+  border-radius: 10rem;
   background-color: $white;
   cursor: pointer;
   @include appearance(none);
@@ -126,6 +129,21 @@ input[type="checkbox"]:checked:before {
 input[type="checkbox"]:checked:not(:disabled) {
   border-color: $green;
   background-color: $green;
+}
+
+
+// FORGOT PASSWORD PROMPT
+span.forgot-password-prompt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 1.325rem;
+  min-height: 1.325rem;
+  font-size: 0.8rem;
 }
 
 
@@ -164,3 +182,37 @@ fieldset.error input::placeholder {color: $red;}
 fieldset.error input {border-color: $red;}
 
 fieldset.error span.error-message {opacity: 1;}
+
+
+// FORM VALIDATION
+span.is-valid {
+  position: absolute;
+  top: 2.325rem;
+  right: 1rem;
+  width: 1.325rem;
+  height: 1.325rem;
+  margin: 0;
+  border: 1px solid $green;
+  border-radius: 10rem;
+  background-color: $green;
+  opacity: 0;
+  cursor: pointer;
+  @include appearance(none);
+  @include transition(all, 0.2s, ease-in-out);
+}
+
+span.is-valid:before {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1.325rem;
+  height: 1.325rem;
+  margin: 0;
+  font-family: "LineAwesome";
+  font-size: 0.8rem;
+  color: $white;
+  content: '\f17b';
+}
+
+fieldset.valid span.is-valid {opacity: 1;}

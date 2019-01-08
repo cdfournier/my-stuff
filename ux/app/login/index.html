@@ -31,7 +31,7 @@
                 <form>
                   <fieldset>
                     <legend>Email Address</legend>
-                    <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"></label>
+                    <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"><span class="is-valid"></span></label>
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <fieldset>
@@ -42,7 +42,8 @@
                   </fieldset>
                   <fieldset>
                     <legend>Remember Me</legend>
-                    <label for="remember" class="checkbox">Remember Me<input type="checkbox" name="remember" id="remember"><span><a class="button--next">Forgot Password?</a></span></label>
+                    <label for="remember" class="checkbox">Remember Me<input type="checkbox" name="remember" id="remember"></label>
+                    <span class="forgot-password-prompt"><a class="button--next">Forgot Password?</a></span>
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
@@ -90,7 +91,7 @@
               <fieldset>
                 <legend>Password</legend>
                 <label for="new-password">Password&#42;<input type="password" name="new-password" id="password" placeholder="Enter your password"></label>
-                <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                <span toggle class="la la-eye-slash show-hide-password"></span>
                 <span class="error-message">This is where the error message goes</span>
               </fieldset>
               <div class="button-box row left">
