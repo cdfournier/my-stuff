@@ -659,8 +659,7 @@ fieldset.valid span.is-valid {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  padding-top: 30vh;
-  padding-bottom: 2rem;
+  padding: 30vh 0 2rem;
   background-image: url("../images/bg-urban.png");
   background-position: center bottom;
   background-repeat: repeat-x;
