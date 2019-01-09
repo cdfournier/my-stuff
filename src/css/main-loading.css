@@ -147,6 +147,12 @@ ul li:last-child, ol li:last-child {
   -o-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s; }
 
+.button.hide {
+  opacity: 0; }
+
+.button.show {
+  opacity: 1; }
+
 .button span.button-label {
   display: block;
   overflow: hidden;

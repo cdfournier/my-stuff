@@ -1,3 +1,50 @@
+// CAROUSELS
+.carousel {
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto 1rem;
+  padding: 0;
+}
+
+.carousel .flickity-prev-next-button {display: none;}
+
+.carousel .flickity-button-icon {fill: $blue;}
+
+.carousel .flickity-page-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: inherit;
+  bottom: 0;
+  width: 100%;
+  margin: 1rem auto 0;
+}
+
+.carousel .flickity-page-dots .dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: 0 0.25rem;
+  padding: 0;
+  line-height: 1;
+  background: $blue;
+}
+
+.carousel .carousel-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 40rem;
+  min-height: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+
 // PROGRESSIVE CAROUSEL
 .carousel.progressive {
   display: block;

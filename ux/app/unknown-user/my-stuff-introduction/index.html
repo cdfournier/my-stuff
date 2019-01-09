@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="../../../../src/css/main.css">
+  </head>
+  <body class="animated">
+    <main>
+      <div class="carousel animated flipInY fast">
+        <div class="carousel-cell">
+          <small>Add Gifs</small>
+          <h1>Welcome to My Stuff</h1>
+          <p>No one expects a catastrophe. It's not something we think about until it happens. Some things can't be replaced after a disaster. For everything else, there's <em>My Stuff</em>.</p>
+        </div>
+        <div class="carousel-cell">
+          <small>Add Gifs</small>
+          <h1>How Does It Work?</h1>
+          <p><em>My Stuff</em> helps you create a master list of all of your valuable possessions so you'll be prepared to deal with property loss in the event of a catastrophe.</p>
+        </div>
+        <div class="carousel-cell">
+          <small>Add Gifs</small>
+          <h1>All The Details</h1>
+          <p><em>My Stuff</em> keeps track of all of the details: product descriptions, age, value, receipts, manuals, and more.</p>
+        </div>
+        <div class="carousel-cell">
+          <small>Add Gifs</small>
+          <h1>Get Paid</h1>
+          <p>When the time comes, you can use <em>My Stuff</em> to send a detailed report of your loss to your insurance carrier. You and your family will get your life back to normal more quickly.</p>
+        </div>
+        <div class="carousel-cell" style="justify-content: center; text-align: center;">
+          <small>Add Gifs</small>
+          <h1>Let's Get Started</h1>
+          <p>Time to start building your list of stuff.</p>
+        </div>
+      </div>
+      <div class="button-box row">
+        <a class="button blue button--previous"><span class="button-label"><span class="pre"><i class="la la-arrow-left"></i></span>Prev</span></a>
+        <a class="button blue button--next"><span class="button-label">Next<span class="post"><i class="la la-arrow-right"></i></span></span></a>
+      </div>
+      <div class="button-box">
+        <a id="add-stuff" class="button secondary blue hide"><span class="button-label">Get Started</span></a>
+      </div>
+    </main>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../../../assets/scripts/mystuff.js"></script>
+    <script>
+      var $carousel = $('.carousel').flickity({
+        prevNextButtons: false,
+        pageDots: true,
+        accessibility: true,
+        draggable: true,
+        wrapAround: true,
+        selectedAttraction: 0.15,
+        friction: 0.8,
+        adaptiveHeight: false
+      });
+      // Flickity instance
+      var flkty = $carousel.data('flickity');
+      
+      // previous
+      $('.button--previous').on( 'click', function() {
+        $carousel.flickity('previous');
+      });
+      // next
+      $('.button--next').on( 'click', function() {
+        $carousel.flickity('next');
+      });
+    </script>
+    <script>
+      $carousel.on( 'change.flickity', function( event, index ) {
+        $('.button').removeClass('hide').addClass('show');
+      });
+    </script>
+    <script>
+      $(function() {
+        var animationName = 'animated fadeOutLeft faster';
+        $('#add-stuff').click(function() {
+          $('body').addClass(animationName).one(animationEnd, function() {
+            $(location).attr('href', '../my-stuff-add-stuff/index.html');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
