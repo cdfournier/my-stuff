@@ -255,6 +255,9 @@ ul li:last-child, ol li:last-child {
 .text.center {
   text-align: center; }
 
+.text.first {
+  padding: 0 2rem; }
+
 .form-container {
   display: block;
   position: relative;
