@@ -13,6 +13,10 @@
   </head>
   <body class="animated">
     <main>
+      <section class="animated flipInY fast">
+        <div class="text first sm">
+          <h1>Add Your Stuff</h1>
+        </div>
         <div class="form-container sm">
           <form class="wrap">
             <fieldset>
@@ -50,8 +54,29 @@
               <label for="age">Age&#42;<input type="text" name="age" class="age" placeholder="Age"></label>
               <span class="error-message">This is where the error message goes</span>
             </fieldset>
+            <div class="button-box row">
+              <div class="attachment-button">
+                <span id="photos" class="button round blue"><i class="la la-camera-retro"></i></span>
+                <span class="counter">0</span>
+                <span class="label">Photos</span>
+              </div>
+              <div class="attachment-button">
+                <span id="manuals" class="button round blue"><i class="la la-book"></i></span>
+                <span class="counter">0</span>
+                <span class="label">Manuals</span>
+              </div>
+              <div class="attachment-button">
+                <span id="receipts" class="button round blue"><i class="la la-barcode"></i></span>
+                <span class="counter">0</span>
+                <span class="label">Receipts</span>
+              </div>
+            </div>
+            <div class="button-box row">
+              <a id="save" class="button blue"><span class="button-label">Save</span></a>
+            </div>
           </form>
         </div>
+      </section>
     </main>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -60,7 +85,22 @@
     <script>
       $(function() {
         var animationName = 'animated fadeOutLeft faster';
-        $('#').click(function() {
+        $('#photos').click(function() {
+          $('body').addClass(animationName).one(animationEnd, function() {
+            $(location).attr('href', '../stuff-add-photos/index.html');
+          });
+        });
+        $('#manuals').click(function() {
+          $('body').addClass(animationName).one(animationEnd, function() {
+            $(location).attr('href', '../stuff-add-manuals/index.html');
+          });
+        });
+        $('#receipts').click(function() {
+          $('body').addClass(animationName).one(animationEnd, function() {
+            $(location).attr('href', '../stuff-add-receipts/index.html');
+          });
+        });
+        $('#save').click(function() {
           $('body').addClass(animationName).one(animationEnd, function() {
             $(location).attr('href', '../new-account-setup/index.html');
           });

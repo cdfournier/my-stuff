@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | </title>
+    <title>My Stuff | Add A Group</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -13,6 +13,25 @@
   </head>
   <body class="animated">
     <main>
+      <section class="animated flipInY fast">
+        <div class="text first sm">
+          <h1>Add A Group</h1>
+          <p>Organize your stuff in groups. You can organize your stuff by room, type of stuff, or any other group that makes sense to you. You can also skip creating a group.</p>
+        </div>
+        <div class="form-container sm">
+          <form>
+            <fieldset>
+              <legend>Group</legend>
+              <label for="group">Group<input type="text" name="group" class="group" placeholder="Create a group"></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <div class="button-box row left">
+              <a id="skip" class="button secondary blue"><span class="button-label">Skip</span></a>
+              <a id="add-group" class="button blue"><span class="button-label">Create Group</span></a>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,14 +40,14 @@
     <script>
       $(function() {
         var animationName = 'animated fadeOutLeft faster';
-        $('#login').click(function() {
+        $('#skip').click(function() {
           $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../../known-user/home/index.html');
+            $(location).attr('href', '../stuff-add-stuff/index.html');
           });
         });
-        $('#new-account').click(function() {
+        $('#add-group').click(function() {
           $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../new-account-setup/index.html');
+            $(location).attr('href', '../stuff-add-stuff/index.html');
           });
         });
       });
