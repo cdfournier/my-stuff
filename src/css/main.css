@@ -121,7 +121,7 @@ ul li:last-child, ol li:last-child {
   min-height: 2.75rem;
   max-height: 2.75rem;
   overflow: hidden;
-  margin: 1rem 0 0;
+  margin: 1rem 0.5rem 0;
   padding: 0 1.75rem;
   border-radius: 0.2rem;
   font-size: 0.69rem;
@@ -283,36 +283,59 @@ input[type="file"] {
 .button-box.row {
   flex-direction: row; }
 
-.button-box.row .button:first-of-type {
-  margin: 1rem 1rem 0 0; }
-
 .button-box.right {
   align-items: flex-end; }
+
+.button-box.right .button {
+  margin: 1rem 0 0 1rem; }
 
 .button-box.left {
   align-items: flex-start; }
 
+.button-box.left .button {
+  margin: 1rem 1rem 0 0; }
+
 .button-box.row.left {
   justify-content: flex-start; }
+
+.button-box.row.left .button {
+  margin: 1rem 1rem 0 0; }
+
+.button-box.row.left .button:last-of-type {
+  margin: 1rem 0 0 0; }
 
 .button-box.row.right {
   justify-content: flex-end; }
 
-@media (min-width: 35.5rem) {
-  .xs {
-    max-width: 16rem; }
-  .sm {
-    max-width: 24rem; }
-  .md {
-    max-width: 32rem; }
-  .lg {
-    max-width: 40rem; }
-  .xs, .sm, .md, .lg {
-    margin: 0; } }
+.button-box.row.right .button {
+  margin: 1rem 0 0 1rem; }
+
+.button-box.row.right .button:first-of-type {
+  margin: 1rem 0 0 0; }
+
+.xs {
+  max-width: 16rem;
+  min-width: 16rem; }
+
+.sm {
+  max-width: 24rem;
+  min-width: 24rem; }
+
+.md {
+  max-width: 32rem;
+  min-width: 32rem; }
+
+.lg {
+  max-width: 40rem;
+  min-width: 40rem; }
+
+.xs, .sm, .md, .lg {
+  margin: 0; }
 
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -338,12 +361,6 @@ main {
   width: 100%;
   margin: 0;
   padding: 2rem 2rem 0; }
-
-.login-form {
-  width: 100%; }
-
-.create-account {
-  width: 100%; }
 
 input[type="password"],
 input[type="checkbox"],
@@ -583,10 +600,12 @@ span.error-message {
 
 fieldset.error label,
 fieldset.error input,
-fieldset.error input::placeholder {
+fieldset.error input::placeholder,
+fieldset.error select {
   color: #f04e59; }
 
-fieldset.error input {
+fieldset.error input,
+fieldset.error select {
   border-color: #f04e59; }
 
 fieldset.error span.error-message {

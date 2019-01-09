@@ -234,9 +234,11 @@ span.error-message {
 
 fieldset.error label,
 fieldset.error input,
-fieldset.error input::placeholder {color: $red;}
+fieldset.error input::placeholder,
+fieldset.error select {color: $red;}
 
-fieldset.error input {border-color: $red;}
+fieldset.error input,
+fieldset.error select {border-color: $red;}
 
 fieldset.error span.error-message {opacity: 1;}
 

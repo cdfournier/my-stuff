@@ -8,7 +8,7 @@
   min-height: 2.75rem;
   max-height: 2.75rem;
   overflow: hidden;
-  margin: 1rem 0 0;
+  margin: 1rem 0.5rem 0;
   padding: 0 1.75rem;
   border-radius: 0.2rem;
   font-size: 0.69rem;
@@ -183,12 +183,22 @@ input[type="file"] {
 
 .button-box.row {flex-direction: row;}
 
-.button-box.row .button:first-of-type {margin: 1rem 1rem 0 0;}
-
 .button-box.right {align-items: flex-end;}
+
+.button-box.right .button {margin: 1rem 0 0 1rem;}
 
 .button-box.left {align-items: flex-start;}
 
+.button-box.left .button {margin: 1rem 1rem 0 0;}
+
 .button-box.row.left {justify-content: flex-start;}
 
+.button-box.row.left .button {margin: 1rem 1rem 0 0;}
+
+.button-box.row.left .button:last-of-type {margin: 1rem 0 0 0;}
+
 .button-box.row.right {justify-content: flex-end;}
+
+.button-box.row.right .button {margin: 1rem 0 0 1rem;}
+
+.button-box.row.right .button:first-of-type {margin: 1rem 0 0 0;}
