@@ -9,7 +9,7 @@ html {
 body, .body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -33,11 +33,11 @@ a {
   text-decoration: none;
   color: #00ac39;
   cursor: pointer;
-  -webkit-transition: all 0.25s ease 0s;
-  -moz-transition: all 0.25s ease 0s;
-  -ms-transition: all 0.25s ease 0s;
-  -o-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s; }
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
 
 img {
   width: 100%;
@@ -47,8 +47,6 @@ img {
 main {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  position: relative;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -156,8 +154,13 @@ ul li:last-child, ol li:last-child {
   text-overflow: ellipsis; }
 
 .button span.pre, .button span.post {
-  display: inline-block;
-  padding: 0; }
+  display: inline-block; }
+
+.button span.pre {
+  padding: 0 0.2rem 0 0; }
+
+.button span.post {
+  padding: 0 0 0 0.2rem; }
 
 .button span.pre i.la, .button span.post i.la {
   position: relative;
@@ -230,34 +233,6 @@ ul li:last-child, ol li:last-child {
 .button-box.row.right {
   justify-content: flex-end; }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 2rem 2rem 0; }
-
-header .logo {
-  width: 50%;
-  max-width: 12rem;
-  margin: auto; }
-
-header .logo.blue {
-  fill: #003350; }
-
-footer {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 2rem; }
-
 @media (min-width: 35.5rem) {
   .xs {
     max-width: 16rem; }
@@ -287,10 +262,11 @@ footer {
   margin: 0;
   padding: 2rem 2rem 0; }
 
-.large-avatar img {
-  width: 8rem;
-  margin: 0 auto 1rem;
-  border-radius: 100%; }
+.login-form {
+  width: 100%; }
+
+.create-account {
+  width: 100%; }
 
 input[type="password"],
 input[type="checkbox"],
@@ -407,11 +383,11 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-transition: all 0.25s ease-in-out 0s;
-  -moz-transition: all 0.25s ease-in-out 0s;
-  -ms-transition: all 0.25s ease-in-out 0s;
-  -o-transition: all 0.25s ease-in-out 0s;
-  transition: all 0.25s ease-in-out 0s; }
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
 
 input[type="checkbox"]:checked:before {
   display: flex;
@@ -521,69 +497,6 @@ span.is-valid:before {
 fieldset.valid span.is-valid {
   opacity: 1; }
 
-.login {
-  width: 100%; }
-
-.carousel.authentication.progressive.flickity-enabled {
-  position: absolute;
-  opacity: 1;
-  -webkit-transition: opacity 0.2s ease-in-out 0s;
-  -moz-transition: opacity 0.2s ease-in-out 0s;
-  -ms-transition: opacity 0.2s ease-in-out 0s;
-  -o-transition: opacity 0.2s ease-in-out 0s;
-  transition: opacity 0.2s ease-in-out 0s; }
-
-.carousel.authentication.progressive.flickity-enabled.hide {
-  display: none;
-  opacity: 0; }
-
-.create-account {
-  display: none;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out 0s;
-  -moz-transition: opacity 0.2s ease-in-out 0s;
-  -ms-transition: opacity 0.2s ease-in-out 0s;
-  -o-transition: opacity 0.2s ease-in-out 0s;
-  transition: opacity 0.2s ease-in-out 0s; }
-
-.create-account.animated.flipInY,
-.create-account.show {
-  display: block;
-  opacity: 1; }
-
-.start-new-account {
-  position: absolute;
-  opacity: 1;
-  -webkit-transition: opacity 0.2s ease-in-out 0s;
-  -moz-transition: opacity 0.2s ease-in-out 0s;
-  -ms-transition: opacity 0.2s ease-in-out 0s;
-  -o-transition: opacity 0.2s ease-in-out 0s;
-  transition: opacity 0.2s ease-in-out 0s; }
-
-.start-new-account.hide {
-  display: none;
-  opacity: 0; }
-
-.carousel.new-account.progressive.flickity-enabled {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out 0s;
-  -moz-transition: opacity 0.2s ease-in-out 0s;
-  -ms-transition: opacity 0.2s ease-in-out 0s;
-  -o-transition: opacity 0.2s ease-in-out 0s;
-  transition: opacity 0.2s ease-in-out 0s; }
-
-.carousel.new-account.progressive.flickity-enabled.flipInY,
-.carousel.new-account.progressive.flickity-enabled.show {
-  display: block;
-  visibility: visible;
-  opacity: 1; }
-
-.carousel.authentication.progressive.flickity-enabled {
-  position: relative; }
-
 .carousel.progressive {
   display: block;
   width: 100%;
@@ -609,69 +522,3 @@ fieldset.valid span.is-valid {
   margin: auto;
   padding: 0;
   text-align: left; }
-
-.loading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100vh;
-  background-color: #003350;
-  -webkit-transition: height 0.2s ease-out 0s;
-  -moz-transition: height 0.2s ease-out 0s;
-  -ms-transition: height 0.2s ease-out 0s;
-  -o-transition: height 0.2s ease-out 0s;
-  transition: height 0.2s ease-out 0s; }
-
-.loading .logo {
-  width: 80%;
-  max-width: 12rem; }
-
-.loading .logo .logo-color {
-  fill: #ffffff; }
-
-.loading.loaded {
-  height: calc(100vh - 70%); }
-
-.return.loading.loaded {
-  height: 0; }
-
-.loading.loaded:after {
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: -1rem;
-  left: 0;
-  z-index: -1;
-  height: 35%;
-  background-color: inherit;
-  content: "";
-  transform: skewY(1deg);
-  transform-origin: 100%; }
-
-.welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  padding: 30vh 0 2rem;
-  background-image: url("../images/bg-urban.png");
-  background-position: center bottom;
-  background-repeat: repeat-x;
-  background-size: contain; }
-
-.welcome.back {
-  padding: 0 0 2rem;
-  background-image: none; }
-
-.welcome .button {
-  justify-content: center;
-  min-width: 14rem; }
-
-.welcome.back .button {
-  min-width: 10rem; }

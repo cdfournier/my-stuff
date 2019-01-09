@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Create Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="../../../../src/css/main.css">
+  </head>
+  <body class="animated">
+    <main>
+      <div class="create-new-account animated flipInY fast">
+        <div class="text sm">
+          <h1>Create An Account</h1>
+          <p>Looking to take advantage of advanced features? Just drop a little information here.</p>
+        </div>
+        <div class="carousel authentication progressive">
+          <div class="carousel-cell">
+            <section class="create-account">
+              <div class="form-container sm">
+                <form>
+                  <fieldset>
+                    <legend>Email Address</legend>
+                    <label for="new-email-address">Email Address&#42;<input type="email" name="new-email-address" class="email-address" placeholder="Enter your email address"></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Password</legend>
+                    <label for="new-password">Password&#42;<input type="password" name="new-password" id="password" placeholder="Enter your password"></label>
+                    <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box row left">
+                    <a class="button blue button--next"><span class="button-label">Next<span class="post"><i class="la la-arrow-right"></i></span></span></a>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-cell">
+            <section class="create-account">
+              <div class="form-container sm">
+                <form>
+                  <fieldset>
+                    <legend>Name</legend>
+                    <label for="new-name">Name&#42;<input type="text" name="new-name" class="name" placeholder="Enter your name address"></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box row left">
+                    <a class="button blue button--previous"><span class="button-label"><span class="pre"><i class="la la-arrow-left"></i></span>Previous</span></a>
+                    <a id="introduction" class="button blue"><span class="button-label">Create Account</span></a>
+                  </div>
+                </form>
+                <p><small>By creating an account you agree to our <a href="#!">Terms &amp; Conditions</a>.</small></p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </main>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../../../assets/scripts/mystuff.js"></script>
+    <script>
+      var $carousel = $('.carousel').flickity({
+        prevNextButtons: false,
+        pageDots: false,
+        draggable: false,
+        wrapAround: true,
+        selectedAttraction: 0.15,
+        friction: 0.8,
+        adaptiveHeight: true
+      });
+      // Flickity instance
+      var flkty = $carousel.data('flickity');
+      
+      // previous
+      $('.button--previous').on( 'click', function() {
+        $carousel.flickity('previous');
+      });
+      // next
+      $('.button--next').on( 'click', function() {
+        $carousel.flickity('next');
+      });
+    </script>
+  </body>
+</html>

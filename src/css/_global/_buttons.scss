@@ -30,10 +30,11 @@
   text-overflow: ellipsis;
 }
 
-.button span.pre, .button span.post {
-  display: inline-block;
-  padding: 0;
-}
+.button span.pre, .button span.post {display: inline-block;}
+
+.button span.pre {padding: 0 0.2rem 0 0;}
+
+.button span.post {padding: 0 0 0 0.2rem;}
 
 .button span.pre i.la, .button span.post i.la {
   position: relative;
@@ -86,6 +87,7 @@
   color: $blue;
   background-color: $white;
 }
+
 
 // BUTTON BOX/ROW
 .button-box {

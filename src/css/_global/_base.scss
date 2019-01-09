@@ -13,7 +13,7 @@ html {
 body, .body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -41,7 +41,7 @@ a {
   text-decoration: none;
   color: $green;
   cursor: pointer;
-  @include transition(all, 0.25s, ease);
+  @include transition(all, 0.2s, ease);
 }
 
 img {
@@ -53,8 +53,6 @@ img {
 main {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  position: relative;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;

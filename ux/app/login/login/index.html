@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="../../../../src/css/main.css">
+  </head>
+  <body class="animated">
+    <main>
+      <div class="carousel authentication progressive animated flipInY fast">
+        <div class="carousel-cell">
+          <section class="login-form">
+            <div class="text sm">
+              <h1>Welcome</h1>
+              <p>Please log in to continue.</p>
+            </div>
+            <div class="form-container sm">
+              <form>
+                <fieldset>
+                  <legend>Email Address</legend>
+                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"><span class="is-valid"></span></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Password</legend>
+                  <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password"></label>
+                  <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Remember Me</legend>
+                  <label for="remember" class="checkbox">Remember Me<input type="checkbox" name="remember" id="remember"></label>
+                  <span class="forgot-password-prompt"><a class="button--next">Forgot Password?</a></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box left">
+                  <a id="login" class="button blue"><span class="button-label">Log In</span></a>
+                </div>
+              </form>
+              <p><small>Don't have an account? <a id="new-account">Create one now</a>.</small></p>
+            </div>
+          </section>
+        </div>
+        <div class="carousel-cell">
+          <section class="forgot-password">
+            <div class="text">
+              <h1>Reset Your Password</h1>
+              <p>Enter your email address and we'll send you a link to reset your password.</p>
+            </div>
+            <div class="form-container sm">
+              <form>
+                <fieldset>
+                  <legend>Email Address</legend>
+                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box left">
+                  <a href="#!" class="button blue"><span class="button-label">Reset Password</span></a>
+                </div>
+              </form>
+              <p><small>Return to <a class="button--previous">Log In</a>.</small></p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../../../assets/scripts/mystuff.js"></script>
+    <script>
+      var $carousel = $('.carousel').flickity({
+        prevNextButtons: false,
+        pageDots: false,
+        draggable: false,
+        wrapAround: true,
+        selectedAttraction: 0.15,
+        friction: 0.8,
+        adaptiveHeight: true
+      });
+      // Flickity instance
+      var flkty = $carousel.data('flickity');
+      
+      // previous
+      $('.button--previous').on( 'click', function() {
+        $carousel.flickity('previous');
+      });
+      // next
+      $('.button--next').on( 'click', function() {
+        $carousel.flickity('next');
+      });
+    </script>
+    <script>
+      $(function() {
+        var animationName = 'animated fadeOutLeft faster';
+        $('#login').click(function() {
+          $('body').addClass(animationName).one(animationEnd, function() {
+            $(location).attr('href', '../../stuff/home/index.html');
+          });
+        });
+        $('#new-account').click(function() {
+          $('body').addClass(animationName).one(animationEnd, function() {
+            $(location).attr('href', '../../new-account/setup/index.html');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
