@@ -1,4 +1,5 @@
 // MAX-WIDTHS
+@media (min-width: 48rem) {
 .xs {
   max-width: 16rem;
   min-width: 16rem;
@@ -19,7 +20,7 @@
   min-width: 40rem;
 }
 
-.xs, .sm, .md, .lg {margin: 0;}
+.xs, .sm, .md, .lg {margin: 0;}}
 
 
 // MAIN
@@ -57,15 +58,3 @@ main {
   margin: 0;
   padding: 2rem 2rem 0;
 }
-
-
-// LOGIN
-// .login-form {width: 100%;}
-
-
-// CREATE ACCOUNT
-// .create-account {width: 100%;}
-
-
-// FORGOT PASSWORD
-// .forgot-password {width: 100%;}

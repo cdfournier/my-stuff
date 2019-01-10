@@ -313,24 +313,21 @@ input[type="file"] {
 .button-box.row.right .button:first-of-type {
   margin: 1rem 0 0 0; }
 
-.xs {
-  max-width: 16rem;
-  min-width: 16rem; }
-
-.sm {
-  max-width: 24rem;
-  min-width: 24rem; }
-
-.md {
-  max-width: 32rem;
-  min-width: 32rem; }
-
-.lg {
-  max-width: 40rem;
-  min-width: 40rem; }
-
-.xs, .sm, .md, .lg {
-  margin: 0; }
+@media (min-width: 48rem) {
+  .xs {
+    max-width: 16rem;
+    min-width: 16rem; }
+  .sm {
+    max-width: 24rem;
+    min-width: 24rem; }
+  .md {
+    max-width: 32rem;
+    min-width: 32rem; }
+  .lg {
+    max-width: 40rem;
+    min-width: 40rem; }
+  .xs, .sm, .md, .lg {
+    margin: 0; } }
 
 main {
   display: flex;

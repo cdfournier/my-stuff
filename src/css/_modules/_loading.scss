@@ -13,10 +13,7 @@
   @include transition(height, 0.2s, ease-out);
 }
 
-.loading .logo {
-  width: 80%;
-  max-width: 12rem;
-}
+.loading .logo {width: 60%;}
 
 .loading .logo .logo-color {fill: $white;}
 
@@ -51,7 +48,7 @@
   background-image: url("../images/bg-urban.png");
   background-position: center bottom;
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: 50%;
 }
 
 .welcome.back {
