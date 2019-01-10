@@ -82,15 +82,5 @@
         $('.button').removeClass('hide').addClass('show');
       });
     </script>
-    <script>
-      $(function() {
-        var animationName = 'animated fadeOutLeft faster';
-        $('#add-stuff').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../stuff-add-group/index.html');
-          });
-        });
-      });
-    </script>
   </body>
 </html>

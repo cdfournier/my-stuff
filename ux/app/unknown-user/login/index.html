@@ -98,20 +98,5 @@
         $carousel.flickity('next');
       });
     </script>
-    <script>
-      $(function() {
-        var animationName = 'animated fadeOutLeft faster';
-        $('#login').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../../known-user/home/index.html');
-          });
-        });
-        $('#new-account').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../new-account-setup/index.html');
-          });
-        });
-      });
-    </script>
   </body>
 </html>

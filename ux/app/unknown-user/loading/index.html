@@ -39,20 +39,5 @@
         $('.welcome').addClass(' fadeInRight fast')
       },4000);
     </script>
-    <script>
-      $(function() {
-        var animationName = 'animated fadeOutLeft faster';
-        $('#login').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../login/index.html');
-          });
-        });
-        $('#new-account').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../new-account-setup/index.html');
-          });
-        });
-      });
-    </script>
   </body>
 </html>

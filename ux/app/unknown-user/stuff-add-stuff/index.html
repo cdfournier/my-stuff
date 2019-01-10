@@ -82,30 +82,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="../../../assets/scripts/mystuff.js"></script>
-    <script>
-      $(function() {
-        var animationName = 'animated fadeOutLeft faster';
-        $('#photos').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../stuff-add-photos/index.html');
-          });
-        });
-        $('#manuals').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../stuff-add-manuals/index.html');
-          });
-        });
-        $('#receipts').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../stuff-add-receipts/index.html');
-          });
-        });
-        $('#save').click(function() {
-          $('body').addClass(animationName).one(animationEnd, function() {
-            $(location).attr('href', '../new-account-setup/index.html');
-          });
-        });
-      });
-    </script>
   </body>
 </html>
