@@ -13,70 +13,52 @@
   </head>
   <body>
     <main>
-      <section class="">
-        <div class="text first">
-          <h1>Add Your Stuff</h1>
-        </div>
-        <div class="form-container">
-          <form class="wrap">
-            <fieldset>
-              <legend>Description</legend>
-              <label for="description">Description&#42;<input type="text" name="description" class="description" placeholder="Describe your stuff"></label>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <fieldset class="half">
-              <legend>Value</legend>
-              <label for="value">Value&#42;<input type="text" name="value" class="value" placeholder="Value"></label>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <fieldset class="half">
-              <legend>Quantity</legend>
-              <label for="quantity">Quantity&#42;<input type="number" name="quantity" class="quantity" placeholder="Quantity"></label>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <fieldset>
-              <legend>Condition</legend>
-              <label for="condition">Condition&#42;
-                <select name="condition" id="condition">
-                  <option value="0">Choose a Condition</option>
-                  <option value="New">New</option>
-                  <option value="Excellent">Excellent</option>
-                  <option value="Good">Good</option>
-                  <option value="Fair">Fair</option>
-                  <option value="Poor">Poor</option>
-                </select>
-                <div class="select-icon"><i class="la la-angle-down"></i></div>
-              </label>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <fieldset class="half">
-              <legend>Age</legend>
-              <label for="age">Age&#42;<input type="text" name="age" class="age" placeholder="Age"></label>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <div class="button-box row">
-              <div class="attachment-button">
-                <span id="photos" class="button round blue"><i class="la la-camera-retro"></i></span>
-                <span class="counter">0</span>
-                <span class="label">Photos</span>
-              </div>
-              <div class="attachment-button">
-                <span id="manuals" class="button round blue"><i class="la la-book"></i></span>
-                <span class="counter">0</span>
-                <span class="label">Manuals</span>
-              </div>
-              <div class="attachment-button">
-                <span id="receipts" class="button round blue"><i class="la la-barcode"></i></span>
-                <span class="counter">0</span>
-                <span class="label">Receipts</span>
-              </div>
-            </div>
-            <div class="button-box row">
-              <a id="save" class="button blue"><span class="button-label">Save</span></a>
-            </div>
-          </form>
-        </div>
-      </section>
+      <div class="text first">
+        <h1>Add Your Stuff</h1>
+      </div>
+      <div class="form-container">
+        <form class="wrap">
+          <fieldset>
+            <legend>Description</legend>
+            <label for="description">Description&#42;<input type="text" name="description" class="description" placeholder="Describe your stuff"></label>
+            <span class="error-message">This is where the error message goes</span>
+          </fieldset>
+          <fieldset class="half">
+            <legend>Value</legend>
+            <label for="value">Value&#42;<input type="text" name="value" class="value" placeholder="Value"></label>
+            <span class="error-message">This is where the error message goes</span>
+          </fieldset>
+          <fieldset class="half">
+            <legend>Quantity</legend>
+            <label for="quantity">Quantity&#42;<input type="number" name="quantity" class="quantity" placeholder="Quantity"></label>
+            <span class="error-message">This is where the error message goes</span>
+          </fieldset>
+          <fieldset>
+            <legend>Condition</legend>
+            <label for="condition">Condition&#42;
+              <select name="condition" id="condition">
+                <option value="0">Choose a Condition</option>
+                <option value="New">New</option>
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+                <option value="Poor">Poor</option>
+              </select>
+              <div class="select-icon"><i class="la la-angle-down"></i></div>
+            </label>
+            <span class="error-message">This is where the error message goes</span>
+          </fieldset>
+          <fieldset class="half">
+            <legend>Age</legend>
+            <label for="age">Age&#42;<input type="text" name="age" class="age" placeholder="Age"></label>
+            <span class="error-message">This is where the error message goes</span>
+          </fieldset>
+          <div class="button-box row left">
+            <a id="add-attachments" class="button secondary blue" href="../stuff-add-attachments/index.html"><span class="button-label">Add Attachments</span></a>
+            <a id="save" class="button blue"><span class="button-label">Save</span></a>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
       <nav>

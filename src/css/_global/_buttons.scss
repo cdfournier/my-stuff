@@ -27,6 +27,8 @@
 
 .button.show {opacity: 1;}
 
+.button.obvs {min-width: 10rem;}
+
 .button span.button-label {
   display: block;
   overflow: hidden;
@@ -47,67 +49,7 @@
 }
 
 
-// ATTACHMENT BUTTONS
-.attachment-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 1rem 1rem 0;
-}
-
-.attachment-button .button.round {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 4rem;
-  max-width: 4rem;
-  height: 4rem;
-  max-height: 4rem;
-  margin: 0;
-  padding: 0.5rem;
-  border-radius: 100%;
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.button-box.row .attachment-button .button.round:first-of-type {margin: 0;}
-
-.attachment-button span.counter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -0.25rem;
-  right: -0.25rem;
-  width: 1.5rem;
-  max-width: 1.5rem;
-  height: 1.5rem;
-  max-height: 1.5rem;
-  border: 1.5px solid $white;
-  border-radius: 100%;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: $white;
-  background-color: $blue;
-}
-
-.attachment-button span.label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  padding: 0.5rem 0;
-  font-size: 0.69rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-
+// ATTACHMENT BUTTON
 input[type="file"] {
   position: absolute;
   width: auto;
@@ -118,6 +60,8 @@ input[type="file"] {
   opacity: 0;
   cursor: pointer;
 }
+
+.button.add-attachment {margin: 0 0 2rem;}
 
 
 // BUTTON BLUE

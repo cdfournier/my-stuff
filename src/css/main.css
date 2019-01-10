@@ -145,6 +145,9 @@ ul li:last-child, ol li:last-child {
 .button.show {
   opacity: 1; }
 
+.button.obvs {
+  min-width: 10rem; }
+
 .button span.button-label {
   display: block;
   overflow: hidden;
@@ -165,63 +168,6 @@ ul li:last-child, ol li:last-child {
   top: 0.1rem;
   font-size: 1rem; }
 
-.attachment-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 1rem 1rem 0; }
-
-.attachment-button .button.round {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 4rem;
-  max-width: 4rem;
-  height: 4rem;
-  max-height: 4rem;
-  margin: 0;
-  padding: 0.5rem;
-  border-radius: 100%;
-  font-size: 2rem;
-  line-height: 1; }
-
-.button-box.row .attachment-button .button.round:first-of-type {
-  margin: 0; }
-
-.attachment-button span.counter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -0.25rem;
-  right: -0.25rem;
-  width: 1.5rem;
-  max-width: 1.5rem;
-  height: 1.5rem;
-  max-height: 1.5rem;
-  border: 1.5px solid #ffffff;
-  border-radius: 100%;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #ffffff;
-  background-color: #003350; }
-
-.attachment-button span.label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  padding: 0.5rem 0;
-  font-size: 0.69rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase; }
-
 input[type="file"] {
   position: absolute;
   width: auto;
@@ -231,6 +177,9 @@ input[type="file"] {
   padding: 0;
   opacity: 0;
   cursor: pointer; }
+
+.button.add-attachment {
+  margin: 0 0 2rem; }
 
 .button.blue {
   border: 1px solid #003350;
@@ -337,7 +286,7 @@ main {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
-  padding: 2rem 0; }
+  padding: 2rem 0 6rem; }
 
 .text {
   display: block;
@@ -370,8 +319,8 @@ footer {
   width: 100%;
   max-width: 40rem;
   margin: 0 auto;
-  padding: 2rem;
-  background-color: #ffffff; }
+  padding: 0.5rem;
+  background-color: #003350; }
 
 nav {
   width: 100%; }
@@ -387,6 +336,12 @@ nav {
     list-style-type: none; }
   nav ul li {
     padding: 0; }
+  nav ul li:nth-of-type(1n) {
+    border-right: 1px solid #ffffff; }
+  nav ul li:nth-of-type(2n) {
+    border-right: 1px solid #ffffff; }
+  nav ul li:nth-of-type(3n) {
+    border-right: none; }
   nav ul li a {
     display: flex;
     flex-direction: column;
@@ -394,12 +349,12 @@ nav {
     justify-content: center;
     width: auto;
     margin: 0;
-    font-size: 0.69rem;
+    font-size: 0.5rem;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
-    color: #003350; }
+    color: #ffffff; }
   nav ul li a span.icon {
     font-size: 2rem; }
 
@@ -450,6 +405,9 @@ fieldset:last-of-type {
 fieldset.half {
   width: calc(50% - 1rem); }
 
+fieldset.inline-button {
+  width: calc(60% - 1rem); }
+
 legend {
   display: none; }
 
@@ -468,7 +426,7 @@ input {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 3rem;
+  height: 2.75rem;
   margin: 0.5rem 0 0;
   padding: 1rem;
   border: 1px solid #d1d8df;
@@ -551,8 +509,8 @@ select {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 3rem;
-  min-height: 3rem;
+  height: 2.75rem;
+  min-height: 2.75rem;
   overflow: hidden;
   margin: 0.5rem 0 0;
   padding: 0 1rem;
@@ -585,8 +543,8 @@ select option {
   right: 1rem;
   bottom: 0;
   z-index: 2;
-  height: 3rem;
-  min-height: 3rem;
+  height: 2.75rem;
+  min-height: 2.75rem;
   font-size: 1rem; }
 
 select:disabled {
