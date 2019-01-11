@@ -347,6 +347,10 @@ main {
 .loading.loaded {
   height: 0; }
 
+@media (min-width: 46.75rem) {
+  .loading .logo {
+    width: 40%; } }
+
 .welcome {
   display: flex;
   flex-direction: column;
@@ -354,7 +358,7 @@ main {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
   background-image: url("../images/bg-urban.png");
   background-position: center bottom;
   background-repeat: repeat-x;
