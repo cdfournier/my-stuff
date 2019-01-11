@@ -168,6 +168,18 @@ ul li:last-child, ol li:last-child {
   top: 0.1rem;
   font-size: 1rem; }
 
+.button span.number,
+.button.secondary span.number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0 0 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.69rem;
+  font-weight: 700; }
+
 input[type="file"] {
   position: absolute;
   width: auto;
@@ -178,6 +190,7 @@ input[type="file"] {
   opacity: 0;
   cursor: pointer; }
 
+.button-box.left .button.add-attachment,
 .button.add-attachment {
   margin: 0 0 2rem; }
 
@@ -283,9 +296,9 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 100%;
+  max-width: 32rem;
   overflow-x: hidden;
-  margin: 0;
+  margin: 0 auto;
   padding: 2rem 0 6rem; }
 
 .text {
@@ -332,23 +345,7 @@ main {
   fill: #ffffff; }
 
 .loading.loaded {
-  height: calc(100vh - 70%); }
-
-.return.loading.loaded {
   height: 0; }
-
-.loading.loaded:after {
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: -1rem;
-  left: 0;
-  z-index: -1;
-  height: 35%;
-  background-color: inherit;
-  content: "";
-  transform: skewY(1deg);
-  transform-origin: 100%; }
 
 .welcome {
   display: flex;
@@ -357,11 +354,11 @@ main {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  padding: 30vh 0 2rem;
+  padding: 2rem 0;
   background-image: url("../images/bg-urban.png");
   background-position: center bottom;
   background-repeat: repeat-x;
-  background-size: 50%; }
+  background-size: 70%; }
 
 .welcome.back {
   padding: 0 0 2rem;

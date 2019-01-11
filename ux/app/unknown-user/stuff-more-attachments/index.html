@@ -18,9 +18,14 @@
       </div>
       <div class="form-container">
         <form class="wrap">
-          <div class="button-box">
-            <span class="button blue add-attachment"><input type="file" id="files" name="files[]" multiple><span class="button-label">Add Attachments<span class="post"><i class="la la-paperclip"></i></span></span></span>
+          <div class="button-box left">
+            <span class="button blue add-attachment"><input type="file" id="files" name="files[]" multiple><span class="button-label">Add Attachment<span class="post"><i class="la la-paperclip"></i></span></span></span>
           </div>
+          <fieldset>
+            <legend>Name</legend>
+            <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment"></label>
+            <span class="error-message">This is where the error message goes</span>
+          </fieldset>
           <fieldset>
             <legend>Attachment Type</legend>
             <label for="attachment-type">Attachment Type
@@ -35,8 +40,8 @@
             </label>
             <span class="error-message">This is where the error message goes</span>
           </fieldset>
-          <div class="button-box">
-            <a id="save" class="button blue" href="../stuff-add-stuff/index.html"><span class="button-label">Save</span></a>
+          <div class="button-box left">
+            <a id="save" class="button blue" href="../stuff-add-more-stuff/index.html"><span class="button-label">Save</span></a>
           </div>
         </form>
       </div>
@@ -44,9 +49,9 @@
     <footer>
       <nav>
         <ul>
-          <li><a href="#!"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
-          <li><a href="#!"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
-          <li><a href="#!"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+          <li><a href="../home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+          <li><a href="../stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+          <li><a href="../profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
         </ul>
       </nav>
     </footer>

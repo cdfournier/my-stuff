@@ -90,7 +90,8 @@ input::placeholder {
 
 input:focus::placeholder {opacity: 0.5;}
 
-input[type="password"] {padding: 1rem 3rem 1rem 1rem;}
+input[type="password"],
+input[type="search"] {padding: 1rem 3rem 1rem 1rem;}
 
 
 // CHECKBOX
@@ -189,6 +190,21 @@ select:disabled {
 }
 
 select:disabled + .select-icon {color: $medium-gray;}
+
+
+// SEARCH
+.search-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 1.425rem;
+  right: 1rem;
+  z-index: 2;
+  height: 2.75rem;
+  min-height: 2.75rem;
+  font-size: 1.5rem;
+}
 
 
 // FORGOT PASSWORD PROMPT
