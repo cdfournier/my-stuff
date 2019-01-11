@@ -35,6 +35,8 @@ main {
   padding: 2rem 0 6rem;
 }
 
+section {width: 100%;}
+
 
 // TEXT
 .text {
@@ -50,7 +52,7 @@ main {
 .text.first {padding: 0 2rem;}
 
 
-// FORM CONTAINER
+// FORM CONTAINERS
 .form-container {
   display: block;
   position: relative;
@@ -58,3 +60,5 @@ main {
   margin: 0;
   padding: 2rem 2rem 0;
 }
+
+.carousel .carousel-cell .form-container {padding: 2rem 0 0;}

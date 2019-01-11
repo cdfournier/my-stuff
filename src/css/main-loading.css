@@ -145,9 +145,6 @@ ul li:last-child, ol li:last-child {
 .button.show {
   opacity: 1; }
 
-.button.obvs {
-  min-width: 10rem; }
-
 .button span.button-label {
   display: block;
   overflow: hidden;
@@ -301,6 +298,9 @@ main {
   margin: 0 auto;
   padding: 2rem 0 6rem; }
 
+section {
+  width: 100%; }
+
 .text {
   display: block;
   position: relative;
@@ -320,6 +320,9 @@ main {
   width: 100%;
   margin: 0;
   padding: 2rem 2rem 0; }
+
+.carousel .carousel-cell .form-container {
+  padding: 2rem 0 0; }
 
 .loading {
   display: flex;
