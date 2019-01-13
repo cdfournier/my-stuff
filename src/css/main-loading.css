@@ -1,3 +1,17 @@
+.m-scene .scene_element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both; }
+
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn; }
+
+.m-scene .scene_element--fadeinup {
+  animation-name: fadeInUp; }
+
+.m-scene .scene_element--fadeinright {
+  animation-name: fadeInRight; }
+
 html {
   font-family: "Montserrat", sans-serif;
   font-size: calc(1rem + 6 * ((100vw - 32rem) / 680));
@@ -321,9 +335,6 @@ section {
   margin: 0;
   padding: 2rem 2rem 0; }
 
-.carousel .carousel-cell .form-container {
-  padding: 2rem 0 0; }
-
 .loading {
   display: flex;
   flex-direction: column;
@@ -365,7 +376,7 @@ section {
   background-image: url("../images/bg-urban.png");
   background-position: center bottom;
   background-repeat: repeat-x;
-  background-size: 70%; }
+  background-size: 100%; }
 
 .welcome.back {
   padding: 0 0 2rem;

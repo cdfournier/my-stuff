@@ -99,7 +99,7 @@ label.checkbox {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-height: 1.325rem;
+  min-height: 1.5rem;
   padding-left: 2rem;
 }
 
@@ -110,8 +110,8 @@ input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1.325rem;
-  height: 1.325rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: 0;
   border: 1px solid $black;
   border-radius: 10rem;
@@ -126,8 +126,8 @@ input[type="checkbox"]:checked:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1.325rem;
-  height: 1.325rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: 0;
   font-family: "LineAwesome";
   font-size: 0.8rem;

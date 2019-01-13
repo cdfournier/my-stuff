@@ -25,3 +25,39 @@
   -webkit-animation-delay: $delay;
   animation-delay: $delay;
 };
+
+@mixin animation-duration($duration: 0.25s) {
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+};
+
+@mixin transition-timing-function($transition-timing: ease-in) {
+  -webkit-transition-timing-function: $transition-timing;
+  -o-transition-timing-function: $transition-timing;
+  transition-timing-function: $transition-timing;
+};
+
+@mixin animation-fill-mode($animation-fill-mode: both) {
+  -webkit-animation-fill-mode: $animation-fill-mode;
+  animation-fill-mode: $animation-fill-mode;
+};
+
+.m-scene {
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Add Your Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../../../../src/css/main.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="add-your-stuff">
+        <div class="text first">
+          <h1>Add Your Stuff</h1>
+        </div>
+        <div class="form-container">
+          <form class="wrap">
+            <fieldset>
+              <legend>Description</legend>
+              <label for="description">Description&#42;<input type="text" name="description" class="description" placeholder="Describe your stuff"></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <fieldset class="half">
+              <legend>Value</legend>
+              <label for="value">Value&#42;<input type="text" name="value" class="value" placeholder="Value"></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <fieldset class="half">
+              <legend>Quantity</legend>
+              <label for="quantity">Quantity&#42;<input type="number" name="quantity" class="quantity" placeholder="Quantity"></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <fieldset>
+              <legend>Condition</legend>
+              <label for="condition">Condition&#42;
+                <select name="condition" id="condition">
+                  <option value="0">Choose a Condition</option>
+                  <option value="New">New</option>
+                  <option value="Excellent">Excellent</option>
+                  <option value="Good">Good</option>
+                  <option value="Fair">Fair</option>
+                  <option value="Poor">Poor</option>
+                </select>
+                <div class="select-icon"><i class="la la-angle-down"></i></div>
+              </label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <fieldset class="half">
+              <legend>Age</legend>
+              <label for="age">Age&#42;<input type="text" name="age" class="age" placeholder="Age"></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <div class="button-box row left">
+              <a id="attachments" class="button secondary blue" href="../attachments/index.html"><span class="button-label">Attachments<span class="number">0</span></span></a>
+              <a id="save" class="button blue"><span class="button-label">Save</span></a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="../../home/home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+          <li><a href="../../stuff/stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+          <li><a href="../../profile/profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../../../assets/scripts/mystuff.js"></script>
+  </body>
+</html>

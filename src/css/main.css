@@ -1,3 +1,17 @@
+.m-scene .scene_element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both; }
+
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn; }
+
+.m-scene .scene_element--fadeinup {
+  animation-name: fadeInUp; }
+
+.m-scene .scene_element--fadeinright {
+  animation-name: fadeInRight; }
+
 html {
   font-family: "Montserrat", sans-serif;
   font-size: calc(1rem + 6 * ((100vw - 32rem) / 680));
@@ -321,9 +335,6 @@ section {
   margin: 0;
   padding: 2rem 2rem 0; }
 
-.carousel .carousel-cell .form-container {
-  padding: 2rem 0 0; }
-
 footer {
   display: flex;
   flex-direction: column;
@@ -480,7 +491,7 @@ label.checkbox {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-height: 1.325rem;
+  min-height: 1.5rem;
   padding-left: 2rem; }
 
 label.checkbox span {
@@ -490,8 +501,8 @@ input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1.325rem;
-  height: 1.325rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: 0;
   border: 1px solid #000000;
   border-radius: 10rem;
@@ -511,8 +522,8 @@ input[type="checkbox"]:checked:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1.325rem;
-  height: 1.325rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: 0;
   font-family: "LineAwesome";
   font-size: 0.8rem;
@@ -678,12 +689,54 @@ span.is-valid:before {
 fieldset.valid span.is-valid {
   opacity: 1; }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+.m-scene .scene_element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both; }
+
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn; }
+
+.m-scene .scene_element--fadeinup {
+  animation-name: fadeInUp; }
+
+.m-scene .scene_element--fadeinright {
+  animation-name: fadeInRight; }
+
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse; }
+
 .carousel {
   display: block;
   width: 100%;
   max-width: 40rem;
   margin: 0 auto 1rem;
   padding: 0 2rem; }
+
+.carousel.no-padding {
+  padding: 0; }
 
 .carousel .flickity-prev-next-button {
   display: none; }
@@ -706,6 +759,7 @@ fieldset.valid span.is-valid {
   height: 0.625rem;
   margin: 0 0.25rem;
   padding: 0;
+  border-radius: 100%;
   line-height: 1;
   background: #003350; }
 

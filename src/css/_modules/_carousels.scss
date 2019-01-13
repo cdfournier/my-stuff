@@ -7,6 +7,8 @@
   padding: 0 2rem;
 }
 
+.carousel.no-padding {padding: 0;}
+
 .carousel .flickity-prev-next-button {display: none;}
 
 .carousel .flickity-button-icon {fill: $blue;}
@@ -27,6 +29,7 @@
   height: 0.625rem;
   margin: 0 0.25rem;
   padding: 0;
+  border-radius: 100%;
   line-height: 1;
   background: $blue;
 }

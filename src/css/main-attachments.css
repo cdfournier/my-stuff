@@ -689,115 +689,44 @@ span.is-valid:before {
 fieldset.valid span.is-valid {
   opacity: 1; }
 
-.stuff-list {
-  width: 100%;
-  padding: 2rem 2rem 0; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-.stuff-list ul {
-  width: 100%;
-  padding: 0;
-  list-style-type: none; }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
 
-.stuff-list ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  width: 100%;
-  min-height: 1.5rem;
-  margin: 0 0 1rem;
-  padding: 0; }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
 
-.stuff-list ul li a {
-  width: 100%;
-  padding: 0 1rem 0 0;
-  color: #003350; }
+.m-scene .scene_element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both; }
 
-.stuff-list ul li:after {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  right: 0;
-  min-height: 1.5rem;
-  font-family: "LineAwesome";
-  font-size: 1rem;
-  content: "\f112"; }
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn; }
 
-.stuff-details {
-  width: 100%; }
+.m-scene .scene_element--fadeinup {
+  animation-name: fadeInUp; }
 
-.stuff-details ul {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 1rem 0 0;
-  padding: 0;
-  list-style-type: none; }
+.m-scene .scene_element--fadeinright {
+  animation-name: fadeInRight; }
 
-.stuff-details ul li {
-  width: 100%;
-  min-height: 1.5rem;
-  margin: 0 0 1rem;
-  padding: 0;
-  font-weight: 400; }
-
-.stuff-details ul li span {
-  font-weight: 700; }
-
-.stuff-details ul li.half {
-  width: calc(50% - 1rem); }
-
-.stuff-attachment-list {
-  width: 100%; }
-
-.stuff-attachment-list ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-  width: 100%;
-  margin: 1rem 0 0;
-  padding: 0;
-  list-style-type: none; }
-
-.stuff-attachment-list ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  min-height: 2rem;
-  margin: 0 0 1rem;
-  padding: 0 0 0 2.5rem;
-  font-weight: 400; }
-
-.stuff-attachment-list ul li.receipts:before,
-.stuff-attachment-list ul li.manuals:before,
-.stuff-attachment-list ul li.photos:before {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  min-height: 2rem;
-  font-family: "LineAwesome";
-  font-size: 2rem;
-  line-height: 1; }
-
-.stuff-attachment-list ul li.receipts:before {
-  content: "\f1ed"; }
-
-.stuff-attachment-list ul li.manuals:before {
-  content: "\f14e"; }
-
-.stuff-attachment-list ul li.photos:before {
-  content: "\f1e4"; }
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse; }
 
 .carousel {
   display: block;
@@ -871,3 +800,69 @@ fieldset.valid span.is-valid {
   margin: auto;
   padding: 0;
   text-align: left; }
+
+ul.attachment-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 2rem 0;
+  list-style-type: none; }
+
+ul.attachment-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0 0 0 2.5rem;
+  border-bottom: 1px solid #d1d8df; }
+
+ul.attachment-list li:first-of-type {
+  border-top: 1px solid #d1d8df; }
+
+ul.attachment-list li a {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0; }
+
+ul.attachment-list li:after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  font-family: "LineAwesome";
+  font-size: 1rem;
+  content: "\f112"; }
+
+ul.attachment-list li.photo:before,
+ul.attachment-list li.manual:before,
+ul.attachment-list li.receipt:before {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  font-family: "LineAwesome";
+  font-size: 2.2rem; }
+
+ul.attachment-list li.photo:before {
+  content: "\f1e8"; }
+
+ul.attachment-list li.manual:before {
+  content: "\f14e"; }
+
+ul.attachment-list li.receipt:before {
+  content: "\f1ec"; }
+
+ul.attachment-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  list-style-type: none; }
+
+ul.attachment-details li span {
+  font-weight: 500; }
