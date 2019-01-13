@@ -320,13 +320,10 @@ section {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 2rem 2rem 0; }
+  padding: 0 2rem; }
 
 .text.center {
   text-align: center; }
-
-.text.first {
-  padding: 0 2rem; }
 
 .form-container {
   display: block;
