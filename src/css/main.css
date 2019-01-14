@@ -286,6 +286,15 @@ input[type="file"] {
 .button-box.row.right .button:first-of-type {
   margin: 1rem 0 0 0; }
 
+.button-box.row span.or {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 2.75rem;
+  margin: 1rem 1rem 0 0;
+  font-size: 0.8rem;
+  font-weight: 500; }
+
 @media (min-width: 48rem) {
   .xs {
     max-width: 16rem;
@@ -567,8 +576,8 @@ select option {
   flex-direction: column;
   justify-content: center;
   position: absolute;
+  top: 1.425rem;
   right: 1rem;
-  bottom: 0;
   z-index: 2;
   height: 2.75rem;
   min-height: 2.75rem;

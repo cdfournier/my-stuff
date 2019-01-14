@@ -2,21 +2,98 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | </title>
+    <title>My Stuff | Change Your Password</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="../../../../src/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="../../../../../src/css/main.css">
   </head>
   <body>
     <main>
+      <section data-qa="change-password">
+        <div class="carousel no-padding">
+          <div class="carousel-cell">
+            <div class="text">
+              <h1>Change Your Password</h1>
+              <p>Complete the form below to change your password.</p>
+            </div>
+            <div class="form-container">
+              <form>
+                <fieldset>
+                  <legend>Current Password</legend>
+                  <label for="current-password">Current Password&#42;<input type="password" name="current-password" id="current-password" placeholder="Enter your current password"></label>
+                  <span toggle="#current-password" class="la la-eye-slash show-hide-password"></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>New Password</legend>
+                  <label for="new-password">New Password&#42;<input type="password" name="new-password" id="new-password" placeholder="Enter your new password"></label>
+                  <span toggle="#new-password" class="la la-eye-slash show-hide-password"></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Confirm New Password</legend>
+                  <label for="confirm-new-password">Confirm New Password&#42;<input type="password" name="confirm-new-password" id="confirm-new-password" placeholder="Enter your new password"></label>
+                  <span toggle="#confirm-new-password" class="la la-eye-slash show-hide-password"></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box row left">
+                  <a class="button blue button--next"><span class="button-label">Change Password</span></a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="text">
+              <h1>Your Password Has Been Changed</h1>
+              <p>Please keep track of your new password.</p>
+              <div class="button-box left">
+                <a class="button blue" href="../../profile/profile/index.html"><span class="button-label">Done</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="../../home/home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+          <li><a href="../../stuff/stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+          <li><a href="../../profile/profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+        </ul>
+      </nav>
+    </footer>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="../../../assets/scripts/mystuff.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../../../../assets/scripts/mystuff.js"></script>
+    <script>
+      var $carousel = $('.carousel').flickity({
+        prevNextButtons: false,
+        pageDots: false,
+        draggable: false,
+        wrapAround: true,
+        selectedAttraction: 0.15,
+        friction: 0.8,
+        adaptiveHeight: true
+      });
+      // Flickity instance
+      var flkty = $carousel.data('flickity');
+      
+      // previous
+      $('.button--previous').on( 'click', function() {
+        $carousel.flickity('previous');
+      });
+      // next
+      $('.button--next').on( 'click', function() {
+        $carousel.flickity('next');
+      });
+    </script>
   </body>
 </html>
