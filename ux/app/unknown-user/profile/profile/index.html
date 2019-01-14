@@ -2,18 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | </title>
+    <title>My Stuff | Your Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="../../../../../src/css/main.css">
+    <link rel="stylesheet" href="../../../../../src/css/main-profile.css">
   </head>
   <body>
     <main>
-      <section data-qa="">
+      <section data-qa="profile">
+        <div class="avatar">
+          <img src="../../../../assets/images/user.jpg" class="avatar">
+        </div>
+        <div class="text">
+          <h1>Your Profile</h1>
+        </div>
+        <ul class="profile">
+          <li><a href="#!"><span>Name</span>{FirstName LastName}</a></li>
+          <li><a href="#!"><span>Email</span>{EmailAddress}</a></li>
+          <li><a href="#!"><span>Phone</span>Add phone number</a></li>
+          <li><a href="#!"><span>Location</span>Add your location</a></li>
+        </ul>
+        <div class="button-box left" style="padding: 1rem 2rem 0;">
+          <a class="button blue"><span class="button-label">Log Out</span></a>
+        </div>
       </section>
     </main>
     <footer>
@@ -21,7 +36,7 @@
         <ul>
           <li><a href="../../home/home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
           <li><a href="../../stuff/stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
-          <li><a href="../../profile/profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+          <li><a class="active"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
         </ul>
       </nav>
     </footer>

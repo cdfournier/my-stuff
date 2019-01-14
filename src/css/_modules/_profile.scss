@@ -1,0 +1,70 @@
+// AVATAR
+.avatar {
+  display: flex;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 2rem;
+  border: 1px solid $blue;
+  border-radius: 100%;
+  font-size: 4rem;
+  color: $blue;
+  text-align: center;
+}
+
+.avatar img {display: none;}
+
+
+// PROFILE
+ul.profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 2rem 0;
+  list-style-type: none;
+}
+
+ul.profile li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid $medium-gray;
+}
+
+ul.profile li:first-of-type {border-top: 1px solid $medium-gray;}
+
+ul.profile li a {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0;
+  font-weight: 400;
+  color: $blue;
+}
+
+ul.profile li span {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+ul.profile li:after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  font-family: "LineAwesome";
+  font-size: 1rem;
+  content: "\f112";
+}
