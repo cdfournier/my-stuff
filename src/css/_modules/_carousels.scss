@@ -11,7 +11,7 @@
 
 .carousel .flickity-prev-next-button {display: none;}
 
-.carousel .flickity-button-icon {fill: $color-one;}
+.carousel .flickity-button-icon {fill: $blue;}
 
 .carousel .flickity-page-dots {
   display: flex;
@@ -31,7 +31,7 @@
   padding: 0;
   border-radius: 100%;
   line-height: 1;
-  background: $color-one;
+  background: $blue;
 }
 
 .carousel .carousel-cell {
@@ -92,14 +92,59 @@
   max-height: 2rem;
   min-height: 2rem;
   padding: 0;
-  border: 1px solid $color-one;
+  border: 1px solid $blue;
   border-radius: 0.2rem;
   line-height: 2.5;
-  color: $color-one;
+  color: $blue;
   background-color: $white;
 }
 
 .button-group.button-group--cells button.button.is-selected {
   color: $white;
-  background-color: $color-one;
+  background-color: $blue;
 }
+
+
+// CAROUSEL NAV
+.carousel-nav.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.carousel-nav.button-group.button-group--cells span.button {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: auto;
+  max-width: none;
+  min-width: auto;
+  height: auto;
+  max-height: none;
+  min-height: auto;
+  margin: 0;
+  padding: 0 1rem 1rem;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 2.5;
+  color: $gray;
+  background-color: $white;
+}
+
+.carousel-nav.button-group.button-group--cells span.button.is-selected {color: $blue;}
+
+.carousel-nav.button-group.button-group--cells span.button:after {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 0.425rem;
+  height: 0.425rem;
+  margin: 0 auto;
+  border-radius: 100%;
+  background-color: transparent;
+  content: "";
+}
+
+.carousel-nav.button-group.button-group--cells span.button.is-selected:after {background-color: $blue;}

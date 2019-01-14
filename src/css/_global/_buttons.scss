@@ -78,46 +78,46 @@ input[type="file"] {
 
 // BUTTON COLOR
 .button {
-  border: 1px solid $color-one;
+  border: 1px solid $blue;
   color: $white;
-  background-color: $color-one;
+  background-color: $blue;
 }
 
 .button:hover, .button:focus {
-  color: $color-one;
+  color: $blue;
   background-color: $white;
 }
 
 .button span.number {
-  color: $color-one;
+  color: $blue;
   background-color: $white;
 }
 
 .button:hover span.number, .button:focus span.number {
   color: $white;
-  background-color: $color-one;
+  background-color: $blue;
 }
 
 
 // SECONDARY BUTTON BLUE
 .button.secondary {
-  border: 1px solid $color-one;
-  color: $color-one;
+  border: 1px solid $blue;
+  color: $blue;
   background-color: $white;
 }
 
 .button.secondary:hover, .button.secondary:focus {
   color: $white;
-  background-color: $color-one;
+  background-color: $blue;
 }
 
 .button.secondary span.number {
   color: $white;
-  background-color: $color-one;
+  background-color: $blue;
 }
 
 .button.secondary:hover span.number, .button.secondary:focus span.number {
-  color: $color-one;
+  color: $blue;
   background-color: $white;
 }
 

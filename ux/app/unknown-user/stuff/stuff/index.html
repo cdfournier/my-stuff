@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="../../../../../src/css/main-stuff.css">
+    <link rel="stylesheet" href="../../../../../src/css/main.css">
   </head>
   <body>
     <main>
@@ -42,9 +42,9 @@
             </fieldset>
           </form>
         </div>
-        <div class="carousel">
+        <div class="carousel no-padding">
           <div class="carousel-cell">
-            <ul class="stuff-list">
+            <ul class="slider">
               <li><a>{Description}</a></li>
               <li><a>{Description}</a></li>
               <li><a>{Description}</a></li>
@@ -58,7 +58,7 @@
             </ul>
           </div>
           <div class="carousel-cell">
-            <ul class="stuff-list">
+            <ul class="slider">
               <li><a>{Description}</a></li>
               <li><a>{Description}</a></li>
               <li><a>{Description}</a></li>
@@ -72,7 +72,7 @@
             </ul>
           </div>
           <div class="carousel-cell">
-            <ul class="stuff-list">
+            <ul class="slider">
               <li><a>{Description}</a></li>
               <li><a>{Description}</a></li>
               <li><a>{Description}</a></li>
@@ -84,10 +84,6 @@
           <button class="button is-selected">1</button>
           <button class="button">2</button>
           <button class="button">3</button>
-        </div>
-        <div class="button-box row">
-          <a class="button blue button--previous"><span class="button-label"><span class="pre"><i class="la la-arrow-left"></i></span>Prev</span></a>
-          <a class="button blue button--next"><span class="button-label">Next<span class="post"><i class="la la-arrow-right"></i></span></span></a>
         </div>
         <div class="button-box" style="padding: 0 2rem;">
           <a class="button secondary blue" href="../add-stuff/index.html"><span class="button-label">Add New Stuff</span></a>
@@ -111,7 +107,7 @@
     <script>
       var $carousel = $('.carousel').flickity({
         prevNextButtons: false,
-        pageDots: true,
+        pageDots: false,
         draggable: true,
         wrapAround: false,
         selectedAttraction: 0.15,

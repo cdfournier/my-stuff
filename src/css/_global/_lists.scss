@@ -11,18 +11,23 @@ ul.slider li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   position: relative;
   width: 100%;
+  height: 4rem;
   padding: 0;
   border-bottom: 1px solid $medium-gray;
 }
 
 ul.slider li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
   padding: 0.5rem 0;
   font-weight: 400;
-  color: $color-one;
+  color: $blue;
 }
 
 ul.slider li span {

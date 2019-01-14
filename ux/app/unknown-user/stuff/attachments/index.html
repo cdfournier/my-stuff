@@ -55,7 +55,7 @@
             <div class="text">
               <h1>This Stuff's Attachments</h1>
             </div>
-            <ul class="attachment-list">
+            <ul class="slider attachment">
               <li class="photo"><a class="button--next">Photo</a></li>
               <li class="manual"><a class="button--next">Owner's Manual</a></li>
               <li class="receipt"><a class="button--next">Receipt</a></li>
@@ -68,10 +68,29 @@
             <div class="text">
               <h1>Attachment Details</h1>
             </div>
-            <ul class="attachment-details">
-              <li><span>Name:&nbsp;</span>{AttachmentName}</li>
-              <li><span>Type:&nbsp;</span>{AttachmentType}</li>
-            </ul>
+            <div class="form-container">
+              <form>
+                <fieldset>
+                  <legend>Name</legend>
+                  <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Attachment Type</legend>
+                  <label for="attachment-type">Attachment Type
+                    <select name="attachment-type" id="attachment-type">
+                      <option value="0">Attachment Type</option>
+                      <option value="Photo">Photo</option>
+                      <option value="Manual">Manual</option>
+                      <option value="Receipt">Receipt</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                  <span class="select-icon"><i class="la la-angle-down"></i></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+              </form>
+            </div>
             <div class="button-box row left" style="padding: 0 2rem;">
               <a class="button blue button--previous"><span class="button-label"><span class="pre"><i class="la la-arrow-left"></i></span>Prev</span></a>
               <a class="button secondary blue"><span class="button-label">Delete</span></a>

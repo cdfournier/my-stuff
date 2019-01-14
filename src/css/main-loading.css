@@ -31,7 +31,7 @@ body, .body {
 a {
   font-weight: 700;
   text-decoration: none;
-  color: #e11073;
+  color: #00ac39;
   cursor: pointer;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -192,37 +192,37 @@ input[type="file"] {
   margin: 0 0 2rem; }
 
 .button {
-  border: 1px solid #e11073;
+  border: 1px solid #003350;
   color: #ffffff;
-  background-color: #e11073; }
+  background-color: #003350; }
 
 .button:hover, .button:focus {
-  color: #e11073;
+  color: #003350;
   background-color: #ffffff; }
 
 .button span.number {
-  color: #e11073;
+  color: #003350;
   background-color: #ffffff; }
 
 .button:hover span.number, .button:focus span.number {
   color: #ffffff;
-  background-color: #e11073; }
+  background-color: #003350; }
 
 .button.secondary {
-  border: 1px solid #e11073;
-  color: #e11073;
+  border: 1px solid #003350;
+  color: #003350;
   background-color: #ffffff; }
 
 .button.secondary:hover, .button.secondary:focus {
   color: #ffffff;
-  background-color: #e11073; }
+  background-color: #003350; }
 
 .button.secondary span.number {
   color: #ffffff;
-  background-color: #e11073; }
+  background-color: #003350; }
 
 .button.secondary:hover span.number, .button.secondary:focus span.number {
-  color: #e11073;
+  color: #003350;
   background-color: #ffffff; }
 
 .button-box {
@@ -320,7 +320,7 @@ section {
   z-index: 100;
   width: 100%;
   height: 100vh;
-  background-color: #e11073;
+  background-color: #003350;
   -webkit-transition: height 0.2s ease-out 0s;
   -moz-transition: height 0.2s ease-out 0s;
   -ms-transition: height 0.2s ease-out 0s;
@@ -393,7 +393,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: #e11073; }
+  background-color: #003350; }
 
 nav {
   width: 100%; }
@@ -636,8 +636,8 @@ select:disabled + .select-icon {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 1.425rem;
-  right: 1rem;
+  top: 0.875rem;
+  right: 0;
   z-index: 2;
   height: 2.75rem;
   min-height: 2.75rem;
@@ -749,17 +749,22 @@ ul.slider li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   position: relative;
   width: 100%;
+  height: 4rem;
   padding: 0;
   border-bottom: 1px solid #d1d8df; }
 
 ul.slider li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
   padding: 0.5rem 0;
   font-weight: 400;
-  color: #e11073; }
+  color: #003350; }
 
 ul.slider li span {
   display: flex;
@@ -820,7 +825,7 @@ ul.slider.attachment li.receipt:before {
   display: none; }
 
 .carousel .flickity-button-icon {
-  fill: #e11073; }
+  fill: #003350; }
 
 .carousel .flickity-page-dots {
   display: flex;
@@ -839,7 +844,7 @@ ul.slider.attachment li.receipt:before {
   padding: 0;
   border-radius: 100%;
   line-height: 1;
-  background: #e11073; }
+  background: #003350; }
 
 .carousel .carousel-cell {
   display: flex;
@@ -896,15 +901,57 @@ ul.slider.attachment li.receipt:before {
   max-height: 2rem;
   min-height: 2rem;
   padding: 0;
-  border: 1px solid #e11073;
+  border: 1px solid #003350;
   border-radius: 0.2rem;
   line-height: 2.5;
-  color: #e11073;
+  color: #003350;
   background-color: #ffffff; }
 
 .button-group.button-group--cells button.button.is-selected {
   color: #ffffff;
-  background-color: #e11073; }
+  background-color: #003350; }
+
+.carousel-nav.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.carousel-nav.button-group.button-group--cells span.button {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: auto;
+  max-width: none;
+  min-width: auto;
+  height: auto;
+  max-height: none;
+  min-height: auto;
+  margin: 0;
+  padding: 0 1rem 1rem;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 2.5;
+  color: #a0a0a0;
+  background-color: #ffffff; }
+
+.carousel-nav.button-group.button-group--cells span.button.is-selected {
+  color: #003350; }
+
+.carousel-nav.button-group.button-group--cells span.button:after {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 0.425rem;
+  height: 0.425rem;
+  margin: 0 auto;
+  border-radius: 100%;
+  background-color: transparent;
+  content: ""; }
+
+.carousel-nav.button-group.button-group--cells span.button.is-selected:after {
+  background-color: #003350; }
 
 .loading {
   display: flex;
@@ -916,9 +963,7 @@ ul.slider.attachment li.receipt:before {
   z-index: 100;
   width: 100%;
   height: 100vh;
-  background-color: #e11073;
-  background: #5752c8;
-  background: linear-gradient(#5752c8 0%, #e11073 80%);
+  background-color: #003350;
   -webkit-transition: height 0.2s ease-out 0s;
   -moz-transition: height 0.2s ease-out 0s;
   -ms-transition: height 0.2s ease-out 0s;
