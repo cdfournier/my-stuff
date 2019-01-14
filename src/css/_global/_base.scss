@@ -39,7 +39,7 @@ body, .body {
 a {
   font-weight: 700;
   text-decoration: none;
-  color: $green;
+  color: $color-one;
   cursor: pointer;
   @include transition(all, 0.2s, ease);
 }

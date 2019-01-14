@@ -76,48 +76,48 @@ input[type="file"] {
 .button.add-attachment {margin: 0 0 2rem;}
 
 
-// BUTTON BLUE
-.button.blue {
-  border: 1px solid $blue;
+// BUTTON COLOR
+.button {
+  border: 1px solid $color-one;
   color: $white;
-  background-color: $blue;
+  background-color: $color-one;
 }
 
-.button.blue:hover, .button.blue:focus {
-  color: $blue;
+.button:hover, .button:focus {
+  color: $color-one;
   background-color: $white;
 }
 
-.button.blue span.number {
-  color: $blue;
+.button span.number {
+  color: $color-one;
   background-color: $white;
 }
 
-.button.blue:hover span.number, .button.blue:focus span.number {
+.button:hover span.number, .button:focus span.number {
   color: $white;
-  background-color: $blue;
+  background-color: $color-one;
 }
 
 
 // SECONDARY BUTTON BLUE
-.button.secondary.blue {
-  border: 1px solid $blue;
-  color: $blue;
+.button.secondary {
+  border: 1px solid $color-one;
+  color: $color-one;
   background-color: $white;
 }
 
-.button.secondary.blue:hover, .button.secondary.blue:focus {
+.button.secondary:hover, .button.secondary:focus {
   color: $white;
-  background-color: $blue;
+  background-color: $color-one;
 }
 
-.button.secondary.blue span.number {
+.button.secondary span.number {
   color: $white;
-  background-color: $blue;
+  background-color: $color-one;
 }
 
-.button.secondary.blue:hover span.number, .button.secondary.blue:focus span.number {
-  color: $blue;
+.button.secondary:hover span.number, .button.secondary:focus span.number {
+  color: $color-one;
   background-color: $white;
 }
 

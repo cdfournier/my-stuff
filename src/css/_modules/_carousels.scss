@@ -11,7 +11,7 @@
 
 .carousel .flickity-prev-next-button {display: none;}
 
-.carousel .flickity-button-icon {fill: $blue;}
+.carousel .flickity-button-icon {fill: $color-one;}
 
 .carousel .flickity-page-dots {
   display: flex;
@@ -31,7 +31,7 @@
   padding: 0;
   border-radius: 100%;
   line-height: 1;
-  background: $blue;
+  background: $color-one;
 }
 
 .carousel .carousel-cell {
@@ -70,4 +70,36 @@
   margin: auto;
   padding: 0;
   text-align: left;
+}
+
+
+// PAGINATION BUTTONS
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-group.button-group--cells button.button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 2rem;
+  max-width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
+  padding: 0;
+  border: 1px solid $color-one;
+  border-radius: 0.2rem;
+  line-height: 2.5;
+  color: $color-one;
+  background-color: $white;
+}
+
+.button-group.button-group--cells button.button.is-selected {
+  color: $white;
+  background-color: $color-one;
 }

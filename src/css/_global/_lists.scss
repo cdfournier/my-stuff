@@ -1,0 +1,70 @@
+// SLIDER LISTS
+ul.slider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 2rem 0;
+  list-style-type: none;
+}
+
+ul.slider li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid $medium-gray;
+}
+
+ul.slider li a {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0;
+  font-weight: 400;
+  color: $color-one;
+}
+
+ul.slider li span {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+ul.slider li:after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  font-family: "LineAwesome";
+  font-size: 1rem;
+  content: "\f112";
+}
+
+
+// ATTACHMENT LIST UPDATES
+ul.slider.attachment li {padding: 0 0 0 2.5rem;}
+
+ul.slider.attachment li.photo:before,
+ul.slider.attachment li.manual:before,
+ul.slider.attachment li.receipt:before {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  font-family: "LineAwesome";
+  font-size: 2.2rem;
+}
+
+ul.slider.attachment li.photo:before {content: "\f1e8";}
+ul.slider.attachment li.manual:before {content: "\f14e";}
+ul.slider.attachment li.receipt:before {content: "\f1ec";}

@@ -11,7 +11,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: $blue;
+  background-color: $color-one;
 }
 
 
@@ -48,5 +48,5 @@ nav {
     color: $white;
   }
   ul li a span.icon {font-size: 2rem;}
-  ul li a.active {color: $medium-gray;}
+  ul li a.active {color: $gray;}
 }
