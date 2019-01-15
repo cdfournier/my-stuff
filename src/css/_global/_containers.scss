@@ -49,7 +49,7 @@ section {width: 100%;}
   z-index: 100;
   width: 100%;
   height: 100vh;
-  background-color: $blue;
+  background-color: $light-blue;
   @include transition(height, 0.2s, ease-out);
 }
 
@@ -71,7 +71,7 @@ section {width: 100%;}
   width: 100%;
   height: 100vh;
   padding: 2rem 0 4rem;
-  background-image: url("../images/bg-urban.png");
+  background-image: url("../images/bg-welcome.png");
   background-position: center bottom;
   background-repeat: repeat-x;
   background-size: 100%;

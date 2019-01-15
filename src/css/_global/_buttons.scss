@@ -76,48 +76,48 @@ input[type="file"] {
 .button.add-attachment {margin: 0 0 2rem;}
 
 
-// BUTTON COLOR
+// PRIMARY BUTTON COLOR
 .button {
-  border: 1px solid $blue;
+  border: 1px solid $slate;
   color: $white;
-  background-color: $blue;
+  background-color: $slate;
 }
 
 .button:hover, .button:focus {
-  color: $blue;
+  color: $slate;
   background-color: $white;
 }
 
 .button span.number {
-  color: $blue;
+  color: $slate;
   background-color: $white;
 }
 
 .button:hover span.number, .button:focus span.number {
   color: $white;
-  background-color: $blue;
+  background-color: $slate;
 }
 
 
 // SECONDARY BUTTON BLUE
 .button.secondary {
-  border: 1px solid $blue;
-  color: $blue;
+  border: 1px solid $slate;
+  color: $slate;
   background-color: $white;
 }
 
 .button.secondary:hover, .button.secondary:focus {
   color: $white;
-  background-color: $blue;
+  background-color: $slate;
 }
 
 .button.secondary span.number {
   color: $white;
-  background-color: $blue;
+  background-color: $slate;
 }
 
 .button.secondary:hover span.number, .button.secondary:focus span.number {
-  color: $blue;
+  color: $slate;
   background-color: $white;
 }
 

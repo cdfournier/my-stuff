@@ -9,7 +9,7 @@ html {
 body, .body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -22,22 +22,25 @@ body, .body {
 
 ::-moz-selection {
   color: #ffffff;
-  background: #f04e59; }
+  background: #dd4a36; }
 
 ::selection {
   color: #ffffff;
-  background: #f04e59; }
+  background: #dd4a36; }
 
 a {
   font-weight: 700;
   text-decoration: none;
-  color: #00ac39;
+  color: #dd4a36;
   cursor: pointer;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
   -ms-transition: all 0.2s ease 0s;
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s; }
+
+a.slate {
+  color: #526470; }
 
 img {
   width: 100%;
@@ -192,37 +195,37 @@ input[type="file"] {
   margin: 0 0 2rem; }
 
 .button {
-  border: 1px solid #003350;
+  border: 1px solid #526470;
   color: #ffffff;
-  background-color: #003350; }
+  background-color: #526470; }
 
 .button:hover, .button:focus {
-  color: #003350;
+  color: #526470;
   background-color: #ffffff; }
 
 .button span.number {
-  color: #003350;
+  color: #526470;
   background-color: #ffffff; }
 
 .button:hover span.number, .button:focus span.number {
   color: #ffffff;
-  background-color: #003350; }
+  background-color: #526470; }
 
 .button.secondary {
-  border: 1px solid #003350;
-  color: #003350;
+  border: 1px solid #526470;
+  color: #526470;
   background-color: #ffffff; }
 
 .button.secondary:hover, .button.secondary:focus {
   color: #ffffff;
-  background-color: #003350; }
+  background-color: #526470; }
 
 .button.secondary span.number {
   color: #ffffff;
-  background-color: #003350; }
+  background-color: #526470; }
 
 .button.secondary:hover span.number, .button.secondary:focus span.number {
-  color: #003350;
+  color: #526470;
   background-color: #ffffff; }
 
 .button-box {
@@ -320,7 +323,7 @@ section {
   z-index: 100;
   width: 100%;
   height: 100vh;
-  background-color: #003350;
+  background-color: #9edadb;
   -webkit-transition: height 0.2s ease-out 0s;
   -moz-transition: height 0.2s ease-out 0s;
   -ms-transition: height 0.2s ease-out 0s;
@@ -348,7 +351,7 @@ section {
   width: 100%;
   height: 100vh;
   padding: 2rem 0 4rem;
-  background-image: url("../images/bg-urban.png");
+  background-image: url("../images/bg-welcome.png");
   background-position: center bottom;
   background-repeat: repeat-x;
   background-size: 100%; }
@@ -393,10 +396,15 @@ footer {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: #003350; }
+  background-color: #ffffff; }
 
 footer nav {
-  width: 100%; }
+  width: 100%;
+  /*
+  ul li:nth-of-type(1n) {border-right: 1px solid $white;}
+  ul li:nth-of-type(2n) {border-right: 1px solid $white;}
+  ul li:nth-of-type(3n) {border-right: none;}
+*/ }
   footer nav ul {
     display: flex;
     flex-direction: row;
@@ -409,12 +417,6 @@ footer nav {
     list-style-type: none; }
   footer nav ul li {
     padding: 0; }
-  footer nav ul li:nth-of-type(1n) {
-    border-right: 1px solid #ffffff; }
-  footer nav ul li:nth-of-type(2n) {
-    border-right: 1px solid #ffffff; }
-  footer nav ul li:nth-of-type(3n) {
-    border-right: none; }
   footer nav ul li a {
     display: flex;
     flex-direction: column;
@@ -427,11 +429,11 @@ footer nav {
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff; }
+    color: #dd4a36; }
   footer nav ul li a span.icon {
     font-size: 2rem; }
   footer nav ul li a.active {
-    color: #a0a0a0; }
+    color: #526470; }
 
 input[type="password"],
 input[type="checkbox"],
@@ -509,7 +511,7 @@ input {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #a0a0a0;
-  font-weight: 500;
+  font-weight: 400;
   cursor: text; }
 
 input:placeholder-shown {
@@ -525,6 +527,9 @@ input::placeholder {
   -ms-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s; }
+
+input:focus {
+  border-color: #dd4a36; }
 
 input:focus::placeholder {
   opacity: 0.5; }
@@ -577,8 +582,8 @@ input[type="checkbox"]:checked:before {
   content: '\f17b'; }
 
 input[type="checkbox"]:checked:not(:disabled) {
-  border-color: #00ac39;
-  background-color: #00ac39; }
+  border-color: #dd4a36;
+  background-color: #dd4a36; }
 
 select {
   display: inline-block;
@@ -596,7 +601,7 @@ select {
   border-left: none;
   border-radius: 0;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-overflow: ellipsis;
   background-color: #ffffff;
   cursor: text;
@@ -630,6 +635,10 @@ select:disabled {
 
 select:disabled + .select-icon {
   color: #d1d8df; }
+
+select:focus {
+  border-color: #dd4a36;
+  outline: none; }
 
 .search-icon {
   display: flex;
@@ -764,7 +773,7 @@ ul.slider li a {
   height: 100%;
   padding: 0.5rem 0;
   font-weight: 500;
-  color: #003350; }
+  color: #dd4a36; }
 
 ul.slider li span {
   display: flex;
@@ -827,7 +836,7 @@ ul.slider.attachment li.receipt:before {
   display: none; }
 
 .carousel .flickity-button-icon {
-  fill: #003350; }
+  fill: #dd4a36; }
 
 .carousel .flickity-page-dots {
   display: flex;
@@ -846,7 +855,7 @@ ul.slider.attachment li.receipt:before {
   padding: 0;
   border-radius: 100%;
   line-height: 1;
-  background: #003350; }
+  background: #526470; }
 
 .carousel .carousel-cell {
   display: flex;
@@ -903,15 +912,15 @@ ul.slider.attachment li.receipt:before {
   max-height: 2rem;
   min-height: 2rem;
   padding: 0;
-  border: 1px solid #003350;
+  border: 1px solid #526470;
   border-radius: 0.2rem;
   line-height: 2.5;
-  color: #003350;
+  color: #526470;
   background-color: #ffffff; }
 
 .button-group.button-group--cells button.button.is-selected {
   color: #ffffff;
-  background-color: #003350; }
+  background-color: #526470; }
 
 .carousel-nav.button-group {
   display: flex;
@@ -939,7 +948,7 @@ ul.slider.attachment li.receipt:before {
   background-color: #ffffff; }
 
 .carousel-nav.button-group.button-group--cells span.button.is-selected {
-  color: #003350; }
+  color: #dd4a36; }
 
 .carousel-nav.button-group.button-group--cells span.button:after {
   display: flex;
@@ -953,4 +962,4 @@ ul.slider.attachment li.receipt:before {
   content: ""; }
 
 .carousel-nav.button-group.button-group--cells span.button.is-selected:after {
-  background-color: #003350; }
+  background-color: #dd4a36; }

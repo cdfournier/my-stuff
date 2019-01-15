@@ -13,7 +13,7 @@ html {
 body, .body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -28,21 +28,23 @@ body, .body {
 
 ::-moz-selection {
   color: $white;
-  background: $red;
+  background: $orange;
 }
 
 ::selection {
   color: $white;
-  background: $red;
+  background: $orange;
 }
 
 a {
   font-weight: 700;
   text-decoration: none;
-  color: $green;
+  color: $orange;
   cursor: pointer;
   @include transition(all, 0.2s, ease);
 }
+
+a.slate {color: $slate;}
 
 img {
   width: 100%;

@@ -11,7 +11,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: $blue;
+  background-color: $white;
 }
 
 
@@ -30,9 +30,11 @@ footer nav {
     list-style-type: none;
   }
   ul li {padding: 0;}
+/*
   ul li:nth-of-type(1n) {border-right: 1px solid $white;}
   ul li:nth-of-type(2n) {border-right: 1px solid $white;}
   ul li:nth-of-type(3n) {border-right: none;}
+*/
   ul li a {
     display: flex;
     flex-direction: column;
@@ -45,8 +47,8 @@ footer nav {
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
-    color: $white;
+    color: $orange;
   }
   ul li a span.icon {font-size: 2rem;}
-  ul li a.active {color: $gray;}
+  ul li a.active {color: $slate;}
 }
