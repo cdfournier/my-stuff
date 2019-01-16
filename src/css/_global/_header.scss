@@ -1,45 +1,49 @@
 // HEADER
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  position: fixed;
-  top: 0;
-  left: 0;
   overflow: hidden;
   width: 100%;
+  min-height: 6.775rem;
   margin: 0;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem 1rem;
 }
 
-header nav {
-  width: 100%;
-  ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  ul li {position: relative;}
-  ul li a {
-    height: 1.5rem;
-    padding-left: 1.5rem;
-    font-size: 0.8rem;
-    color: $color-one;
-  }
-  ul li:before {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    height: 1.5rem;
-    font-family: "LineAwesome";
-    content: "\f111";
-  }
+.header--fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.headroom {
+  @include transition(all, 0.2s, ease-in-out);
+  will-change: transform;
+}
+
+.headroom--pinned {@include transform(translateY(0));}
+
+.headroom--unpinned {@include transform(translateY(-100%));}
+
+
+// HEADER LOGO
+header .logo {
+  display: grid;
+  width: 8rem;
+}
+
+header .logo .logo-color {fill: $black;}
+
+
+// HEADER BACK BUTTON
+header.header--fixed .back-button {display: none;}
+
+header.header--fixed.back .logo {display: none;}
+
+header.header--fixed.back .back-button {
+  display: block;
+  font-size: 1.5rem;
 }

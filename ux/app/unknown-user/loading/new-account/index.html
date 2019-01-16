@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | Log In</title>
+    <title>My Stuff | Create An Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -20,64 +20,36 @@
       <div class="back-button"><i class="la la-angle-left"></i></div>
     </header>
     <main>
-      <section data-qa="log-in">
-        <div class="carousel no-padding">
-          <div class="carousel-cell">
-            <div class="text">
-              <h1>Welcome</h1>
-              <p>Please log in to continue.</p>
+      <section data-qa="create-an-account">
+        <div class="text">
+          <h1>Create An Account</h1>
+          <p>Looking to take advantage of advanced features? Just drop a little information here.</p>
+        </div>
+        <div class="form-container">
+          <form>
+            <fieldset>
+              <legend>Name</legend>
+              <label for="new-name">Name&#42;<input type="text" name="new-name" class="name" placeholder="Enter your name"></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <fieldset>
+              <legend>Email Address</legend>
+              <label for="new-email-address">Email Address&#42;<input type="email" name="new-email-address" class="email-address" placeholder="Enter your email address"></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <fieldset>
+              <legend>Password</legend>
+              <label for="new-password">Password&#42;<input type="password" name="new-password" id="password" placeholder="Enter your password"></label>
+              <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <div class="button-box row left" style="align-items: center;">
+              <a id="introduction" class="button" href="../introduction/index.html"><span class="button-label">Create Account</span></a>
+              <span class="or">or</span>
+              <a id="cancel" class="button secondary" href="../../authentication/login/index.html"><span class="button-label">Log In</span></a>
             </div>
-            <div class="form-container">
-              <form>
-                <fieldset>
-                  <legend>Email Address</legend>
-                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"><span class="is-valid"></span></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <fieldset>
-                  <legend>Password</legend>
-                  <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password"></label>
-                  <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <fieldset>
-                  <legend>Remember Me</legend>
-                  <label for="remember" class="checkbox">Remember Me<input type="checkbox" name="remember" id="remember"></label>
-                  <span class="forgot-password-prompt"><a class="button--next">Forgot Password?</a></span>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <div class="button-box left">
-                  <a id="login" class="button"><span class="button-label">Log In</span></a>
-                </div>
-              </form>
-              <p><small>Don't have an account? <a id="new-account" href="../../loading/new-account/index.html">Create one now</a>.</small></p>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="text">
-              <h1>Reset Your Password</h1>
-              <p>Enter your email address and we'll send you a link to reset your password.</p>
-            </div>
-            <div class="form-container">
-              <form>
-                <fieldset>
-                  <legend>Email Address</legend>
-                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <div class="button-box left">
-                  <a class="button button--next"><span class="button-label">Reset Password</span></a>
-                </div>
-              </form>
-              <p><small>Return to <a class="button--previous">Log In</a>.</small></p>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="text">
-              <h1>Password Reset Email Sent</h1>
-              <p>Please check your email inbox. We've sent you a special link that you can use to reset your password.</p>
-            </div>
-          </div>
+          </form>
+          <p><small>By creating an account you agree to our <a href="../../policies/terms/index.html">Terms &amp; Conditions</a>.</small></p>
         </div>
       </section>
     </main>
@@ -93,11 +65,11 @@
       var $carousel = $('.carousel').flickity({
         prevNextButtons: false,
         pageDots: false,
-        draggable: false,
+        draggable: true,
         wrapAround: false,
         selectedAttraction: 0.15,
         friction: 0.8,
-        adaptiveHeight: true
+        adaptiveHeight: false
       });
       // Flickity instance
       var flkty = $carousel.data('flickity');

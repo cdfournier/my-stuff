@@ -13,6 +13,8 @@ input[type="url"] {
   border-top: none;
   border-right: none;
   border-left: none;
+  border-image: none;
+  border-radius: 0;
   outline: none;
   font-size: 1rem;
   @include appearance(none);

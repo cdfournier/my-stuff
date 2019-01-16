@@ -7,6 +7,8 @@
   padding: 0 2rem;
 }
 
+.carousel .flickity-viewport {@include transition(height, 0.2s, ease);}
+
 .carousel.no-padding {padding: 0;}
 
 .carousel .flickity-prev-next-button {display: none;}
@@ -35,31 +37,6 @@
 }
 
 .carousel .carousel-cell {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 40rem;
-  min-height: 100%;
-  margin: auto;
-  padding: 0;
-  text-align: left;
-}
-
-
-// PROGRESSIVE CAROUSEL
-.carousel.progressive {
-  display: block;
-  width: 100%;
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.carousel.progressive .flickity-viewport {@include transition(height, 0.2s, ease);}
-
-.carousel.progressive .carousel-cell {
   display: flex;
   flex-direction: column;
   align-items: center;

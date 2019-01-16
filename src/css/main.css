@@ -308,10 +308,7 @@ main {
   max-width: 32rem;
   overflow-x: hidden;
   margin: 0 auto;
-  padding: 2rem 0 6rem; }
-
-main.short {
-  padding: 0 0 6rem; }
+  padding-bottom: 6rem; }
 
 section {
   width: 100%; }
@@ -387,6 +384,63 @@ section {
   margin: 0;
   padding: 2rem 2rem 0; }
 
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 100%;
+  min-height: 6.775rem;
+  margin: 0;
+  padding: 2rem 2rem 1rem; }
+
+.header--fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100; }
+
+.headroom {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  will-change: transform; }
+
+.headroom--pinned {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0); }
+
+.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+header .logo {
+  display: grid;
+  width: 8rem; }
+
+header .logo .logo-color {
+  fill: #000000; }
+
+header.header--fixed .back-button {
+  display: none; }
+
+header.header--fixed.back .logo {
+  display: none; }
+
+header.header--fixed.back .back-button {
+  display: block;
+  font-size: 1.5rem; }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -452,6 +506,8 @@ input[type="url"] {
   border-top: none;
   border-right: none;
   border-left: none;
+  border-image: none;
+  border-radius: 0;
   outline: none;
   font-size: 1rem;
   -webkit-appearance: none;
@@ -839,6 +895,13 @@ ul.slider.icon li.bitcoin:before {
   margin: 0 auto 1rem;
   padding: 0 2rem; }
 
+.carousel .flickity-viewport {
+  -webkit-transition: height 0.2s ease 0s;
+  -moz-transition: height 0.2s ease 0s;
+  -ms-transition: height 0.2s ease 0s;
+  -o-transition: height 0.2s ease 0s;
+  transition: height 0.2s ease 0s; }
+
 .carousel.no-padding {
   padding: 0; }
 
@@ -868,32 +931,6 @@ ul.slider.icon li.bitcoin:before {
   background: #526470; }
 
 .carousel .carousel-cell {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 40rem;
-  min-height: 100%;
-  margin: auto;
-  padding: 0;
-  text-align: left; }
-
-.carousel.progressive {
-  display: block;
-  width: 100%;
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 0; }
-
-.carousel.progressive .flickity-viewport {
-  -webkit-transition: height 0.2s ease 0s;
-  -moz-transition: height 0.2s ease 0s;
-  -ms-transition: height 0.2s ease 0s;
-  -o-transition: height 0.2s ease 0s;
-  transition: height 0.2s ease 0s; }
-
-.carousel.progressive .carousel-cell {
   display: flex;
   flex-direction: column;
   align-items: center;

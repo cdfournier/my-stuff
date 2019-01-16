@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Your Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="../../../../../src/css/main.css">
+  </head>
+  <body>
+    <main class="short">
+      <section data-qa="profile">
+        <div class="carousel-nav button-group button-group--cells">
+          <span class="button is-selected">Profile</span>
+          <span class="button">Carrier</span>
+          <span class="button">Payment</span>
+        </div>
+        <div class="carousel no-padding">
+          <div class="carousel-cell">
+            <div class="text">
+              <h1>Your Profile</h1>
+            </div>
+            <ul class="slider">
+              <li><a href="#!"><span>Name</span>{FirstName LastName}</a></li>
+              <li><a href="#!"><span>Email</span>{EmailAddress}</a></li>
+              <li><a href="#!"><span>Password</span>{&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;}</a></li>
+              <li><a href="#!"><span>Phone</span>Add phone number</a></li>
+              <li><a href="#!"><span>Location</span>Add your location</a></li>
+            </ul>
+          </div>
+          <div class="carousel-cell">
+            <div class="text">
+              <h1>Your Insurance Carrier</h1>
+            </div>
+            <ul class="slider">
+              <li><a href="#!"><span>Carrier</span>Add your insurance carrier</a></li>
+              <li><a href="#!"><span>Adjuster</span>Add your adjuster name</a></li>
+              <li><a href="#!"><span>Policy #</span>Add your policy number</a></li>
+            </ul>
+            <div class="button-box" style="padding: 1rem 2rem 0;">
+              <a class="button"><span class="button-label">File A Claim</span></a>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="text">
+              <h1>Your Payment Options</h1>
+            </div>
+            <ul class="slider icon">
+              <li class="credit-card"><a href="#!"><span>Add Credit Card</span>Add credit card</a></li>
+              <li class="paypal"><a href="#!"><span>Add Paypal</span>Add Paypal</a></li>
+              <li class="bitcoin"><a href="#!"><span>Add Paypal</span>Add Paypal</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="button-box left" style="padding: 1rem 2rem 0;">
+          <a class="button secondary"><span class="button-label">Log Out</span></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="../../home/home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+          <li><a href="../../stuff/stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+          <li><a class="active"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../../../../assets/scripts/mystuff.js"></script>
+    <script>
+      var $carousel = $('.carousel').flickity({
+        prevNextButtons: false,
+        pageDots: false,
+        draggable: true,
+        wrapAround: false,
+        selectedAttraction: 0.15,
+        friction: 0.8,
+        adaptiveHeight: false
+      });
+      // Flickity instance
+      var flkty = $carousel.data('flickity');
+      // elements
+      var $cellButtonGroup = $('.button-group--cells');
+      var $cellButtons = $cellButtonGroup.find('.button');
+      
+      // update selected cellButtons
+      $carousel.on( 'select.flickity', function() {
+        $cellButtons.filter('.is-selected')
+          .removeClass('is-selected');
+        $cellButtons.eq( flkty.selectedIndex )
+          .addClass('is-selected');
+      });
+      
+      // select cell on button click
+      $cellButtonGroup.on( 'click', '.button', function() {
+        var index = $(this).index();
+        $carousel.flickity( 'select', index );
+      });
+      // previous
+      $('.button--previous').on( 'click', function() {
+        $carousel.flickity('previous');
+      });
+      // next
+      $('.button--next').on( 'click', function() {
+        $carousel.flickity('next');
+      });
+    </script>
+  </body>
+</html>
