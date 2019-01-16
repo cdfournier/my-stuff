@@ -27,7 +27,7 @@ ul.slider li a {
   height: 100%;
   padding: 0.5rem 0;
   font-weight: 500;
-  color: $orange;
+  color: $slate;
 }
 
 ul.slider li span {
@@ -56,12 +56,10 @@ ul.slider li:after {
 }
 
 
-// ATTACHMENT LIST UPDATES
-ul.slider.attachment li {padding: 0 0 0 2.5rem;}
+// SLIDER LISTS WITH ICONS
+ul.slider.icon li {padding: 0 0 0 2.5rem;}
 
-ul.slider.attachment li.photo:before,
-ul.slider.attachment li.manual:before,
-ul.slider.attachment li.receipt:before {
+ul.slider.icon li:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,6 +70,9 @@ ul.slider.attachment li.receipt:before {
   font-size: 2.2rem;
 }
 
-ul.slider.attachment li.photo:before {content: "\f1e8";}
-ul.slider.attachment li.manual:before {content: "\f14e";}
-ul.slider.attachment li.receipt:before {content: "\f1ec";}
+ul.slider.icon li.photo:before {content: "\f1e8";}
+ul.slider.icon li.manual:before {content: "\f14e";}
+ul.slider.icon li.receipt:before {content: "\f1ec";}
+ul.slider.icon li.paypal:before {content: "\f175";}
+ul.slider.icon li.credit-card:before {content: "\f1aa";}
+ul.slider.icon li.bitcoin:before {content: "\f149";}

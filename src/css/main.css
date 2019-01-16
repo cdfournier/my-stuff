@@ -310,6 +310,9 @@ main {
   margin: 0 auto;
   padding: 2rem 0 6rem; }
 
+main.short {
+  padding: 0 0 6rem; }
+
 section {
   width: 100%; }
 
@@ -773,7 +776,7 @@ ul.slider li a {
   height: 100%;
   padding: 0.5rem 0;
   font-weight: 500;
-  color: #dd4a36; }
+  color: #526470; }
 
 ul.slider li span {
   display: flex;
@@ -798,12 +801,10 @@ ul.slider li:after {
   font-size: 1rem;
   content: "\f112"; }
 
-ul.slider.attachment li {
+ul.slider.icon li {
   padding: 0 0 0 2.5rem; }
 
-ul.slider.attachment li.photo:before,
-ul.slider.attachment li.manual:before,
-ul.slider.attachment li.receipt:before {
+ul.slider.icon li:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -813,14 +814,23 @@ ul.slider.attachment li.receipt:before {
   font-family: "LineAwesome";
   font-size: 2.2rem; }
 
-ul.slider.attachment li.photo:before {
+ul.slider.icon li.photo:before {
   content: "\f1e8"; }
 
-ul.slider.attachment li.manual:before {
+ul.slider.icon li.manual:before {
   content: "\f14e"; }
 
-ul.slider.attachment li.receipt:before {
+ul.slider.icon li.receipt:before {
   content: "\f1ec"; }
+
+ul.slider.icon li.paypal:before {
+  content: "\f175"; }
+
+ul.slider.icon li.credit-card:before {
+  content: "\f1aa"; }
+
+ul.slider.icon li.bitcoin:before {
+  content: "\f149"; }
 
 .carousel {
   display: block;
@@ -939,7 +949,7 @@ ul.slider.attachment li.receipt:before {
   max-height: none;
   min-height: auto;
   margin: 0;
-  padding: 0 1rem 1rem;
+  padding: 1rem;
   border: none;
   font-size: 0.8rem;
   font-weight: 700;
