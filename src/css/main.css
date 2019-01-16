@@ -336,7 +336,7 @@ section {
 .loading .logo .logo-color {
   fill: #ffffff; }
 
-.loading.loaded {
+.loading.loaded, .loading.loaded .logo {
   height: 0; }
 
 @media (min-width: 46.75rem) {
@@ -366,6 +366,53 @@ section {
 
 .welcome.back .button {
   min-width: 10rem; }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 2rem;
+  background-color: #f8f9fc;
+  -webkit-transition: height 0.2s ease-out 0s;
+  -moz-transition: height 0.2s ease-out 0s;
+  -ms-transition: height 0.2s ease-out 0s;
+  -o-transition: height 0.2s ease-out 0s;
+  transition: height 0.2s ease-out 0s; }
+
+.home .logo {
+  width: 40%; }
+
+.home .logo .logo-color {
+  fill: #526470; }
+
+.recent-activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: #526470;
+  -webkit-transition: height 0.2s ease-out 0s;
+  -moz-transition: height 0.2s ease-out 0s;
+  -ms-transition: height 0.2s ease-out 0s;
+  -o-transition: height 0.2s ease-out 0s;
+  transition: height 0.2s ease-out 0s; }
+
+.recent-activity.loaded {
+  height: 60vh; }
+
+.recent-activity h1 {
+  color: #ffffff; }
 
 .text {
   display: block;
@@ -431,16 +478,6 @@ header .logo {
 
 header .logo .logo-color {
   fill: #000000; }
-
-header.header--fixed .back-button {
-  display: none; }
-
-header.header--fixed.back .logo {
-  display: none; }
-
-header.header--fixed.back .back-button {
-  display: block;
-  font-size: 1.5rem; }
 
 footer {
   display: flex;
