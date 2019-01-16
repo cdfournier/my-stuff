@@ -391,8 +391,9 @@ header {
   justify-content: flex-start;
   overflow: hidden;
   width: 100%;
+  max-width: 32rem;
   min-height: 6.775rem;
-  margin: 0;
+  margin: 0 auto;
   padding: 2rem 2rem 1rem; }
 
 .header--fixed {
@@ -1010,3 +1011,19 @@ ul.slider.icon li.bitcoin:before {
 
 .carousel-nav.button-group.button-group--cells span.button.is-selected:after {
   background-color: #dd4a36; }
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 6rem 0 2rem;
+  font-size: 1.5rem;
+  outline: none; }
+
+.close-modal-icon {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-family: "LineAwesome"; }
