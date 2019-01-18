@@ -35,6 +35,8 @@ main {
   padding-bottom: 6rem;
 }
 
+main.no-padding {padding: 0;}
+
 section {width: 100%;}
 
 
@@ -46,6 +48,8 @@ section {width: 100%;}
   margin: 0;
   padding: 0 2rem;
 }
+
+.text.more-padding {padding: 2rem 2rem 0;}
 
 .text.center {text-align: center;}
 
@@ -61,7 +65,7 @@ section {width: 100%;}
   @include transition(opacity, 0.2s, ease-in);
 }
 
-.form-container.wait {
+.form-container.hidden.wait {
   display: none;
   opacity: 0;
 }

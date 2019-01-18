@@ -7,6 +7,8 @@ ul.slider {
   list-style-type: none;
 }
 
+ul.slider.more-padding {padding: 2rem 2rem 0;}
+
 ul.slider li {
   display: flex;
   flex-direction: column;

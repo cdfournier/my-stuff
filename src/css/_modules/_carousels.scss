@@ -125,3 +125,13 @@
 }
 
 .carousel-nav.button-group.button-group--cells span.button.is-selected:after {background-color: $orange;}
+
+
+// RECENT ACTIVITY CAROUSEL NAV
+.recent-activity .carousel-nav.button-group {padding: 2rem 0 0;}
+
+.recent-activity .carousel-nav.button-group.button-group--cells span.button {background-color: $light-blue;}
+
+.recent-activity .carousel-nav.button-group.button-group--cells span.button.is-selected {color: $white;}
+
+.recent-activity .carousel-nav.button-group.button-group--cells span.button.is-selected:after {background-color: $white;}
