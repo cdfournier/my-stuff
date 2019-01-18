@@ -55,23 +55,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100vh;
-  padding: 6rem 0 0;
-  background-color: $white;
+  padding: 0 0 16rem;
   @include transition(height, 0.2s, ease-out);
 }
 
-.home .logo {width: 40%;}
+.home p {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $white;
+}
 
-.home .logo .logo-color {fill: $slate;}
+.home .logo {width: 50%;}
+
+.home .logo .logo-color {fill: $white;}
 
 .home .graphic {
   width: 30%;
   margin: 1rem auto 0;
+}
+
+.home video {
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100vh;
 }
 
 
@@ -87,7 +99,7 @@
   height: 0;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  background-color: $light-blue;
+  background-color: $white;
   @include transition(height, 0.2s, ease-out);
 }
 
@@ -96,12 +108,12 @@
   padding: 0 0 6rem;
 }
 
-.recent-activity {color: $white;}
+.recent-activity {color: $slate;}
 
 .recent-activity .button {
-  border: 1px solid $white;
-  color: $light-blue;
-  background-color: $white;
+  border: 1px solid $orange;
+  color: $white;
+  background-color: $orange;
 }
 
 

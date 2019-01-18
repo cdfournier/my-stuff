@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | </title>
+    <title>My Stuff | You Are Logged Out</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -19,24 +19,67 @@
       </div>
     </header>
     <main>
-      <section data-qa="">
+      <section data-qa="logged-out">
+        <div class="carousel no-padding">
+          <div class="carousel-cell">
+            <div class="text">
+              <h1>See You Later</h1>
+              <p>Please log back in to see your stuff.</p>
+            </div>
+            <div class="form-container">
+              <form>
+                <fieldset>
+                  <legend>Email Address</legend>
+                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address" autocomplete><span class="is-valid"></span></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Password</legend>
+                  <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password"></label>
+                  <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box left">
+                  <a id="login" class="button"><span class="button-label">Log In</span></a>
+                </div>
+              </form>
+              <p><small><a class="button--next">Forgot Password?</a></small></p>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="text">
+              <h1>Reset Your Password</h1>
+              <p>Enter your email address and we'll send you a link to reset your password.</p>
+            </div>
+            <div class="form-container">
+              <form>
+                <fieldset>
+                  <legend>Email Address</legend>
+                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address" autocomplete></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box left">
+                  <a class="button button--next"><span class="button-label">Reset Password</span></a>
+                </div>
+              </form>
+              <p><small>Return to <a class="button--previous">Log In</a>.</small></p>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="text">
+              <h1>Password Reset Email Sent</h1>
+              <p>Please check your email inbox. We've sent you a special link that you can use to reset your password.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="../../home/home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
-          <li><a href="../../stuff/stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
-          <li><a href="../../profile/profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
-        </ul>
-      </nav>
-    </footer>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/animatedmodal@1.0.0/animatedModal.js"></script>
+    <script src="../../../../assets/scripts/animatedModal.js"></script>
     <script src="../../../../assets/scripts/mystuff.header.js"></script>
     <script src="../../../../assets/scripts/mystuff.js"></script>
     <script>

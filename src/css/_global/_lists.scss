@@ -51,7 +51,8 @@ ul.slider li:after {
   justify-content: center;
   position: absolute;
   right: 0;
-  height: 100%;
+  bottom: 0;
+  height: 74%;
   font-family: "LineAwesome";
   font-size: 1rem;
   content: "\f112";
@@ -71,6 +72,8 @@ ul.slider.icon li:before {
   font-family: "LineAwesome";
   font-size: 2.2rem;
 }
+
+ul.slider.icon li:after {height: 100%;}
 
 ul.slider.icon li.photo:before {content: "\f1e8";}
 ul.slider.icon li.manual:before {content: "\f14e";}

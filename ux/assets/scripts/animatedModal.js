@@ -32,8 +32,12 @@
             beforeOpen: function() {},           
             afterOpen: function() {}, 
             beforeClose: function() {}, 
-            afterClose: function() {},
-            override: false
+            afterClose: function() {
+              $('body').removeAttr('style');
+            }
+ 
+            
+
         }, options);
         
         var closeBt = $('.close-'+settings.modalTarget);
@@ -59,21 +63,38 @@
             'overflow-y':settings.overflow,
             'z-index':settings.zIndexOut,
             'opacity':settings.opacityOut,
-            '-webkit-animation-duration':settings.animationDuration
+            '-webkit-animation-duration':settings.animationDuration,
+            '-moz-animation-duration':settings.animationDuration,
+            '-ms-animation-duration':settings.animationDuration,
+            'animation-duration':settings.animationDuration
         };
         //Apply stles
         id.css(initStyles);
 
-        if (!settings.override) {
-            modal.click(function(event) {
-                event.preventDefault();
-                open();
-            });
-        }
+        modal.click(function(event) {       
+            event.preventDefault();
+            $('body, html').css({'overflow':'hidden'});
+            if (href == idConc) {
+                if (id.hasClass(settings.modalTarget+'-off')) {
+                    id.removeClass(settings.animatedOut);
+                    id.removeClass(settings.modalTarget+'-off');
+                    id.addClass(settings.modalTarget+'-on');
+                } 
+
+                 if (id.hasClass(settings.modalTarget+'-on')) {
+                    settings.beforeOpen();
+                    id.css({'opacity':settings.opacityIn,'z-index':settings.zIndexIn});
+                    id.addClass(settings.animatedIn);  
+                    id.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', afterOpen);
+                };  
+            } 
+        });
+
+
 
         closeBt.click(function(event) {
             event.preventDefault();
-            $('body, html').css({'overflow':'auto'});
+            $('body, html').css({'overflow':'visible'});
 
             settings.beforeClose(); //beforeClose
             if (id.hasClass(settings.modalTarget+'-on')) {
@@ -98,31 +119,6 @@
             settings.afterOpen(); //afterOpen
         }
 
-        function open() {
-            $('body, html').css({'overflow':'hidden'});
-            if (href == idConc) {
-                if (id.hasClass(settings.modalTarget+'-off')) {
-                    id.removeClass(settings.animatedOut);
-                    id.removeClass(settings.modalTarget+'-off');
-                    id.addClass(settings.modalTarget+'-on');
-                }
-
-                if (id.hasClass(settings.modalTarget+'-on')) {
-                    settings.beforeOpen();
-                    id.css({'opacity':settings.opacityIn,'z-index':settings.zIndexIn});
-                    id.addClass(settings.animatedIn);
-                    id.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', afterOpen);
-                };
-            }
-        }
-
-        return {
-            open: open
-        };
     }; // End animatedModal.js
 
 }(jQuery));
-
-
-
-        
