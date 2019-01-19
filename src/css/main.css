@@ -867,11 +867,11 @@ ul.slider.icon li.bitcoin:before {
   overflow: hidden;
   padding: 0 0 4rem;
   background-color: #9edadb;
-  -webkit-transition: max-height 0.2s ease-out 0s;
-  -moz-transition: max-height 0.2s ease-out 0s;
-  -ms-transition: max-height 0.2s ease-out 0s;
-  -o-transition: max-height 0.2s ease-out 0s;
-  transition: max-height 0.2s ease-out 0s; }
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s; }
 
 .loading .logo {
   width: 55%; }
@@ -880,9 +880,11 @@ ul.slider.icon li.bitcoin:before {
   fill: #ffffff; }
 
 .loading.loaded {
-  height: 0vh;
-  max-height: 0vh;
-  padding: 0; }
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%); }
 
 .welcome {
   display: flex;
@@ -1021,7 +1023,6 @@ ul.slider.icon li.bitcoin:before {
   justify-content: flex-start;
   position: absolute;
   top: 0;
-  z-index: 100;
   width: 100%;
   min-height: 100vh;
   background-color: #ffffff; }

@@ -13,18 +13,14 @@
   overflow: hidden;
   padding: 0 0 4rem;
   background-color: $light-blue;
-  @include transition(max-height, 0.2s, ease-out);
+  @include transition(all, 0.2s, ease-out);
 }
 
 .loading .logo {width: 55%;}
 
 .loading .logo .logo-color {fill: $white;}
 
-.loading.loaded {
-  height: 0vh;
-  max-height: 0vh;
-  padding: 0;
-}
+.loading.loaded {@include transform(translateY(-100%));}
 
 
 // WELCOME
@@ -164,7 +160,6 @@
   justify-content: flex-start;
   position: absolute;
   top: 0;
-  z-index: 100;
   width: 100%;
   min-height: 100vh;
   background-color: $white;
