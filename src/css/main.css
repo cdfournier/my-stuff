@@ -911,6 +911,20 @@ ul.slider.icon li.bitcoin:before {
 .welcome p {
   font-weight: 500; }
 
+.welcome p a {
+  display: block;
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  color: #ffffff; }
+
+.welcome p a:before {
+  display: block;
+  width: 25%;
+  height: 1px;
+  margin: 0 auto 1rem;
+  background-color: #ffffff;
+  content: ""; }
+
 .welcome .button {
   justify-content: center;
   min-width: 14rem;
