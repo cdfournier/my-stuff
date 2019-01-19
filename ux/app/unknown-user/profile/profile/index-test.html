@@ -31,11 +31,11 @@
               <h1>Your Profile</h1>
             </div>
             <ul class="slider">
-              <li><a class="open-name-modal" href="#name-modal"><span>Name</span>{FirstName LastName}</a></li>
-              <li><a class="open-email-modal" href="#email-modal"><span>Email</span>{EmailAddress}</a></li>
-              <li><a class="open-password-modal" href="#password-modal"><span>Password</span>{&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;}</a></li>
-              <li><a class="open-phone-modal" href="#phone-modal"><span>Phone</span>Add phone number</a></li>
-              <li><a class="open-location-modal" href="#location-modal"><span>Location</span>Add your location</a></li>
+              <li><a href="#open-name-modal"><span>Name</span>{FirstName LastName}</a></li>
+              <li><a href="#email-modal"><span>Email</span>{EmailAddress}</a></li>
+              <li><a href="#password-modal"><span>Password</span>{&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;}</a></li>
+              <li><a href="#phone-modal"><span>Phone</span>Add phone number</a></li>
+              <li><a href="#location-modal"><span>Location</span>Add your location</a></li>
             </ul>
           </div>
           <div class="carousel-cell">
@@ -43,9 +43,9 @@
               <h1>Your Insurance Carrier</h1>
             </div>
             <ul class="slider">
-              <li><a class="open-carrier-modal" href="#carrier-modal"><span>Carrier</span>Add your insurance carrier</a></li>
-              <li><a class="open-adjuster-modal" href="#adjuster-modal"><span>Adjuster</span>Add your adjuster name</a></li>
-              <li><a class="open-policy-modal" href="#policy-modal"><span>Policy #</span>Add your policy number</a></li>
+              <li><a href="#carrier-modal"><span>Carrier</span>Add your insurance carrier</a></li>
+              <li><a href="#adjuster-modal"><span>Adjuster</span>Add your adjuster name</a></li>
+              <li><a href="#policy-modal"><span>Policy #</span>Add your policy number</a></li>
             </ul>
           </div>
           <div class="carousel-cell">
@@ -54,9 +54,9 @@
               <p>Add a payment method below to take advantage of advanced features like filing a claim with your insurance company.</p>
             </div>
             <ul class="slider icon">
-              <li class="credit-card"><a class="open-card-modal" href="#card-modal"><span>Add Credit Card</span>Add credit card</a></li>
-              <li class="paypal"><a class="open-paypal-modal" href="#paypal-modal"><span>Add Paypal</span>Add Paypal</a></li>
-              <li class="bitcoin"><a class="open-bitcoin-modal" href="#bitcoin-modal"><span>Add Bitcoin</span>Add Bitcoin</a></li>
+              <li class="credit-card"><a href="#card-modal"><span>Add Credit Card</span>Add credit card</a></li>
+              <li class="paypal"><a href="#paypal-modal"><span>Add Paypal</span>Add Paypal</a></li>
+              <li class="bitcoin"><a href="#bitcoin-modal"><span>Add Bitcoin</span>Add Bitcoin</a></li>
             </ul>
           </div>
         </div>
@@ -64,8 +64,8 @@
           <a class="button secondary" href="../../authentication/logout/index.html"><span class="button-label">Log Out</span></a>
         </div>
       </section>
-      <section data-qa="profile-modals">
-        <div id="name-modal" class="modal">
+      <section data-qa="profile-modals" class="modals">
+        <div id="name-modal" class="name modal">
           <div class="text">
             <h1>Update Your Name</h1>
           </div>
@@ -156,8 +156,6 @@
           </div>
           <div id="btn-close-modal" class="close-location-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
         </div>
-      </section>
-      <section data-qa="carrier-modals">
         <div id="carrier-modal" class="modal">
           <div class="text">
             <h1>Update Your Carrier</h1>
@@ -202,7 +200,7 @@
             <form>
               <fieldset>
                 <legend>Policy Number</legend>
-                <label for="policy">Policy #<input type="text" name="policy" class="policy" placeholder="Update your policy number"></label>
+                <label for="policy">Policy Number<input type="text" name="policy" class="policy" placeholder="Update your policy number"></label>
                 <span class="error-message">This is where the error message goes</span>
               </fieldset>
               <div class="button-box left">
@@ -212,8 +210,6 @@
           </div>
           <div id="btn-close-modal" class="close-policy-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
         </div>
-      </section>
-      <section data-qa="payment-modals">
         <div id="card-modal" class="modal">
           <div class="text">
             <h1>Update Your Credit Card</h1>
@@ -299,7 +295,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/animatedmodal@1.0.0/animatedModal.js"></script>
     <script src="../../../../assets/scripts/mystuff.header.js"></script>
     <script src="../../../../assets/scripts/mystuff.js"></script>
     <script>
@@ -341,86 +336,8 @@
       });
     </script>
     <script>
-      $(".open-name-modal").animatedModal({
-        modalTarget:'name-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-email-modal").animatedModal({
-        modalTarget:'email-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-password-modal").animatedModal({
-        modalTarget:'password-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-phone-modal").animatedModal({
-        modalTarget:'phone-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-location-modal").animatedModal({
-        modalTarget:'location-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-    </script>
-    <script>
-      $(".open-carrier-modal").animatedModal({
-        modalTarget:'carrier-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-adjuster-modal").animatedModal({
-        modalTarget:'adjuster-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-policy-modal").animatedModal({
-        modalTarget:'policy-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-    </script>
-    <script>
-      $(".open-card-modal").animatedModal({
-        modalTarget:'card-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-paypal-modal").animatedModal({
-        modalTarget:'paypal-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-bitcoin-modal").animatedModal({
-        modalTarget:'bitcoin-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
+      $('#open-name-modal').click(function() {
+        $('.name.modal').addClass('open');
       });
     </script>
   </body>

@@ -34,6 +34,19 @@
   padding: 2rem 0 4rem;
 }
 
+.welcome .video-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 .welcome video {
   position: absolute;
   top: 0;
@@ -55,6 +68,8 @@
   font-size: 0.8rem;
   color: $white;
 }
+
+.welcome p a:hover, .welcome p a:focus {color: $orange;}
 
 .welcome p a:before {
   display: block;

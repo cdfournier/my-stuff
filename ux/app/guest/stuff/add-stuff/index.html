@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | You Are Logged Out</title>
+    <title>My Stuff | Add Your Stuff</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -19,61 +19,117 @@
       </div>
     </header>
     <main>
-      <section data-qa="logged-out">
+      <section data-qa="add-your-stuff">
+        <div class="carousel-nav button-group button-group--cells">
+          <span class="button is-selected">Add Stuff</span>
+          <span class="button">Add Attachments</span>
+        </div>
         <div class="carousel no-padding">
           <div class="carousel-cell">
             <div class="text">
-              <h1>See You Later</h1>
-              <p>Please log back in to see your stuff.</p>
+              <h1>Add Your Stuff</h1>
             </div>
             <div class="form-container">
-              <form>
+              <form class="wrap">
                 <fieldset>
-                  <legend>Email Address</legend>
-                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address" autocomplete><span class="is-valid"></span></label>
+                  <legend>Group</legend>
+                  <label for="group">Group<input type="text" name="group" class="group" placeholder="Create or add to a group"></label>
                   <span class="error-message">This is where the error message goes</span>
                 </fieldset>
                 <fieldset>
-                  <legend>Password</legend>
-                  <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password"></label>
-                  <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                  <legend>Description</legend>
+                  <label for="description">Description&#42;<input type="text" name="description" class="description" placeholder="Describe your stuff"></label>
                   <span class="error-message">This is where the error message goes</span>
                 </fieldset>
-                <div class="button-box left">
-                  <a id="login" class="button"><span class="button-label">Log In</span></a>
+                <fieldset class="half">
+                  <legend>Value</legend>
+                  <label for="value">Value&#42;<input type="text" name="value" class="value" placeholder="Value"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset class="half">
+                  <legend>Quantity</legend>
+                  <label for="quantity">Quantity&#42;<input type="number" name="quantity" class="quantity" placeholder="Quantity"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Condition</legend>
+                  <label for="condition">Condition&#42;
+                    <select name="condition" id="condition">
+                      <option value="0">Choose a Condition</option>
+                      <option value="New">New</option>
+                      <option value="Excellent">Excellent</option>
+                      <option value="Good">Good</option>
+                      <option value="Fair">Fair</option>
+                      <option value="Poor">Poor</option>
+                    </select>
+                  </label>
+                  <span class="select-icon"><i class="la la-angle-down"></i></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset class="half">
+                  <legend>Age</legend>
+                  <label for="age">Age&#42;<input type="text" name="age" class="age" placeholder="Age"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box row left">
+                  <a id="attachments" class="button secondary button--next"><span class="button-label">Attachments<span class="number">0</span></span></a>
                 </div>
               </form>
-              <p><small><a class="button--next">Forgot Password?</a></small></p>
+            </div>
+            <div class="text">
+              <p style="padding: 2rem 0 0;">You can't save your stuff as a guest&hellip; so why not sign up now?</p>
+              <div class="button-box row left" style="padding: 0;">
+                <a id="save" class="button"><span class="button-label">Sign Up Now</span></a>
+              </div>
             </div>
           </div>
           <div class="carousel-cell">
             <div class="text">
-              <h1>Reset Your Password</h1>
-              <p>Enter your email address and we'll send you a link to reset your password.</p>
+              <h1>This Stuff's Attachments</h1>
             </div>
-            <div class="form-container">
+            <div class="form-container hidden wait">
               <form>
                 <fieldset>
-                  <legend>Email Address</legend>
-                  <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address" autocomplete></label>
+                  <legend>Name</legend>
+                  <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Attachment Type</legend>
+                  <label for="attachment-type">Attachment Type
+                    <select name="attachment-type" id="attachment-type">
+                      <option value="0">Attachment Type</option>
+                      <option value="Photo">Photo</option>
+                      <option value="Manual">Manual</option>
+                      <option value="Receipt">Receipt</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                  <span class="select-icon"><i class="la la-angle-down"></i></span>
                   <span class="error-message">This is where the error message goes</span>
                 </fieldset>
                 <div class="button-box left">
-                  <a class="button button--next"><span class="button-label">Reset Password</span></a>
+                  <a class="button save-attachment"><span class="button-label">Save</span></a>
                 </div>
               </form>
-              <p><small>Return to <a class="button--previous">Log In</a>.</small></p>
             </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="text">
-              <h1>Password Reset Email Sent</h1>
-              <p>Please check your email inbox. We've sent you a special link that you can use to reset your password.</p>
-            </div>
+            <ul class="slider icon more-padding">
+              <h2>Current Attachments</h2>
+              <p>You have no attachments. But if you sign up, we can help you save the right attachments with the right stuff.</p>
+            </ul>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="../../home/home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+          <li><a href="../../stuff/stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+          <li><a href="../../profile/profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+        </ul>
+      </nav>
+    </footer>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -118,6 +174,39 @@
       // next
       $('.button--next').on( 'click', function() {
         $carousel.flickity('next');
+      });
+    </script>
+    <script>
+      $(".open-manual-modal").animatedModal({
+        modalTarget:'manual-modal',
+        animatedIn:'slideInRight',
+        animatedOut:'slideOutRight',
+        animationDuration:'0.4s',
+        color:'#ffffff'
+      });
+      $(".open-photo-modal").animatedModal({
+        modalTarget:'photo-modal',
+        animatedIn:'slideInRight',
+        animatedOut:'slideOutRight',
+        animationDuration:'0.4s',
+        color:'#ffffff'
+      });
+      $(".open-receipt-modal").animatedModal({
+        modalTarget:'receipt-modal',
+        animatedIn:'slideInRight',
+        animatedOut:'slideOutRight',
+        animationDuration:'0.4s',
+        color:'#ffffff'
+      });
+    </script>
+    <script>
+      $(".add-attachment").on('change', function() {
+        $(".form-container.hidden").removeClass("wait");
+      });
+    </script>
+    <script>
+      $(".save-attachment").click(function(){
+        $(".form-container.hidden").addClass("wait");
       });
     </script>
   </body>

@@ -895,6 +895,18 @@ ul.slider.icon li.bitcoin:before {
   height: 100vh;
   padding: 2rem 0 4rem; }
 
+.welcome .video-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden; }
+
 .welcome video {
   position: absolute;
   top: 0;
@@ -918,6 +930,9 @@ ul.slider.icon li.bitcoin:before {
   margin: 1rem 0 0;
   font-size: 0.8rem;
   color: #ffffff; }
+
+.welcome p a:hover, .welcome p a:focus {
+  color: #dd4a36; }
 
 .welcome p a:before {
   display: block;
@@ -1207,38 +1222,3 @@ ul.slider.icon li.bitcoin:before {
   top: 2rem;
   left: 2rem;
   font-family: "LineAwesome"; }
-
-.modals {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -10;
-  width: 100%;
-  margin: 0 auto;
-  padding: 6rem 0 2rem;
-  outline: none; }
-
-.modal-test {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 1.5rem;
-  background-color: #ffffff;
-  -webkit-transition: transform 0.2s ease-in-out 0s;
-  -moz-transition: transform 0.2s ease-in-out 0s;
-  -ms-transition: transform 0.2s ease-in-out 0s;
-  -o-transition: transform 0.2s ease-in-out 0s;
-  transition: transform 0.2s ease-in-out 0s;
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  transform: translateX(100%); }
