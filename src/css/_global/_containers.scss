@@ -1,5 +1,5 @@
 // MAX-WIDTHS
-@media (min-width: 48rem) {
+@media (min-width: 46.75rem) {
 .xs {
   max-width: 16rem;
   min-width: 16rem;
@@ -30,6 +30,7 @@ main {
   align-items: center;
   width: 100%;
   max-width: 32rem;
+  min-height: 100vh;
   overflow-x: hidden;
   margin: 0 auto;
   padding-bottom: 6rem;
