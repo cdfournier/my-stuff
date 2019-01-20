@@ -394,7 +394,8 @@ header {
 
 header .logo {
   display: grid;
-  width: 8rem; }
+  width: 8rem;
+  outline: none; }
 
 header .logo .logo-color {
   fill: #000000; }
@@ -1040,6 +1041,7 @@ ul.slider.icon li.bitcoin:before {
   top: 0;
   width: 100%;
   min-height: 100vh;
+  padding: 0 0 2rem;
   background-color: #ffffff; }
 
 .introduction .carousel, .introduction .carousel .carousel-cell {
@@ -1056,15 +1058,14 @@ ul.slider.icon li.bitcoin:before {
   width: 100%;
   max-width: 100%;
   min-width: 100%;
-  height: 38vh;
-  max-height: 38vh;
+  height: auto;
   min-height: 38vh;
   margin: 0 auto 2rem;
   padding: 0; }
 
 .introduction .vecteezy {
-  position: absolute;
-  top: 34vh; }
+  position: relative;
+  top: -4rem; }
 
 .introduction .vecteezy p {
   padding: 0 2rem;
@@ -1210,11 +1211,16 @@ ul.slider.icon li.bitcoin:before {
 .modal {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
   padding: 6rem 0 2rem;
   font-size: 1.5rem;
   outline: none; }
+
+.modal-content {
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 auto; }
 
 .close-modal-icon {
   display: block;

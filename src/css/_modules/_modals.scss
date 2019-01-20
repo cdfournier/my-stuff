@@ -2,11 +2,17 @@
 .modal {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
   padding: 6rem 0 2rem;
   font-size: 1.5rem;
   outline: none;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 auto;
 }
 
 .close-modal-icon {

@@ -177,6 +177,7 @@
   top: 0;
   width: 100%;
   min-height: 100vh;
+  padding: 0 0 2rem;
   background-color: $white;
 }
 
@@ -192,16 +193,15 @@
   width: 100%;
   max-width: 100%;
   min-width: 100%;
-  height: 38vh;
-  max-height: 38vh;
+  height: auto;
   min-height: 38vh;
   margin: 0 auto 2rem;
   padding: 0;
 }
 
 .introduction .vecteezy {
-  position: absolute;
-  top: 34vh;
+  position: relative;
+  top: -4rem;
 }
 
 .introduction .vecteezy p {

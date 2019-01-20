@@ -35,6 +35,7 @@ header {
 header .logo {
   display: grid;
   width: 8rem;
+  outline: none;
 }
 
 header .logo .logo-color {fill: $black;}
