@@ -1177,7 +1177,7 @@ ul.slider.stuff li div.details span {
   flex-direction: row;
   justify-content: center; }
 
-.button-group.button-group--cells button.button {
+.button-group.button-group--cells .button {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -1190,12 +1190,12 @@ ul.slider.stuff li div.details span {
   min-height: 2rem;
   padding: 0;
   border: 1px solid #526470;
-  border-radius: 0.2rem;
+  border-radius: 100%;
   line-height: 2.5;
   color: #526470;
   background-color: #ffffff; }
 
-.button-group.button-group--cells button.button.is-selected {
+.button-group.button-group--cells .button.is-selected {
   color: #ffffff;
   background-color: #526470; }
 

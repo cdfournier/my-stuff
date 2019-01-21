@@ -57,7 +57,7 @@
   justify-content: center;
 }
 
-.button-group.button-group--cells button.button {
+.button-group.button-group--cells .button {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -70,13 +70,13 @@
   min-height: 2rem;
   padding: 0;
   border: 1px solid $slate;
-  border-radius: 0.2rem;
+  border-radius: 100%;
   line-height: 2.5;
   color: $slate;
   background-color: $white;
 }
 
-.button-group.button-group--cells button.button.is-selected {
+.button-group.button-group--cells .button.is-selected {
   color: $white;
   background-color: $slate;
 }
