@@ -925,6 +925,25 @@ ul.stuff li div.details span.description {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+ul.activities {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0 0;
+  list-style-type: none; }
+
+ul.activities.more-padding {
+  padding: 2rem 0 0; }
+
+ul.activities li {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .loading {
   display: flex;
   flex-direction: column;
