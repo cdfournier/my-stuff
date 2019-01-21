@@ -50,13 +50,49 @@
             </fieldset>
           </form>
         </div>
-        <ul class="slider stuff">
-          <!-- <p>You have no stuff.</p> -->
-          <li><a class="open-stuff-modal" href="#stuff-modal">
-            <div class="label">Description<span>Qty</span></div>
-            <div class="details">Product<span>1</span></div>
-          </a></li>
-        </ul>
+          <ul class="slider stuff">
+            <!-- <p>You have no stuff.</p> -->
+            <li><a class="open-stuff-modal" href="#stuff-modal">
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Ethan Allen Marcus Track-Arm Sofa<span>1</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Bruckner Metal-Top End Table<span>2</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Beam Metal Base Coffee Table<span>1</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Grayson Leather Lounge Chair<span>1</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Sayville Four Glass Door Cabinet<span>1</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Surveyor's Floor Lamp<span>2</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Grange Rug<span>1</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Bronzeville Media Cabinet<span>1</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Samsung 55&quot;&nbsp;LED 2160p Smart 4K UHD TV<span>1</span></div>
+            </a></li>
+            <li><a>
+              <div class="label">Description<span>Qty</span></div>
+              <div class="details">Xbox One S 500GB Console<span>1</span></div>
+            </a></li>
+          </ul>
       </section>
       <section id="top" data-qa="stuff-modals">
         <div id="stuff-modal" class="modal">
@@ -278,6 +314,16 @@
     <script>
       $(".save-attachment").click(function(){
         $(".form-container.hidden").addClass("wait");
+      });
+    </script>
+    <script>
+      $("#attachments").click(function(){
+        $(".close-stuff-modal").addClass("hide");
+      });
+    </script>
+    <script>
+      $(".button--previous").click(function(){
+        $(".close-stuff-modal").removeClass("hide");
       });
     </script>
   </body>

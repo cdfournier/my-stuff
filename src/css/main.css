@@ -787,8 +787,11 @@ ul.slider li {
   position: relative;
   width: 100%;
   height: 5rem;
+  overflow: hidden;
   padding: 0;
-  border-bottom: 1px solid #d1d8df; }
+  border-bottom: 1px solid #d1d8df;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 ul.slider li a {
   display: flex;
@@ -862,12 +865,20 @@ ul.slider.stuff li div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: calc(100% - 2rem); }
+  position: relative;
+  width: calc(100% - 2rem);
+  padding: 0 2rem 0 0; }
 
 ul.slider.stuff li div.label {
   font-size: 0.8rem;
   font-weight: 700;
   color: #000000; }
+
+ul.slider.stuff li div.details {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 ul.slider.stuff li div.details, ul.slider.stuff li div.details span {
   font-size: 1rem;
@@ -876,7 +887,11 @@ ul.slider.stuff li div.details, ul.slider.stuff li div.details span {
 
 ul.slider.stuff li div.label span, ul.slider.stuff li div.details span {
   position: absolute;
-  right: 2rem; }
+  right: 0; }
+
+ul.slider.stuff li div.details span {
+  top: 0;
+  line-height: 1.5; }
 
 .loading {
   display: flex;
@@ -1252,3 +1267,16 @@ ul.slider.stuff li div.label span, ul.slider.stuff li div.details span {
   top: 2rem;
   left: 2rem;
   font-family: "LineAwesome"; }
+
+.close-stuff-modal {
+  display: block;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
+
+.close-stuff-modal.hide {
+  display: none;
+  opacity: 0; }

@@ -22,3 +22,14 @@
   left: 2rem;
   font-family: "LineAwesome"
 }
+
+.close-stuff-modal {
+  display: block;
+  opacity: 1;
+  @include transition(all, 0.2s, ease);
+}
+
+.close-stuff-modal.hide {
+  display: none;
+  opacity: 0;
+}

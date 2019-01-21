@@ -17,8 +17,11 @@ ul.slider li {
   position: relative;
   width: 100%;
   height: 5rem;
+  overflow: hidden;
   padding: 0;
   border-bottom: 1px solid $medium-gray;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 ul.slider li a {
@@ -88,13 +91,22 @@ ul.slider.stuff li div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
   width: calc(100% - 2rem);
+  padding: 0 2rem 0 0;
 }
 
 ul.slider.stuff li div.label {
   font-size: 0.8rem;
   font-weight: 700;
   color: $black;
+}
+
+ul.slider.stuff li div.details {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 ul.slider.stuff li div.details, ul.slider.stuff li div.details span {
@@ -105,5 +117,10 @@ ul.slider.stuff li div.details, ul.slider.stuff li div.details span {
 
 ul.slider.stuff li div.label span, ul.slider.stuff li div.details span {
   position: absolute;
-  right: 2rem;
+  right: 0;
+}
+
+ul.slider.stuff li div.details span {
+  top: 0;
+  line-height: 1.5;
 }
