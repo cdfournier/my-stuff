@@ -81,3 +81,29 @@ ul.slider.icon li.receipt:before {content: "\f1ec";}
 ul.slider.icon li.paypal:before {content: "\f175";}
 ul.slider.icon li.credit-card:before {content: "\f1aa";}
 ul.slider.icon li.bitcoin:before {content: "\f149";}
+
+
+// SLIDER LISTS FOR STUFF
+ul.slider.stuff li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+}
+
+ul.slider.stuff li div.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $black;
+}
+
+ul.slider.stuff li div.details, ul.slider.stuff li div.details span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $slate;
+}
+
+ul.slider.stuff li div.label span, ul.slider.stuff li div.details span {
+  position: absolute;
+  right: 2rem;
+}

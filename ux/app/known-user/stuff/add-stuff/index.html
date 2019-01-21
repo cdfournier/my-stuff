@@ -122,100 +122,106 @@
       </section>
       <section data-qa="attachment-modals">
         <div id="manual-modal" class="modal">
-          <div class="text">
-            <h1>Update Attachment</h1>
+          <div class="modal-content">
+            <div class="text">
+              <h1>Update Attachment</h1>
+            </div>
+            <div class="form-container">
+              <form>
+                <fieldset>
+                  <legend>Name</legend>
+                  <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment" value="Owner's Manual"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Attachment Type</legend>
+                  <label for="attachment-type">Attachment Type
+                    <select name="attachment-type" id="attachment-type">
+                      <option value="Manual">Manual</option>
+                      <option value="0">Attachment Type</option>
+                      <option value="Photo">Photo</option>
+                      <option value="Receipt">Receipt</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                  <span class="select-icon"><i class="la la-angle-down"></i></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box left">
+                  <a class="button close-manual-modal"><span class="button-label">Save</span></a>
+                </div>
+              </form>
+            </div>
+            <div id="btn-close-modal" class="close-manual-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
           </div>
-          <div class="form-container">
-            <form>
-              <fieldset>
-                <legend>Name</legend>
-                <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment" value="Owner's Manual"></label>
-                <span class="error-message">This is where the error message goes</span>
-              </fieldset>
-              <fieldset>
-                <legend>Attachment Type</legend>
-                <label for="attachment-type">Attachment Type
-                  <select name="attachment-type" id="attachment-type">
-                    <option value="Manual">Manual</option>
-                    <option value="0">Attachment Type</option>
-                    <option value="Photo">Photo</option>
-                    <option value="Receipt">Receipt</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </label>
-                <span class="select-icon"><i class="la la-angle-down"></i></span>
-                <span class="error-message">This is where the error message goes</span>
-              </fieldset>
-              <div class="button-box left">
-                <a class="button close-manual-modal"><span class="button-label">Save</span></a>
-              </div>
-            </form>
-          </div>
-          <div id="btn-close-modal" class="close-manual-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
         </div>
         <div id="photo-modal" class="modal">
-          <div class="text">
-            <h1>Update Attachment</h1>
+          <div class="modal-content">
+            <div class="text">
+              <h1>Update Attachment</h1>
+            </div>
+            <div class="form-container">
+              <form>
+                <fieldset>
+                  <legend>Name</legend>
+                  <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment" value="Photo"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Attachment Type</legend>
+                  <label for="attachment-type">Attachment Type
+                    <select name="attachment-type" id="attachment-type">
+                      <option value="Photo">Photo</option>
+                      <option value="0">Attachment Type</option>
+                      <option value="Manual">Manual</option>
+                      <option value="Receipt">Receipt</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                  <span class="select-icon"><i class="la la-angle-down"></i></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box left">
+                  <a class="button close-photo-modal"><span class="button-label">Save</span></a>
+                </div>
+              </form>
+            </div>
+            <div id="btn-close-modal" class="close-photo-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
           </div>
-          <div class="form-container">
-            <form>
-              <fieldset>
-                <legend>Name</legend>
-                <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment" value="Photo"></label>
-                <span class="error-message">This is where the error message goes</span>
-              </fieldset>
-              <fieldset>
-                <legend>Attachment Type</legend>
-                <label for="attachment-type">Attachment Type
-                  <select name="attachment-type" id="attachment-type">
-                    <option value="Photo">Photo</option>
-                    <option value="0">Attachment Type</option>
-                    <option value="Manual">Manual</option>
-                    <option value="Receipt">Receipt</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </label>
-                <span class="select-icon"><i class="la la-angle-down"></i></span>
-                <span class="error-message">This is where the error message goes</span>
-              </fieldset>
-              <div class="button-box left">
-                <a class="button close-photo-modal"><span class="button-label">Save</span></a>
-              </div>
-            </form>
-          </div>
-          <div id="btn-close-modal" class="close-photo-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
         </div>
         <div id="receipt-modal" class="modal">
-          <div class="text">
-            <h1>Update Attachment</h1>
+          <div class="modal-content">
+            <div class="text">
+              <h1>Update Attachment</h1>
+            </div>
+            <div class="form-container">
+              <form>
+                <fieldset>
+                  <legend>Name</legend>
+                  <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment" value="Receipt"></label>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <fieldset>
+                  <legend>Attachment Type</legend>
+                  <label for="attachment-type">Attachment Type
+                    <select name="attachment-type" id="attachment-type">
+                      <option value="Receipt">Receipt</option>
+                      <option value="0">Attachment Type</option>
+                      <option value="Photo">Photo</option>
+                      <option value="Manual">Manual</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                  <span class="select-icon"><i class="la la-angle-down"></i></span>
+                  <span class="error-message">This is where the error message goes</span>
+                </fieldset>
+                <div class="button-box left">
+                  <a class="button close-receipt-modal"><span class="button-label">Save</span></a>
+                </div>
+              </form>
+            </div>
+            <div id="btn-close-modal" class="close-receipt-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
           </div>
-          <div class="form-container">
-            <form>
-              <fieldset>
-                <legend>Name</legend>
-                <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment" value="Receipt"></label>
-                <span class="error-message">This is where the error message goes</span>
-              </fieldset>
-              <fieldset>
-                <legend>Attachment Type</legend>
-                <label for="attachment-type">Attachment Type
-                  <select name="attachment-type" id="attachment-type">
-                    <option value="Receipt">Receipt</option>
-                    <option value="0">Attachment Type</option>
-                    <option value="Photo">Photo</option>
-                    <option value="Manual">Manual</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </label>
-                <span class="select-icon"><i class="la la-angle-down"></i></span>
-                <span class="error-message">This is where the error message goes</span>
-              </fieldset>
-              <div class="button-box left">
-                <a class="button close-receipt-modal"><span class="button-label">Save</span></a>
-              </div>
-            </form>
-          </div>
-          <div id="btn-close-modal" class="close-receipt-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
         </div>
       </section>
     </main>

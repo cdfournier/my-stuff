@@ -854,6 +854,26 @@ ul.slider.icon li.credit-card:before {
 ul.slider.icon li.bitcoin:before {
   content: "\f149"; }
 
+ul.slider.stuff li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 2rem); }
+
+ul.slider.stuff li div.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #000000; }
+
+ul.slider.stuff li div.details, ul.slider.stuff li div.details span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #526470; }
+
+ul.slider.stuff li div.label span, ul.slider.stuff li div.details span {
+  position: absolute;
+  right: 2rem; }
+
 .loading {
   display: flex;
   flex-direction: column;
