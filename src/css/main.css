@@ -910,7 +910,7 @@ ul.stuff li div {
 ul.stuff li div.label {
   font-size: 0.8rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 2;
   color: #000000; }
 
 ul.stuff li div.details {
@@ -920,7 +920,7 @@ ul.stuff li div.details {
 
 ul.stuff li div.details span.description {
   display: block;
-  width: calc(100% - 4rem);
+  width: calc(100% - 2rem);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
@@ -929,20 +929,33 @@ ul.activities {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1rem 0 0;
+  padding: 1rem 2rem 0;
+  font-weight: 700;
   list-style-type: none; }
 
 ul.activities.more-padding {
-  padding: 2rem 0 0; }
+  padding: 2rem 2rem 0; }
 
 ul.activities li {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   width: 100%;
   overflow: hidden;
   padding: 0 0 0.5rem;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+ul.activities li span {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #526470; }
 
 .loading {
   display: flex;
