@@ -540,7 +540,6 @@ input {
 input:placeholder-shown {
   overflow: hidden;
   text-overflow: ellipsis;
-  transform-origin: left bottom;
   white-space: nowrap; }
 
 input::placeholder {
@@ -607,6 +606,13 @@ input[type="checkbox"]:checked:before {
 input[type="checkbox"]:checked:not(:disabled) {
   border-color: #dd4a36;
   background-color: #dd4a36; }
+
+input[type="date"] {
+  width: calc(100% - 0.7875rem); }
+
+@media (min-width: 46.75rem) {
+  input[type="date"] {
+    width: auto; } }
 
 select {
   display: inline-block;

@@ -23,7 +23,6 @@
         <div class="carousel-nav button-group button-group--cells">
           <span class="button is-selected">Profile</span>
           <span class="button">Carrier</span>
-          <span class="button">Payment</span>
         </div>
         <div class="carousel no-padding">
           <div class="carousel-cell">
@@ -46,17 +45,6 @@
               <li><a class="open-carrier-modal" href="#carrier-modal"><span>Carrier</span>Add your insurance carrier</a></li>
               <li><a class="open-adjuster-modal" href="#adjuster-modal"><span>Adjuster</span>Add your adjuster name</a></li>
               <li><a class="open-policy-modal" href="#policy-modal"><span>Policy #</span>Add your policy number</a></li>
-            </ul>
-          </div>
-          <div class="carousel-cell">
-            <div class="text">
-              <h1>Your Payment Options</h1>
-              <p>Add a payment method below to take advantage of advanced features like filing a claim with your insurance company.</p>
-            </div>
-            <ul class="slider icon">
-              <li class="credit-card"><a class="open-card-modal" href="#card-modal"><span>Add Credit Card</span>Add credit card</a></li>
-              <li class="paypal"><a class="open-paypal-modal" href="#paypal-modal"><span>Add Paypal</span>Add Paypal</a></li>
-              <li class="bitcoin"><a class="open-bitcoin-modal" href="#bitcoin-modal"><span>Add Bitcoin</span>Add Bitcoin</a></li>
             </ul>
           </div>
         </div>
@@ -229,83 +217,6 @@
           </div>
         </div>
       </section>
-      <section data-qa="payment-modals">
-        <div id="card-modal" class="modal">
-          <div class="modal-content">
-            <div class="text">
-              <h1>Update Your Credit Card</h1>
-            </div>
-            <div class="form-container">
-              <form class="wrap">
-                <fieldset>
-                  <legend>Name On Card</legend>
-                  <label for="card-name">Name On Card<input type="text" name="card-name" class="card-name" placeholder="Name on card"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <fieldset>
-                  <legend>Card Number</legend>
-                  <label for="card-number">Card Number<input type="text" name="card-number" id="cardnumber" class="card-number" placeholder="Card number"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <fieldset class="half">
-                  <legend>Expiration</legend>
-                  <label for="expiration">Expiration<input type="text" name="expiration" class="expiration" placeholder="Expiration"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <fieldset class="half">
-                  <legend>Security Code</legend>
-                  <label for="security">Security Code<input type="number" name="security" class="security" placeholder="Security Code"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <div class="button-box left">
-                  <a class="button close-card-modal close-modal" aria-label="close"><span class="button-label">Save</span></a>
-                </div>
-              </form>
-            </div>
-            <div id="btn-close-modal" class="close-card-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
-          </div>
-        </div>
-        <div id="paypal-modal" class="modal">
-          <div class="modal-content">
-            <div class="text">
-              <h1>Update Your PayPal</h1>
-            </div>
-            <div class="form-container">
-              <form>
-                <fieldset>
-                  <legend>PayPal</legend>
-                  <label for="paypal">PayPal<input type="text" name="paypal" class="paypal" placeholder="Update your PayPal"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <div class="button-box left">
-                  <a class="button close-paypal-modal close-modal" aria-label="close"><span class="button-label">Save</span></a>
-                </div>
-              </form>
-            </div>
-            <div id="btn-close-modal" class="close-paypal-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
-          </div>
-        </div>
-        <div id="bitcoin-modal" class="modal">
-          <div class="modal-content">
-            <div class="text">
-              <h1>Update Your Bitcoin</h1>
-            </div>
-            <div class="form-container">
-              <form>
-                <fieldset>
-                  <legend>Bitcoin</legend>
-                  <label for="bitcoin">Bitcoin<input type="text" name="bitcoin" class="bitcoin" placeholder="Update your Bitcoin"></label>
-                  <span class="error-message">This is where the error message goes</span>
-                </fieldset>
-                <div class="button-box left">
-                  <a class="button close-bitcoin-modal close-modal" aria-label="close"><span class="button-label">Save</span></a>
-                </div>
-              </form>
-            </div>
-            <div id="btn-close-modal" class="close-bitcoin-modal close-modal-icon" aria-label="close"><i class="la la-angle-left"></i></div>
-          </div>
-        </div>
-      </section>
     </main>
     <footer>
       <nav>
@@ -416,29 +327,6 @@
       });
       $(".open-policy-modal").animatedModal({
         modalTarget:'policy-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-    </script>
-    <script>
-      $(".open-card-modal").animatedModal({
-        modalTarget:'card-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-paypal-modal").animatedModal({
-        modalTarget:'paypal-modal',
-        animatedIn:'slideInRight',
-        animatedOut:'slideOutRight',
-        animationDuration:'0.4s',
-        color:'#ffffff'
-      });
-      $(".open-bitcoin-modal").animatedModal({
-        modalTarget:'bitcoin-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
         animationDuration:'0.4s',

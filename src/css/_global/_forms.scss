@@ -82,7 +82,6 @@ input {
 input:placeholder-shown {
   overflow: hidden;
   text-overflow: ellipsis;
-  transform-origin: left bottom;
   white-space: nowrap;
 }
 
@@ -144,6 +143,12 @@ input[type="checkbox"]:checked:not(:disabled) {
   border-color: $orange;
   background-color: $orange;
 }
+
+
+// DATE PICKER
+input[type="date"] {width: calc(100% - 0.7875rem);}
+
+@media (min-width: 46.75rem) {input[type="date"] {width: auto;}}
 
 
 // SELECT
