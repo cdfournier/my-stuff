@@ -306,3 +306,48 @@ span.is-valid:before {
 }
 
 fieldset.valid span.is-valid {opacity: 1;}
+
+
+// ACCORDIAN CONTAINER
+.form-display-control {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 2rem 0;
+}
+
+.form-display-control input.accordian {
+  z-index: -1;
+  opacity: 0;
+}
+
+.form-display-control input.accordian ~ form {
+  max-height: 0;
+  @include transition(max-height, 0.2s, ease-in-out);
+}
+
+label.form-control-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 0 0.5rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $orange;
+}
+
+label.form-control-header span {padding: 0 0.25rem 0 0;}
+
+label.form-control-header i.la.la-angle-up {
+  font-weight: bold;
+  @include transition(all, 0.2s, ease-in-out);
+}
+
+.form-display-control input.accordian:checked ~ label.form-control-header i.la.la-angle-up {@include transform(rotate(0.5turn));}
+
+.form-display-control input.accordian:checked ~ form {max-height: 100rem;}
