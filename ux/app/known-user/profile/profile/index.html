@@ -30,11 +30,11 @@
               <h1>Your Profile</h1>
             </div>
             <ul class="slider">
-              <li><a class="open-name-modal" href="#name-modal"><span>Name</span>{FirstName LastName}</a></li>
-              <li><a class="open-email-modal" href="#email-modal"><span>Email</span>{EmailAddress}</a></li>
-              <li><a class="open-password-modal" href="#password-modal"><span>Password</span>{&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;}</a></li>
-              <li><a class="open-phone-modal" href="#phone-modal"><span>Phone</span>Add phone number</a></li>
-              <li><a class="open-location-modal" href="#location-modal"><span>Location</span>Add your location</a></li>
+              <li><a id="open-name-modal" href="#name-modal"><span>Name</span>{FirstName LastName}</a></li>
+              <li><a id="open-email-modal" href="#email-modal"><span>Email</span>{EmailAddress}</a></li>
+              <li><a id="open-password-modal" href="#password-modal"><span>Password</span>{&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;}</a></li>
+              <li><a id="open-phone-modal" href="#phone-modal"><span>Phone</span>Add phone number</a></li>
+              <li><a id="open-location-modal" href="#location-modal"><span>Location</span>Add your location</a></li>
             </ul>
           </div>
           <div class="carousel-cell">
@@ -42,9 +42,9 @@
               <h1>Your Insurance Carrier</h1>
             </div>
             <ul class="slider">
-              <li><a class="open-carrier-modal" href="#carrier-modal"><span>Carrier</span>Add your insurance carrier</a></li>
-              <li><a class="open-adjuster-modal" href="#adjuster-modal"><span>Adjuster</span>Add your adjuster name</a></li>
-              <li><a class="open-policy-modal" href="#policy-modal"><span>Policy #</span>Add your policy number</a></li>
+              <li><a id="open-carrier-modal" href="#carrier-modal"><span>Carrier</span>Add your insurance carrier</a></li>
+              <li><a id="open-adjuster-modal" href="#adjuster-modal"><span>Adjuster</span>Add your adjuster name</a></li>
+              <li><a id="open-policy-modal" href="#policy-modal"><span>Policy #</span>Add your policy number</a></li>
             </ul>
           </div>
         </div>
@@ -274,35 +274,35 @@
       });
     </script>
     <script>
-      $(".open-name-modal").animatedModal({
+      $("#open-name-modal").animatedModal({
         modalTarget:'name-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
         animationDuration:'0.4s',
         color:'#ffffff'
       });
-      $(".open-email-modal").animatedModal({
+      $("#open-email-modal").animatedModal({
         modalTarget:'email-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
         animationDuration:'0.4s',
         color:'#ffffff'
       });
-      $(".open-password-modal").animatedModal({
+      $("#open-password-modal").animatedModal({
         modalTarget:'password-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
         animationDuration:'0.4s',
         color:'#ffffff'
       });
-      $(".open-phone-modal").animatedModal({
+      $("#open-phone-modal").animatedModal({
         modalTarget:'phone-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
         animationDuration:'0.4s',
         color:'#ffffff'
       });
-      $(".open-location-modal").animatedModal({
+      $("#open-location-modal").animatedModal({
         modalTarget:'location-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
@@ -311,21 +311,21 @@
       });
     </script>
     <script>
-      $(".open-carrier-modal").animatedModal({
+      $("#open-carrier-modal").animatedModal({
         modalTarget:'carrier-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
         animationDuration:'0.4s',
         color:'#ffffff'
       });
-      $(".open-adjuster-modal").animatedModal({
+      $("#open-adjuster-modal").animatedModal({
         modalTarget:'adjuster-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
         animationDuration:'0.4s',
         color:'#ffffff'
       });
-      $(".open-policy-modal").animatedModal({
+      $("#open-policy-modal").animatedModal({
         modalTarget:'policy-modal',
         animatedIn:'slideInRight',
         animatedOut:'slideOutRight',
