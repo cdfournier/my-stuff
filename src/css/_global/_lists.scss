@@ -63,7 +63,10 @@ ul.slider li:after {
 
 
 // SLIDER LISTS WITH ICONS
-ul.slider.icon li {padding: 0 0 0 2.5rem;}
+ul.slider.icon li {
+  height: 4rem;
+  padding: 0 0 0 2.5rem;
+}
 
 ul.slider.icon li:before {
   display: flex;
