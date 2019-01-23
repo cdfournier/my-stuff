@@ -3,11 +3,11 @@ ul.slider {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1rem 2rem 0;
+  padding: 1rem 0 0;
   list-style-type: none;
 }
 
-ul.slider.more-padding {padding: 2rem 2rem 0;}
+ul.slider.more-padding {padding: 2rem 0 0;}
 
 ul.slider li {
   display: flex;
@@ -94,7 +94,7 @@ ul.stuff {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1rem 2rem 0;
+  padding: 1rem 0 0;
   list-style-type: none;
 }
 
