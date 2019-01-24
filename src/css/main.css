@@ -14,17 +14,7 @@ body, .body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 0;
-  /*
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 0;
-  animation: 0.5s ease-out 0s 1 fadeIn;
-*/ }
+  padding: 0; }
 
 @keyframes fadeIn {
   0% {
