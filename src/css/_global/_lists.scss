@@ -196,3 +196,13 @@ ul.activities li span {
   color: $white;
   background-color: $slate;
 }
+
+
+// SWITCH LISTS
+ul.slider li label.toggle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $slate;
+}
+
+ul.slider li.switch:after {display: none;}

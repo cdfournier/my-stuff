@@ -145,6 +145,70 @@ input[type="checkbox"]:checked:not(:disabled) {
 }
 
 
+// SWITCHES
+input.toggle[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  left: auto;
+  width: 3.5rem;
+  height: 1.75rem;
+  min-height: 1.75rem;
+  max-height: 1.75rem;
+  margin: 0;
+  padding: 0.1875rem;
+  border-color: transparent;
+  border-radius: 2rem;
+  background-color: $slate;
+  @include transition(all, 0.2s, ease-in-out);
+}
+
+input.toggle[type="checkbox"]:checked:before {display: none;}
+
+input.toggle[type="checkbox"]:after {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  border-color: transparent;
+  border-radius: 100%;
+  font-family: "LineAwesome";
+  font-size: 1rem;
+  background-color: $white;
+  content: "\f342";
+  @include transition(all, 0.2s, ease-in-out);
+}
+
+input.toggle[type="checkbox"]:checked {
+  border-color: transparent;
+  background-color: $green;
+}
+
+input.toggle[type="checkbox"]:checked:after {
+  left: calc(100% - 1.25rem);
+  color: $green;
+  content: "\f17b";
+}
+
+label.toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  min-height: 1.75rem;
+  padding: 0 4rem 0 0;
+}
+
+
 // DATE PICKER
 input[type="date"] {
   width: calc(100% - 0.7875rem);

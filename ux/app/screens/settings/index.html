@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | Create An Account</title>
+    <title>My Stuff | Settings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="../../../../src/css/main.css">
+    <style>h2 {padding: 1rem 0 0;}</style>
   </head>
   <body>
     <header id="header" class="header--fixed">
@@ -19,40 +20,23 @@
       </div>
     </header>
     <main>
-      <section data-qa="create-an-account">
+      <section data-qa="settings">
         <div class="text">
-          <h1>Create An Account</h1>
-        </div>
-        <div class="form-container">
-          <form>
-            <fieldset>
-              <legend>Name</legend>
-              <label for="name">Name&#42;<input type="text" name="name" class="name" placeholder="Enter your name" autocomplete></label>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <fieldset>
-              <legend>Email Address</legend>
-              <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address" autocomplete></label>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <fieldset>
-              <legend>Password</legend>
-              <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password"></label>
-              <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
-              <span class="error-message">This is where the error message goes</span>
-            </fieldset>
-            <div class="button-box row left" style="align-items: center;">
-              <a id="introduction" class="button" href="../introduction/index.html"><span class="button-label">Create Account</span></a>
-              <span class="or">or</span>
-              <a id="cancel" class="button secondary" href="../login/index.html"><span class="button-label">Log In</span></a>
-            </div>
-          </form>
-          <p><small>By creating an account you agree to our <a class="open-terms-modal" href="#terms-modal">Terms &amp; Conditions</a>.</small></p>
+          <h1>Settings</h1>
+          <ul class="slider">
+            <li class="switch">
+              <fieldset>
+                <legend>Email Notifications</legend>
+                <label class="toggle" for="email-notifications">Email Notifications<input type="checkbox" name="email-notifications" class="toggle" id="email-notifications"></label>
+              </fieldset>
+            </li>
+            <li><a class="open-privacy-modal" href="#privacy-modal">Privacy</a></li>
+            <li><a class="open-terms-modal" href="#terms-modal">Terms</a></li>
+          </ul>
         </div>
       </section>
-      <section data-qa="policy-modals">
+      <section data-qa="settings-modals">
         <div id="privacy-modal" class="modal">
-          <style>h2 {padding: 1rem 0 0;}</style>
           <div class="modal-content">
             <div class="text">
               <h1>Privacy Policy</h1>
@@ -94,7 +78,6 @@
           </div>
         </div>
         <div id="terms-modal" class="modal">
-          <style>h2 {padding: 1rem 0 0;}</style>
           <div class="modal-content">
             <div class="text">
               <h1>Terms &amp; Conditions</h1>
@@ -114,6 +97,16 @@
         </div>
       </section>
     </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="../home/home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+          <li><a href="../stuff/stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+          <li><a href="../profile/profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+          <li><a class="active"><span class="icon"><i class="la la-gear"></i></span>Settings</a></li>
+        </ul>
+      </nav>
+    </footer>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
