@@ -1,18 +1,15 @@
 // MODALS
 .modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 6rem 0 2rem;
-  font-size: 1.5rem;
-  outline: none;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .modal-content {
   width: 100%;
   max-width: 32rem;
   margin: 0 auto;
+  padding: 4rem 0 2rem;
 }
 
 .close-modal-icon {
