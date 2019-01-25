@@ -209,13 +209,26 @@ label.toggle {
 }
 
 
-// DATE PICKER
-input[type="date"] {
-  width: calc(100% - 0.7875rem);
-  background: none;
+// DATE
+label.date span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-@media (min-width: 46.75rem) {input[type="date"] {width: auto;}}
+label.date span input {
+  width: 20%;
+  text-align: center;
+}
+
+label.date span input.purchase-year {width: 30%;}
+
+label.date span.slash {
+  display: block;
+  width: auto;
+}
 
 
 // SELECT
