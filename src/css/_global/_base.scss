@@ -20,6 +20,7 @@ body, .body {
   height: 100%;
   margin: 0 auto;
   padding: 0;
+  animation: 0.5s ease-out 0s 1 fadeIn;
 }
 
 @keyframes fadeIn {
