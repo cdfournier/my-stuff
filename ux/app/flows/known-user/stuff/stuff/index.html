@@ -229,8 +229,8 @@
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box row left">
-                    <a id="save" class="button close-stuff"><span class="button-label">Save</span></a>
-                    <a id="attachments" class="button secondary button--next" href="#top"><span class="button-label">Attachments<span class="number">1</span></span></a>
+                    <a class="button close-stuff"><span class="button-label">Save</span></a>
+                    <a class="button secondary button--next" href="#top"><span class="button-label">Attachments<span class="number">1</span></span></a>
                   </div>
                 </form>
               </div>
@@ -366,11 +366,6 @@
       });
       $(".save-attachment").click(function(){
         $(".form-container.hidden").addClass("wait");
-      });
-    </script>
-    <script>
-      $("#attachments").click(function(){
-        $(".close-stuff-modal").addClass("hide");
       });
     </script>
     <script>
