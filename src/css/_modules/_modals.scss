@@ -1,32 +1,46 @@
 // MODALS
 .modal {
   display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
   margin: 0;
-  padding: 0;
+  background-color: $white;
+  @include transform(translateX(100%));
+  @include transition(all, 0.2s, ease);
+}
+
+.modal.open {
+  @include transform(translateX(0%));
+  @include transition(all, 0.2s, ease);
 }
 
 .modal-content {
+  display: block;
+  position: relative;
   width: 100%;
-  max-width: 32rem;
-  margin: 0 auto;
-  padding: 4rem 0 2rem;
+  min-height: 100%;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 5rem 0 2rem;
 }
 
-.close-modal-icon {
+.modal-content .text, .modal-content .form-container {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.close-modal {
   display: block;
   position: absolute;
   top: 2rem;
   left: 2rem;
-  font-family: "LineAwesome"
-}
-
-.close-stuff-modal {
-  display: block;
-  opacity: 1;
-  @include transition(all, 0.2s, ease);
-}
-
-.close-stuff-modal.hide {
-  display: none;
-  opacity: 0;
+  font-family: "LineAwesome";
+  font-size: 1.5rem;
 }

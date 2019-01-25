@@ -882,7 +882,7 @@ label.form-control-header {
   font-size: 0.64rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #a0a0a0; }
+  color: #dd4a36; }
 
 label.form-control-header span {
   padding: 0 0.25rem 0 0; }
@@ -1383,7 +1383,8 @@ ul.slider li.switch:after {
 .button-group {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 auto; }
 
 .button-group.button-group--cells .button {
   display: flex;
@@ -1461,31 +1462,57 @@ ul.slider li.switch:after {
 */
 .modal {
   display: block;
-  margin: 0;
-  padding: 0; }
-
-.modal-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
   width: 100%;
-  max-width: 32rem;
-  margin: 0 auto;
-  padding: 4rem 0 2rem; }
-
-.close-modal-icon {
-  display: block;
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  font-family: "LineAwesome"; }
-
-.close-stuff-modal {
-  display: block;
-  opacity: 1;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
   -ms-transition: all 0.2s ease 0s;
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s; }
 
-.close-stuff-modal.hide {
-  display: none;
-  opacity: 0; }
+.modal.open {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
+
+.modal-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 5rem 0 2rem; }
+
+.modal-content .text, .modal-content .form-container {
+  max-width: 32rem;
+  margin: 0 auto; }
+
+.close-modal {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-family: "LineAwesome";
+  font-size: 1.5rem; }
