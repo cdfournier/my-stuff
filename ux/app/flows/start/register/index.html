@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Stuff | Settings</title>
+    <title>My Stuff | Create An Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="../../../../../../src/css/main.css">
+    <link rel="stylesheet" href="../../../../../src/css/main.css">
   </head>
   <body>
     <header>
@@ -19,26 +19,38 @@
       </div>
     </header>
     <main>
-      <section data-qa="settings">
+      <section data-qa="create-an-account">
         <div class="text">
-          <h1>Settings</h1>
-          <ul class="slider">
-            <li><a class="open-privacy">Privacy</a></li>
-            <li><a class="open-terms">Terms</a></li>
-          </ul>
+          <h1>Create An Account</h1>
+        </div>
+        <div class="form-container">
+          <form>
+            <fieldset>
+              <legend>Name</legend>
+              <label for="name">Name&#42;<input type="text" name="name" class="name" placeholder="Enter your name" autocomplete></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <fieldset>
+              <legend>Email Address</legend>
+              <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address" autocomplete></label>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <fieldset>
+              <legend>Password</legend>
+              <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password"></label>
+              <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+              <span class="error-message">This is where the error message goes</span>
+            </fieldset>
+            <div class="button-box row left" style="align-items: center;">
+              <a id="introduction" class="button" href="../../new-user/welcome/introduction/index.html"><span class="button-label">Create Account</span></a>
+              <span class="or">or</span>
+              <a id="cancel" class="button secondary" href="../../authentication/login/index.html"><span class="button-label">Log In</span></a>
+            </div>
+          </form>
+          <p><small>By creating an account you agree to our <a class="open-terms">Terms &amp; Conditions</a>.</small></p>
         </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="../../home/home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
-          <li><a href="../../stuff/stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
-          <li><a href="../../profile/profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
-          <li><a class="active"><span class="icon"><i class="la la-gear"></i></span>Settings</a></li>
-        </ul>
-      </nav>
-    </footer>
     <div class="modals">
       <div id="privacy-modal" class="modal privacy">
         <div class="modal-content">
