@@ -679,7 +679,7 @@ label.date span {
   width: 100%; }
 
 label.date span input {
-  width: 20%;
+  width: 24%;
   text-align: center; }
 
 label.date span input.purchase-year {
