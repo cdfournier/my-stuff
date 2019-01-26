@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#DD4A36;}
+	.st1{display:none;fill:#9EDADB;}
+	.st2{fill:#FFFFFF;}
+</style>
+<g id="icon_1_">
+	<rect id="background" class="st0" width="1024" height="1024"/>
+	<rect id="background_1_" class="st1" width="1024" height="1024"/>
+	<path id="cutout" class="st2" d="M1024,1024H0V0h1024V1024z M787,237H237h-25v25v100v25h25v375v25h25h500h25v-25V387h25v-25V262
+		v-25H787z M737,387H637H287v350h450V387z M762,287h-25H262v50h425h75V287z M612,512c0,13.8-11.2,25-25,25H437
+		c-13.8,0-25-11.2-25-25s11.2-25,25-25h150C600.8,487,612,498.2,612,512z"/>
+</g>
+<g id="mask">
+	<path class="st2" d="M225,1024H0V799C0,923.3,100.7,1024,225,1024z M225,0H0v225C0,100.7,100.7,0,225,0z M799,0
+		c124.3,0,225,100.7,225,225V0H799z M799,1024h225V799C1024,923.3,923.3,1024,799,1024z"/>
+</g>
+</svg>
