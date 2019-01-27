@@ -1,0 +1,31 @@
+// COLORS
+$black: #000000;
+$light-gray: #f8f9fc;
+$medium-gray: #d1d8df;
+$gray: #a0a0a0;
+$white: #ffffff;
+
+$cream: #eaeae8;
+$red: #f04e59;
+$blue: #003350;
+$green: #00ac39;
+
+$hot-pink: #e11073;
+$purple: #5752c8;
+
+$light-blue: #9edadb;
+$slate: #526470;
+$orange: #dd4a36;
+$pale-gray: #e8e8e8;
+
+
+// PINK/PURPLE COLOR BASE
+$color-one: #e11073;
+$color-two: #5752c8;
+
+
+// GRADIENTS
+@mixin vertical-gradient($direction, $color-stop-one, $color-stop-two) {
+  background: -webkit-linear-gradient(0deg, rgba(225,16,115,1) 0%, rgba(87,82,200,1) 75%);
+  background: linear-gradient(0deg, rgba(225,16,115,1) 0%, rgba(87,82,200,1) 75%);
+}
