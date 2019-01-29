@@ -166,7 +166,7 @@
   padding: 0 0 2rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  color: $slate;
+  color: $black;
   background-color: $white;
   @include transform(translateY(-100%));
   @include transition(all, 0.4s, ease-out);

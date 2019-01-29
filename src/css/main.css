@@ -1090,6 +1090,7 @@ ul.activities li span {
   border-radius: 0.25rem;
   font-size: 0.8rem;
   font-weight: 700;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #526470; }
 
@@ -1268,7 +1269,7 @@ ul.slider li.switch:after {
   padding: 0 0 2rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  color: #526470;
+  color: #000000;
   background-color: #ffffff;
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
