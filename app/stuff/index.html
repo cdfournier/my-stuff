@@ -35,7 +35,7 @@
           <h1>Your Current Stuff</h1>
         </div>
         <div class="form-display-control">
-          <input id="form-display" type="checkbox" name="form-display-control" class="accordian" checked>
+          <input id="form-display" type="checkbox" name="form-display-control" class="accordian">
           <label for="form-display" class="form-control-header"><span>Show/Hide Search Controls</span><i class="la la-angle-up"></i></label>
           <form>
             <fieldset>
@@ -58,16 +58,6 @@
               <span class="select-icon"><i class="la la-angle-down"></i></span>
               <span class="error-message">This is where the error message goes</span>
             </fieldset>
-<!--
-            <div class="button-box row">
-              <a class="button secondary button--previous"><span class="button-label"><span class="pre"><i class="la la-arrow-left"></i></span>Prev</span></a>
-              <a class="button secondary button--next"><span class="button-label">Next<span class="post"><i class="la la-arrow-right"></i></span></span></a>
-            </div>
-            <div class="button-group button-group--cells">
-              <a class="button is-selected">1</a>
-              <a class="button">2</a>
-            </div>
--->
           </form>
         </div>
         <div class="carousel no-padding">
@@ -291,27 +281,6 @@
         $('body').addClass('exit').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
         function() {
           window.location.href = '../add-stuff/index.html';
-        });
-      });
-
-      $('.exit-home').click(function() {
-        $('body').addClass('exit').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
-        function() {
-          window.location.href = '../home/index.html';
-        });
-      });
-
-      $('.exit-profile').click(function() {
-        $('body').addClass('exit').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
-        function() {
-          window.location.href = '../profile/index.html';
-        });
-      });
-
-      $('.exit-settings').click(function() {
-        $('body').addClass('exit').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
-        function() {
-          window.location.href = '../settings/index.html';
         });
       });
     </script>
