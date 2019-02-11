@@ -1,0 +1,41 @@
+// NOTIFICATIONS
+.notification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 150;
+  width: 100%;
+  padding: 1rem;
+  @include transition(all, 0.2s, ease-in-out);
+  @include transform(translateY(-100%));
+}
+
+.notification .details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.notification span.icon, .notification span.dismiss {font-size: 1.563rem;}
+
+.notification span.icon {padding: 0 0.25rem 0 0;}
+
+.notification span.dismiss {cursor: pointer;}
+
+.notification .message {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 4rem);
+}
+
+.notification.show {@include transform(translateY(0));}
+
+.notification.error {
+  color: $white;
+  background-color: $red;
+}
