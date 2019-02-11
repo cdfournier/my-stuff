@@ -1142,11 +1142,11 @@ ul.slider li.switch:after {
   -ms-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%); }
+  -webkit-transform: translateY(-100rem);
+  -moz-transform: translateY(-100rem);
+  -ms-transform: translateY(-100rem);
+  -o-transform: translateY(-100rem);
+  transform: translateY(-100rem); }
 
 .notification.show {
   -webkit-transform: translateY(0);

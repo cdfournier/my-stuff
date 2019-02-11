@@ -11,7 +11,7 @@
   width: 100%;
   padding: 1rem;
   @include transition(all, 0.2s, ease-in-out);
-  @include transform(translateY(-100%));
+  @include transform(translateY(-100rem));
 }
 
 .notification.show {@include transform(translateY(0));}
