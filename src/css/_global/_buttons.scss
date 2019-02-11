@@ -5,8 +5,8 @@
   justify-content: center;
   width: auto;
   max-width: 100%;
-  min-height: 2.75rem;
   max-height: 2.75rem;
+  min-height: 2.75rem;
   overflow: hidden;
   margin: 1rem 0.5rem 0;
   padding: 0 1.75rem;
@@ -29,8 +29,10 @@
 
 .button span.button-label {
   display: block;
-  overflow: hidden;
+  position: relative;
+  top: -1px;
   width: auto;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 

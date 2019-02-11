@@ -141,11 +141,19 @@
       </section>
       <section data-qa="notifications">
         <div class="notification error">
-          <span class="icon"><i class="la la-exclamation-circle"></i></span>
           <div class="message">
-            <span>This is where the error message goes</span>
+            <p>This is where the error message goes</p>
           </div>
           <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button"><span class="button-label">Yes</span></button>
+              <button class="button"><span class="button-label">No</span></button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
