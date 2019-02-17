@@ -9,30 +9,30 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-size: 1.953rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: capitalize;
 }
 
 h2, h3 {
-  font-size: 1.563rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: capitalize;
 }
 
 h3 {font-size: 1.25rem;}
 
-h1 + h2 {padding: 0.8rem 0;}
+h1 + h2 {padding: 0.875rem 0;}
 
 p {
-  padding: 0.8rem 0;
+  padding: 1rem 0;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-p:last-of-type {padding: 0.8rem 0 0;}
+p:last-of-type {padding: 1rem 0 0;}
 
-small {font-size: 0.8rem;}
+small {font-size: 0.875rem;}
 
 strong, em, b {
   font-style: normal;
@@ -42,27 +42,3 @@ strong, em, b {
 h1.center, h2.center, h3.center, p.center, strong.center, em.center, small.center {text-align: center;}
 
 h1.right, h2.right, h3.right, p.right, strong.right, em.right, small.right {text-align: right;}
-
-
-// LISTS
-ul, ol {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 0 1rem 1.5rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: left;
-}
-
-ul {list-style-type: disc;}
-
-ol {list-style-type: decimal;}
-
-ul li, ol li {
-  width: 100%;
-  padding: 0 0 1rem 0;
-}
-
-ul li:last-child, ol li:last-child {padding: 0;}

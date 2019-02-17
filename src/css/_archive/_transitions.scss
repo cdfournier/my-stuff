@@ -1,0 +1,5 @@
+// TRANSITIONS
+.exit {
+  @include transition(all, 0.2s, ease-out);
+  @include transform(translateY(-100%));
+}

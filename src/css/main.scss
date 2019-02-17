@@ -1,14 +1,17 @@
 @import "_global/base";
 @import "_global/typography";
-@import "_global/buttons";
 @import "_global/containers";
-@import "_global/header";
-@import "_global/footer";
-@import "_global/forms";
-@import "_global/lists";
-@import "_global/notifications";
-@import "_global/custom";
-@import "_global/transitions";
 
-@import "_modules/carousels";
-@import "_modules/modals";
+@import "_modules/buttons";
+@import "_modules/navigation";
+@import "_modules/indicators";
+@import "_modules/notifications";
+@import "_modules/lists";
+@import "_modules/forms";
+@import "_modules/authentication";
+
+@import "_pages/welcome";
+@import "_pages/home";
+@import "_pages/stuff";
+@import "_pages/profile";
+@import "_pages/settings";

@@ -1,0 +1,48 @@
+// FOOTER
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: $white;
+}
+
+
+// NAVIGATION
+footer nav {
+  width: 100%;
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  ul li {padding: 0;}
+  ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+    font-size: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: $orange;
+  }
+  ul li a span.icon {font-size: 2rem;}
+  ul li a.active {color: $slate;}
+}

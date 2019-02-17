@@ -1,5 +1,5 @@
 // MIXINS
-@mixin transition($property: all, $duration: 0.2s, $timing: ease-in-out, $delay: 0s) {
+@mixin transition($property: all, $duration: 0.325s, $timing: ease-in-out, $delay: 0s) {
   -webkit-transition: $property $duration $timing $delay;
   -moz-transition: $property $duration $timing $delay;
   -ms-transition: $property $duration $timing $delay;
@@ -26,7 +26,7 @@
   animation-delay: $delay;
 };
 
-@mixin animation-duration($duration: 0.2s) {
+@mixin animation-duration($duration: 0.325s) {
   -webkit-animation-duration: $duration;
   animation-duration: $duration;
 };

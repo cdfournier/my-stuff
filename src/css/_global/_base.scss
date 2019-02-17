@@ -1,6 +1,7 @@
 @import "mixins";
 @import "colors";
 
+// BASE
 html {
   width: 100%;
   min-width: 100%;
@@ -8,12 +9,14 @@ html {
   margin: 0 auto;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: calc(1rem + 6 * ((100vw - 32rem) / 680));
+  font-size: calc(1rem + 8 * ((100vw - 32rem) / 680));
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
   color: $black;
 }
+
+@media (min-width: 45.25rem) {html {font-size: calc(1rem + 4 * ((100vw - 32rem) / 680));}}
 
 body, .body {
   width: 100%;
@@ -42,22 +45,11 @@ body, .body {
   box-sizing: border-box;
 }
 
-::-moz-selection {
-  color: $white;
-  background: $orange;
-}
-
-::selection {
-  color: $white;
-  background: $orange;
-}
-
 a {
   font-weight: 700;
   text-decoration: none;
-  color: $orange;
   cursor: pointer;
-  @include transition(all, 0.2s, ease);
+  @include transition(all, 0.325s, ease);
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -66,8 +58,6 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
-
-a.slate {color: $slate;}
 
 img {
   width: 100%;

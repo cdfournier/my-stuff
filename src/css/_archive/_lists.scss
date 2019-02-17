@@ -1,0 +1,209 @@
+// SLIDER LISTS
+ul.slider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0 0;
+  list-style-type: none;
+}
+
+ul.slider.more-padding {padding: 2rem 0 0;}
+
+ul.slider li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+  padding: 0;
+  border-bottom: 1px solid $medium-gray;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+ul.slider li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  color: $slate;
+}
+
+ul.slider li span {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 2;
+  text-align: left;
+  color: $black;
+}
+
+ul.slider li:after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 74%;
+  font-family: "LineAwesome";
+  font-size: 1rem;
+  content: "\f112";
+}
+
+
+// SLIDER LISTS WITH ICONS
+ul.slider.icon li {
+  height: 4rem;
+  padding: 0 0 0 2.5rem;
+}
+
+ul.slider.icon li:before {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  font-family: "LineAwesome";
+  font-size: 2.2rem;
+}
+
+ul.slider.icon li:after {height: 100%;}
+
+ul.slider.icon li.photo:before {content: "\f1e8";}
+ul.slider.icon li.manual:before {content: "\f14e";}
+ul.slider.icon li.receipt:before {content: "\f1ec";}
+ul.slider.icon li.paypal:before {content: "\f175";}
+ul.slider.icon li.credit-card:before {content: "\f1aa";}
+ul.slider.icon li.bitcoin:before {content: "\f149";}
+
+
+// STUFF
+ul.stuff {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0 0;
+  list-style-type: none;
+}
+
+ul.stuff li {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+  padding: 0;
+  border-bottom: 1px solid $medium-gray;
+}
+
+ul.stuff li:after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 74%;
+  font-family: "LineAwesome";
+  font-size: 1rem;
+  content: "\f112";
+}
+
+ul.stuff li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  color: $slate;
+}
+
+ul.stuff li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: calc(100% - 2rem);
+  padding: 0;
+}
+
+ul.stuff li div.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 2;
+  color: $black;
+}
+
+ul.stuff li div.details {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $slate;
+}
+
+ul.stuff li div.details span.description {
+  display: block;
+  width: calc(100% - 2rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// ACTIVITIES
+ul.activities {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 2rem 0;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+ul.activities.more-padding {padding: 2rem 2rem 0;}
+
+ul.activities li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+ul.activities li span {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $slate;
+}
+
+
+// SWITCH LISTS
+ul.slider li label.toggle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $slate;
+}
+
+ul.slider li.switch:after {display: none;}

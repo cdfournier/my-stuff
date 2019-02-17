@@ -1,31 +1,104 @@
 // COLORS
 $black: #000000;
-$light-gray: #f8f9fc;
-$medium-gray: #d1d8df;
 $gray: #a0a0a0;
 $white: #ffffff;
-
-$cream: #eaeae8;
-$red: #f04e59;
-$blue: #003350;
-$green: #00ac39;
-
-$hot-pink: #e11073;
-$purple: #5752c8;
 
 $light-blue: #9edadb;
 $slate: #526470;
 $orange: #dd4a36;
 $pale-gray: #e8e8e8;
 
+$red: #f04e59;
+$green: #00ac39;
 
-// PINK/PURPLE COLOR BASE
-$color-one: #e11073;
-$color-two: #5752c8;
+$hot-pink: #e11073;
+$purple: #5752c8;
 
 
-// GRADIENTS
-@mixin vertical-gradient($direction, $color-stop-one, $color-stop-two) {
-  background: -webkit-linear-gradient(0deg, rgba(225,16,115,1) 0%, rgba(87,82,200,1) 75%);
-  background: linear-gradient(0deg, rgba(225,16,115,1) 0%, rgba(87,82,200,1) 75%);
+// COLOR USAGE
+$color-one: $purple;
+$color-two: $hot-pink;
+
+
+// SELECTION
+::-moz-selection {
+  color: $white;
+  background: $color-one;
 }
+
+::selection {
+  color: $white;
+  background: $color-one;
+}
+
+
+// TEXT LINKS
+a {color: $color-one;}
+
+a:hover, a:focus {color: $color-two;}
+
+
+// DEFAULT BUTTONS
+.button {
+  border: 1px solid $color-one;
+  color: $white;
+  background-color: $color-one;
+}
+
+.button:hover, .button:focus {
+  color: $color-one;
+  background-color: $white;
+}
+
+.button span.number {
+  color: $white;
+  background-color: $color-one;
+}
+
+.button:hover span.number, .button:focus span.number {
+  color: $color-one;
+  background-color: $white;
+}
+
+.button.secondary {
+  border: 1px solid $color-one;
+  color: $color-one;
+  background-color: $white;
+}
+
+.button.secondary:hover, .button.secondary:focus {
+  color: $white;
+  background-color: $color-one;
+}
+
+.button.secondary span.number {
+  color: $color-one;
+  background-color: $white;
+}
+
+.button.secondary:hover span.number, .button.secondary:focus span.number {
+  color: $white;
+  background-color: $color-one;
+}
+
+
+// FORM COLORS
+input:focus {border-color: $color-one;}
+
+input[type="checkbox"]:checked:not(:disabled) {
+  border-color: $color-one;
+  background-color: $color-one;
+}
+
+input.toggle[type="checkbox"] {background-color: $slate;}
+
+input.toggle[type="checkbox"]:checked {
+  border-color: transparent;
+  background-color: $green;
+}
+
+input.toggle[type="checkbox"]:checked:after {color: $green;}
+
+select:focus {border-color: $color-one;}
+
+.show-hide-password {color: $color-one;}

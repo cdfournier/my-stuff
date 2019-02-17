@@ -1,0 +1,123 @@
+// BUTTONS
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 100%;
+  max-height: 2.5rem;
+  min-height: 2.5rem;
+  overflow: hidden;
+  margin: 1rem 0.5rem 0;
+  padding: 0 1.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  @include transition(all, 0.325s, ease-in-out);
+}
+
+.button.hide {opacity: 0;}
+
+.button.show {opacity: 1;}
+
+.button span.button-label {
+  display: block;
+  position: relative;
+  top: 0;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button span.pre, .button span.post {display: inline-block;}
+
+.button span.pre {padding: 0 0.25rem 0 0;}
+
+.button span.post {padding: 0 0 0 0.25rem;}
+
+.button span.pre i.la, .button span.post i.la {
+  position: relative;
+  top: 0.1rem;
+  font-size: 1rem;
+}
+
+.button span.number,
+.button.secondary span.number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0 0 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+
+// ATTACHMENT BUTTON
+input[type="file"] {
+  position: absolute;
+  width: auto;
+  max-width: 9.5rem;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+// BUTTON BOX/ROW
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0 0;
+}
+
+.button-box.row {flex-direction: row;}
+
+.button-box.right {align-items: flex-end;}
+
+.button-box.right .button {margin: 1rem 0 0 1rem;}
+
+.button-box.left {align-items: flex-start;}
+
+.button-box.left .button {margin: 1rem 1rem 0 0;}
+
+.button-box.row.left {justify-content: flex-start;}
+
+.button-box.row.left .button {margin: 1rem 1rem 0 0;}
+
+.button-box.row.left .button:last-of-type {margin: 1rem 0 0 0;}
+
+.button-box.row.right {justify-content: flex-end;}
+
+.button-box.row.right .button {margin: 1rem 0 0 1rem;}
+
+.button-box.row.right .button:first-of-type {margin: 1rem 0 0 0;}
+
+
+// BUTTON BOX/ROW 'OR' SPAN
+.button-box.row span.or {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 2.75rem;
+  margin: 1rem 1rem 0 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
