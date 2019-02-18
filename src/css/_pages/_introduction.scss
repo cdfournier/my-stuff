@@ -1,0 +1,21 @@
+// INTRODUCTION
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 0 2rem;
+  color: $white;
+  background-color: $purple;
+}
+
+
+// INTRODUCTION CELLS
+.intro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}

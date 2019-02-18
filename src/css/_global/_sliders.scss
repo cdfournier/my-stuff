@@ -26,3 +26,7 @@
 // SIGN UP SLIDER
 .sign-up .slider.int {min-width: 200%;}
 .sign-up .slider.int.slide-two {@include transform(translateX(-50%));}
+
+
+// INTRODUCTION SLIDER
+.introduction .slider.int {min-width: 500%;}
