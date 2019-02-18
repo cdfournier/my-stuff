@@ -1,0 +1,28 @@
+// SLIDERS
+.slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.slider.ext {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider.int {
+  @include transition(all, 0.325s, ease);
+  @include transform(translateX(0%));
+}
+
+
+// SIGN IN SLIDER
+.sign-in .slider.int {min-width: 300%;}
+.sign-in .slider.int.slide-two {@include transform(translateX(-33.3%));}
+.sign-in .slider.int.slide-three {@include transform(translateX(-66.6%));}
+
+
+// SIGN UP SLIDER
+.sign-up .slider.int {min-width: 200%;}
+.sign-up .slider.int.slide-two {@include transform(translateX(-50%));}

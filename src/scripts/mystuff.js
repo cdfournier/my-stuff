@@ -12,6 +12,7 @@ var animationEnd = (function(el) {
       return animations[t];
     }
   }
+
 })(document.createElement('div'));
 
 
@@ -24,6 +25,18 @@ $(".show-hide-password").click(function() {
   } else {
     input.attr("type", "password");
   }
+});
+
+
+// NOTIFICATIONS
+$('.dismiss.error').click( function() {
+  $('.notification.error').removeClass('show');
+});
+$('.dismiss--yes').click( function() {
+  $('.notification.confirm').removeClass('show');
+});
+$('.dismiss--no').click( function() {
+  $('.notification.confirm').removeClass('show');
 });
 
 

@@ -1,0 +1,35 @@
+// SIGN UP
+.sign-up {width: 100%;}
+
+
+// SIGN UP SLIDER CELLS
+.register, .terms {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+.terms {
+  max-height: 0;
+  @include transition(max-height, 0.325s, ease);
+}
+
+.sign-up .slider.int.slide-two .terms {
+  max-height: 100%;
+  @include transition(max-height, 0.325s, ease);
+}
+
+.terms .text {padding: 5rem 2rem 0;}
+
+.terms .back {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  color: $color-one;
+}
+
+.terms .back:hover, .terms .back:focus {color: $color-two;}

@@ -123,6 +123,8 @@ input[type="file"] { position: absolute; width: auto; max-width: 9.5rem; overflo
 
 .xl { max-width: 56rem; }
 
+.xs, .sm, .md, .lg, .xl { margin: 0 auto; }
+
 main { display: flex; flex-direction: column; justify-content: center; min-height: calc(100vh - 3.5rem); margin: 0; padding: 0 0 2rem; }
 
 .text { display: block; position: relative; width: 100%; margin: 0; padding: 2rem 2rem 0; }
@@ -240,3 +242,81 @@ nav ul li a:hover, nav ul li a:focus { color: #e11073; }
 nav ul li a span.icon { font-size: 1.75rem; }
 
 nav ul li a.active { color: #a0a0a0; }
+
+.indicator { display: flex; flex-direction: column; width: 100%; max-width: 16rem; margin: 0 auto; padding: 1rem 2rem 0; }
+
+.indicator-gauge { display: block; width: 100%; height: 2px; background-color: #ffffff; }
+
+.indicator-gauge > span { display: block; width: 0%; height: inherit; -webkit-transition: all 5s ease 0s; -moz-transition: all 5s ease 0s; -ms-transition: all 5s ease 0s; -o-transition: all 5s ease 0s; transition: all 5s ease 0s; }
+
+.indicator-gauge > span.loaded { width: 100%; }
+
+.loading .indicator .indicator-gauge > span { background-color: #5752c8; }
+
+.notification { display: flex; flex-direction: row; align-items: center; justify-content: space-between; position: fixed; top: 0; left: 0; z-index: 150; width: 100%; padding: 1rem; -webkit-transition: all 0.5s ease-in-out 0s; -moz-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; transition: all 0.5s ease-in-out 0s; -webkit-transform: translateY(-100rem); -moz-transform: translateY(-100rem); -ms-transform: translateY(-100rem); -o-transform: translateY(-100rem); transform: translateY(-100rem); }
+
+.notification.show { -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+
+.notification span.dismiss { font-size: 1.75rem; cursor: pointer; }
+
+.notification.error, .notification.confirm { color: #ffffff; background-color: #f04e59; }
+
+.notification.error .message { display: flex; flex-direction: column; width: calc(100% - 2rem); }
+
+.notification.confirm .message { display: flex; flex-direction: column; width: calc(100%); text-align: center; }
+
+.notification .message p { padding: 0; }
+
+.action { display: flex; flex-direction: row; justify-content: center; width: 100%; padding: 1rem 0 0; }
+
+.action button.button { height: 2.25rem; max-height: 2.25rem; min-height: 2.25rem; margin: 0 0.5rem; border-color: #ffffff; line-height: 2.25rem; color: #f04e59; background-color: #ffffff; }
+
+.action button.button:hover, .action button.button:focus { color: #ffffff; background-color: #f04e59; }
+
+.slider { display: flex; flex-direction: row; flex-wrap: nowrap; margin: 0; }
+
+.slider.ext { max-width: 100%; overflow: hidden; }
+
+.slider.int { -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; -webkit-transform: translateX(0%); -moz-transform: translateX(0%); -ms-transform: translateX(0%); -o-transform: translateX(0%); transform: translateX(0%); }
+
+.sign-in .slider.int { min-width: 300%; }
+
+.sign-in .slider.int.slide-two { -webkit-transform: translateX(-33.3%); -moz-transform: translateX(-33.3%); -ms-transform: translateX(-33.3%); -o-transform: translateX(-33.3%); transform: translateX(-33.3%); }
+
+.sign-in .slider.int.slide-three { -webkit-transform: translateX(-66.6%); -moz-transform: translateX(-66.6%); -ms-transform: translateX(-66.6%); -o-transform: translateX(-66.6%); transform: translateX(-66.6%); }
+
+.sign-up .slider.int { min-width: 200%; }
+
+.sign-up .slider.int.slide-two { -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); }
+
+.loading { display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; max-width: 100%; min-width: 100%; height: 100vh; max-height: 100vh; min-height: 100vh; overflow: hidden; margin: 0; padding: 0; background-color: #5752c8; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
+
+.loading .logo { width: 50%; max-width: 16rem; }
+
+.loading .logo .logo-color { fill: #ffffff; }
+
+.loading.loaded { -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); }
+
+.welcome { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 0 auto; padding: 0; }
+
+.welcome h1 { display: flex; flex-direction: column; font-size: 1rem; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; }
+
+.welcome h1 svg { width: 12rem; margin: 1rem auto 0; fill: #5752c8; }
+
+.sign-in { width: 100%; }
+
+.authentication, .forgot-password, .password-email-sent { display: flex; flex-direction: column; position: relative; width: 100%; height: fit-content; }
+
+.sign-up { width: 100%; }
+
+.register, .terms { display: flex; flex-direction: column; position: relative; width: 100%; height: fit-content; }
+
+.terms { max-height: 0; -webkit-transition: max-height 0.325s ease 0s; -moz-transition: max-height 0.325s ease 0s; -ms-transition: max-height 0.325s ease 0s; -o-transition: max-height 0.325s ease 0s; transition: max-height 0.325s ease 0s; }
+
+.sign-up .slider.int.slide-two .terms { max-height: 100%; -webkit-transition: max-height 0.325s ease 0s; -moz-transition: max-height 0.325s ease 0s; -ms-transition: max-height 0.325s ease 0s; -o-transition: max-height 0.325s ease 0s; transition: max-height 0.325s ease 0s; }
+
+.terms .text { padding: 5rem 2rem 0; }
+
+.terms .back { display: block; position: absolute; top: 2rem; left: 2rem; font-size: 1.5rem; color: #5752c8; }
+
+.terms .back:hover, .terms .back:focus { color: #e11073; }
