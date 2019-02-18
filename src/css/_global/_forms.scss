@@ -96,7 +96,7 @@ input:focus {border-color: $color-one;}
 input:focus::placeholder {opacity: 0.5;}
 
 input[type="password"],
-input[type="search"] {padding: 1rem 3rem 1rem 0;}
+input[type="search"] {padding: 0 3rem 0 0;}
 
 
 // CHECKBOX

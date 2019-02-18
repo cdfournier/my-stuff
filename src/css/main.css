@@ -161,7 +161,7 @@ input:focus { border-color: #5752c8; }
 
 input:focus::placeholder { opacity: 0.5; }
 
-input[type="password"], input[type="search"] { padding: 1rem 3rem 1rem 0; }
+input[type="password"], input[type="search"] { padding: 0 3rem 0 0; }
 
 label.checkbox { flex-direction: row; align-items: center; justify-content: space-between; min-height: 1.5rem; padding-left: 2rem; }
 
@@ -311,7 +311,9 @@ nav ul li a.active { color: #a0a0a0; }
 
 .register, .terms { display: flex; flex-direction: column; position: relative; width: 100%; height: fit-content; }
 
-.terms { max-height: 0; -webkit-transition: max-height 0.325s ease 0s; -moz-transition: max-height 0.325s ease 0s; -ms-transition: max-height 0.325s ease 0s; -o-transition: max-height 0.325s ease 0s; transition: max-height 0.325s ease 0s; }
+.register { justify-content: center; min-height: 100vh; padding: 0 0 2rem; }
+
+.terms { max-height: 100vh; -webkit-transition: max-height 0.325s ease 0s; -moz-transition: max-height 0.325s ease 0s; -ms-transition: max-height 0.325s ease 0s; -o-transition: max-height 0.325s ease 0s; transition: max-height 0.325s ease 0s; }
 
 .sign-up .slider.int.slide-two .terms { max-height: 100%; -webkit-transition: max-height 0.325s ease 0s; -moz-transition: max-height 0.325s ease 0s; -ms-transition: max-height 0.325s ease 0s; -o-transition: max-height 0.325s ease 0s; transition: max-height 0.325s ease 0s; }
 

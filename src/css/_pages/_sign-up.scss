@@ -11,8 +11,14 @@
   height: fit-content;
 }
 
+.register {
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 0 2rem;
+}
+
 .terms {
-  max-height: 0;
+  max-height: 100vh;
   @include transition(max-height, 0.325s, ease);
 }
 
