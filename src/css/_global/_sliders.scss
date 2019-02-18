@@ -17,6 +17,34 @@
 }
 
 
+// SLIDER DOTS
+.slider-dots {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider-dots ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  list-style-type: none;
+}
+
+.slider-dots ul li {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 1rem 0 0;
+  border: 2px solid $white;
+  border-radius: 100%;
+}
+
+
 // SIGN IN SLIDER
 .sign-in .slider.int {min-width: 300%;}
 .sign-in .slider.int.slide-two {@include transform(translateX(-33.3%));}
