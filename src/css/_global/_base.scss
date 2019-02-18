@@ -16,7 +16,7 @@ html {
   color: $black;
 }
 
-@media (min-width: 45.25rem) {html {font-size: calc(1rem + 4 * ((100vw - 32rem) / 680));}}
+@media (min-width: 46rem) {html {font-size: calc(1rem + 4 * ((100vw - 32rem) / 680));}}
 
 body, .body {
   width: 100%;

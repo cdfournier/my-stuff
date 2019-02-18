@@ -1,18 +1,13 @@
 // COLORS
+$purple: #5752c8;
+$hot-pink: #e11073;
+
 $black: #000000;
 $gray: #a0a0a0;
 $white: #ffffff;
 
-$light-blue: #9edadb;
-$slate: #526470;
-$orange: #dd4a36;
-$pale-gray: #e8e8e8;
-
-$red: #f04e59;
-$green: #00ac39;
-
-$hot-pink: #e11073;
-$purple: #5752c8;
+$error: #f04e59;
+$valid: #00ac39;
 
 
 // COLOR USAGE
@@ -34,71 +29,4 @@ $color-two: $hot-pink;
 
 // TEXT LINKS
 a {color: $color-one;}
-
 a:hover, a:focus {color: $color-two;}
-
-
-// DEFAULT BUTTONS
-.button {
-  border: 1px solid $color-one;
-  color: $white;
-  background-color: $color-one;
-}
-
-.button:hover, .button:focus {
-  color: $color-one;
-  background-color: $white;
-}
-
-.button span.number {
-  color: $white;
-  background-color: $color-one;
-}
-
-.button:hover span.number, .button:focus span.number {
-  color: $color-one;
-  background-color: $white;
-}
-
-.button.secondary {
-  border: 1px solid $color-one;
-  color: $color-one;
-  background-color: $white;
-}
-
-.button.secondary:hover, .button.secondary:focus {
-  color: $white;
-  background-color: $color-one;
-}
-
-.button.secondary span.number {
-  color: $color-one;
-  background-color: $white;
-}
-
-.button.secondary:hover span.number, .button.secondary:focus span.number {
-  color: $white;
-  background-color: $color-one;
-}
-
-
-// FORM COLORS
-input:focus {border-color: $color-one;}
-
-input[type="checkbox"]:checked:not(:disabled) {
-  border-color: $color-one;
-  background-color: $color-one;
-}
-
-input.toggle[type="checkbox"] {background-color: $slate;}
-
-input.toggle[type="checkbox"]:checked {
-  border-color: transparent;
-  background-color: $green;
-}
-
-input.toggle[type="checkbox"]:checked:after {color: $green;}
-
-select:focus {border-color: $color-one;}
-
-.show-hide-password {color: $color-one;}

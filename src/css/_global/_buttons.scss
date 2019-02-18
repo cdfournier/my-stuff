@@ -75,6 +75,52 @@ input[type="file"] {
 }
 
 
+// PRIMARY BUTTON COLOR
+.button {
+  border: 1px solid $color-one;
+  color: $white;
+  background-color: $color-one;
+}
+
+.button:hover, .button:focus {
+  color: $color-one;
+  background-color: $white;
+}
+
+.button span.number {
+  color: $color-one;
+  background-color: $white;
+}
+
+.button:hover span.number, .button:focus span.number {
+  color: $white;
+  background-color: $color-one;
+}
+
+
+// SECONDARY BUTTON COLOR
+.button.secondary {
+  border: 1px solid $color-one;
+  color: $color-one;
+  background-color: $white;
+}
+
+.button.secondary:hover, .button.secondary:focus {
+  color: $white;
+  background-color: $color-one;
+}
+
+.button.secondary span.number {
+  color: $white;
+  background-color: $color-one;
+}
+
+.button.secondary:hover span.number, .button.secondary:focus span.number {
+  color: $color-one;
+  background-color: $white;
+}
+
+
 // BUTTON BOX/ROW
 .button-box {
   display: flex;
@@ -109,15 +155,3 @@ input[type="file"] {
 .button-box.row.right .button {margin: 1rem 0 0 1rem;}
 
 .button-box.row.right .button:first-of-type {margin: 1rem 0 0 0;}
-
-
-// BUTTON BOX/ROW 'OR' SPAN
-.button-box.row span.or {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 2.75rem;
-  margin: 1rem 1rem 0 0;
-  font-size: 0.875rem;
-  font-weight: 500;
-}

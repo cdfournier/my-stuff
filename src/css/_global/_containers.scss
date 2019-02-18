@@ -1,12 +1,8 @@
 // MAX-WIDTHS
 .xs {max-width: 16rem;}
-
 .sm {max-width: 24rem;}
-
 .md {max-width: 32rem;}
-
 .lg {max-width: 40rem;}
-
 .xl {max-width: 56rem;}
 
 
@@ -15,7 +11,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 3.5rem);
   margin: 0;
   padding: 0 0 2rem;
 }

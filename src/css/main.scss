@@ -1,17 +1,6 @@
 @import "_global/base";
 @import "_global/typography";
+@import "_global/buttons";
 @import "_global/containers";
-
-@import "_modules/buttons";
-@import "_modules/navigation";
-@import "_modules/indicators";
-@import "_modules/notifications";
-@import "_modules/lists";
-@import "_modules/forms";
-@import "_modules/authentication";
-
-@import "_pages/welcome";
-@import "_pages/home";
-@import "_pages/stuff";
-@import "_pages/profile";
-@import "_pages/settings";
+@import "_global/forms";
+@import "_global/navigation";

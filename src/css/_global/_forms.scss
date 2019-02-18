@@ -91,6 +91,8 @@ input::placeholder {
   @include transition(all, 0.125s, ease);
 }
 
+input:focus {border-color: $color-one;}
+
 input:focus::placeholder {opacity: 0.5;}
 
 input[type="password"],
@@ -137,6 +139,11 @@ input[type="checkbox"]:checked:before {
   content: '\f17b';
 }
 
+input[type="checkbox"]:checked:not(:disabled) {
+  border-color: $color-one;
+  background-color: $color-one;
+}
+
 
 // SWITCHES
 input.toggle[type="checkbox"] {
@@ -156,6 +163,7 @@ input.toggle[type="checkbox"] {
   padding: 0.1875rem;
   border-color: transparent;
   border-radius: 2rem;
+  background-color: $gray;
   @include transition(all, 0.325s, ease-in-out);
 }
 
@@ -180,8 +188,14 @@ input.toggle[type="checkbox"]:after {
   @include transition(all, 0.325s, ease-in-out);
 }
 
+input.toggle[type="checkbox"]:checked {
+  border-color: transparent;
+  background-color: $color-one;
+}
+
 input.toggle[type="checkbox"]:checked:after {
   left: calc(100% - 1.25rem);
+  color: $color-one;
   content: "\f17b";
 }
 
@@ -268,7 +282,10 @@ select:disabled {
 
 select:disabled + .select-icon {color: $gray;}
 
-select:focus {outline: none;}
+select:focus {
+  border-color: $color-one;
+  outline: none;
+}
 
 
 // SEARCH
@@ -313,6 +330,7 @@ span.forgot-password-prompt {
   width: auto;
   height: calc(100% - 0.925rem);
   font-size: 1.5rem;
+  color: $color-one;
   cursor: pointer;
   @include transition(all, 0.25s, ease);
 }
@@ -326,7 +344,7 @@ span.error-message {
   padding: 0.75rem 0 0;
   font-size: 0.875rem;
   font-weight: 700;
-  color: $red;
+  color: $error;
   opacity: 0;
   @include transition(all, 0.325s, ease-in-out);
 }
@@ -334,12 +352,12 @@ span.error-message {
 fieldset.invalid label,
 fieldset.invalid input,
 fieldset.invalid input::placeholder,
-fieldset.invalid select {color: $red;}
+fieldset.invalid select {color: $error;}
 
 fieldset.invalid input,
-fieldset.invalid select {border-color: $red;}
+fieldset.invalid select {border-color: $error;}
 
-fieldset.invalid .show-hide-password {color: $red;}
+fieldset.invalid .show-hide-password {color: $error;}
 
 fieldset.invalid span.error-message {opacity: 1;}
 
@@ -352,9 +370,9 @@ span.is-valid {
   width: 1.5rem;
   height: 1.5rem;
   margin: 0;
-  border: 1px solid $green;
+  border: 1px solid $valid;
   border-radius: 10rem;
-  background-color: $green;
+  background-color: $valid;
   opacity: 0;
   cursor: pointer;
   @include appearance(none);
