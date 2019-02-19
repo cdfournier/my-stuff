@@ -21,7 +21,8 @@
 .slider-dots {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  right: 0;
+  width: auto;
 }
 
 .slider-dots ul {
@@ -60,3 +61,20 @@
 
 // INTRODUCTION SLIDER
 .introduction .slider.int {min-width: 500%;}
+.introduction .slider.int.slide-two {@include transform(translateX(-20%));}
+.introduction .slider.int.slide-three {@include transform(translateX(-40%));}
+.introduction .slider.int.slide-four {@include transform(translateX(-60%));}
+.introduction .slider.int.slide-five {@include transform(translateX(-80%));}
+
+
+// INTRODUCTION SLIDER DOTS
+.slider-dots.dots-two ul li {border: 2px solid $color-one;}
+.slider-dots.dots-three ul li {border: 2px solid $white;}
+.slider-dots.dots-four ul li {border: 2px solid $color-one;}
+.slider-dots.dots-five ul li {border: 2px solid $white;}
+
+.slider-dots ul li.slider-dot.one.show {background-color: $white;}
+.slider-dots ul li.slider-dot.two.show {background-color: $color-one;}
+.slider-dots ul li.slider-dot.three.show {background-color: $white;}
+.slider-dots ul li.slider-dot.four.show {background-color: $color-one;}
+.slider-dots ul li.slider-dot.five.show {background-color: $white;}
