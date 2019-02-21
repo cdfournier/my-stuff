@@ -8,6 +8,20 @@
   padding: 0;
 }
 
+.introduction .text.skip {
+  position: absolute;
+  top: 0;
+}
+
+.introduction .text.skip a {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-one;
+}
+
+.introduction .text.skip a:hover, .introduction .text.skip a:focus {color: $color-two;}
+
 
 // INTRODUCTION SLIDES
 .intro {
@@ -21,20 +35,6 @@
   padding: 0 0 2rem;
   @include transition(all, 0.5s, ease);
 }
-
-.intro .text.skip {
-  position: absolute;
-  top: 0;
-}
-
-.intro .text.skip a {
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: $color-one;
-}
-
-.intro .text.skip a:hover, .intro .text.skip a:focus {color: $color-two;}
 
 .intro .text.next {
   position: absolute;
@@ -52,32 +52,3 @@
 }
 
 .intro .text.next a:hover, .intro .text.next a:focus {color: $color-two;}
-
-/*
-.intro.one {
-  color: $white;
-  background-color: $color-one;
-}
-
-.intro.one .text.skip a, .intro.one .text.next a {color: $white;}
-.intro.one .text.skip a:hover, .intro.one .text.skip a:focus,
-.intro.one .text.next a:hover, .intro.one .text.next a:focus {color: $color-two;}
-
-.intro.two {
-  color: $black;
-  background-color: $white;
-}
-
-.intro.two .text.skip a, .intro.two .text.next a {color: $color-one;}
-.intro.two .text.skip a:hover, .intro.two .text.skip a:focus,
-.intro.two .text.next a:hover, .intro.two .text.next a:focus {color: $color-two;}
-
-.intro.three {
-  color: $white;
-  background-color: $color-two;
-}
-
-.intro.three .text.skip a, .intro.three .text.next a {color: $white;}
-.intro.three .text.skip a:hover, .intro.three .text.skip a:focus,
-.intro.three .text.next a:hover, .intro.three .text.next a:focus {color: $color-one;}
-*/
