@@ -41,7 +41,7 @@
   width: 0.75rem;
   height: 0.75rem;
   margin: 0 0 0 1rem;
-  border: 2px solid $white;
+  border: 2px solid $color-one;
   border-radius: 100%;
 }
 
@@ -68,10 +68,12 @@
 
 
 // INTRODUCTION SLIDER DOTS
+/*
 .slider-dots.dots-two ul li {border: 2px solid $color-one;}
 .slider-dots.dots-three ul li {border: 2px solid $white;}
 .slider-dots.dots-four ul li {border: 2px solid $color-one;}
 .slider-dots.dots-five ul li {border: 2px solid $white;}
+*/
 
 .slider-dots ul li.slider-dot.one.show {background-color: $white;}
 .slider-dots ul li.slider-dot.two.show {background-color: $color-one;}

@@ -31,7 +31,10 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: $color-one;
 }
+
+.intro .text.skip a:hover, .intro .text.skip a:focus {color: $color-two;}
 
 .intro .text.next {
   position: absolute;
@@ -45,8 +48,12 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: $color-one;
 }
 
+.intro .text.next a:hover, .intro .text.next a:focus {color: $color-two;}
+
+/*
 .intro.one {
   color: $white;
   background-color: $color-one;
@@ -73,3 +80,4 @@
 .intro.three .text.skip a, .intro.three .text.next a {color: $white;}
 .intro.three .text.skip a:hover, .intro.three .text.skip a:focus,
 .intro.three .text.next a:hover, .intro.three .text.next a:focus {color: $color-one;}
+*/
