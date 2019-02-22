@@ -303,15 +303,15 @@ nav ul li a.active { color: #a0a0a0; }
 
 .introduction .slider.int { min-width: 600%; }
 
-.introduction .slider.int.slide-two { -webkit-transform: translateX(-16.6%); -moz-transform: translateX(-16.6%); -ms-transform: translateX(-16.6%); -o-transform: translateX(-16.6%); transform: translateX(-16.6%); }
+.introduction .slider.int.slide-two { -webkit-transform: translateX(-16.7%); -moz-transform: translateX(-16.7%); -ms-transform: translateX(-16.7%); -o-transform: translateX(-16.7%); transform: translateX(-16.7%); }
 
-.introduction .slider.int.slide-three { -webkit-transform: translateX(-33.2%); -moz-transform: translateX(-33.2%); -ms-transform: translateX(-33.2%); -o-transform: translateX(-33.2%); transform: translateX(-33.2%); }
+.introduction .slider.int.slide-three { -webkit-transform: translateX(-33.4%); -moz-transform: translateX(-33.4%); -ms-transform: translateX(-33.4%); -o-transform: translateX(-33.4%); transform: translateX(-33.4%); }
 
-.introduction .slider.int.slide-four { -webkit-transform: translateX(-49.8%); -moz-transform: translateX(-49.8%); -ms-transform: translateX(-49.8%); -o-transform: translateX(-49.8%); transform: translateX(-49.8%); }
+.introduction .slider.int.slide-four { -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); }
 
-.introduction .slider.int.slide-five { -webkit-transform: translateX(-66.4%); -moz-transform: translateX(-66.4%); -ms-transform: translateX(-66.4%); -o-transform: translateX(-66.4%); transform: translateX(-66.4%); }
+.introduction .slider.int.slide-five { -webkit-transform: translateX(-66.66%); -moz-transform: translateX(-66.66%); -ms-transform: translateX(-66.66%); -o-transform: translateX(-66.66%); transform: translateX(-66.66%); }
 
-.introduction .slider.int.slide-six { -webkit-transform: translateX(-83%); -moz-transform: translateX(-83%); -ms-transform: translateX(-83%); -o-transform: translateX(-83%); transform: translateX(-83%); }
+.introduction .slider.int.slide-six { -webkit-transform: translateX(-83.35%); -moz-transform: translateX(-83.35%); -ms-transform: translateX(-83.35%); -o-transform: translateX(-83.35%); transform: translateX(-83.35%); }
 
 .slider-dots ul li.slider-dot.one.show { background-color: #5752c8; }
 
