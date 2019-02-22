@@ -18,9 +18,12 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $color-one;
+  @include transition(all, 0.325s, ease);
 }
 
 .introduction .text.skip a:hover, .introduction .text.skip a:focus {color: $color-two;}
+
+.introduction .text.skip a.hidden {opacity: 0;}
 
 
 // INTRODUCTION SLIDES
@@ -52,3 +55,12 @@
 }
 
 .intro .text.next a:hover, .intro .text.next a:focus {color: $color-two;}
+
+
+// INTRODUCTION FIGURES
+.intro figure {
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+}

@@ -30,10 +30,11 @@
           </div>
         </div>
       </section>
-      <section data-qa="introduction" class="introduction">
+      <section data-qa="introduction" class="introduction md">
         <div class="slider ext">
           <div class="slider int">
             <div class="intro one">
+              <figure class="graphic"><img src="../../src/images/intro-b-min.png" alt="Vintage Camera"></figure>
               <div class="text">
                 <h1>Welcome to My Stuff</h1>
                 <p>No one expects a catastrophe. It's not something we think about until it happens. Some things can't be replaced after a disaster. For everything else, there's <em>My Stuff</em>.</p>
@@ -41,6 +42,7 @@
               <div class="text next animated fadeInLeft delay-1s"><a class="slider--two">Next</a></div>
             </div>
             <div class="intro two">
+              <figure class="graphic"><img src="../../src/images/intro-c-min.png" alt="Custom Cabinet"></figure>
               <div class="text">
                 <h1>How Does It Work?</h1>
                 <p><em>My Stuff</em> helps you create a master list of all of your valuable possessions so you'll be prepared to deal with property loss in the event of a catastrophe.</p>
@@ -48,6 +50,7 @@
               <div class="text next"><a class="slider--three">Next</a></div>
             </div>
             <div class="intro three">
+              <figure class="graphic"><img src="../../src/images/intro-e-min.png" alt="Baby Grand Piano"></figure>
               <div class="text">
                 <h1>All The Details</h1>
                 <p><em>My Stuff</em> keeps track of all of your stuff's details: descriptions, value, manuals, receipts, and more.</p>
@@ -55,6 +58,7 @@
               <div class="text next"><a class="slider--four">Next</a></div>
             </div>
             <div class="intro four">
+              <figure class="graphic"><img src="../../src/images/intro-f-min.png" alt="Record Collection"></figure>
               <div class="text">
                 <h1>Organized Your Way</h1>
                 <p>Keep your stuff organized any way you like. You can group stuff by room, by the type of stuff you have, or any way you like.</p>
@@ -62,9 +66,13 @@
               <div class="text next"><a class="slider--five">Next</a></div>
             </div>
             <div class="intro five">
+              <figure class="graphic"><img src="../../src/images/intro-g-min.png" alt="Vintage Pocket Watch"></figure>
               <div class="text">
                 <h1>Get Paid</h1>
-                <p>When the time comes, you can use <em>My Stuff</em> to send a detailed report of your loss to your insurance carrier. You and your family will get your life back to normal more quickly.</p>
+                <p>When the time comes, you can use <em>My Stuff</em> to send a detailed report of your loss to your insurance carrier.&#42; You and your family will get your life back to normal more quickly.</p>
+              </div>
+              <div class="text">
+                <small>&#42;Some restrictions apply. Additional fees required.</small>
               </div>
               <div class="text next"><a class="slider--six">Next</a></div>
             </div>
@@ -78,6 +86,7 @@
               </div>
             </div>
           </div>
+<!--
           <div class="slider-dots">
             <ul class="animated fadeInRight delay-1s">
               <li class="slider-dot one show"></li>
@@ -88,8 +97,9 @@
               <li class="slider-dot six"></li>
             </ul>
           </div>
+-->
         </div>
-        <div class="text right skip animated fadeInDown delay-1s"><a href="../add-stuff/index.html">Skip</a></div>
+        <div class="text right skip md animated fadeInDown delay-1s"><a href="../add-stuff/index.html">Skip</a></div>
       </section>
     </main>
     <!-- scripts -->
@@ -99,6 +109,7 @@
     <script>
       $('.slider--two').click(function() {
         $('.slider.int').addClass('slide-two');
+        $('.intro.two figure').addClass('animated fadeInRight');
         $('.slider-dot.one').removeClass('show');
         $('.slider-dot.two').addClass('show');
         $('.slider-dots').addClass('dots-two');
@@ -106,6 +117,7 @@
 
       $('.slider--three').click(function() {
         $('.slider.int').addClass('slide-three');
+        $('.intro.three figure').addClass('animated fadeInRight');
         $('.slider-dot.two').removeClass('show');
         $('.slider-dot.three').addClass('show');
         $('.slider-dots').addClass('dots-three');
@@ -113,6 +125,7 @@
 
       $('.slider--four').click(function() {
         $('.slider.int').addClass('slide-four');
+        $('.intro.four figure').addClass('animated fadeInRight');
         $('.slider-dot.three').removeClass('show');
         $('.slider-dot.four').addClass('show');
         $('.slider-dots').addClass('dots-four');
@@ -120,6 +133,7 @@
 
       $('.slider--five').click(function() {
         $('.slider.int').addClass('slide-five');
+        $('.intro.five figure').addClass('animated fadeInRight');
         $('.slider-dot.four').removeClass('show');
         $('.slider-dot.five').addClass('show');
         $('.slider-dots').addClass('dots-five');
@@ -127,10 +141,12 @@
 
       $('.slider--six').click(function() {
         $('.slider.int').addClass('slide-six');
+        $('.intro.six figure').addClass('animated fadeInRight');
         $('.slider-dot.five').removeClass('show');
         $('.slider-dot.six').addClass('show');
-        $('.slider-dots').addClass('dots-six');
+        $('.slider-dots').addClass('hidden');
         $('.intro.six .button').addClass('animated fadeInRight');
+        $('.introduction .text.skip a').addClass('hidden');
       });
     </script>
   </body>

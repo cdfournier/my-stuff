@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  position: relative;
   margin: 0;
 }
 
@@ -19,11 +20,14 @@
 
 // SLIDER DOTS
 .slider-dots {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   width: auto;
+  @include transition(all, 0.325s, ease);
 }
+
+.slider-dots.hidden {opacity: 0;}
 
 .slider-dots ul {
   display: flex;
@@ -67,8 +71,6 @@
 .introduction .slider.int.slide-five {@include transform(translateX(-66.4%));}
 .introduction .slider.int.slide-six {@include transform(translateX(-83%));}
 
-
-.introduction .slider-dots {background-color: $white;}
 .slider-dots ul li.slider-dot.one.show {background-color: $color-one;}
 .slider-dots ul li.slider-dot.two.show {background-color: $color-one;}
 .slider-dots ul li.slider-dot.three.show {background-color: $color-one;}
