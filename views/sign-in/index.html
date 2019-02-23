@@ -33,7 +33,7 @@
       <section data-qa="sign-in" class="sign-in md">
         <div class="slider ext">
           <div class="slider int">
-            <div class="authentication">
+            <div class="slide one">
               <div class="text">
                 <h1>Welcome</h1>
                 <p>Please sign in to continue.</p>
@@ -54,7 +54,7 @@
                   <fieldset>
                     <legend>Remember Me</legend>
                     <label for="remember" class="checkbox">Remember Me<input type="checkbox" name="remember" id="remember"></label>
-                    <span class="forgot-password-prompt"><a class="slider--forgot">Forgot Password?</a></span>
+                    <span class="forgot-password-prompt"><a class="slide--two">Forgot Password?</a></span>
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
@@ -64,7 +64,7 @@
                 <p><small>Don't have an account? <a href="../sign-up/index.html">Create one now</a>.</small></p>
               </div>
             </div>
-            <div class="forgot-password">
+            <div class="slide two">
               <div class="text">
                 <h1>Forgot Your Password?</h1>
                 <p>Enter your email address here, and we'll send you a link to reset your password.</p>
@@ -77,13 +77,13 @@
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
-                    <a class="button slider--send"><span class="button-label">Send Email</span></a>
-                    <a class="button secondary slider--cancel"><span class="button-label">Cancel</span></a>
+                    <a class="button slide--three"><span class="button-label">Send Email</span></a>
+                    <a class="button secondary slide--one"><span class="button-label">Cancel</span></a>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="password-email-sent">
+            <div class="slide three">
               <div class="text">
                 <h1>Password Reset Email Sent</h1>
                 <p>Please check your email inbox. We've sent you a special link that you can use to reset your password.</p>
@@ -98,13 +98,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="../../src/scripts/mystuff.js"></script>
     <script>
-      $('.slider--forgot').click(function() {
+      $('.slide--two').click(function() {
+        $('.slider.int').removeClass('slide-one');
         $('.slider.int').addClass('slide-two');
       });
-      $('.slider--cancel').click(function() {
+      $('.slide--one').click(function() {
         $('.slider.int').removeClass('slide-two');
+        $('.slider.int').addClass('slide-one');
       });
-      $('.slider--send').click(function() {
+      $('.slider--three').click(function() {
         $('.slider.int').removeClass('slide-two');
         $('.slider.int').addClass('slide-three');
       });

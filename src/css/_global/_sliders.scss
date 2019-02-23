@@ -77,3 +77,10 @@
 .slider-dots ul li.slider-dot.four.show {background-color: $color-one;}
 .slider-dots ul li.slider-dot.five.show {background-color: $color-one;}
 .slider-dots ul li.slider-dot.six.show {background-color: $color-one;}
+
+
+// ADD STUFF SLIDER
+.add-stuff .slider.int {min-width: 400%;}
+.add-stuff .slider.int.slide-two {@include transform(translateX(-25%));}
+.add-stuff .slider.int.slide-three {@include transform(translateX(-50%));}
+.add-stuff .slider.int.slide-four {@include transform(translateX(-75%));}

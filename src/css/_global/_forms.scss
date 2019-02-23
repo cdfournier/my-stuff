@@ -93,8 +93,6 @@ input::placeholder {
 
 input:focus {border-color: $color-one;}
 
-input:focus::placeholder {opacity: 0.5;}
-
 input[type="password"],
 input[type="search"] {padding: 0 3rem 0 0;}
 
