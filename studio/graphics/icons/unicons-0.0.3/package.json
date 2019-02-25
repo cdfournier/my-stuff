@@ -1,0 +1,44 @@
+{
+  "name": "unicons",
+  "version": "0.0.3",
+  "description": "Ready to use font icons for your next project",
+  "scripts": {
+    "build": "npm run download && npm run generate-fontello-config && npm run generate",
+    "download": "node build/download.js",
+    "generate": "fontello-cli install && node build/fontello-folder-move.js",
+    "generate-fontello-config": "node build/generate-fontello-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iconscout/unicons.git"
+  },
+  "keywords": [
+    "icon",
+    "font",
+    "font",
+    "icon",
+    "icons",
+    "webfont"
+  ],
+  "author": "Iconscout",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Iconscout/unicons/issues"
+  },
+  "homepage": "https://iconscout.com/unicons",
+  "devDependencies": {},
+  "dependencies": {
+    "async": "^2.6.1",
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "fontello-cli": "^0.4.0",
+    "fs-plus": "^3.1.1",
+    "glob": "^7.1.3",
+    "lodash": "^4.17.11",
+    "parse-svg-path": "^0.1.2",
+    "scale-svg-path": "0.0.1",
+    "serialize-svg-path": "^0.1.0",
+    "svgo": "^1.1.1",
+    "uuid": "^3.3.2"
+  }
+}
