@@ -22,12 +22,23 @@
   @include transition(all, 0.5s, ease);
 }
 
-.loading .logo {
-  width: 50%;
-  max-width: 16rem;
+.loading .logo {width: 100%;}
+
+.loading .logo .logo-color {fill: $white;}
+
+.loading .logo .icons-color {
+  fill: none;
+  stroke: $color-one;
 }
 
-.loading .logo .logo-color {fill: $white; }
+.loading .logo .icons-color-loading {
+  max-height: 0;
+  fill: none;
+  stroke: $gray;
+  @include transition(all, 0.5s, ease);
+}
+
+.loading .logo .icons-color-loading.loaded {max-height: 100vh;}
 
 .loading.loaded {@include transform(translateY(-100%));}
 
