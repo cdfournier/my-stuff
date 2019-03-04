@@ -1,6 +1,19 @@
 @import "mixins";
 @import "colors";
 
+
+// COLOR APPLICATION
+:root {
+  --color-one: $purple;
+  --color-two: $hot-pink;
+}
+
+:export {
+  color-one: $purple;
+  color-two: $hot-pink;
+};
+
+
 // BASE
 html {
   width: 100%;

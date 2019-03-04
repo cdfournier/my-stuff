@@ -33,9 +33,9 @@ nav {
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
-    color: $color-one;
+    color: var(--color-one);
   }
-  ul li a:hover, ul li a:focus {color: $color-two;}
+  ul li a:hover, ul li a:focus {color: var(--color-two);}
   ul li a span.icon {font-size: 1.75rem;}
   ul li a.active {color: $gray;}
 }

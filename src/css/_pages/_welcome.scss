@@ -18,27 +18,16 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background-color: $color-one;
+  background-color: var(--color-one);
   @include transition(all, 0.5s, ease);
 }
 
-.loading .logo {width: 100%;}
-
-.loading .logo .logo-color {fill: $white;}
-
-.loading .logo .icons-color {
-  fill: none;
-  stroke: $color-one;
+.loading .logo {
+  width: 100%;
+  max-width: 16rem;
 }
 
-.loading .logo .icons-color-loading {
-  max-height: 0;
-  fill: none;
-  stroke: $gray;
-  @include transition(all, 0.5s, ease);
-}
-
-.loading .logo .icons-color-loading.loaded {max-height: 100vh;}
+.loading .logo svg {fill: $white;}
 
 .loading.loaded {@include transform(translateY(-100%));}
 
@@ -66,5 +55,5 @@
 .welcome h1 svg {
   width: 12rem;
   margin: 1rem auto 0;
-  fill: $color-one;
+  fill: var(--color-one);
 }

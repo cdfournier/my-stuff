@@ -75,47 +75,68 @@ span.button.add-attachment input[type="file"] {
 
 // PRIMARY BUTTON COLOR
 .button {
-  border: 1px solid $color-one;
+  border: 1px solid var(--color-one);
   color: $white;
-  background-color: $color-one;
+  background-color: var(--color-one);
 }
 
 .button:hover, .button:focus {
-  color: $color-one;
+  color: var(--color-one);
   background-color: $white;
 }
 
 .button span.number {
-  color: $color-one;
+  color: var(--color-one);
   background-color: $white;
 }
 
 .button:hover span.number, .button:focus span.number {
   color: $white;
-  background-color: $color-one;
+  background-color: var(--color-one);
+}
+
+.button.disabled {
+  border: 1px solid $gray;
+  background-color: $gray;
 }
 
 
 // SECONDARY BUTTON COLOR
 .button.secondary {
-  border: 1px solid $color-one;
-  color: $color-one;
+  border: 1px solid var(--color-one);
+  color: var(--color-one);
   background-color: $white;
 }
 
 .button.secondary:hover, .button.secondary:focus {
   color: $white;
-  background-color: $color-one;
+  background-color: var(--color-one);
 }
 
 .button.secondary span.number {
   color: $white;
-  background-color: $color-one;
+  background-color: var(--color-one);
 }
 
 .button.secondary:hover span.number, .button.secondary:focus span.number {
-  color: $color-one;
+  color: var(--color-one);
   background-color: $white;
+}
+
+.button.secondary.disabled {
+  border: 1px solid $gray;
+  color: $gray;
+}
+
+
+// BACK BUTTONS
+a.back--two,
+a.back--three,
+a.back--four,
+a.back--five {
+  display: block;
+  padding: 2rem 0 0 2rem;
+  font-size: 1.75rem;
 }
 
 
@@ -135,26 +156,22 @@ span.button.add-attachment input[type="file"] {
 .button-box.row {flex-direction: row;}
 
 .button-box.right {align-items: flex-end;}
-
 .button-box.right .button {margin: 1rem 0 0 1rem;}
 
 .button-box.left {align-items: flex-start;}
-
 .button-box.left .button {margin: 1rem 1rem 0 0;}
 
 .button-box.row.left {justify-content: flex-start;}
-
 .button-box.row.left .button {margin: 1rem 1rem 0 0;}
-
 .button-box.row.left .button:last-of-type {margin: 1rem 0 0 0;}
 
 .button-box.row.right {justify-content: flex-end;}
-
 .button-box.row.right .button {margin: 1rem 0 0 1rem;}
-
 .button-box.row.right .button:first-of-type {margin: 1rem 0 0 0;}
 
-.button-box.row span.skip {
+.button-box.row span.skip,
+.button-box.row span.cancel,
+.button-box.row span.done {
   display: flex;
   flex-direction: column;
   justify-content: center;

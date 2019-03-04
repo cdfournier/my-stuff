@@ -17,11 +17,11 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: $color-one;
+  color: var(--color-one);
   @include transition(all, 0.325s, ease);
 }
 
-.introduction .text.skip a:hover, .introduction .text.skip a:focus {color: $color-two;}
+.introduction .text.skip a:hover, .introduction .text.skip a:focus {color: var(--color-two);}
 
 .introduction .text.skip a.hidden {opacity: 0;}
 
@@ -51,10 +51,10 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: $color-one;
+  color: var(--color-one);
 }
 
-.intro .text.next a:hover, .intro .text.next a:focus {color: $color-two;}
+.intro .text.next a:hover, .intro .text.next a:focus {color: var(--color-two);}
 
 
 // INTRODUCTION FIGURES

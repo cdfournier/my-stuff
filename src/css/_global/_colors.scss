@@ -10,23 +10,18 @@ $error: #f04e59;
 $valid: #00ac39;
 
 
-// COLOR USAGE
-$color-one: $purple;
-$color-two: $hot-pink;
-
-
 // SELECTION
 ::-moz-selection {
   color: $white;
-  background: $color-one;
+  background: var(--color-one);
 }
 
 ::selection {
   color: $white;
-  background: $color-one;
+  background: var(--color-one);
 }
 
 
 // TEXT LINKS
-a {color: $color-one;}
-a:hover, a:focus {color: $color-two;}
+a {color: var(--color-one);}
+a:hover, a:focus {color: var(--color-two);}

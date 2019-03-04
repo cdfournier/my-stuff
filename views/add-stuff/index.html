@@ -95,8 +95,8 @@
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
-                    <a class="button slide--three"><span class="button-label">Add Attachments<span class="post"><i class="la la-paperclip"></i></span></span></a>
-                    <a class="button secondary"><span class="button-label">Done</span></a>
+                    <a class="button secondary slide--three"><span class="button-label">Add Attachments<span class="post"><i class="la la-paperclip"></i></span></span></a>
+                    <a class="button save"><span class="button-label">Save Item</span></a>
                   </div>
                 </form>
               </div>
@@ -106,7 +106,7 @@
                 <h1>Add Attachments</h1>
                 <div class="button-box row left">
                   <span class="button add-attachment"><input type="file" id="files" name="files[]"><span class="button-label">Add Attachment<span class="post"><i class="la la-paperclip"></i></span></span></span>
-                    <span class="skip"><a class="">Skip</a></span>
+                    <span class="cancel"><a class="">Cancel</a></span>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
                   </fieldset>
                   <div class="button-box row left">
                     <a class="button add-another"><span class="button-label">Add Another?</span></a>
-                    <span class="skip"><a class="">Done</a></span>
+                    <span class="done"><a class="">Done</a></span>
                   </div>
                 </form>
               </div>
@@ -159,21 +159,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="../../src/scripts/mystuff.js"></script>
     <script>
-      $('.slide--two').click(function() {
-        $('.slider.int').addClass('slide-two');
-      });
+      $('.slide--two').click(function() {$('.slider.int').addClass('slide-two');});
       $('.slide--three').click(function() {
         $('.slider.int').removeClass('slide-two');
         $('.slider.int').addClass('slide-three');
       });
-      $(".add-attachment").on('change', function() {
-        $(".slider.int").removeClass("slide-three");
+      $('.add-attachment').on('change', function() {
+        $('.slider.int').removeClass('slide-three');
         $('.slider.int').addClass('slide-four');
       });
       $('.add-another').click(function() {
         $('.slider.int').removeClass('slide-four');
         $('.slider.int').addClass('slide-three');
       });
+
+      $('.cancel').click(function() {
+        $('.slider.int').removeClass('slide-three');
+        $('.slider.int').addClass('slide-two');
+      });
+      $('.done').click(function() {
+        $('.slider.int').removeClass('slide-four');
+        $('.slider.int').addClass('slide-two');
+      });
+
+      $('.save').click(function() {window.location.href = 'index.html';});
     </script>
   </body>
 </html>

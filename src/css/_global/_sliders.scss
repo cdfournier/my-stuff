@@ -45,7 +45,7 @@
   width: 0.75rem;
   height: 0.75rem;
   margin: 0 0 0 1rem;
-  border: 2px solid $color-one;
+  border: 2px solid var(--color-one);
   border-radius: 100%;
 }
 
@@ -71,12 +71,12 @@
 .introduction .slider.int.slide-five {@include transform(translateX(-66.66%));}
 .introduction .slider.int.slide-six {@include transform(translateX(-83.35%));}
 
-.slider-dots ul li.slider-dot.one.show {background-color: $color-one;}
-.slider-dots ul li.slider-dot.two.show {background-color: $color-one;}
-.slider-dots ul li.slider-dot.three.show {background-color: $color-one;}
-.slider-dots ul li.slider-dot.four.show {background-color: $color-one;}
-.slider-dots ul li.slider-dot.five.show {background-color: $color-one;}
-.slider-dots ul li.slider-dot.six.show {background-color: $color-one;}
+.slider-dots ul li.slider-dot.one.show {background-color: var(--color-one);}
+.slider-dots ul li.slider-dot.two.show {background-color: var(--color-one);}
+.slider-dots ul li.slider-dot.three.show {background-color: var(--color-one);}
+.slider-dots ul li.slider-dot.four.show {background-color: var(--color-one);}
+.slider-dots ul li.slider-dot.five.show {background-color: var(--color-one);}
+.slider-dots ul li.slider-dot.six.show {background-color: var(--color-one);}
 
 
 // ADD STUFF SLIDER
@@ -84,3 +84,10 @@
 .add-stuff .slider.int.slide-two {@include transform(translateX(-25%));}
 .add-stuff .slider.int.slide-three {@include transform(translateX(-50%));}
 .add-stuff .slider.int.slide-four {@include transform(translateX(-75%));}
+
+
+// PROFILE SLIDER
+.profile .slider.int {min-width: 400%;}
+.profile .slider.int.slide-two {@include transform(translateX(-25%));}
+.profile .slider.int.slide-three {@include transform(translateX(-50%));}
+.profile .slider.int.slide-four {@include transform(translateX(-75%));}
