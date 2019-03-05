@@ -52,7 +52,7 @@
                 <form>
                   <fieldset class="name">
                     <legend>Name</legend>
-                    <label for="name">Name<input type="text" name="name" placeholder="Name" value="{First Last Name}"><span class="is-valid"></span></label>
+                    <label for="name">Name<input type="text" name="name" class="block-tab" placeholder="Name" value="{First Last Name}"><span class="is-valid"></span></label>
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
@@ -70,16 +70,44 @@
                 <form>
                   <fieldset class="email">
                     <legend>Email</legend>
-                    <label for="email">Email<input type="email" name="email" placeholder="Email" value="email@email.com}"><span class="is-valid"></span></label>
+                    <label for="email">Email<input type="email" name="email" class="block-tab" placeholder="Email" value="{email@email.com}"><span class="is-valid"></span></label>
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
-                    <a class="button disabled save"><span class="button-label">Save</span></a>
+                    <a class="button email disabled save--email"><span class="button-label">Save</span></a>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="slide four"></div>
+            <div class="slide four">
+              <a class="back--four"><i class="la la-angle-left"></i></a>
+              <div class="text">
+                <h2>My Password</h2>
+                <p>Need to change your password? Please confirm your current password and enter a new password below.</p>
+              </div>
+              <div class="form-container">
+                <form>
+                  <fieldset class="password">
+                    <legend>Current Password</legend>
+                    <label for="current-password">Current Password<input type="password" name="current-password" placeholder="Current password" value="{Password}"><span class="is-valid"></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="password">
+                    <legend>New Password</legend>
+                    <label for="new-password">New Password<input type="password" name="new-password" placeholder="New Password"><span class="is-valid"></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="password">
+                    <legend>Confirm New Password</legend>
+                    <label for="confirm-password">Confirm New Password<input type="password" name="confirm-password" class="block-tab" placeholder="Confirm New Password"><span class="is-valid"></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a class="button password disabled save--password"><span class="button-label">Save</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -107,9 +135,13 @@
 
       $('.name').on('change', function() {$('.button.name.disabled').removeClass('disabled');});
       $('.email').on('change', function() {$('.button.email.disabled').removeClass('disabled');});
+      $('.password').on('change', function() {$('.button.password.disabled').removeClass('disabled');});
 
       $('.save--name').click(function() {$('.slider.int').removeClass('slide-two');});
       $('.save--email').click(function() {$('.slider.int').removeClass('slide-three');});
+      $('.save--password').click(function() {$('.slider.int').removeClass('slide-four');});
+
+      $('.block-tab').on('keydown', function(e) {if (e.keyCode == 9) e.preventDefault();});
     </script>
   </body>
 </html>

@@ -293,6 +293,12 @@ nav ul li a.active { color: #a0a0a0; }
 
 .slider.int { -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; -webkit-transform: translateX(0%); -moz-transform: translateX(0%); -ms-transform: translateX(0%); -o-transform: translateX(0%); transform: translateX(0%); }
 
+.slide { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative; width: 100%; padding: 0 0 2rem; -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
+
+.sign-in .slide, .sign-up .slide { height: fit-content; }
+
+main.top .slide { justify-content: flex-start; }
+
 .slider-dots { position: absolute; bottom: 0; right: 0; width: auto; -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
 
 .slider-dots.hidden { opacity: 0; }
@@ -337,6 +343,8 @@ nav ul li a.active { color: #a0a0a0; }
 
 .slider-dots ul li.slider-dot.six.show { background-color: var(--color-one); }
 
+.stuff .slider.int { min-width: 100%; }
+
 .add-stuff .slider.int { min-width: 400%; }
 
 .add-stuff .slider.int.slide-two { -webkit-transform: translateX(-25%); -moz-transform: translateX(-25%); -ms-transform: translateX(-25%); -o-transform: translateX(-25%); transform: translateX(-25%); }
@@ -369,11 +377,7 @@ nav ul li a.active { color: #a0a0a0; }
 
 .sign-in { width: 100%; }
 
-.sign-in .slide { display: flex; flex-direction: column; position: relative; width: 100%; height: fit-content; }
-
 .sign-up { width: 100%; }
-
-.sign-up .slide { display: flex; flex-direction: column; position: relative; width: 100%; height: fit-content; }
 
 .register { justify-content: center; min-height: 100vh; padding: 0 0 2rem; }
 
@@ -407,13 +411,11 @@ nav ul li a.active { color: #a0a0a0; }
 
 .intro figure { display: grid; width: 50%; margin: 0 auto; padding: 0 0 1rem; }
 
+.stuff { display: flex; flex-direction: column; justify-content: center; width: 100%; padding: 0; }
+
 .add-stuff { display: flex; flex-direction: column; justify-content: center; width: 100%; padding: 0; }
 
-.add-stuff .slide { display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; width: 100%; padding: 0 0 2rem; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
-
 .profile { display: flex; flex-direction: column; justify-content: center; width: 100%; padding: 0; }
-
-.profile .slide { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative; width: 100%; padding: 0 0 2rem; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
 
 .profile ul { display: flex; flex-direction: column; width: 100%; margin: 0; padding: 1rem 0 0; list-style-type: none; }
 

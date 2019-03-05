@@ -18,6 +18,23 @@
 }
 
 
+// SLIDE
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 0 0 2rem;
+  @include transition(all, 0.325s, ease);
+}
+
+.sign-in .slide, .sign-up .slide {height: fit-content;}
+
+main.top .slide {justify-content: flex-start;}
+
+
 // SLIDER DOTS
 .slider-dots {
   position: absolute;
@@ -77,6 +94,10 @@
 .slider-dots ul li.slider-dot.four.show {background-color: var(--color-one);}
 .slider-dots ul li.slider-dot.five.show {background-color: var(--color-one);}
 .slider-dots ul li.slider-dot.six.show {background-color: var(--color-one);}
+
+
+// STUFF SLIDER
+.stuff .slider.int {min-width: 100%;}
 
 
 // ADD STUFF SLIDER

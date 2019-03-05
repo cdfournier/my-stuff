@@ -39,11 +39,11 @@
                 <form>
                   <fieldset>
                     <legend>Group</legend>
-                    <label for="group">Group<input type="text" name="group" class="group" placeholder="Add a group?" autocomplete><span class="is-valid"></span></label>
+                    <label for="group">Group<input type="text" name="group" class="group block-tab" placeholder="Add a group?" autocomplete><span class="is-valid"></span></label>
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box row left">
-                    <a class="button slide--two"><span class="button-label">Add Group</span></a>
+                    <a class="button add-group disabled"><span class="button-label">Add Group</span></a>
                     <span class="skip"><a class="slide--two">Skip</a></span>
                   </div>
                 </form>
@@ -89,14 +89,14 @@
                       <span>
                         <input type="number" name="purchase-date" class="purchase-month" min="1" max="12" placeholder="mm"><span class="slash">/</span>
                         <input type="number" name="purchase-date" class="purchase-day" min="1" max="31" placeholder="dd"><span class="slash">/</span>
-                        <input type="number" name="purchase-date" class="purchase-year" placeholder="yyyy">
+                        <input type="number" name="purchase-date" class="purchase-year block-tab" placeholder="yyyy">
                       </span>
                     </label>
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
                     <a class="button secondary slide--three"><span class="button-label">Add Attachments<span class="post"><i class="la la-paperclip"></i></span></span></a>
-                    <a class="button save"><span class="button-label">Save Item</span></a>
+                    <a class="button save disabled"><span class="button-label">Save Item</span></a>
                   </div>
                 </form>
               </div>
@@ -181,8 +181,22 @@
         $('.slider.int').removeClass('slide-four');
         $('.slider.int').addClass('slide-two');
       });
+      
+      $('.add-group').click(false);
+      $('.save').click(false);
 
-      $('.save').click(function() {window.location.href = 'index.html';});
+      $('.group').on('change', function() {
+        $('.button.add-group.disabled').removeClass('disabled');
+        $('.add-group').click(true);
+        $('.add-group').click(function() {$('.slider.int').addClass('slide-two');});
+      });
+      $('.purchase-year').on('change', function() {
+        $('.button.save.disabled').removeClass('disabled');
+        $('.save').click(true);
+        $('.save').click(function() {window.location.href = 'index.html';});
+      });
+
+      $('.block-tab').on('keydown', function(e) {if (e.keyCode == 9) e.preventDefault();});
     </script>
   </body>
 </html>
