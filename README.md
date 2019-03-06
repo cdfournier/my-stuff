@@ -1,6 +1,8 @@
 # My Stuff
 A new service designed to make it wicked easy to catalog the important details of all of your stuff.
 
+## Views
+
 ## Current Dependencies
 - [Animate.css](https://daneden.github.io/animate.css/)
 - [Animate On Scroll](https://github.com/michalsnik/aos/tree/v2)

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Add Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../src/css-r1/main.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="notifications">
+        <div class="notification error">
+          <div class="message">
+            <p>This is where the error message goes</p>
+          </div>
+          <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button dismiss--yes"><span class="button-label">Yes</span></button>
+              <button class="button dismiss--no"><span class="button-label">No</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-qa="add-stuff" class="add-stuff md">
+        <div class="slider ext">
+          <div class="slider int">
+            <div class="slide one">
+              <div class="text"><h1>Add Your Stuff</h1></div>
+              <div class="form-container">
+                <form>
+                  <fieldset>
+                    <legend>Group</legend>
+                    <label for="group">Group<input type="text" name="group" class="group block-tab" placeholder="Add a group?" autocomplete><span class="is-valid"></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box row left">
+                    <a class="button add-group disabled"><span class="button-label">Add Group</span></a>
+                    <span class="skip"><a class="slide--two">Skip</a></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="slide two">
+              <div class="text"><h1>Your Stuff's Details</h1></div>
+              <div class="form-container">
+                <form class="wrap">
+                  <fieldset>
+                    <legend>Description</legend>
+                    <label for="description">Description*<input type="text" name="description" class="description" placeholder="Describe your stuff"></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="half">
+                    <legend>Value</legend>
+                    <label for="value">Value*<input type="text" name="value" class="value" placeholder="Value"></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="half">
+                    <legend>Quantity</legend>
+                    <label for="quantity">Quantity*<input type="number" name="quantity" class="quantity" placeholder="Quantity"></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Condition</legend>
+                    <label for="condition">Condition*
+                      <select name="condition" id="condition">
+                        <option value="0">Choose a Condition</option>
+                        <option value="New">New</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Poor">Poor</option>
+                      </select>
+                    </label>
+                    <span class="select-icon"><i class="la la-angle-down"></i></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="half">
+                    <legend>Purchase Date</legend>
+                    <label for="purchase-date" class="date">Purchase Date*
+                      <span>
+                        <input type="number" name="purchase-date" class="purchase-month" min="1" max="12" placeholder="mm"><span class="slash">/</span>
+                        <input type="number" name="purchase-date" class="purchase-day" min="1" max="31" placeholder="dd"><span class="slash">/</span>
+                        <input type="number" name="purchase-date" class="purchase-year block-tab" placeholder="yyyy">
+                      </span>
+                    </label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a class="button secondary slide--three"><span class="button-label">Add Attachments<span class="post"><i class="la la-paperclip"></i></span></span></a>
+                    <a class="button save disabled"><span class="button-label">Save Item</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="slide three">
+              <div class="text">
+                <h1>Add Attachments</h1>
+                <div class="button-box row left">
+                  <span class="button add-attachment"><input type="file" id="files" name="files[]"><span class="button-label">Add Attachment<span class="post"><i class="la la-paperclip"></i></span></span></span>
+                    <span class="cancel"><a class="">Cancel</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="slide four">
+              <div class="text">
+                <h1>Attachment Details</h1>
+              </div>
+              <div class="form-container">
+                <form>
+                  <fieldset>
+                    <legend>Name</legend>
+                    <label for="attachment-name">Name<input type="text" name="attachment-name" class="attachment-name" placeholder="Name this attachment"></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Attachment Type</legend>
+                    <label for="attachment-type">Attachment Type
+                      <select name="attachment-type" id="attachment-type">
+                        <option value="0">Attachment Type</option>
+                        <option value="Photo">Photo</option>
+                        <option value="Manual">Manual</option>
+                        <option value="Receipt">Receipt</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </label>
+                    <span class="select-icon"><i class="la la-angle-down"></i></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box row left">
+                    <a class="button add-another"><span class="button-label">Add Another?</span></a>
+                    <span class="done"><a class="">Done</a></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <nav>
+      <ul>
+        <li><a href="../home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+        <li><a href="../stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+        <li><a href="../profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+        <li><a href="../settings/index.html"><span class="icon"><i class="la la-gear"></i></span>Settings</a></li>
+      </ul>
+    </nav>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../src/scripts/mystuff.js"></script>
+    <script>
+      $('.slide--two').click(function() {$('.slider.int').addClass('slide-two');});
+      $('.slide--three').click(function() {
+        $('.slider.int').removeClass('slide-two');
+        $('.slider.int').addClass('slide-three');
+      });
+      $('.add-attachment').on('change', function() {
+        $('.slider.int').removeClass('slide-three');
+        $('.slider.int').addClass('slide-four');
+      });
+      $('.add-another').click(function() {
+        $('.slider.int').removeClass('slide-four');
+        $('.slider.int').addClass('slide-three');
+      });
+
+      $('.cancel').click(function() {
+        $('.slider.int').removeClass('slide-three');
+        $('.slider.int').addClass('slide-two');
+      });
+      $('.done').click(function() {
+        $('.slider.int').removeClass('slide-four');
+        $('.slider.int').addClass('slide-two');
+      });
+      
+      $('.add-group').click(false);
+      $('.save').click(false);
+
+      $('.group').on('change', function() {
+        $('.button.add-group.disabled').removeClass('disabled');
+        $('.add-group').click(true);
+        $('.add-group').click(function() {$('.slider.int').addClass('slide-two');});
+      });
+      $('.purchase-year').on('change', function() {
+        $('.button.save.disabled').removeClass('disabled');
+        $('.save').click(true);
+        $('.save').click(function() {window.location.href = 'index.html';});
+      });
+
+      $('.block-tab').on('keydown', function(e) {if (e.keyCode == 9) e.preventDefault();});
+    </script>
+  </body>
+</html>
