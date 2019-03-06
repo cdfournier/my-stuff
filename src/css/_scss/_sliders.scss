@@ -35,6 +35,16 @@
 main.top .slide {justify-content: flex-start;}
 
 
+// SLIDE HEIGHT
+.slider.int .slide.two, .slider.int .slide.three, .slider.int .slide.four, .slider.int .slide.five, .slider.int .slide.six {max-height: 0;}
+
+.slider.int.slide-two .slide.two {max-height: 500rem;}
+.slider.int.slide-three .slide.three {max-height: 500rem;}
+.slider.int.slide-four .slide.four {max-height: 500rem;}
+.slider.int.slide-five .slide.five {max-height: 500rem;}
+.slider.int.slide-six .slide.six {max-height: 500rem;}
+
+
 // SLIDER DOTS
 .slider-dots {
   position: absolute;

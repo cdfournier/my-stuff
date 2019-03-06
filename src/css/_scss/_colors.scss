@@ -1,8 +1,6 @@
 // COLORS
-$color-dark: #0c0b44;
-$color-light: #3f3480;
-
-$color-pink: #e11073;
+$purple: #5752c8;
+$pink: #e11073;
 
 $color-black: #000000;
 $color-gray: #a0a0a0;
@@ -25,5 +23,5 @@ $color-valid: #218003;
 
 
 // TEXT LINKS
-a {color: $color-white;}
+a {color: var(--color-one);}
 a:hover, a:focus {color: var(--color-two);}

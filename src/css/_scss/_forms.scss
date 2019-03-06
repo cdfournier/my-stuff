@@ -44,7 +44,7 @@ fieldset {
   margin: 0 0 1rem;
   padding: 0;
   border: none;
-  @include transition(all, 0.325s, ease-in-out);
+  @include transition(all, 0.325s, ease);
 }
 
 fieldset:last-of-type {margin: 0;}
@@ -120,7 +120,7 @@ input[type="checkbox"] {
   background-color: $color-white;
   cursor: pointer;
   @include appearance(none);
-  @include transition(all, 0.325s, ease-in-out);
+  @include transition(all, 0.325s, ease);
 }
 
 input[type="checkbox"]:checked:before {
@@ -162,7 +162,7 @@ input.toggle[type="checkbox"] {
   border-color: transparent;
   border-radius: 2rem;
   background-color: $color-gray;
-  @include transition(all, 0.325s, ease-in-out);
+  @include transition(all, 0.325s, ease);
 }
 
 input.toggle[type="checkbox"]:checked:before {display: none;}
@@ -183,7 +183,7 @@ input.toggle[type="checkbox"]:after {
   font-size: 1rem;
   background-color: $color-white;
   content: "\f342";
-  @include transition(all, 0.325s, ease-in-out);
+  @include transition(all, 0.325s, ease);
 }
 
 input.toggle[type="checkbox"]:checked {
@@ -344,7 +344,7 @@ span.error-message {
   font-weight: 700;
   color: $color-error;
   opacity: 0;
-  @include transition(all, 0.325s, ease-in-out);
+  @include transition(all, 0.325s, ease);
 }
 
 fieldset.invalid label,
@@ -374,7 +374,7 @@ span.is-valid {
   opacity: 0;
   cursor: pointer;
   @include appearance(none);
-  @include transition(all, 0.325s, ease-in-out);
+  @include transition(all, 0.325s, ease);
 }
 
 span.is-valid:before {

@@ -75,24 +75,24 @@ span.button.add-attachment input[type="file"] {
 
 // PRIMARY BUTTON COLOR
 .button {
-  border: 1px solid $color-white;
-  color: var(--color-one);
-  background-color: $color-white;
+  border: 1px solid var(--color-one);
+  color: $color-white;
+  background-color: var(--color-one);
 }
 
 .button:hover, .button:focus {
-  color: $color-white;
-  background-color: var(--color-one);
+  color: var(--color-one);
+  background-color: $color-white;
 }
 
 .button span.number {
-  color: $color-white;
-  background-color: var(--color-one);
+  color: var(--color-one);
+  background-color: $color-white;
 }
 
 .button:hover span.number, .button:focus span.number {
-  color: var(--color-one);
-  background-color: $color-white;
+  color: $color-white;
+  background-color: var(--color-one);
 }
 
 .button.disabled {
@@ -104,24 +104,24 @@ span.button.add-attachment input[type="file"] {
 
 // SECONDARY BUTTON COLOR
 .button.secondary {
-  border: 1px solid $color-white;
-  color: $color-white;
-  background-color: var(--color-one);
+  border: 1px solid var(--color-one);
+  color: var(--color-one);
+  background-color: $color-white;
 }
 
 .button.secondary:hover, .button.secondary:focus {
-  color: var(--color-one);
-  background-color: $color-white;
+  color: $color-white;
+  background-color: var(--color-one);
 }
 
 .button.secondary span.number {
-  color: var(--color-one);
-  background-color: $color-white;
+  color: $color-white;
+  background-color: var(--color-one);
 }
 
 .button.secondary:hover span.number, .button.secondary:focus span.number {
-  color: $color-white;
-  background-color: var(--color-one);
+  color: var(--color-one);
+  background-color: $color-white;
 }
 
 .button.secondary.disabled {

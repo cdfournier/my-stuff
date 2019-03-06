@@ -55,7 +55,7 @@
 .welcome h1 svg {
   width: 12rem;
   margin: 1rem auto 0;
-  fill: $color-white;
+  fill: var(--color-one);
 }
 
 .welcome small {

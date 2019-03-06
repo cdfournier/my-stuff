@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../src/css/main.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="notifications">
+        <div class="notification error">
+          <div class="message">
+            <p>This is where the error message goes</p>
+          </div>
+          <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button dismiss--yes"><span class="button-label">Yes</span></button>
+              <button class="button dismiss--no"><span class="button-label">No</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-qa="sign-in" class="sign-in md">
+        <div class="slider ext">
+          <div class="slider int">
+            <div class="slide one">
+              <div class="text">
+                <h1>Welcome</h1>
+                <p>Please sign in to continue.</p>
+              </div>
+              <div class="form-container">
+                <form>
+                  <fieldset>
+                    <legend>Email Address</legend>
+                    <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="email-address" placeholder="Enter your email address" autocomplete><span class="is-valid"></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Password</legend>
+                    <label for="password">Password&#42;<input type="password" name="password" id="password" class="block-tab" placeholder="Enter your password" autocomplete><span class="is-valid"></span></label>
+                    <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Remember Me</legend>
+                    <label for="remember" class="checkbox">Remember Me<input type="checkbox" name="remember" id="remember" class="block-tab"></label>
+                    <span class="forgot-password-prompt"><a class="slide--two">Forgot Password?</a></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a href="../home/index.html" class="button"><span class="button-label">Sign In</span></a>
+                  </div>
+                </form>
+                <p><small>Don't have an account? <a href="../sign-up/index.html">Create one now</a>.</small></p>
+              </div>
+            </div>
+            <div class="slide two">
+              <div class="text">
+                <h1>Forgot Your Password?</h1>
+                <p>Enter your email address here, and we'll send you a link to reset your password.</p>
+              </div>
+              <div class="form-container">
+                <form>
+                  <fieldset>
+                    <legend>Email Address</legend>
+                    <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="block-tab" placeholder="Enter your email address" autocomplete><span class="is-valid"></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a class="button slide--three"><span class="button-label">Send Email</span></a>
+                    <a class="button secondary slide--one"><span class="button-label">Cancel</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="slide three">
+              <div class="text">
+                <h1>Password Reset Email Sent</h1>
+                <p>Please check your email inbox. We've sent you a special link that you can use to reset your password.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../src/scripts/mystuff.js"></script>
+    <script>
+      $('.slide--two').click(function() {
+        $('.slider.int').removeClass('slide-one');
+        $('.slider.int').addClass('slide-two');
+      });
+      $('.slide--one').click(function() {
+        $('.slider.int').removeClass('slide-two');
+        $('.slider.int').addClass('slide-one');
+      });
+      $('.slide--three').click(function() {
+        $('.slider.int').removeClass('slide-two');
+        $('.slider.int').addClass('slide-three');
+      });
+
+      $('.block-tab').on('keydown', function(e) {if (e.keyCode == 9) e.preventDefault();});
+    </script>
+  </body>
+</html>
