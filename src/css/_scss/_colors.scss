@@ -25,5 +25,5 @@ $color-valid: #218003;
 
 
 // TEXT LINKS
-a {color: var(--color-one);}
+a {color: $color-white;}
 a:hover, a:focus {color: var(--color-two);}

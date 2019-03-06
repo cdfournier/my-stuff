@@ -18,13 +18,13 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background-color: var(--color-one);
   @include transition(all, 0.5s, ease);
+  background-color: var(--color-one);
 }
 
 .loading .logo {
   width: 100%;
-  max-width: 16rem;
+  max-width: 14rem;
 }
 
 .loading .logo svg {fill: $color-white;}
@@ -55,7 +55,12 @@
 .welcome h1 svg {
   width: 12rem;
   margin: 1rem auto 0;
-  fill: var(--color-one);
+  fill: $color-white;
+}
+
+.welcome small {
+  display: block;
+  padding: 2rem 0 0;
 }
 
 

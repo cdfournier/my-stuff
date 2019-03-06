@@ -26,4 +26,6 @@
 
 
 // LOADING INDICATOR
+.loading .indicator {padding: 4rem 2rem 0;}
+
 .loading .indicator .indicator-gauge > span {background-color: var(--color-one);}

@@ -26,7 +26,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
-  color: $color-black;
+  color: $color-white;
+  background-color: var(--color-one);
 }
 
 @media (min-width: 46rem) {html {font-size: calc(1rem + 4 * ((100vw - 32rem) / 680));}}
