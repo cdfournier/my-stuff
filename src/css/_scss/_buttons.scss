@@ -20,7 +20,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
-  @include transition(all, 0.325s, ease-in-out);
+  @include transition(all, 0.325s, ease);
 }
 
 .button.hide {opacity: 0;}
@@ -73,7 +73,7 @@ span.button.add-attachment input[type="file"] {
 }
 
 
-// PRIMARY BUTTON COLOR
+// BUTTON COLOR
 .button {
   border: 1px solid var(--color-one);
   color: $color-white;
@@ -93,12 +93,6 @@ span.button.add-attachment input[type="file"] {
 .button:hover span.number, .button:focus span.number {
   color: $color-white;
   background-color: var(--color-one);
-}
-
-.button.disabled {
-  border: 1px solid $color-gray;
-  background-color: $color-gray;
-  cursor: not-allowed;
 }
 
 
@@ -124,10 +118,35 @@ span.button.add-attachment input[type="file"] {
   background-color: $color-white;
 }
 
-.button.secondary.disabled {
+
+// DISABLED BUTTONS
+.button.disabled, .button.secondary.disabled {
   border: 1px solid $color-gray;
   color: $color-gray;
-  cursor: not-allowed;
+  background-color: $color-white;
+  cursor: none;
+}
+
+.mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 10rem;
+  border: 1px solid $color-white;
+  border-radius: 0.25rem;
+  background-color: $color-white;
+  opacity: 0.5;
+  @include transition(all, 0.325s, ease);
+}
+
+.mask.stack {height: calc(50% + 1rem);}
+
+.mask.hidden, .mask.stack.hidden {
+  height: 0;
+  max-height: 0;
 }
 
 

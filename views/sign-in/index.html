@@ -58,7 +58,8 @@
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
-                    <a href="../home/index.html" class="button"><span class="button-label">Sign In</span></a>
+                    <a href="../home/index.html" class="button disabled sign--in"><span class="button-label">Sign In</span></a>
+                    <div class="mask one"></div>
                   </div>
                 </form>
                 <p><small>Don't have an account? <a href="../sign-up/index.html">Create one now</a>.</small></p>
@@ -73,12 +74,13 @@
                 <form>
                   <fieldset>
                     <legend>Email Address</legend>
-                    <label for="email-address">Email Address&#42;<input type="email" name="email-address" class="block-tab" placeholder="Enter your email address" autocomplete><span class="is-valid"></span></label>
+                    <label for="email-address">Email Address&#42;<input type="email" name="email-address" id="send-reset-email" class="block-tab" placeholder="Enter your email address" autocomplete><span class="is-valid"></span></label>
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
-                    <a class="button slide--three"><span class="button-label">Send Email</span></a>
+                    <a class="button disabled slide--three"><span class="button-label">Send Email</span></a>
                     <a class="button secondary slide--one"><span class="button-label">Cancel</span></a>
+                    <div class="mask stack two"></div>
                   </div>
                 </form>
               </div>
@@ -109,6 +111,15 @@
       $('.slide--three').click(function() {
         $('.slider.int').removeClass('slide-two');
         $('.slider.int').addClass('slide-three');
+      });
+
+      $('#password').on('change', function() {
+        $('.button.disabled.sign--in').removeClass('disabled');
+        $('.mask.one').addClass('hidden');
+      });
+      $('#send-reset-email').on('change', function() {
+        $('.button.disabled.slide--three').removeClass('disabled');
+        $('.mask.two').addClass('hidden');
       });
 
       $('.block-tab').on('keydown', function(e) {if (e.keyCode == 9) e.preventDefault();});
