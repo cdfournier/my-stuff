@@ -124,7 +124,7 @@ span.button.add--attachment input[type="file"] {
   border: 1px solid $color-gray;
   color: $color-gray;
   background-color: $color-white;
-  cursor: none;
+  cursor: not-allowed;
 }
 
 .mask {
