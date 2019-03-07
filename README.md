@@ -2,9 +2,10 @@
 A new service designed to make it wicked easy to catalog the important details of all of your stuff.
 
 ## Views
-- [Welcome](https://cdfournier.github.io/my-stuff/views/welcome/welcome/index.html)
-- [Sign In](https://cdfournier.github.io/my-stuff/views/sign-in/sign-in/index.html)
-- [Sign Up](https://cdfournier.github.io/my-stuff/views/sign-up/sign-up/index.html)
+- [Welcome](https://cdfournier.github.io/my-stuff/views/welcome/index.html)
+- [Sign In](https://cdfournier.github.io/my-stuff/views/sign-in/index.html)
+- [Sign Up](https://cdfournier.github.io/my-stuff/views/sign-up/index.html)
+- [Introduction](https://cdfournier.github.io/my-stuff/views/introduction/index.html)
 
 ## Current Dependencies
 - [Animate.css](https://daneden.github.io/animate.css/)

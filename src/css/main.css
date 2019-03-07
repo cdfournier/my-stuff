@@ -1007,41 +1007,6 @@ main.top .slide {
 .slider.int.slide-six .slide.six {
   max-height: 500rem; }
 
-.slider-dots {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: auto;
-  -webkit-transition: all 0.325s ease 0s;
-  -moz-transition: all 0.325s ease 0s;
-  -ms-transition: all 0.325s ease 0s;
-  -o-transition: all 0.325s ease 0s;
-  transition: all 0.325s ease 0s; }
-
-.slider-dots.hidden {
-  opacity: 0; }
-
-.slider-dots ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-  list-style-type: none; }
-
-.slider-dots ul li {
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0 0 1rem;
-  border: 2px solid var(--color-one);
-  border-radius: 100%; }
-
-.slider-dots ul li:first-of-type {
-  margin: 0; }
-
 .sign-in .slider.int {
   min-width: 300%; }
 
@@ -1107,23 +1072,10 @@ main.top .slide {
   -o-transform: translateX(-83.35%);
   transform: translateX(-83.35%); }
 
-.slider-dots ul li.slider-dot.one.show {
-  background-color: var(--color-one); }
-
-.slider-dots ul li.slider-dot.two.show {
-  background-color: var(--color-one); }
-
-.slider-dots ul li.slider-dot.three.show {
-  background-color: var(--color-one); }
-
-.slider-dots ul li.slider-dot.four.show {
-  background-color: var(--color-one); }
-
-.slider-dots ul li.slider-dot.five.show {
-  background-color: var(--color-one); }
-
-.slider-dots ul li.slider-dot.six.show {
-  background-color: var(--color-one); }
+.introduction .slide {
+  align-items: center;
+  height: 100vh;
+  padding: 0 0 2rem; }
 
 .stuff .slider.int {
   min-width: 100%; }
@@ -1274,9 +1226,30 @@ main.top .slide {
 .introduction .text.skip a.hidden {
   opacity: 0; }
 
-.intro figure {
+.introduction .text.next {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  padding: 2rem; }
+
+.introduction .text.next a {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-one);
+  -webkit-transition: all 0.325s ease 0s;
+  -moz-transition: all 0.325s ease 0s;
+  -ms-transition: all 0.325s ease 0s;
+  -o-transition: all 0.325s ease 0s;
+  transition: all 0.325s ease 0s; }
+
+.introduction .text.skip a:hover, .introduction .text.skip a:focus {
+  color: var(--color-two); }
+
+.introduction .slide figure {
   display: grid;
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
   padding: 0 0 1rem; }
 
