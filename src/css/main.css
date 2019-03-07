@@ -200,7 +200,7 @@ h1.right, h2.right, h3.right, p.right, strong.right, em.right, small.right {
   font-size: 0.75rem;
   font-weight: 700; }
 
-span.button.add-attachment input[type="file"] {
+span.button.add--attachment input[type="file"] {
   position: absolute;
   width: auto;
   max-width: 9.5rem;

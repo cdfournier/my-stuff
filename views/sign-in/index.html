@@ -58,8 +58,7 @@
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
-                    <a href="../home/index.html" class="button disabled sign--in"><span class="button-label">Sign In</span></a>
-                    <div class="mask one"></div>
+                    <a class="button disabled sign--in" role="button"><span class="button-label">Sign In</span></a>
                   </div>
                 </form>
                 <p><small>Don't have an account? <a href="../sign-up/index.html">Create one now</a>.</small></p>
@@ -78,9 +77,8 @@
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
-                    <a class="button disabled slide--three"><span class="button-label">Send Email</span></a>
-                    <a class="button secondary slide--one"><span class="button-label">Cancel</span></a>
-                    <div class="mask stack two"></div>
+                    <a class="button disabled slide--three" role="button"><span class="button-label">Send Email</span></a>
+                    <a class="button secondary slide--one" role="button"><span class="button-label">Cancel</span></a>
                   </div>
                 </form>
               </div>
@@ -115,11 +113,10 @@
 
       $('#password').on('change', function() {
         $('.button.disabled.sign--in').removeClass('disabled');
-        $('.mask.one').addClass('hidden');
+        $('.sign--in').click(function() {window.location.href = '../home/index.html';});
       });
       $('#send-reset-email').on('change', function() {
         $('.button.disabled.slide--three').removeClass('disabled');
-        $('.mask.two').addClass('hidden');
       });
 
       $('.block-tab').on('keydown', function(e) {if (e.keyCode == 9) e.preventDefault();});

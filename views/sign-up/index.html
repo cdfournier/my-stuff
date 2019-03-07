@@ -56,8 +56,7 @@
                     <span class="error-message">This is where the error message goes</span>
                   </fieldset>
                   <div class="button-box left">
-                    <a href="../introduction/index.html" class="button disabled create--account" role="button"><span class="button-label">Create Account</span></a>
-                    <div class="mask"></div>
+                    <a class="button disabled create--account" role="button"><span class="button-label">Create Account</span></a>
                   </div>
                 </form>
                 <p><small>By creating an account you agree to our <a class="slide--two">Terms &amp; Conditions</a>.</small></p>
@@ -100,7 +99,7 @@
 
       $('#password').on('change', function() {
         $('.button.disabled').removeClass('disabled');
-        $('.mask').addClass('hidden');
+        $('.create--account').click(function() {window.location.href = '../introduction/index.html';});
       });
 
       $('.back--two').click(function() {$('.slider.int').removeClass('slide-two');});
