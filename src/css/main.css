@@ -211,11 +211,11 @@ label.date span input.purchase-year { width: 30%; }
 
 label.date span.slash { display: block; width: auto; }
 
-select { display: inline-block; position: relative; z-index: 1; width: 100%; height: 2.75rem; min-height: 2.75rem; overflow: hidden; margin: 0; padding: 0; border-top: none; border-right: none; border-bottom: 1px solid #a0a0a0; border-left: none; border-radius: 0; font-size: 1rem; font-weight: 400; text-overflow: ellipsis; background-color: #ffffff; cursor: text; white-space: nowrap; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+select { display: inline-block; position: relative; width: 100%; height: 2.75rem; min-height: 2.75rem; overflow: hidden; margin: 0; padding: 0; border-top: none; border-right: none; border-bottom: 1px solid #a0a0a0; border-left: none; border-radius: 0; font-size: 1rem; font-weight: 400; text-overflow: ellipsis; background-color: #ffffff; cursor: text; white-space: nowrap; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 select option { overflow: hidden; text-overflow: ellipsis; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
-.select-icon { display: flex; flex-direction: column; justify-content: center; position: absolute; top: 0.875rem; right: 0; z-index: 2; height: 2.75rem; min-height: 2.75rem; font-size: 1rem; }
+.select-icon { display: flex; flex-direction: column; justify-content: center; position: absolute; top: 0.875rem; right: 0; height: 2.75rem; min-height: 2.75rem; font-size: 1rem; }
 
 select:disabled { border-color: #a0a0a0; color: #a0a0a0; }
 
@@ -359,6 +359,38 @@ main.top .slide { justify-content: flex-start; }
 
 .profile .slider.int.slide-four { -webkit-transform: translateX(-75%); -moz-transform: translateX(-75%); -ms-transform: translateX(-75%); -o-transform: translateX(-75%); transform: translateX(-75%); }
 
+.accordion { display: flex; flex-direction: column; align-items: center; position: relative; width: 100%; overflow: hidden; margin: 0 auto 1rem; padding: 1rem; border: 1px solid #a0a0a0; border-radius: 0.25rem; background-color: #ffffff; -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
+
+.accordion:last-of-type { margin: 0 auto; }
+
+.accordion > input { position: absolute; z-index: -1; opacity: 0; }
+
+.accordion label { display: flex; flex-direction: column; width: 100%; cursor: pointer; }
+
+.accordion label ul.overview { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; width: 100%; margin: 0; padding: 0; list-style-type: none; }
+
+.accordion label ul.overview li { display: flex; flex-direction: column; position: relative; margin: 0 1rem 0 0; font-size: 1rem; font-weight: 400; }
+
+.accordion label ul.overview li span { padding: 0 0 0.25rem; font-size: 0.875rem; font-weight: 600; }
+
+.accordion label ul.overview li.stuff-number, .accordion label ul.overview li.stuff-group { display: none; }
+
+.accordion label ul.overview li.stuff-description { width: 55%; }
+
+.accordion label ul.overview li.stuff-value { width: 30%; }
+
+.accordion label ul.overview li:last-of-type { margin: 0; }
+
+.accordion ul.overview:after { display: flex; flex-direction: column; justify-content: center; position: absolute; right: 0; margin: 0; font-family: "LineAwesome"; content: "\f110"; -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; -webkit-transform: rotate(0turn); -moz-transform: rotate(0turn); -ms-transform: rotate(0turn); -o-transform: rotate(0turn); transform: rotate(0turn); }
+
+.accordion input.accordion:checked ~ label ul.overview:after { -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; -webkit-transform: rotate(-0.5turn); -moz-transform: rotate(-0.5turn); -ms-transform: rotate(-0.5turn); -o-transform: rotate(-0.5turn); transform: rotate(-0.5turn); }
+
+.accordion .form-container { width: 100%; max-height: 0; padding: 0; -webkit-transition: max-height 0.325s ease 0s; -moz-transition: max-height 0.325s ease 0s; -ms-transition: max-height 0.325s ease 0s; -o-transition: max-height 0.325s ease 0s; transition: max-height 0.325s ease 0s; }
+
+.accordion input.accordion:checked ~ .form-container { max-height: 500rem; -webkit-transition: max-height 0.325s ease 0s; -moz-transition: max-height 0.325s ease 0s; -ms-transition: max-height 0.325s ease 0s; -o-transition: max-height 0.325s ease 0s; transition: max-height 0.325s ease 0s; }
+
+.accordion .form-container:before { display: block; width: 100%; height: 1px; margin: 2rem auto; background-color: #a0a0a0; content: ""; }
+
 .loading { display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; max-width: 100%; min-width: 100%; height: 100vh; max-height: 100vh; min-height: 100vh; overflow: hidden; margin: 0; padding: 0; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; background-color: var(--color-one); }
 
 .loading .logo { width: 100%; max-width: 14rem; }
@@ -396,6 +428,8 @@ main.top .slide { justify-content: flex-start; }
 .introduction .slide figure { display: grid; width: 45%; margin: 0 auto; padding: 0 0 1rem; }
 
 .stuff { display: flex; flex-direction: column; justify-content: center; width: 100%; padding: 0; }
+
+.stuff-list { display: flex; flex-direction: column; justify-content: flex-start; width: 100%; padding: 2rem; }
 
 .add-stuff { display: flex; flex-direction: column; justify-content: center; width: 100%; padding: 0; }
 

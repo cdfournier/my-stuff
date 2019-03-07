@@ -128,6 +128,14 @@
   padding: 0;
 }
 
+.stuff-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2rem;
+}
+
 
 // ADD STUFF
 .add-stuff {
