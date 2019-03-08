@@ -68,6 +68,16 @@
 .sign-in, .sign-up {width: 100%;}
 
 
+// PAGES
+.stuff, .add-stuff, .profile, .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+
 // INTRODUCTION
 .introduction {
   display: flex;
@@ -120,40 +130,12 @@
 
 
 // STUFF
-.stuff {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 0;
-}
-
 .stuff-list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
   padding: 2rem;
-}
-
-
-// ADD STUFF
-.add-stuff {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 0;
-}
-
-
-// PROFILE
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 0;
 }
 
 

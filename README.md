@@ -9,6 +9,7 @@ A new service designed to make it wicked easy to catalog the important details o
 - [Stuff](https://cdfournier.github.io/my-stuff/views/stuff/index.html)
 - [Add Stuff](https://cdfournier.github.io/my-stuff/views/add-stuff/index.html)
 - [Profile](https://cdfournier.github.io/my-stuff/views/profile/index.html)
+- [Home](https://cdfournier.github.io/my-stuff/home/profile/index.html)
 
 ## Current Dependencies
 - [Animate.css](https://daneden.github.io/animate.css/)
