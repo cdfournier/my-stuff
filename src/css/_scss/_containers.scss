@@ -44,3 +44,10 @@ main.center {justify-content: center;}
   margin: 0;
   padding: 2rem 2rem 0;
 }
+
+.form-container figure {
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 0 2rem;
+}

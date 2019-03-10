@@ -72,4 +72,10 @@
 .add-stuff .slider.int {min-width: 300%;}
 .add-stuff .slider.int.slide-two {@include transform(translateX(-33.3%));}
 .add-stuff .slider.int.slide-three {@include transform(translateX(-66.6%));}
-.add-stuff .slider.int.slide-four {@include transform(translateX(-75%));}
+
+
+// EDIT STUFF SLIDER
+.edit-stuff .slider.int {min-width: 400%;}
+.edit-stuff .slider.int.slide-two {@include transform(translateX(-25%));}
+.edit-stuff .slider.int.slide-three {@include transform(translateX(-50%));}
+.edit-stuff .slider.int.slide-four {@include transform(translateX(-75%));}
