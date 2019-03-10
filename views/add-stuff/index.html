@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Add Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../src/css/main.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="notifications">
+        <div class="notification error">
+          <div class="message">
+            <p>This is where the error message goes</p>
+          </div>
+          <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button dismiss--yes"><span class="button-label">Yes</span></button>
+              <button class="button dismiss--no"><span class="button-label">No</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-qa="add-stuff" class="add-stuff">
+        <div class="slider ext">
+          <div class="slider int">
+            <div class="slide one">
+              <div class="text"><h1>Add your stuff</h1></div>
+              <div class="form-container">
+                <form class="wrap">
+                  <fieldset>
+                    <legend>Description</legend>
+                    <label for="description">Description&#42;<input type="text" name="description" id="description" placeholder="Describe your stuff" aria-describedby="description-input-help" aria-invalid="false"></label>
+                    <span id="description-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="half">
+                    <legend>Value</legend>
+                    <label for="value">Value&#42;<input type="text" name="value" id="value" placeholder="Value" aria-describedby="value-input-help" aria-invalid="false"></label>
+                    <span id="value-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="half">
+                    <legend>Quantity</legend>
+                    <label for="quantity">Quantity&#42;<input type="number" name="quantity" id="quantity" placeholder="Quantity" aria-describedby="quantity-input-help" aria-invalid="false"></label>
+                    <span id="quantity-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Condition</legend>
+                    <label for="condition">Condition&#42;
+                      <select name="condition" id="condition" aria-describedby="condition-input-help" aria-invalid="false">
+                        <option value="0">Choose a condition</option>
+                        <option value="New">New</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Poor">Poor</option>
+                      </select>
+                    </label>
+                    <span class="select-icon"><i class="la la-angle-down"></i></span>
+                    <span id="select-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Group</legend>
+                    <label for="group">Group<input type="text" name="group" id="group" placeholder="Add a group?" aria-describedby="group-input-help" aria-invalid="false"></label>
+                    <span id="group-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="half">
+                    <legend>Purchase date</legend>
+                    <label for="purchase-date">Purchase date<input type="button" name="purchase-date" id="purchase-date" class="slide--two" value="MM/DD/YYYY" aria-describedby="purchase-date-input-help" aria-invalid="false"></label>
+                    <span id="purchase-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="half">
+                    <legend>Attachments</legend>
+                    <label for="attachments">Attachments<span class="attachments-number">0</span><input type="button" name="attachments" id="attachments" class="attachments slide--three" value="Add Attachments" aria-describedby="attachments-date-input-help" aria-invalid="false"></label>
+                    <span id="attachments-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box">
+                    <a class="button" role="button"><span class="button-label">Save</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="slide two">
+              <a class="back--two"><i class="la la-angle-left"></i></a>
+              <div class="text"><h1>Purchase date</h1></div>
+              <div class="date-picker">
+                <div class="picks">
+                  <div class="pick month">
+                    <p>Pick a month</p>
+                    <ul>
+                      <li><a>January</a></li>
+                      <li><a>February</a></li>
+                      <li><a>March</a></li>
+                      <li><a>April</a></li>
+                      <li><a>May</a></li>
+                      <li><a>June</a></li>
+                      <li><a>July</a></li>
+                      <li><a>August</a></li>
+                      <li><a>September</a></li>
+                      <li><a>October</a></li>
+                      <li><a>November</a></li>
+                      <li><a>December</a></li>
+                    </ul>
+                  </div>
+                  <div class="pick day">
+                    <p>Pick a day</p>
+                    <ul>
+                      <li><a>01</a></li>
+                      <li><a>02</a></li>
+                      <li><a>03</a></li>
+                      <li><a>04</a></li>
+                      <li><a>05</a></li>
+                      <li><a>06</a></li>
+                      <li><a>07</a></li>
+                      <li><a>08</a></li>
+                      <li><a>09</a></li>
+                      <li><a>10</a></li>
+                      <li><a>11</a></li>
+                      <li><a>12</a></li>
+                      <li><a>13</a></li>
+                      <li><a>14</a></li>
+                      <li><a>15</a></li>
+                      <li><a>16</a></li>
+                      <li><a>17</a></li>
+                      <li><a>18</a></li>
+                      <li><a>19</a></li>
+                      <li><a>20</a></li>
+                      <li><a>21</a></li>
+                      <li><a>22</a></li>
+                      <li><a>23</a></li>
+                      <li><a>24</a></li>
+                      <li><a>25</a></li>
+                      <li><a>26</a></li>
+                      <li><a>27</a></li>
+                      <li><a>28</a></li>
+                      <li><a>29</a></li>
+                      <li><a>31</a></li>
+                      <li><a>31</a></li>
+                    </ul>
+                  </div>
+                  <div class="pick year">
+                    <p>Pick a year</p>
+                    <ul>
+                      <li><a>2019</a></li>
+                      <li><a>2018</a></li>
+                      <li><a>2017</a></li>
+                      <li><a>2016</a></li>
+                      <li><a>2015</a></li>
+                      <li><a>2014</a></li>
+                      <li><a>2013</a></li>
+                      <li><a>2012</a></li>
+                      <li><a>2011</a></li>
+                      <li><a>2010</a></li>
+                      <li><a>2009</a></li>
+                      <li><a>2008</a></li>
+                      <li><a>2007</a></li>
+                      <li><a>2006</a></li>
+                      <li><a>2005</a></li>
+                      <li><a>2004</a></li>
+                      <li><a>2003</a></li>
+                      <li><a>2002</a></li>
+                      <li><a>2001</a></li>
+                      <li><a>2000</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide three">
+              <a class="back--three"><i class="la la-angle-left"></i></a>
+              <div class="text">
+                <h1>Add attachments</h1>
+                <div class="button-box">
+                  <span class="button add--attachment" role="button"><input type="file" id="files" name="files[]"><span class="button-label">Add Attachment<span class="post"><i class="la la-paperclip"></i></span></span></span>
+                </div>
+              </div>
+              <div class="form-container">
+                <form>
+                  <fieldset>
+                    <legend>Attachment name</legend>
+                    <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                    <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Attachment type</legend>
+                    <label for="attachment-type">Attachment type
+                      <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                        <option value="0">Attachment type</option>
+                        <option value="Photo">Photo</option>
+                        <option value="Manual">Manual</option>
+                        <option value="Receipt">Receipt</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </label>
+                    <span class="select-icon"><i class="la la-angle-down"></i></span>
+                    <span id="attachment-type-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box">
+                    <a class="button add--another" role="button"><span class="button-label">Add Another?</span></a>
+                    <a class="text-button back--done">Done</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <nav aria-label="Main Menu">
+      <ul>
+        <li><a href="../home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+        <li><a href="../stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+        <li><a href="../profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+      </ul>
+    </nav>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../src/scripts/mystuff.js"></script>
+    <script>
+      $('.slide--two').click(function() {$('.slider.int').addClass('slide-two');});
+      $('.slide--three').click(function() {$('.slider.int').addClass('slide-three');});
+
+      $('.back--two').click(function() {$('.slider.int').removeClass('slide-two');});
+      $('.back--three').click(function() {$('.slider.int').removeClass('slide-three');});
+      $('.back--done').click(function() {$('.slider.int').removeClass('slide-three');});
+
+      $('.pick.month ul li a').click(function() {$('.picks').addClass('picks-two');});
+      $('.pick.day ul li a').click(function() {
+        $('.picks').removeClass('picks-two');
+        $('.picks').addClass('picks-three');
+      });
+      $('.pick.year ul li a').click(function() {
+        $('.slider.int').removeClass('slide-two');
+        $('.picks').removeClass('picks-three');
+      });
+
+      $('.block-tab').on('keydown', function(e) {if (e.keyCode == 9) e.preventDefault();});
+    </script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 // INPUT RESETS
 input[type="password"],
 input[type="checkbox"],
+input[type="button"],
 input[type="number"],
 input[type="select"],
 input[type="search"],
@@ -97,6 +98,7 @@ input:focus {border-color: var(--color-one);}
 input[type="password"],
 input[type="search"] {padding: 0 3rem 0 0;}
 
+/*
 input[type="password"] {
   font-size: 2rem;
   letter-spacing: 2px;
@@ -106,6 +108,7 @@ input[type="password"]::placeholder {
   font-size: 1rem;
   letter-spacing: 0px;
 }
+*/
 
 
 // CHECKBOX
@@ -292,6 +295,38 @@ select:focus {
 }
 
 
+// BUTTON INPUT
+input[type="button"] {background-color: $color-white;}
+
+
+// ATTACHMENT BUTTON INPUT
+input[type="button"].attachments {
+  padding: 0 0 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-one);
+}
+
+span.attachments-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 25%;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem 0 0;
+  padding: 0.125rem 0 0;
+  border-radius: 100%;
+  font-size: 0.5rem;
+  font-weight: 600;
+  line-height: 1rem;
+  color: $color-white;
+  background-color: $color-black;
+}
+
+
 // FORGOT PASSWORD PROMPT
 span.forgot-password-prompt {
   display: flex;
@@ -301,9 +336,8 @@ span.forgot-password-prompt {
   top: 0;
   right: 0;
   width: auto;
-  height: 1.325rem;
-  min-height: 1.325rem;
-  font-size: 0.875rem;
+  height: 1.5rem;
+  min-height: 1.5rem;
 }
 
 

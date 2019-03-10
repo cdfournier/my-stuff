@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../src/css/main.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="notifications">
+        <div class="notification error">
+          <div class="message">
+            <p>This is where the error message goes</p>
+          </div>
+          <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button dismiss--yes"><span class="button-label">Yes</span></button>
+              <button class="button dismiss--no"><span class="button-label">No</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-qa="introduction" class="introduction md">
+        <div class="slider ext">
+          <div class="slider int">
+            <div class="slide one">
+              <figure class="graphic animated fadeInDown delay-0.5s"><img src="../../src/images/intro-b-min.png" alt="Vintage Camera"></figure>
+              <div class="text">
+                <h1>Welcome to My Stuff</h1>
+                <p>No one expects a catastrophe. It’s not something we think about until it happens. Some things can’t be replaced after a disaster.</p>
+                <p>For everything else, there’s <em>My Stuff</em>.</p>
+              </div>
+              <div class="text right next animated fadeInRight delay-1s"><a class="button-text slider--two">Next</a></div>
+            </div>
+            <div class="slide two">
+              <figure class="graphic"><img src="../../src/images/intro-c-min.png" alt="Custom Cabinet"></figure>
+              <div class="text">
+                <h1>How Does It Work?</h1>
+                <p><em>My Stuff</em> helps you create a master list of all of your valuable possessions so you’ll be prepared to deal with property loss in the event of a catastrophe.</p>
+              </div>
+              <div class="text right next"><a class="button-text slider--three">Next</a></div>
+            </div>
+            <div class="slide three">
+              <figure class="graphic"><img src="../../src/images/intro-e-min.png" alt="Baby Grand Piano"></figure>
+              <div class="text">
+                <h1>All The Details</h1>
+                <p><em>My Stuff</em> keeps track of all of your stuff’s details: descriptions, value, manuals, receipts, and more.</p>
+              </div>
+              <div class="text right next"><a class="button-text slider--four">Next</a></div>
+            </div>
+            <div class="slide four">
+              <figure class="graphic"><img src="../../src/images/intro-f-min.png" alt="Record Collection"></figure>
+              <div class="text">
+                <h1>Organized Your Way</h1>
+                <p>Keep your stuff organized any way you like. You can group stuff by room, by the type of stuff you have, or any way you like.</p>
+              </div>
+              <div class="text right next"><a class="button-text slider--five">Next</a></div>
+            </div>
+            <div class="slide five">
+              <figure class="graphic"><img src="../../src/images/intro-g-min.png" alt="Vintage Pocket Watch"></figure>
+              <div class="text">
+                <h1>Get Paid</h1>
+                <p>When the time comes, you can use <em>My Stuff</em> to send a detailed report of your loss to your insurance carrier.&#42; You and your family will get your life back to normal more quickly.</p>
+              </div>
+              <div class="text">
+                <small>&#42;Some restrictions apply. Additional fees required.</small>
+              </div>
+              <div class="text right next"><a class="button-text slider--six">Next</a></div>
+            </div>
+            <div class="slide six">
+              <div class="text" style="padding: 2rem 2rem 4rem;">
+                <h1>Let’s Get Started</h1>
+                <p>Time to start building your list of stuff.</p>
+                <div class="button-box">
+                  <a href="../add-stuff/index.html" class="button" role="button"><span class="button-label">Add Your Stuff</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text skip md animated fadeInDown delay-1s"><a href="../add-stuff/index.html" class="button-text">Skip</a></div>
+      </section>
+    </main>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../src/scripts/mystuff.js"></script>
+    <script>
+      $('.slider--two').click(function() {
+        $('.slider.int').addClass('slide-two');
+        $('.slide.two figure').addClass('animated fadeInRight');
+      });
+
+      $('.slider--three').click(function() {
+        $('.slider.int').addClass('slide-three');
+        $('.slider.int').removeClass('slide-two');
+        $('.slide.three figure').addClass('animated fadeInRight');
+      });
+
+      $('.slider--four').click(function() {
+        $('.slider.int').addClass('slide-four');
+        $('.slider.int').removeClass('slide-three');
+        $('.slide.four figure').addClass('animated fadeInRight');
+      });
+
+      $('.slider--five').click(function() {
+        $('.slider.int').addClass('slide-five');
+        $('.slider.int').removeClass('slide-four');
+        $('.slide.five figure').addClass('animated fadeInRight');
+      });
+
+      $('.slider--six').click(function() {
+        $('.slider.int').addClass('slide-six');
+        $('.slider.int').removeClass('slide-five');
+        $('.slide.six figure').addClass('animated fadeInRight');
+        $('.slide.six .button').addClass('animated fadeInRight');
+        $('.introduction .text.skip a').addClass('hidden');
+      });
+    </script>
+  </body>
+</html>

@@ -82,6 +82,24 @@ span.button.add--attachment input[type="file"] {
 }
 
 
+// TEXT BUTTON
+a.text-button {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+
+// BACK BUTTONS
+a.back--two,
+a.back--three,
+a.back--four,
+a.back--five {
+  display: block;
+  padding: 2rem 0 0 2rem;
+  font-size: 1.75rem;
+}
+
+
 // BUTTON BOX/ROW
 .button-box {
   display: flex;

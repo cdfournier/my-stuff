@@ -21,12 +21,11 @@ h2 {
 h1 + h2 {padding: 1rem 0;}
 
 p {
-  padding: 1rem 0;
+  padding: 1rem 0 0;
   font-size: 1rem;
+  font-weight: 300;
   line-height: 1.5;
 }
-
-p:last-of-type {padding: 1rem 0 0;}
 
 small {font-size: 0.75rem;}
 

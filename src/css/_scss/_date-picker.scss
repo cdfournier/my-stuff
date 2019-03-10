@@ -1,0 +1,115 @@
+// DATE PICKER
+.date-picker {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+// PICKS
+.picks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 300%;
+  margin: 0;
+  @include transition(all, 0.325s, ease);
+  @include transform(translateX(0%));
+}
+
+.picks.picks-two {@include transform(translateX(-100%));}
+.picks.picks-three {@include transform(translateX(-200%));}
+
+
+// PICK
+.pick {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0 2rem 2rem;
+  text-align: center;
+  @include transition(all, 0.325s, ease);
+}
+
+.pick.month ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0 0;
+  list-style-type: none;
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: $color-black;
+  }
+}
+
+.pick.day ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0 0;
+  list-style-type: none;
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: $color-black;
+  }
+}
+
+.pick.year ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0 0;
+  list-style-type: none;
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: $color-black;
+  }
+}

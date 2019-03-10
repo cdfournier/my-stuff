@@ -1,0 +1,61 @@
+// PAGES
+.stuff, .add-stuff, .profile, .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+// INTRODUCTION
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.introduction .text.skip {
+  position: absolute;
+  top: 0;
+}
+
+.introduction .text.skip a {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-one);
+  @include transition(all, 0.325s, ease);
+}
+
+.introduction .text.skip a:hover, .introduction .text.skip a:focus {color: var(--color-two);}
+
+.introduction .text.skip a.hidden {opacity: 0;}
+
+.introduction .text.next {
+  padding: 2rem;
+}
+
+.introduction .text.next a {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-one);
+  @include transition(all, 0.325s, ease);
+}
+
+.introduction .text.skip a:hover, .introduction .text.skip a:focus {color: var(--color-two);}
+
+
+// INTRODUCTION FIGURES
+.introduction .slide figure {
+  display: grid;
+  width: 45%;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+}
