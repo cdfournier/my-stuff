@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../src/css-r2/main.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="notifications">
+        <div class="notification error">
+          <div class="message">
+            <p>This is where the error message goes</p>
+          </div>
+          <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button dismiss--yes"><span class="button-label">Yes</span></button>
+              <button class="button dismiss--no"><span class="button-label">No</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-qa="profile" class="profile md">
+        <div class="slider ext">
+          <div class="slider int">
+            <div class="slide one">
+              <div class="text">
+                <h1>My Profile</h1>
+                <ul>
+                  <li><span class="label">Name</span>{First Last Name}<a class="edit--name">Edit</a></li>
+                  <li><span class="label">Email</span>{Email Address}<a class="edit--email">Edit</a></li>
+                  <li><span class="label">Password</span>{Password}<a class="edit--password">Edit</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide two">
+              <a class="back--two"><i class="la la-angle-left"></i></a>
+              <div class="text">
+                <h2>My Name</h2>
+              </div>
+              <div class="form-container">
+                <form>
+                  <fieldset class="name">
+                    <legend>Name</legend>
+                    <label for="name">Name<input type="text" name="name" class="block-tab" placeholder="Name" value="{First Last Name}"><span class="is-valid"></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a class="button name disabled save--name" role="button"><span class="button-label">Save</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="slide three">
+              <a class="back--three"><i class="la la-angle-left"></i></a>
+              <div class="text">
+                <h2>My Email</h2>
+              </div>
+              <div class="form-container">
+                <form>
+                  <fieldset class="email">
+                    <legend>Email</legend>
+                    <label for="email">Email<input type="email" name="email" class="block-tab" placeholder="Email" value="{email@email.com}"><span class="is-valid"></span></label>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a class="button email disabled save--email" role="button"><span class="button-label">Save</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="slide four">
+              <a class="back--four"><i class="la la-angle-left"></i></a>
+              <div class="text">
+                <h2>My Password</h2>
+                <p>Need to change your password? Please confirm your current password and enter a new password below.</p>
+              </div>
+              <div class="form-container">
+                <form>
+                  <fieldset class="password">
+                    <legend>Current Password&#42;</legend>
+                    <label for="current-password">Current Password<input type="password" name="current-password" id="current-password" placeholder="Current password" value="{Password}"><span class="is-valid"></span></label>
+                    <span toggle="#current-password" class="la la-eye-slash show-hide-password"></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="password">
+                    <legend>New Password&#42;</legend>
+                    <label for="new-password">New Password<input type="password" name="new-password" id="new-password" placeholder="Enter a new password"><span class="is-valid"></span></label>
+                    <span toggle="#new-password" class="la la-eye-slash show-hide-password"></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <fieldset class="password">
+                    <legend>Confirm New Password&#42;</legend>
+                    <label for="confirm-password">Confirm New Password<input type="password" name="confirm-password" id="confirm-password" class="block-tab" placeholder="Confirm your new password"><span class="is-valid"></span></label>
+                    <span toggle="#confirm-password" class="la la-eye-slash show-hide-password"></span>
+                    <span class="error-message">This is where the error message goes</span>
+                  </fieldset>
+                  <div class="button-box left">
+                    <a class="button password disabled save--password" role="button"><span class="button-label">Save</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <nav aria-label="Main Menu">
+      <ul>
+        <li><a href="../home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+        <li><a href="../stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+        <li><a href="../profile/index.html"><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+      </ul>
+    </nav>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../src/scripts/mystuff.js"></script>
+    <script>
+      $('.edit--name').click(function() {$('.slider.int').addClass('slide-two');});
+      $('.edit--email').click(function() {$('.slider.int').addClass('slide-three');});
+      $('.edit--password').click(function() {$('.slider.int').addClass('slide-four');});
+
+      $('.back--two').click(function() {$('.slider.int').removeClass('slide-two');});
+      $('.back--three').click(function() {$('.slider.int').removeClass('slide-three');});
+      $('.back--four').click(function() {$('.slider.int').removeClass('slide-four');});
+
+      $('.name').on('change', function() {$('.button.save--name.disabled').removeClass('disabled');});
+      $('.email').on('change', function() {$('.button.save--email.disabled').removeClass('disabled');});
+      $('.password').on('change', function() {$('.button.save--password.disabled').removeClass('disabled');});
+
+      $('.save--name').click(function() {$('.slider.int').removeClass('slide-two');});
+      $('.save--email').click(function() {$('.slider.int').removeClass('slide-three');});
+      $('.save--password').click(function() {$('.slider.int').removeClass('slide-four');});
+
+      $('.block-tab').on('keydown', function(e) {if (e.keyCode == 9) e.preventDefault();});
+    </script>
+  </body>
+</html>

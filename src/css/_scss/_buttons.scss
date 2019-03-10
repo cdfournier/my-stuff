@@ -8,8 +8,8 @@
   max-height: 2.5rem;
   min-height: 2.5rem;
   overflow: hidden;
-  margin: 1rem 0.5rem 0;
-  padding: 0 1.75rem;
+  margin: 0;
+  padding: 0 3rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -46,19 +46,6 @@
   font-size: 1rem;
 }
 
-.button span.number,
-.button.secondary span.number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 0 0 0.5rem;
-  border-radius: 2rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-}
-
 
 // ATTACHMENT BUTTON
 span.button.add--attachment input[type="file"] {
@@ -73,133 +60,36 @@ span.button.add--attachment input[type="file"] {
 }
 
 
-// BUTTON COLOR
+// SECONDARY BUTTON COLOR
 .button {
   border: 1px solid var(--color-one);
-  color: $color-white;
-  background-color: var(--color-one);
+  color: var(--color-one);
+  background-color: $color-white;
 }
 
 .button:hover, .button:focus {
-  color: var(--color-one);
-  background-color: $color-white;
+  border: 1px solid var(--color-two);
+  color: var(--color-two);
 }
 
 .button span.number {
-  color: var(--color-one);
-  background-color: $color-white;
+  color: $color-white;
+  background-color: var(--color-one);
 }
 
 .button:hover span.number, .button:focus span.number {
-  color: $color-white;
-  background-color: var(--color-one);
-}
-
-
-// SECONDARY BUTTON COLOR
-.button.secondary {
-  border: 1px solid var(--color-one);
-  color: var(--color-one);
-  background-color: $color-white;
-}
-
-.button.secondary:hover, .button.secondary:focus {
-  color: $color-white;
-  background-color: var(--color-one);
-}
-
-.button.secondary span.number {
-  color: $color-white;
-  background-color: var(--color-one);
-}
-
-.button.secondary:hover span.number, .button.secondary:focus span.number {
-  color: var(--color-one);
-  background-color: $color-white;
-}
-
-
-// DISABLED BUTTONS
-.button.disabled, .button.secondary.disabled {
-  border: 1px solid $color-gray;
-  color: $color-gray;
-  background-color: $color-white;
-  cursor: not-allowed;
-}
-
-.mask {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 10rem;
-  border: 1px solid $color-white;
-  border-radius: 0.25rem;
-  background-color: $color-white;
-  opacity: 0.5;
-  @include transition(all, 0.325s, ease);
-}
-
-.mask.stack {height: calc(50% + 1rem);}
-
-.mask.hidden, .mask.stack.hidden {
-  height: 0;
-  max-height: 0;
-}
-
-
-// BACK BUTTONS
-a.back--two,
-a.back--three,
-a.back--four,
-a.back--five {
-  display: block;
-  padding: 2rem 0 0 2rem;
-  font-size: 1.75rem;
+  background-color: var(--color-two);
 }
 
 
 // BUTTON BOX/ROW
 .button-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 1rem 0 0;
-}
-
-.button-box.row {flex-direction: row;}
-
-.button-box.right {align-items: flex-end;}
-.button-box.right .button {margin: 1rem 0 0 1rem;}
-
-.button-box.left {align-items: flex-start;}
-.button-box.left .button {margin: 1rem 1rem 0 0;}
-
-.button-box.row.left {justify-content: flex-start;}
-.button-box.row.left .button {margin: 1rem 1rem 0 0;}
-.button-box.row.left .button:last-of-type {margin: 1rem 0 0 0;}
-
-.button-box.row.right {justify-content: flex-end;}
-.button-box.row.right .button {margin: 1rem 0 0 1rem;}
-.button-box.row.right .button:first-of-type {margin: 1rem 0 0 0;}
-
-.button-box.row span.skip,
-.button-box.row span.cancel,
-.button-box.row span.done {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  right: 0;
-  height: 2.5rem;
-  margin: 1rem 0 0 0;
-  font-size: 0.875rem;
-  text-transform: uppercase;
+  padding: 2rem 0 0;
 }

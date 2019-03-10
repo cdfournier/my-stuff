@@ -1,0 +1,31 @@
+// INDICATORS
+.indicator {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 1rem 2rem 0;
+}
+
+.indicator-gauge {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $color-white;
+}
+
+.indicator-gauge > span {
+  display: block;
+  width: 0%;
+  height: inherit;
+  @include transition(all, 5s, ease);
+}
+
+.indicator-gauge > span.loaded {width: 100%;}
+
+
+// LOADING INDICATOR
+.loading .indicator {padding: 4rem 2rem 0;}
+
+.loading .indicator .indicator-gauge > span {background-color: var(--color-one);}

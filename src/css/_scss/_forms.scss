@@ -61,9 +61,10 @@ label {
   position: relative;
   width: auto;
   margin: 0;
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 500;
   text-align: left;
+  color: $color-gray;
 }
 
 input {
@@ -74,7 +75,7 @@ input {
   height: 2.5rem;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid $color-gray;
+  border-bottom: 1px solid $color-gray_med;
   font-weight: 400;
   cursor: text;
   @include transition(all, 0.25s, ease);
@@ -96,14 +97,29 @@ input:focus {border-color: var(--color-one);}
 input[type="password"],
 input[type="search"] {padding: 0 3rem 0 0;}
 
+input[type="password"] {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+input[type="password"]::placeholder {
+  font-size: 1rem;
+  letter-spacing: 0px;
+}
+
 
 // CHECKBOX
 label.checkbox {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: fit-content;
   min-height: 1.5rem;
   padding-left: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $color-black;
+  cursor: pointer;
 }
 
 label.checkbox span {z-index: 10;}
@@ -206,28 +222,6 @@ label.toggle {
 }
 
 
-// DATE
-label.date span {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-label.date span input {
-  width: 24%;
-  text-align: center;
-}
-
-label.date span input.purchase-year {width: 30%;}
-
-label.date span.slash {
-  display: block;
-  width: auto;
-}
-
-
 // SELECT
 select {
   display: inline-block;
@@ -240,14 +234,14 @@ select {
   padding: 0;
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid $color-gray;
+  border-bottom: 1px solid $color-gray_med;
   border-left: none;
   border-radius: 0;
   font-size: 1rem;
   font-weight: 400;
   text-overflow: ellipsis;
   background-color: $color-white;
-  cursor: text;
+  cursor: pointer;
   white-space: nowrap;
   @include appearance(none);
 }
@@ -271,11 +265,11 @@ select option {
 }
 
 select:disabled {
-  border-color: $color-gray;
+  border-color: $color-gray_light;
   color: $color-gray;
 }
 
-select:disabled + .select-icon {color: $color-gray;}
+select:disabled + .select-icon {color: $color-gray_light;}
 
 select:focus {
   border-color: var(--color-one);
@@ -337,7 +331,7 @@ span.error-message {
   width: 100%;
   min-height: 1.5rem;
   padding: 0.75rem 0 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: $color-error;
   opacity: 0;

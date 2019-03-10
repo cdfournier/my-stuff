@@ -14,7 +14,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   min-height: calc(100vh - 3.5rem);
-  margin: 0;
+  margin: 0 auto;
   padding: 0 0 2rem;
 }
 
@@ -26,7 +26,8 @@ main.center {justify-content: center;}
   display: block;
   position: relative;
   width: 100%;
-  margin: 0;
+  max-width: 28rem;
+  margin: 0 auto;
   padding: 2rem 2rem 0;
 }
 
@@ -41,6 +42,7 @@ main.center {justify-content: center;}
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0;
+  max-width: 28rem;
+  margin: 0 auto;
   padding: 2rem 2rem 0;
 }

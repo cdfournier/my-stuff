@@ -1,0 +1,47 @@
+// PROFILE
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+
+// PROFILE LIST
+.profile ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0 0;
+  list-style-type: none;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 1rem 0 0;
+    span.label {
+      padding: 0 0 0.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;      
+    }
+    a {
+      position: absolute;
+      right: 0;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+  }
+  li:after {
+    display: block;
+    width: 100%;
+    padding: 1rem 0 0;
+    border-bottom: 1px solid $gray;
+    content: "";
+  }
+}

@@ -1,0 +1,12 @@
+// CODE
+p {line-height: 2;}
+
+p code {
+  margin: 0 0.125rem;
+  padding: 0.125rem 0.25rem;
+  border: 1px solid $color-gray;
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  background-color: $color-gray_light;
+  white-space: nowrap;
+}

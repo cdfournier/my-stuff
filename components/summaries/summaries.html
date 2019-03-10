@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Components: Summaries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../src/css/guide.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="notifications">
+        <div class="notification error">
+          <div class="message">
+            <p>This is where the error message goes</p>
+          </div>
+          <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button dismiss--yes"><span class="button-label">Yes</span></button>
+              <button class="button dismiss--no"><span class="button-label">No</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-qa="component-summaries" class="">
+        <div class="text">
+          <h1>Summaries</h1>
+          <h2>Stuff summary</h2>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span>Product description</li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <h2 style="padding: 1rem 0;">Attachment summary</h2>
+          <a><div class="summary attachment">
+            <ul>
+              <li class="thumbnail"><img src="../../src/images/intro-f-min.png" alt="Attachment thumbnail"></li>
+              <li class="name"><span>Name</span>Attachment name</li>
+              <li class="type"><span>Type</span>Attachment type</li>
+            </ul>
+          </div></a>
+        </div>
+      </section>
+    </main>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../src/scripts/mystuff.js"></script>
+  </body>
+</html>

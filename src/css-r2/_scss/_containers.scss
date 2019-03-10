@@ -1,0 +1,46 @@
+// MAX-WIDTHS
+.xs {max-width: 16rem;}
+.sm {max-width: 24rem;}
+.md {max-width: 32rem;}
+.lg {max-width: 40rem;}
+.xl {max-width: 56rem;}
+
+.xs, .sm, .md, .lg, .xl {margin: 0 auto;}
+
+
+// MAIN
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: calc(100vh - 3.5rem);
+  margin: 0;
+  padding: 0 0 2rem;
+}
+
+main.center {justify-content: center;}
+
+
+// TEXT
+.text {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 2rem 0;
+}
+
+.text.center {text-align: center;}
+
+.text.right {text-align: right;}
+
+
+// FORM CONTAINER
+.form-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 2rem 0;
+}

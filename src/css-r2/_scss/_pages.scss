@@ -1,0 +1,178 @@
+// LOADING
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  @include transition(all, 0.5s, ease);
+  background-color: var(--color-one);
+}
+
+.loading .logo {
+  width: 100%;
+  max-width: 14rem;
+}
+
+.loading .logo svg {fill: $color-white;}
+
+.loading.loaded {@include transform(translateY(-100%));}
+
+
+// WELCOME
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.welcome h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.welcome h1 svg {
+  width: 12rem;
+  margin: 1rem auto 0;
+  fill: var(--color-one);
+}
+
+.welcome small {
+  display: block;
+  padding: 2rem 0 0;
+}
+
+
+// SIGN IN OR SIGN UP
+.sign-in, .sign-up {width: 100%;}
+
+
+// PAGES
+.stuff, .add-stuff, .profile, .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+
+// INTRODUCTION
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.introduction .text.skip {
+  position: absolute;
+  top: 0;
+}
+
+.introduction .text.skip a {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-one);
+  @include transition(all, 0.325s, ease);
+}
+
+.introduction .text.skip a:hover, .introduction .text.skip a:focus {color: var(--color-two);}
+
+.introduction .text.skip a.hidden {opacity: 0;}
+
+.introduction .text.next {
+  padding: 2rem;
+}
+
+.introduction .text.next a {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-one);
+  @include transition(all, 0.325s, ease);
+}
+
+.introduction .text.skip a:hover, .introduction .text.skip a:focus {color: var(--color-two);}
+
+
+// INTRODUCTION FIGURES
+.introduction .slide figure {
+  display: grid;
+  width: 45%;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+}
+
+
+// STUFF
+.stuff-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2rem;
+}
+
+
+// PROFILE LIST
+.profile ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0 0;
+  list-style-type: none;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 1rem 0 0;
+    span.label {
+      padding: 0 0 0.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;      
+    }
+    a {
+      position: absolute;
+      right: 0;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+  }
+  li:after {
+    display: block;
+    width: 100%;
+    padding: 1rem 0 0;
+    border-bottom: 1px solid $color-gray;
+    content: "";
+  }
+}
