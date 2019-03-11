@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="../../src/css/main.css">
   </head>
-  <body>
+  <body style="background-color: #f8f8f8;">
     <main>
       <section data-qa="notifications">
         <div class="notification error">
@@ -30,13 +30,124 @@
           </div>
         </div>
       </section>
-      <section data-qa="stuff" class="stuff">
+      <section data-qa="stuff" class="stuff-page">
         <div class="text">
           <h1>Your Stuff</h1>
         </div>
+        <div class="form-container">
+          <form>
+            <fieldset>
+              <legend>Search</legend>
+              <label for="search-input">Search<input type="search" name="search-input" id="search-input" placeholder="Search" aria-describedby="search-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+              <span class="search-icon"><i class="la la-search"></i></span>
+              <span id="search-input-help" class="error-message" role="alert">This is where the error message goes</span>
+            </fieldset>
+          </form>
+        </div>
+        <div class="text">
+          <h2>Recently added stuff</h2>
+          <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+          <a href="../edit-stuff/index.html"><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+        </div>
+        <div class="text">
+          <h2>Kitchen stuff</h2>
+          <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+        </div>
+        <div class="text">
+          <h2>Furniture stuff</h2>
+          <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+        </div>
+        <div class="text">
+          <h2>Computer stuff</h2>
+          <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+          <a><div class="summary stuff">
+            <ul>
+              <li class="description"><span>Description</span><span class="overflow">Product description</span></li>
+              <li class="quantity"><span>Quantity</span>0000</li>
+              <li class="value"><span>Value</span>&#36;000.00</li>
+            </ul>
+          </div></a>
+        </div>
+        <div class="text add-stuff animated fadeInDown delay-1s"><a href="../add-stuff/index.html" class="text-button">Add More Stuff</a></div>
       </section>
     </main>
-    <nav aria-label="Main Menu">
+    <nav style="background-color: #f8f8f8;" aria-label="Main Menu">
       <ul>
         <li><a href="../home/index.html"><span class="icon"><i class="la la-home"></i></span>Home</a></li>
         <li><a href="../stuff/index.html"><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>

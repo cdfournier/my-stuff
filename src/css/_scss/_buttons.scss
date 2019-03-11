@@ -89,6 +89,14 @@ a.text-button {
 }
 
 
+// INLINE TEXT BUTTON
+.inline-text-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+
 // BACK BUTTONS
 a.back--two,
 a.back--three,
@@ -109,5 +117,5 @@ a.back--five {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 2rem 0 0;
+  padding: 1rem 0 0;
 }
