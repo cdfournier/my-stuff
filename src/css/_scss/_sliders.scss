@@ -43,25 +43,25 @@
 
 
 // SIGN IN SLIDER
-.sign-in .slider.int {min-width: 300%;}
-.sign-in .slider.int.slide-two {@include transform(translateX(-33.3%));}
-.sign-in .slider.int.slide-three {@include transform(translateX(-66.6%));}
+.sign-in-page .slider.int {min-width: 300%;}
+.sign-in-page .slider.int.slide-two {@include transform(translateX(-33.3%));}
+.sign-in-page .slider.int.slide-three {@include transform(translateX(-66.6%));}
 
 
 // SIGN UP SLIDER
-.sign-up .slider.int {min-width: 200%;}
-.sign-up .slider.int.slide-two {@include transform(translateX(-50%));}
+.sign-up-page .slider.int {min-width: 200%;}
+.sign-up-page .slider.int.slide-two {@include transform(translateX(-50%));}
 
 
 // INTRODUCTION SLIDER
-.introduction .slider.int {min-width: 600%;}
-.introduction .slider.int.slide-two {@include transform(translateX(-16.7%));}
-.introduction .slider.int.slide-three {@include transform(translateX(-33.4%));}
-.introduction .slider.int.slide-four {@include transform(translateX(-50%));}
-.introduction .slider.int.slide-five {@include transform(translateX(-66.66%));}
-.introduction .slider.int.slide-six {@include transform(translateX(-83.35%));}
+.introduction-page .slider.int {min-width: 600%;}
+.introduction-page .slider.int.slide-two {@include transform(translateX(-16.7%));}
+.introduction-page .slider.int.slide-three {@include transform(translateX(-33.4%));}
+.introduction-page .slider.int.slide-four {@include transform(translateX(-50%));}
+.introduction-page .slider.int.slide-five {@include transform(translateX(-66.66%));}
+.introduction-page .slider.int.slide-six {@include transform(translateX(-83.35%));}
 
-.introduction .slide {
+.introduction-page .slide {
   align-items: center;
   height: 100vh;
   padding: 4rem 0 2rem;
@@ -69,13 +69,20 @@
 
 
 // ADD STUFF SLIDER
-.add-stuff .slider.int {min-width: 300%;}
-.add-stuff .slider.int.slide-two {@include transform(translateX(-33.3%));}
-.add-stuff .slider.int.slide-three {@include transform(translateX(-66.6%));}
+.add-stuff-page .slider.int {min-width: 300%;}
+.add-stuff-page .slider.int.slide-two {@include transform(translateX(-33.3%));}
+.add-stuff-page .slider.int.slide-three {@include transform(translateX(-66.6%));}
 
 
 // EDIT STUFF SLIDER
-.edit-stuff .slider.int {min-width: 400%;}
-.edit-stuff .slider.int.slide-two {@include transform(translateX(-25%));}
-.edit-stuff .slider.int.slide-three {@include transform(translateX(-50%));}
-.edit-stuff .slider.int.slide-four {@include transform(translateX(-75%));}
+.edit-stuff-page .slider.int {min-width: 400%;}
+.edit-stuff-page .slider.int.slide-two {@include transform(translateX(-25%));}
+.edit-stuff-page .slider.int.slide-three {@include transform(translateX(-50%));}
+.edit-stuff-page .slider.int.slide-four {@include transform(translateX(-75%));}
+
+
+// PROFILE SLIDER
+.profile-page .slider.int {min-width: 400%;}
+.profile-page .slider.int.slide-two {@include transform(translateX(-25%));}
+.profile-page .slider.int.slide-three {@include transform(translateX(-50%));}
+.profile-page .slider.int.slide-four {@include transform(translateX(-75%));}

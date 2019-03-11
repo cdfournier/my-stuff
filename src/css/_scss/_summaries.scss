@@ -36,23 +36,26 @@
         text-transform: uppercase;
         color: $color-gray;
       }
+      span.overflow {
+        overflow: hidden;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: $color-black;
+        text-overflow: ellipsis;
+        text-transform: none;
+        white-space: nowrap;
+      }
     }
-    li.description {width: 50%;}
-    li.description span.overflow {
-      overflow: hidden;
-      font-size: 0.875rem;
-      font-weight: 400;
-      color: $color-black;
-      text-overflow: ellipsis;
-      text-transform: none;
-      white-space: nowrap;
-    }
-    li.quantity {width: 25%;}
+    li.description {width: 60%;}
+    li.quantity {width: 15%;}
     li.value {width: 25%;}
 
     li.group {width: 45%;}
     li.qty {width: 15%;}
-    li.date {width: 40%;}
+    li.date {
+      display: none;
+      width: 40%;
+    }
 
     li.thumbnail {width: 2.25rem;}
     li.name {width: 40%;}
@@ -60,4 +63,9 @@
 
     li:last-of-type {margin: 0;}
   }
+}
+
+
+@media (min-width: 21.75rem) {
+.summary ul li.date {display: flex;}
 }

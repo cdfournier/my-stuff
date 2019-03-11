@@ -8,6 +8,7 @@ A new service designed to make it wicked easy to catalog the important details o
 - [Introduction](https://cdfournier.github.io/my-stuff/views/introduction/index.html)
 - [Stuff](https://cdfournier.github.io/my-stuff/views/stuff/index.html)
 - [Add Stuff](https://cdfournier.github.io/my-stuff/views/add-stuff/index.html)
+- [Edit Stuff](https://cdfournier.github.io/my-stuff/views/edit-stuff/index.html)
 - [Profile](https://cdfournier.github.io/my-stuff/views/profile/index.html)
 - [Home](https://cdfournier.github.io/my-stuff/home/profile/index.html)
 
