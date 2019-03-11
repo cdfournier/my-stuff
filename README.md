@@ -12,6 +12,11 @@ A new service designed to make it wicked easy to catalog the important details o
 - [Edit Stuff](https://cdfournier.github.io/my-stuff/views/edit-stuff/index.html)
 - [Profile](https://cdfournier.github.io/my-stuff/views/profile/index.html)
 
+## Components
+- [Buttons](https://cdfournier.github.io/my-stuff/components/buttons/buttons.html)
+- [Forms](https://cdfournier.github.io/my-stuff/components/forms/forms.html)
+- [Summaries](https://cdfournier.github.io/my-stuff/components/summaries/summaries.html)
+
 ## Current Dependencies
 - [Animate.css](https://daneden.github.io/animate.css/)
 - [Animate On Scroll](https://github.com/michalsnik/aos/tree/v2)
