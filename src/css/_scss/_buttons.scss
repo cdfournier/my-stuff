@@ -64,7 +64,7 @@ span.button.add--attachment input[type="file"] {
 .button {
   border: 1px solid var(--color-one);
   color: var(--color-one);
-  background-color: $color-white;
+  background-color: transparent;
 }
 
 .button:hover, .button:focus {

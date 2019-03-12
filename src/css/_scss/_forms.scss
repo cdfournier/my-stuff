@@ -244,7 +244,7 @@ select {
   font-size: 1rem;
   font-weight: 400;
   text-overflow: ellipsis;
-  background-color: $color-white;
+  background-color: transparent;
   cursor: pointer;
   white-space: nowrap;
   @include appearance(none);
@@ -297,7 +297,7 @@ select:focus {
 
 
 // BUTTON INPUT
-input[type="button"] {background-color: $color-white;}
+input[type="button"] {background-color: transparent;}
 
 
 // ATTACHMENT BUTTON INPUT

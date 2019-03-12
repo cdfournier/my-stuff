@@ -35,6 +35,12 @@
 .slider.int .slide.two, .slider.int .slide.three, .slider.int .slide.four,
 .slider.int .slide.five, .slider.int .slide.six {max-height: 0;}
 
+.stuff-page .slider.int.slide-two .slide.one,
+.stuff-page .slider.int.slide-three .slide.one,
+.stuff-page .slider.int.slide-four .slide.one,
+.stuff-page .slider.int.slide-five .slide.one,
+.stuff-page .slider.int.slide-six .slide.one {max-height: 0;}
+
 .slider.int.slide-two .slide.two {max-height: 500rem;}
 .slider.int.slide-three .slide.three {max-height: 500rem;}
 .slider.int.slide-four .slide.four {max-height: 500rem;}
@@ -66,6 +72,14 @@
   height: 100vh;
   padding: 4rem 0 2rem;
 }
+
+
+// STUFF SLIDER
+.stuff-page .slider.int {min-width: 500%;}
+.stuff-page .slider.int.slide-two {@include transform(translateX(-20%));}
+.stuff-page .slider.int.slide-three {@include transform(translateX(-40%));}
+.stuff-page .slider.int.slide-four {@include transform(translateX(-60%));}
+.stuff-page .slider.int.slide-five {@include transform(translateX(-80%));}
 
 
 // ADD STUFF SLIDER
