@@ -26,6 +26,8 @@
   justify-content: flex-start;
   position: relative;
   width: 100%;
+  max-width: 100vw;
+  min-width: 100vw;
   padding: 0 0 2rem;
   @include transition(all, 0.325s, ease);
 }

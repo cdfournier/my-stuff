@@ -292,7 +292,7 @@ nav ul li a.active { color: #808080; }
 
 .slider.int { -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; -webkit-transform: translateX(0%); -moz-transform: translateX(0%); -ms-transform: translateX(0%); -o-transform: translateX(0%); transform: translateX(0%); }
 
-.slide { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; position: relative; width: 100%; padding: 0 0 2rem; -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
+.slide { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; position: relative; width: 100%; max-width: 100vw; min-width: 100vw; padding: 0 0 2rem; -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
 
 .slider.int .slide.two, .slider.int .slide.three, .slider.int .slide.four, .slider.int .slide.five, .slider.int .slide.six { max-height: 0; }
 
