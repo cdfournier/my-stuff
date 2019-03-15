@@ -27,6 +27,8 @@ p {
   line-height: 1.5;
 }
 
+form + p:first-of-type {padding: 2rem 0 0;}
+
 small {font-size: 0.75rem;}
 
 strong, em, b {
