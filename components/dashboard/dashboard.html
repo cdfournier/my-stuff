@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff | Components: Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../src/css/guide.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="notifications">
+        <div class="notification error">
+          <div class="message">
+            <p>This is where the error message goes</p>
+          </div>
+          <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button dismiss--yes"><span class="button-label">Yes</span></button>
+              <button class="button dismiss--no"><span class="button-label">No</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-qa="component-dashboard" class="">
+        <div class="text">
+          <h1>Dashboard</h1>
+        </div>
+        <div class="dashboard">
+          <div class="stat">
+            <ul>
+              <li><span class="icon"><i class="la la-money"></i></span></li>
+              <li><span class="label">Stuff value</span></li>
+              <li><span class="value"><span class="currency">$</span>12.4k</span></li>
+            </ul>
+          </div>
+          <div class="stat">
+            <ul>
+              <li><span class="icon"><i class="la la-cubes"></i></span></li>
+              <li><span class="value">245</span></li>
+              <li><span class="label">Belongings</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../src/scripts/mystuff.js"></script>
+  </body>
+</html>
