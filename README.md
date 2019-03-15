@@ -14,6 +14,7 @@ A new service designed to make it wicked easy to catalog the important details o
 
 ## Components
 - [Buttons](https://cdfournier.github.io/my-stuff/components/buttons/buttons.html)
+- [Dashboard](https://cdfournier.github.io/my-stuff/components/dashboard/dashboard.html)
 - [Forms](https://cdfournier.github.io/my-stuff/components/forms/forms.html)
 - [Summaries](https://cdfournier.github.io/my-stuff/components/summaries/summaries.html)
 
