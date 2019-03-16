@@ -144,6 +144,82 @@ $('.introduction-page .add--stuff').click(function() {
 });
 
 
+// HOME
+$('.home-page .text.add-stuff').click(function() {
+  $('.home-page').removeClass('show');
+  $('.add-stuff-page').addClass('show');
+});
+
+
+// STUFF
+$('.stuff-page .text.add-stuff').click(function() {
+  $('.stuff-page').removeClass('show');
+  $('.add-stuff-page').addClass('show');
+});
+
+$('.stuff-page .slide--two').click(function() {$('.stuff-page .slider.int').addClass('slide-two');});
+$('.stuff-page .slide--three').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-two');
+  $('.stuff-page .slider.int').addClass('slide-three');
+});
+$('.stuff-page .slide--four').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-two');
+  $('.stuff-page .slider.int').addClass('slide-four');
+});
+$('.stuff-page .slide--five').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-four');
+  $('.stuff-page .slider.int').addClass('slide-five');
+});
+
+$('.stuff-page .back--two').click(function() {$('.stuff-page .slider.int').removeClass('slide-two');});
+$('.stuff-page .back--three').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-three');
+  $('.stuff-page .slider.int').addClass('slide-two');
+});
+$('.stuff-page .back--done').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-four');
+  $('.stuff-page .slider.int').addClass('slide-two');
+});
+$('.stuff-page .back--four').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-four');
+  $('.stuff-page .slider.int').addClass('slide-two');
+});
+$('.stuff-page .back--five').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-five');
+  $('.stuff-page .slider.int').addClass('slide-four');
+});
+
+$('.stuff-page .changes--save').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-two');
+  $('.stuff-page .slider.int').addClass('slide-one');
+});
+$('.stuff-page .changes--cancel').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-two');
+  $('.stuff-page .slider.int').addClass('slide-one');
+});
+
+$('.stuff-page .attachment--save').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-five');
+  $('.stuff-page .slider.int').addClass('slide-four');
+});
+$('.stuff-page .attachment--cancel').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-five');
+  $('.stuff-page .slider.int').addClass('slide-four');
+});
+
+$('.stuff-page .pick.month ul li a').click(function() {$('.picks').addClass('picks-two');});
+$('.stuff-page .pick.day ul li a').click(function() {
+  $('.picks').removeClass('picks-two');
+  $('.picks').addClass('picks-three');
+});
+$('.stuff-page .pick.year ul li a').click(function() {
+  $('.stuff-page .slider.int').removeClass('slide-two');
+  $('.picks').removeClass('picks-three');
+  $('.stuff-page .slider.int').removeClass('slide-three');
+  $('.stuff-page .slider.int').addClass('slide-two');
+});
+
+
 // ADD STUFF
 $('.add-stuff-page .slide--two').click(function() {$('.add-stuff-page .slider.int').addClass('slide-two');});
 $('.add-stuff-page .slide--three').click(function() {$('.add-stuff-page .slider.int').addClass('slide-three');});
@@ -160,6 +236,47 @@ $('.add-stuff-page .pick.day ul li a').click(function() {
 $('.add-stuff-page .pick.year ul li a').click(function() {
   $('.add-stuff-page .slider.int').removeClass('slide-two');
   $('.picks').removeClass('picks-three');
+});
+
+
+// PROFILE
+$('.profile-page .edit--name').click(function() {$('.profile-page .slider.int').addClass('slide-two');});
+$('.profile-page .edit--email').click(function() {$('.profile-page .slider.int').addClass('slide-three');});
+$('.profile-page .edit--password').click(function() {$('.profile-page .slider.int').addClass('slide-four');});
+
+$('.profile-page .back--two').click(function() {$('.profile-page .slider.int').removeClass('slide-two');});
+$('.profile-page .back--three').click(function() {$('.profile-page .slider.int').removeClass('slide-three');});
+$('.profile-page .back--four').click(function() {$('.profile-page .slider.int').removeClass('slide-four');});
+
+$('.profile-page .name').on('change', function() {$('.profile-page .name .button.save--name.disabled').removeClass('disabled');});
+$('.profile-page .email').on('change', function() {$('.profile-page .email .button.save--email.disabled').removeClass('disabled');});
+$('.profile-page .password').on('change', function() {$('.profile-page .password .button.save--password.disabled').removeClass('disabled');});
+
+$('.profile-page .save--name').click(function() {$('.profile-page .slider.int').removeClass('slide-two');});
+$('.profile-page .save--email').click(function() {$('.profile-page .slider.int').removeClass('slide-three');});
+$('.profile-page .save--password').click(function() {$('.profile-page .slider.int').removeClass('slide-four');});
+
+
+// NAV
+$('nav .nav--home').click(function() {
+  $('.stuff-page').removeClass('show');
+  $('.add-stuff-page').removeClass('show');
+  $('.profile-page').removeClass('show');
+  $('.home-page').addClass('show');
+  $('.home-page .text.add-stuff').addClass('animated fadeInDown delay-1s');
+});
+$('nav .nav--stuff').click(function() {
+  $('.home-page').removeClass('show');
+  $('.add-stuff-page').removeClass('show');
+  $('.profile-page').removeClass('show');
+  $('.stuff-page').addClass('show');
+  $('.stuff-page .text.add-stuff').addClass('animated fadeInDown delay-1s');
+});
+$('nav .nav--profile').click(function() {
+  $('.home-page').removeClass('show');
+  $('.stuff-page').removeClass('show');
+  $('.add-stuff-page').removeClass('show');
+  $('.profile-page').addClass('show');
 });
 
 

@@ -34,6 +34,9 @@ main.center {justify-content: center;}
 
 .text.right {text-align: right;}
 
+.text > h2:first-of-type {padding: 0;}
+.text > .inline-text-button:first-of-type {top: 2rem;}
+
 
 // FORM CONTAINER
 .form-container {
@@ -48,6 +51,7 @@ main.center {justify-content: center;}
 .form-container figure {
   display: grid;
   width: 50%;
+  max-width: 14rem;
   margin: 0 auto;
   padding: 0 0 2rem;
 }

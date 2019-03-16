@@ -21,20 +21,21 @@ main {padding: 0;}
 
 
 // PAGE TRANSITIONS
-.welcome, .sign-in-page, .sign-up-page, .introduction-page, .home-page,
-.stuff-page, .add-stuff-page, .edit-stuff-page, .profile-page {
+.welcome, .sign-in-page, .sign-up-page, .introduction-page,
+.home-page, .stuff-page, .add-stuff-page, .profile-page {
   justify-content: flex-start;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   max-height: 0;
+  padding-bottom: 4rem;
   @include transition(all, 0.5s, ease);
   @include transform(translateY(-200rem));
 }
 
 .welcome.show, .sign-in-page.show, .sign-up-page.show, .introduction-page.show,
-.home-page.show, .add-stuff-page.show {
+.home-page.show, .stuff-page.show, .add-stuff-page.show, .profile-page.show {
   max-height: 500rem;
   min-height: 100vh;
   @include transform(translateY(0rem));

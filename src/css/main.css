@@ -83,7 +83,7 @@ span.button.add--attachment input[type="file"] { position: absolute; width: auto
 
 a.text-button { margin: 2rem 0 0; font-size: 0.75rem; text-transform: uppercase; }
 
-.inline-text-button { position: absolute; top: 2rem; right: 2rem; }
+.inline-text-button { position: absolute; top: 3rem; right: 2rem; }
 
 a.back--two, a.back--three, a.back--four, a.back--five { display: block; padding: 2rem 0 0 2rem; font-size: 1.75rem; }
 
@@ -113,9 +113,13 @@ main.center { justify-content: center; }
 
 .text.right { text-align: right; }
 
+.text > h2:first-of-type { padding: 0; }
+
+.text > .inline-text-button:first-of-type { top: 2rem; }
+
 .form-container { display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; margin: 0; padding: 2rem 2rem 0; }
 
-.form-container figure { display: grid; width: 50%; margin: 0 auto; padding: 0 0 2rem; }
+.form-container figure { display: grid; width: 50%; max-width: 14rem; margin: 0 auto; padding: 0 0 2rem; }
 
 input[type="password"], input[type="checkbox"], input[type="button"], input[type="number"], input[type="select"], input[type="search"], input[type="radio"], input[type="email"], input[type="date"], input[type="file"], input[type="text"], input[type="tel"], input[type="url"] { border-top: none; border-right: none; border-left: none; border-image: none; border-radius: 0; outline: none; font-size: 1rem; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
@@ -220,7 +224,7 @@ fieldset.valid .show-hide-password { right: 2rem; }
 
 .summary ul li span.overflow { overflow: hidden; font-size: 0.875rem; font-weight: 400; color: #000000; text-overflow: ellipsis; text-transform: none; white-space: nowrap; }
 
-.summary ul li.description { width: 60%; }
+.summary ul li.description { width: 55%; }
 
 .summary ul li.quantity { width: 15%; }
 
