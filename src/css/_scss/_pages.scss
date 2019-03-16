@@ -33,7 +33,7 @@
 
 
 // WELCOME
-.welcome {
+.welcome-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@
   padding: 0;
 }
 
-.welcome h1 {
+.welcome-page h1 {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
@@ -52,7 +52,7 @@
   text-transform: uppercase;
 }
 
-.welcome h1 svg {
+.welcome-page h1 svg {
   width: 12rem;
   margin: 1rem auto 0;
   fill: var(--color-one);
@@ -102,9 +102,7 @@
 
 .introductio-pagen .text.skip a.hidden {opacity: 0;}
 
-.introduction-page .text.next {
-  padding: 2rem;
-}
+.introduction-page .text.next {padding: 2rem;}
 
 .introduction-page .text.next a {
   font-size: 0.875rem;
@@ -127,7 +125,7 @@
 
 
 // HOME
-.home-page .text.add-stuff {
+.home-page .text.add-more-stuff {
   position: absolute;
   top: 0;
   right: 0;
@@ -136,7 +134,7 @@
 
 
 // STUFF
-.stuff-page .text.add-stuff {
+.stuff-page .text.add-more-stuff {
   position: absolute;
   top: 0;
   right: 0;

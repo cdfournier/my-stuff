@@ -115,6 +115,8 @@ main.center { justify-content: center; }
 
 .text > h2:first-of-type { padding: 0; }
 
+.text p + h2:first-of-type { padding: 1rem 0 0; }
+
 .text > .inline-text-button:first-of-type { top: 2rem; }
 
 .form-container { display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; margin: 0; padding: 2rem 2rem 0; }

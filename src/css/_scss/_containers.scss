@@ -35,6 +35,7 @@ main.center {justify-content: center;}
 .text.right {text-align: right;}
 
 .text > h2:first-of-type {padding: 0;}
+.text p + h2:first-of-type {padding: 1rem 0 0;}
 .text > .inline-text-button:first-of-type {top: 2rem;}
 
 

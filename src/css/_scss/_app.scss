@@ -21,7 +21,7 @@ main {padding: 0;}
 
 
 // PAGE TRANSITIONS
-.welcome, .sign-in-page, .sign-up-page, .introduction-page,
+.welcome-page, .sign-in-page, .sign-up-page, .introduction-page,
 .home-page, .stuff-page, .add-stuff-page, .profile-page, .sign-out-page {
   justify-content: flex-start;
   position: absolute;
@@ -34,14 +34,14 @@ main {padding: 0;}
   @include transform(translateY(-200rem));
 }
 
-.welcome.show, .sign-in-page.show, .sign-up-page.show, .introduction-page.show,
+.welcome-page.show, .sign-in-page.show, .sign-up-page.show, .introduction-page.show,
 .home-page.show, .stuff-page.show, .add-stuff-page.show, .profile-page.show, .sign-out-page.show {
   max-height: 500rem;
   min-height: 100vh;
   @include transform(translateY(0rem));
 }
 
-.welcome.show {
+.welcome-page.show {
   justify-content: center;
   min-height: 80vh;
 }
@@ -53,3 +53,18 @@ main {padding: 0;}
 
 // ADD STUFF
 .add-stuff-page {margin-bottom: 4rem;}
+
+
+// ATTACHMENTS
+.stuff-page .slide.four .form-container,
+.add-stuff-page .slide.three .form-container {
+  max-height: 0;
+  opacity: 0;
+  @include transition(all, 0.325s, ease);  
+}
+
+.stuff-page .slide.four .form-container.show,
+.add-stuff-page .slide.three .form-container.show {
+  max-height: 100rem;
+  opacity: 1;
+}
