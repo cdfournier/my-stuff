@@ -1,6 +1,10 @@
 # My Stuff
 A new service designed to make it wicked easy to catalog the important details of all of your stuff.
 
+
+## App
+- [App](https://cdfournier.github.io/my-stuff/app/app/index.html)
+
 ## Views
 - [Welcome](https://cdfournier.github.io/my-stuff/views/welcome/index.html)
 - [Sign In](https://cdfournier.github.io/my-stuff/views/sign-in/index.html)
