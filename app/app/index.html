@@ -1,0 +1,1337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../../src/css/app.css">
+  </head>
+  <body>
+    <main>
+      <section data-qa="notifications">
+        <div class="notification error">
+          <div class="message">
+            <p>This is where the error message goes</p>
+          </div>
+          <span class="dismiss error"><i class="la la-times-circle"></i></span>
+        </div>
+        <div class="notification confirm">
+          <div class="message">
+            <p>You have unsaved changes. If you continue those changes will be lost. Are you sure you want to continue?</p>
+            <div class="action">
+              <button class="button dismiss--yes"><span class="button-label">Yes</span></button>
+              <button class="button dismiss--no"><span class="button-label">No</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="content">
+        <section data-qa="welcome" class="welcome md">
+          <div class="text center">
+            <h1>Welcome to <svg xmlns="http://www.w3.org/2000/svg" title="My Stuff welcome screen logo" description="My Stuff welcome screen logo" viewBox="0 0 326 154" alt="My Stuff"><path class="logo-color" d="M106.4 40.8c-4.5 24.7-12.4 49-23.7 81.2-1.2 3.3-2 8.1-6.5 8.1-2.3 0-4.6-2.2-4.5-4.2C73 124.2 91 67 93.6 57.5c1.4-5.3 13.5-50.4 1.6-50.4-4.8 0-9.7 4.9-12.5 8.1C66.3 32.9 55.6 57.9 48 80.8c-1 2.7-1.2 7.6-5.6 7.6-2 0-3.9-1.4-3.9-3.8 0-1.7.9-3.9 1.3-5.3 2.6-8.7 5.5-19.1 5.5-28.7 0-2.9-.6-7.2-3-7.2-13 0-29.7 35.9-31.6 59.6-.3 4.2-4.2 4.6-5.5 4.6-3.9 0-5.2-2.9-5.2-5.5C0 99 1.6 96 2.5 92.5c5.3-21.8 14.7-42.1 20.8-64.1.9-4.2 1-9.4 5.6-9.4 2 0 4.2 1.2 4.2 3.8 0 1.6-.6 3.5-.7 4.6-1.3 6.4-3 12.6-4.9 18.8 3.9-4.3 9.2-8.7 15.6-8.7 5.9 0 8.8 5.3 9.4 10.8 6.1-12.4 12.8-24.5 21.8-35.2 5-6 12.5-13.1 21-13.1 3.7 0 8.1 1.3 9.9 4.9 4.9 9.4 3.2 25.3 1.2 35.9zm26.4 76.7c-2-1.2-4.5-2.3-7.4-3-1.2 4.3-4.8 14.4-7.4 20.8-2.7 6.6-9.4 18.8-18.2 18.8-6.5 0-10.1-3.9-10.1-10.4 0-14.6 14.4-33.8 29.7-35.4l2.7-9.8c-3 3.8-6.6 7.4-11.8 7.4-4.5 0-8.1-2-7.4-8.7.4-4.2 6.8-23.8 12.5-23.8 3.3 0 2.2 2.2 1.2 3.9-1.3 2.6-10.2 23.1-6.1 23.1 8.2 0 16.3-28.3 21-28.3 1.6 0 3.3 1 3.3 2.7-.1 2.7-1.3 5.9-8.2 33.6 3 .4 5.9 1.4 8.2 3.5 2.6 1.8.4 7-2 5.6zm-14.6-3c-16.4 2.9-27 33.1-18.6 33.1 7.5-.1 17-29.2 18.6-33.1zm91.7-92.9c0 5.3-1.2 16.2-6.1 16.2-1.9 0-4.3-.9-3.5-3.6 1.3-4.2 2.3-8.1 2.3-12.6 0-7.6-4.6-10.5-11.1-10.5-15.9 0-41.1 24.1-41.1 43.4 0 20.4 46.1 19.3 46.1 43.6 0 12.7-20.5 28-36 28-3.2 0-11.5-.9-11.2-4.8.1-1.7 2-2.7 3.7-2.7 1.6 0 3.2.7 4.9.7 8.4 0 29.7-9.7 29.7-21.5 0-7.4-8.6-11.7-14.4-14.6-11.8-5.9-31.1-11.4-31.1-28.4C142.1 34.9 167 5 191.8 5c6.8 0 13.3 2.3 16.3 8.7 1.3 2.5 1.8 5.2 1.8 7.9zm37.9 34.7c-2 0-20 .3-25.9.1-3.3 12.7-7.8 26-11.4 38.7l-6.8 24.2c-.4 1 0 .7.6 1.4.3.6.3 1.2.1 1.6-1 2.5-2.5 4.2-5 4.6-1.4.1-2.9-.1-3.7-1.2-1-1.2-.6-2.6-.3-3.9.7-2.9 1.6-5.8 2.5-8.7l5.6-19.1c3.7-12.7 7.6-25.4 11.5-38-5.9 0-12.1-.3-18.2-.3-1.4 0-2.9.1-4-.9-1-1-1-2.6 0-3.6 1.2-.9 2.6-.9 4-.9 18.7 0 19.9.1 19.9.1l4.8-13.9c.9-2.5 2.2-6.4 5.8-4.3 1.4.9 1.4 2 1 3.5l-4.5 14.7c7.6.1 20.8 0 24.1 0 5.7.4 8 5.9-.1 5.9zM271 87.8c-5.9 9.4-17 18.3-25.4 18.3-6.6 0-7.9-5.3-7.4-9.4-2.7 2.7-5.9 5.6-9.9 6.5-3.2.7-6.6.3-8.1-2.7-2.2-5.1 2.9-17.5 6.8-21.6 1-1.2 2.2-1.7 3.5-1.4 2.9.6 2.3 1.7 1.6 3.3-2 4.2-8.9 17.5-4.6 17.5 6.5 0 11.7-11.3 14.6-15.2 1.2-1.4 2.7-5.8 4.9-6.4 1.4-.3 3.2.1 4.2 1.3 1.2 1.6 0 3.6-1 5.1-3.6 5.6-7.6 17.8-2.7 17.8 6.2 0 17-11 22.1-15.7.8-1.1 2.1 1.4 1.4 2.6zm46.1-12.5c-4.6 0-8.4.1-14 .3-.9 2.3-1.4 5.2-2.2 7.6 1.3 4 1.6 8.2 1.7 12.3.4 13.1-5.6 53.4-19.7 53.4-16.1 0 7.6-57 10.5-65.7-3.2-1.9-8.2-7.6-8.2-8.2 0-4 9.8-4 12-4.3l5.2-15.4c-5.3 8.1-13.8 14.9-22.2 21.1 2.2 3.8 2 8.7 2 12.8 0 9.4-4.5 46.3-17 46.3-5 0-6.8-4.6-6.8-8.8 0-14.7 13.7-43.9 13.7-48.2 0-.7-2-1.9-2-3.5 0-2.2 2.9-2.6 4.5-3.2 1.7-4.8 15-45.9 21.3-45.9 1.3 0 2.6.7 2.6 2.2 0 1.7-1.3 3.2-2 4.5-6.1 10.7-10.1 23.1-13.8 34.9 10.2-7.4 18.3-18 25.9-27.9 2.9-6.1 8.8-22.1 14.4-22.1 4.5 0 2.9 5.1 1.7 7.5-2.2 4.8-5 9.1-7.9 13.4-4.2 6.1-9.9 24.5-12.1 32 4.3 0 9.5-.4 14.6-.4 3.1.1 1.1 5.3-2.2 5.3zm-40.3 10.3c-3.6 10.8-15 43-11 43 7.4 0 12-34.9 11-43zM297.4 96c-3.7 11.5-11.8 32-12.7 44.2 6.2-4.1 12.5-28.3 12.7-44.2z"/></svg></h1>
+            <p>A new service designed to make it wicked easy to catalog the important details of all of your stuff.</p>
+            <div class="button-box">
+              <a class="button sign--in" role="button"><span class="button-label">Sign In</span></a>
+              <a class="button secondary sign--up" role="button"><span class="button-label">Sign Up</span></a>
+            </div>
+          </div>
+        </section>
+        <section data-qa="sign-in-page" class="sign-in-page md">
+          <div class="slider ext">
+            <div class="slider int">
+              <div class="slide one">
+                <div class="text">
+                  <h1>Welcome</h1>
+                  <p>Please sign in to continue.</p>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Email address</legend>
+                      <label for="email">Email address<input type="email" name="email" id="email" placeholder="Enter your email address" aria-describedby="email-input-help" aria-invalid="false"></label>
+                      <span id="email-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Password</legend>
+                      <label for="password">Password<input type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                      <span id="password-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Remember me</legend>
+                      <label for="remember" class="checkbox">Remember me<input type="checkbox" name="remember" id="remember" value="remember" aria-describedby="remember-help" aria-invalid="false"></label>
+                      <span class="forgot-password-prompt"><a class="slide--two">Forgot Password?</a></span>
+                      <span id="remember-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button disabled sign--in" role="button"><span class="button-label">Sign In</span></a>
+                    </div>
+                  </form>
+                  <p>Don’t have an account? <a class="sign--up block-tab">Create one now</a>.</p>
+                </div>
+              </div>
+              <div class="slide two">
+                <div class="text">
+                  <h1>Forgot your password?</h1>
+                  <p>Enter your email address here, and we’ll send you a link to reset your password.</p>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Email address</legend>
+                      <label for="email">Email address&#42;<input type="email" name="email" id="email" placeholder="Enter your email address" aria-describedby="forgot-password-help" aria-invalid="false"></label>
+                      <span id="forgot-password-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button disabled slide--three" role="button"><span class="button-label">Send Email</span></a>
+                      <a class="text-button slide--one">Cancel</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="slide three">
+                <div class="text">
+                  <h1>Password reset email sent</h1>
+                  <p>Please check your email inbox. We’ve sent you a special link that you can use to reset your password.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-qa="sign-up-page" class="sign-up-page">
+          <div class="slider ext">
+            <div class="slider int">
+              <div class="slide one">
+                <div class="text">
+                  <h1>Create an account</h1>
+                  <p>Please sign up to continue.</p>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Name</legend>
+                      <label for="name">Name&#42;<input type="text" name="name" id="name" placeholder="Enter your name" aria-describedby="name-input-help" aria-invalid="false"></label>
+                      <span id="name-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Email address</legend>
+                      <label for="email">Email address&#42;<input type="email" name="email" id="email" placeholder="Enter your email address" aria-describedby="email-input-help" aria-invalid="false"></label>
+                      <span id="email-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Password</legend>
+                      <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
+                      <span id="password-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button disabled create--account" role="button"><span class="button-label">Create Account</span></a>
+                    </div>
+                  </form>
+                  <p>By creating an account you agree to our <a class="slide--two">Terms &amp; Conditions</a>.</p>
+                  <p>Already have an account? <a class="sign--in">Sign in now</a>.</p>
+                </div>
+              </div>
+              <div class="slide two">
+                <a class="back--two"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Terms &amp; Conditions</h1>
+                  <p>By downloading or using the app, these terms will automatically apply to you &ndash; you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to <em>My Stuff</em>.</p>
+                  <p><em>My Stuff</em> is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.</p>
+                  <p>The <em>My Stuff</em> app stores and processes personal data that you have provided to us, in order to provide my Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the <em>My Stuff</em> app won’t work properly or at all. </p>
+                  <p>You should be aware that there are certain things that <em>My Stuff</em> will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but <em>My Stuff</em> cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.</p>
+                  <p>If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.</p>
+                  <p>Along the same lines, <em>My Stuff</em> cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged &ndash; if it runs out of battery and you can’t turn it on to avail the Service, <em>My Stuff</em> cannot accept responsibility.</p>
+                  <p>With respect to <em>My Stuff</em>’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavor to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. <em>My Stuff</em> accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.</p>
+                  <p>At some point, we may wish to update the app. The app is currently available on Android &amp; iOS &ndash; the requirements for both systems (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. <em>My Stuff</em> does not promise that it will always update the app so that it is relevant to you and/or works with the Android &amp; iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.</p>
+                  <h2>Changes to Terms &amp; Conditions</h2>
+                  <p>We may update our Terms &amp; Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms &amp; Conditions on this page. These changes are effective immediately after they are posted on this page.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-qa="introduction-page" class="introduction-page">
+          <div class="slider ext">
+            <div class="slider int">
+              <div class="slide one">
+                <figure class="graphic"><img src="../../src/images/intro-b-min.png" alt="Vintage Camera"></figure>
+                <div class="text">
+                  <h1>Welcome to My Stuff</h1>
+                  <p>No one expects a catastrophe. It’s not something we think about until it happens. Some things can’t be replaced after a disaster.</p>
+                  <p>For everything else, there’s <em>My Stuff</em>.</p>
+                </div>
+                <div class="text right next"><a class="button-text slider--two">Next</a></div>
+              </div>
+              <div class="slide two">
+                <figure class="graphic"><img src="../../src/images/intro-c-min.png" alt="Custom Cabinet"></figure>
+                <div class="text">
+                  <h1>How Does It Work?</h1>
+                  <p><em>My Stuff</em> helps you create a master list of all of your valuable possessions so you’ll be prepared to deal with property loss in the event of a catastrophe.</p>
+                </div>
+                <div class="text right next"><a class="button-text slider--three">Next</a></div>
+              </div>
+              <div class="slide three">
+                <figure class="graphic"><img src="../../src/images/intro-e-min.png" alt="Baby Grand Piano"></figure>
+                <div class="text">
+                  <h1>All The Details</h1>
+                  <p><em>My Stuff</em> keeps track of all of your stuff’s details: descriptions, value, manuals, receipts, and more.</p>
+                </div>
+                <div class="text right next"><a class="button-text slider--four">Next</a></div>
+              </div>
+              <div class="slide four">
+                <figure class="graphic"><img src="../../src/images/intro-f-min.png" alt="Record Collection"></figure>
+                <div class="text">
+                  <h1>Organized Your Way</h1>
+                  <p>Keep your stuff organized any way you like. You can group stuff by room, by the type of stuff you have, or any way you like.</p>
+                </div>
+                <div class="text right next"><a class="button-text slider--five">Next</a></div>
+              </div>
+              <div class="slide five">
+                <figure class="graphic"><img src="../../src/images/intro-g-min.png" alt="Vintage Pocket Watch"></figure>
+                <div class="text">
+                  <h1>Get Paid</h1>
+                  <p>When the time comes, you can use <em>My Stuff</em> to send a detailed report of your loss to your insurance carrier.&#42; You and your family will get your life back to normal more quickly.</p>
+                </div>
+                <div class="text">
+                  <small>&#42;Some restrictions apply. Additional fees required.</small>
+                </div>
+                <div class="text right next"><a class="button-text slider--six">Next</a></div>
+              </div>
+              <div class="slide six">
+                <div class="text" style="padding: 2rem 2rem 4rem;">
+                  <h1>Let’s Get Started</h1>
+                  <p>Time to start building your list of stuff.</p>
+                  <div class="button-box">
+                    <a class="button add--stuff" role="button"><span class="button-label">Add Your Stuff</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text skip md"><a class="button-text add--stuff">Skip</a></div>
+        </section>
+        <section data-qa="home-page" class="home-page">
+          <div class="text">
+            <h1>Home</h1>
+            <p>Welcome back {First}!</p>
+          </div>
+          <div class="dashboard">
+            <div class="stat">
+              <ul>
+                <li><span class="icon"><i class="la la-money"></i></span></li>
+                <li><span class="value"><span class="currency">$</span>12.4k</span></li>
+                <li><span class="label">Stuff value</span></li>
+              </ul>
+            </div>
+            <div class="stat">
+              <ul>
+                <li><span class="icon"><i class="la la-cubes"></i></span></li>
+                <li><span class="value">245</span></li>
+                <li><span class="label">Belongings</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text">
+            <h2>Recently added stuff</h2>
+            <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+            <a><div class="summary stuff">
+              <ul>
+                <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                <li class="quantity"><span>Qty</span>0000</li>
+                <li class="value"><span>Value</span>&#36;000.00</li>
+              </ul>
+            </div></a>
+            <a><div class="summary stuff">
+              <ul>
+                <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                <li class="quantity"><span>Qty</span>0000</li>
+                <li class="value"><span>Value</span>&#36;000.00</li>
+              </ul>
+            </div></a>
+            <a><div class="summary stuff">
+              <ul>
+                <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                <li class="quantity"><span>Qty</span>0000</li>
+                <li class="value"><span>Value</span>&#36;000.00</li>
+              </ul>
+            </div></a>
+          </div>
+          <div class="text add-stuff add--stuff"><a class="text-button add--stuff">Add More Stuff</a></div>
+        </section>
+        <section data-qa="stuff-page" class="stuff-page">
+          <div class="slider ext">
+            <div class="slider int">
+              <div class="slide one">
+                <div class="text">
+                  <h1>Your Stuff</h1>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Search</legend>
+                      <label for="search-input">Search<input type="search" name="search-input" id="search-input" placeholder="Search" aria-describedby="search-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <span class="search-icon"><i class="la la-search"></i></span>
+                      <span id="search-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="text">
+                  <h2>Recently added stuff</h2>
+                  <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+                  <a class="slide--two"><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                </div>
+                <div class="text">
+                  <h2>Kitchen stuff</h2>
+                  <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                </div>
+                <div class="text">
+                  <h2>Furniture stuff</h2>
+                  <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                </div>
+                <div class="text">
+                  <h2>Computer stuff</h2>
+                  <span class="inline-text-button"><a class="text-button">See more&nbsp;<i class="la la-arrow-right"></i></a></span>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary stuff">
+                    <ul>
+                      <li class="description"><span>Description</span><span class="overflow">A very long product description</span></li>
+                      <li class="quantity"><span>Qty</span>0000</li>
+                      <li class="value"><span>Value</span>&#36;000.00</li>
+                    </ul>
+                  </div></a>
+                </div>
+                <div class="text add-stuff"><a class="text-button add--stuff">Add More Stuff</a></div>
+              </div>
+              <div class="slide two">
+                <div class="text"><h1>Edit your stuff</h1></div>
+                <div class="form-container">
+                  <form class="wrap">
+                    <fieldset>
+                      <legend>Description</legend>
+                      <label for="description">Description&#42;<input type="text" name="description" id="description" placeholder="Describe your stuff" value="Product description" aria-describedby="description-input-help" aria-invalid="false"></label>
+                      <span id="description-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Value</legend>
+                      <label for="value">Value&#42;<input type="text" name="value" id="value" placeholder="Value" value="&#36;000.00" aria-describedby="value-input-help" aria-invalid="false"></label>
+                      <span id="value-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Quantity</legend>
+                      <label for="quantity">Quantity&#42;<input type="number" name="quantity" id="quantity" placeholder="Quantity" value="00" aria-describedby="quantity-input-help" aria-invalid="false"></label>
+                      <span id="quantity-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Condition</legend>
+                      <label for="condition">Condition&#42;
+                        <select name="condition" id="condition" aria-describedby="condition-input-help" aria-invalid="false">
+                          <option value="New">New</option>
+                          <option value="0">Choose a condition</option>
+                          <option value="Excellent">Excellent</option>
+                          <option value="Good">Good</option>
+                          <option value="Fair">Fair</option>
+                          <option value="Poor">Poor</option>
+                        </select>
+                      </label>
+                      <span class="select-icon"><i class="la la-angle-down"></i></span>
+                      <span id="select-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Group</legend>
+                      <label for="group">Group<input type="text" name="group" id="group" placeholder="Add a group?" value="Group name" aria-describedby="group-input-help" aria-invalid="false"></label>
+                      <span id="group-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Purchase date</legend>
+                      <label for="purchase-date">Purchase date<input type="button" name="purchase-date" id="purchase-date" class="slide--three" value="03/10/2000" aria-describedby="purchase-date-input-help" aria-invalid="false"></label>
+                      <span id="purchase-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Attachments</legend>
+                      <label for="attachments">Attachments<span class="attachments-number">3</span><input type="button" name="attachments" id="attachments" class="attachments slide--four" value="Add Attachments" aria-describedby="attachments-date-input-help" aria-invalid="false"></label>
+                      <span id="attachments-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button changes--save" role="button"><span class="button-label">Save</span></a>
+                      <a class="text-button changes--cancel" role="button"><span class="button-label">Cancel</span></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="slide three">
+                <a class="back--three"><i class="la la-angle-left"></i></a>
+                <div class="text"><h1>Purchase date</h1></div>
+                <div class="date-picker">
+                  <div class="picks">
+                    <div class="pick month">
+                      <p>Pick a month</p>
+                      <ul>
+                        <li><a>January</a></li>
+                        <li><a>February</a></li>
+                        <li><a>March</a></li>
+                        <li><a>April</a></li>
+                        <li><a>May</a></li>
+                        <li><a>June</a></li>
+                        <li><a>July</a></li>
+                        <li><a>August</a></li>
+                        <li><a>September</a></li>
+                        <li><a>October</a></li>
+                        <li><a>November</a></li>
+                        <li><a>December</a></li>
+                      </ul>
+                    </div>
+                    <div class="pick day">
+                      <p>Pick a day</p>
+                      <ul>
+                        <li><a>01</a></li>
+                        <li><a>02</a></li>
+                        <li><a>03</a></li>
+                        <li><a>04</a></li>
+                        <li><a>05</a></li>
+                        <li><a>06</a></li>
+                        <li><a>07</a></li>
+                        <li><a>08</a></li>
+                        <li><a>09</a></li>
+                        <li><a>10</a></li>
+                        <li><a>11</a></li>
+                        <li><a>12</a></li>
+                        <li><a>13</a></li>
+                        <li><a>14</a></li>
+                        <li><a>15</a></li>
+                        <li><a>16</a></li>
+                        <li><a>17</a></li>
+                        <li><a>18</a></li>
+                        <li><a>19</a></li>
+                        <li><a>20</a></li>
+                        <li><a>21</a></li>
+                        <li><a>22</a></li>
+                        <li><a>23</a></li>
+                        <li><a>24</a></li>
+                        <li><a>25</a></li>
+                        <li><a>26</a></li>
+                        <li><a>27</a></li>
+                        <li><a>28</a></li>
+                        <li><a>29</a></li>
+                        <li><a>31</a></li>
+                        <li><a>31</a></li>
+                      </ul>
+                    </div>
+                    <div class="pick year">
+                      <p>Pick a year</p>
+                      <ul>
+                        <li><a>2019</a></li>
+                        <li><a>2018</a></li>
+                        <li><a>2017</a></li>
+                        <li><a>2016</a></li>
+                        <li><a>2015</a></li>
+                        <li><a>2014</a></li>
+                        <li><a>2013</a></li>
+                        <li><a>2012</a></li>
+                        <li><a>2011</a></li>
+                        <li><a>2010</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>2009</a></li>
+                        <li><a>2008</a></li>
+                        <li><a>2007</a></li>
+                        <li><a>2006</a></li>
+                        <li><a>2005</a></li>
+                        <li><a>2004</a></li>
+                        <li><a>2003</a></li>
+                        <li><a>2002</a></li>
+                        <li><a>2001</a></li>
+                        <li><a>2000</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1999</a></li>
+                        <li><a>1998</a></li>
+                        <li><a>1997</a></li>
+                        <li><a>1996</a></li>
+                        <li><a>1995</a></li>
+                        <li><a>1994</a></li>
+                        <li><a>1993</a></li>
+                        <li><a>1992</a></li>
+                        <li><a>1991</a></li>
+                        <li><a>1990</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1989</a></li>
+                        <li><a>1988</a></li>
+                        <li><a>1987</a></li>
+                        <li><a>1986</a></li>
+                        <li><a>1985</a></li>
+                        <li><a>1984</a></li>
+                        <li><a>1983</a></li>
+                        <li><a>1982</a></li>
+                        <li><a>1981</a></li>
+                        <li><a>1980</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1979</a></li>
+                        <li><a>1978</a></li>
+                        <li><a>1977</a></li>
+                        <li><a>1976</a></li>
+                        <li><a>1975</a></li>
+                        <li><a>1974</a></li>
+                        <li><a>1973</a></li>
+                        <li><a>1972</a></li>
+                        <li><a>1971</a></li>
+                        <li><a>1970</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1969</a></li>
+                        <li><a>1968</a></li>
+                        <li><a>1967</a></li>
+                        <li><a>1966</a></li>
+                        <li><a>1965</a></li>
+                        <li><a>1964</a></li>
+                        <li><a>1963</a></li>
+                        <li><a>1962</a></li>
+                        <li><a>1961</a></li>
+                        <li><a>1960</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide four">
+                <a class="back--four"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Attachments</h1>
+                  <div class="button-box">
+                    <span class="button add--attachment" role="button"><input type="file" id="files" name="files[]"><span class="button-label">Add Attachment<span class="post"><i class="la la-paperclip"></i></span></span></span>
+                  </div>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Attachment name</legend>
+                      <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                      <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Attachment type</legend>
+                      <label for="attachment-type">Attachment type
+                        <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                          <option value="0">Attachment type</option>
+                          <option value="Photo">Photo</option>
+                          <option value="Manual">Manual</option>
+                          <option value="Receipt">Receipt</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </label>
+                      <span class="select-icon"><i class="la la-angle-down"></i></span>
+                      <span id="attachment-type-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button add--another" role="button"><span class="button-label">Add Another?</span></a>
+                      <a class="text-button back--done">Done</a>
+                    </div>
+                  </form>
+                </div>
+                <div class="text">
+                  <h2>This stuff's attachments</h2>
+                  <a class="slide--five"><div class="summary attachment">
+                    <ul>
+                      <li class="thumbnail"><img src="../../src/images/intro-f-min.png" alt="Attachment thumbnail"></li>
+                      <li class="name"><span>Name</span>Attachment name</li>
+                      <li class="type"><span>Type</span>Attachment type</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary attachment">
+                    <ul>
+                      <li class="thumbnail"><img src="../../src/images/intro-f-min.png" alt="Attachment thumbnail"></li>
+                      <li class="name"><span>Name</span><span class="overflow">A very long attachment name</span></li>
+                      <li class="type"><span>Type</span>Attachment type</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary attachment">
+                    <ul>
+                      <li class="thumbnail"><img src="../../src/images/intro-f-min.png" alt="Attachment thumbnail"></li>
+                      <li class="name"><span>Name</span><span class="overflow">A very long attachment name</span></li>
+                      <li class="type"><span>Type</span>Attachment type</li>
+                    </ul>
+                  </div></a>
+                </div>
+              </div>
+              <div class="slide five">
+                <a class="back--five"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Edit attachment</h1>
+                </div>
+                <div class="form-container">
+                  <figure><img src="../../src/images/intro-f-min.png" align="Attachment thumbnail"></figure>
+                  <form>
+                    <fieldset>
+                      <legend>Attachment name</legend>
+                      <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" value="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                      <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Attachment type</legend>
+                      <label for="attachment-type">Attachment type
+                        <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                          <option value="Photo">Photo</option>
+                          <option value="0">Attachment type</option>
+                          <option value="Manual">Manual</option>
+                          <option value="Receipt">Receipt</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </label>
+                      <span class="select-icon"><i class="la la-angle-down"></i></span>
+                      <span id="attachment-type-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button attachment--save" role="button"><span class="button-label">Save</span></a>
+                      <a class="text-button attachment--cancel">Cancel</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-qa="add-stuff-page" class="add-stuff-page">
+          <div class="slider ext">
+            <div class="slider int">
+              <div class="slide one">
+                <div class="text"><h1>Add your stuff</h1></div>
+                <div class="form-container">
+                  <form class="wrap">
+                    <fieldset>
+                      <legend>Description</legend>
+                      <label for="description">Description&#42;<input type="text" name="description" id="description" placeholder="Describe your stuff" aria-describedby="description-input-help" aria-invalid="false"></label>
+                      <span id="description-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Value</legend>
+                      <label for="value">Value&#42;<input type="text" name="value" id="value" placeholder="Value" aria-describedby="value-input-help" aria-invalid="false"></label>
+                      <span id="value-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Quantity</legend>
+                      <label for="quantity">Quantity&#42;<input type="number" name="quantity" id="quantity" placeholder="Quantity" aria-describedby="quantity-input-help" aria-invalid="false"></label>
+                      <span id="quantity-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Condition</legend>
+                      <label for="condition">Condition&#42;
+                        <select name="condition" id="condition" aria-describedby="condition-input-help" aria-invalid="false">
+                          <option value="0">Choose a condition</option>
+                          <option value="New">New</option>
+                          <option value="Excellent">Excellent</option>
+                          <option value="Good">Good</option>
+                          <option value="Fair">Fair</option>
+                          <option value="Poor">Poor</option>
+                        </select>
+                      </label>
+                      <span class="select-icon"><i class="la la-angle-down"></i></span>
+                      <span id="select-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Group</legend>
+                      <label for="group">Group<input type="text" name="group" id="group" placeholder="Add a group?" aria-describedby="group-input-help" aria-invalid="false"></label>
+                      <span id="group-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Purchase date</legend>
+                      <label for="purchase-date">Purchase date<input type="button" name="purchase-date" id="purchase-date" class="slide--two" value="mm/dd/YYYY" aria-describedby="purchase-date-input-help" aria-invalid="false"></label>
+                      <span id="purchase-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Attachments</legend>
+                      <label for="attachments">Attachments<span class="attachments-number">0</span><input type="button" name="attachments" id="attachments" class="attachments slide--three" value="Add Attachments" aria-describedby="attachments-date-input-help" aria-invalid="false"></label>
+                      <span id="attachments-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button" role="button"><span class="button-label">Save</span></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="slide two">
+                <a class="back--two"><i class="la la-angle-left"></i></a>
+                <div class="text"><h1>Purchase date</h1></div>
+                <div class="date-picker">
+                  <div class="picks">
+                    <div class="pick month">
+                      <p>Pick a month</p>
+                      <ul>
+                        <li><a>January</a></li>
+                        <li><a>February</a></li>
+                        <li><a>March</a></li>
+                        <li><a>April</a></li>
+                        <li><a>May</a></li>
+                        <li><a>June</a></li>
+                        <li><a>July</a></li>
+                        <li><a>August</a></li>
+                        <li><a>September</a></li>
+                        <li><a>October</a></li>
+                        <li><a>November</a></li>
+                        <li><a>December</a></li>
+                      </ul>
+                    </div>
+                    <div class="pick day">
+                      <p>Pick a day</p>
+                      <ul>
+                        <li><a>01</a></li>
+                        <li><a>02</a></li>
+                        <li><a>03</a></li>
+                        <li><a>04</a></li>
+                        <li><a>05</a></li>
+                        <li><a>06</a></li>
+                        <li><a>07</a></li>
+                        <li><a>08</a></li>
+                        <li><a>09</a></li>
+                        <li><a>10</a></li>
+                        <li><a>11</a></li>
+                        <li><a>12</a></li>
+                        <li><a>13</a></li>
+                        <li><a>14</a></li>
+                        <li><a>15</a></li>
+                        <li><a>16</a></li>
+                        <li><a>17</a></li>
+                        <li><a>18</a></li>
+                        <li><a>19</a></li>
+                        <li><a>20</a></li>
+                        <li><a>21</a></li>
+                        <li><a>22</a></li>
+                        <li><a>23</a></li>
+                        <li><a>24</a></li>
+                        <li><a>25</a></li>
+                        <li><a>26</a></li>
+                        <li><a>27</a></li>
+                        <li><a>28</a></li>
+                        <li><a>29</a></li>
+                        <li><a>31</a></li>
+                        <li><a>31</a></li>
+                      </ul>
+                    </div>
+                    <div class="pick year">
+                      <p>Pick a year</p>
+                      <ul>
+                        <li><a>2019</a></li>
+                        <li><a>2018</a></li>
+                        <li><a>2017</a></li>
+                        <li><a>2016</a></li>
+                        <li><a>2015</a></li>
+                        <li><a>2014</a></li>
+                        <li><a>2013</a></li>
+                        <li><a>2012</a></li>
+                        <li><a>2011</a></li>
+                        <li><a>2010</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>2009</a></li>
+                        <li><a>2008</a></li>
+                        <li><a>2007</a></li>
+                        <li><a>2006</a></li>
+                        <li><a>2005</a></li>
+                        <li><a>2004</a></li>
+                        <li><a>2003</a></li>
+                        <li><a>2002</a></li>
+                        <li><a>2001</a></li>
+                        <li><a>2000</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1999</a></li>
+                        <li><a>1998</a></li>
+                        <li><a>1997</a></li>
+                        <li><a>1996</a></li>
+                        <li><a>1995</a></li>
+                        <li><a>1994</a></li>
+                        <li><a>1993</a></li>
+                        <li><a>1992</a></li>
+                        <li><a>1991</a></li>
+                        <li><a>1990</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1989</a></li>
+                        <li><a>1988</a></li>
+                        <li><a>1987</a></li>
+                        <li><a>1986</a></li>
+                        <li><a>1985</a></li>
+                        <li><a>1984</a></li>
+                        <li><a>1983</a></li>
+                        <li><a>1982</a></li>
+                        <li><a>1981</a></li>
+                        <li><a>1980</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1979</a></li>
+                        <li><a>1978</a></li>
+                        <li><a>1977</a></li>
+                        <li><a>1976</a></li>
+                        <li><a>1975</a></li>
+                        <li><a>1974</a></li>
+                        <li><a>1973</a></li>
+                        <li><a>1972</a></li>
+                        <li><a>1971</a></li>
+                        <li><a>1970</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1969</a></li>
+                        <li><a>1968</a></li>
+                        <li><a>1967</a></li>
+                        <li><a>1966</a></li>
+                        <li><a>1965</a></li>
+                        <li><a>1964</a></li>
+                        <li><a>1963</a></li>
+                        <li><a>1962</a></li>
+                        <li><a>1961</a></li>
+                        <li><a>1960</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide three">
+                <a class="back--three"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Add attachments</h1>
+                  <div class="button-box">
+                    <span class="button add--attachment" role="button"><input type="file" id="files" name="files[]"><span class="button-label">Add Attachment<span class="post"><i class="la la-paperclip"></i></span></span></span>
+                  </div>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Attachment name</legend>
+                      <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                      <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Attachment type</legend>
+                      <label for="attachment-type">Attachment type
+                        <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                          <option value="0">Attachment type</option>
+                          <option value="Photo">Photo</option>
+                          <option value="Manual">Manual</option>
+                          <option value="Receipt">Receipt</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </label>
+                      <span class="select-icon"><i class="la la-angle-down"></i></span>
+                      <span id="attachment-type-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button add--another" role="button"><span class="button-label">Add Another?</span></a>
+                      <a class="text-button back--done">Done</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-qa="edit-stuff-page" class="edit-stuff-page">
+          <div class="slider ext">
+            <div class="slider int">
+              <div class="slide one">
+                <div class="text"><h1>Edit your stuff</h1></div>
+                <div class="form-container">
+                  <form class="wrap">
+                    <fieldset>
+                      <legend>Description</legend>
+                      <label for="description">Description&#42;<input type="text" name="description" id="description" placeholder="Describe your stuff" value="Product description" aria-describedby="description-input-help" aria-invalid="false"></label>
+                      <span id="description-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Value</legend>
+                      <label for="value">Value&#42;<input type="text" name="value" id="value" placeholder="Value" value="&#36;000.00" aria-describedby="value-input-help" aria-invalid="false"></label>
+                      <span id="value-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Quantity</legend>
+                      <label for="quantity">Quantity&#42;<input type="number" name="quantity" id="quantity" placeholder="Quantity" value="00" aria-describedby="quantity-input-help" aria-invalid="false"></label>
+                      <span id="quantity-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Condition</legend>
+                      <label for="condition">Condition&#42;
+                        <select name="condition" id="condition" aria-describedby="condition-input-help" aria-invalid="false">
+                          <option value="New">New</option>
+                          <option value="0">Choose a condition</option>
+                          <option value="Excellent">Excellent</option>
+                          <option value="Good">Good</option>
+                          <option value="Fair">Fair</option>
+                          <option value="Poor">Poor</option>
+                        </select>
+                      </label>
+                      <span class="select-icon"><i class="la la-angle-down"></i></span>
+                      <span id="select-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Group</legend>
+                      <label for="group">Group<input type="text" name="group" id="group" placeholder="Add a group?" value="Group name" aria-describedby="group-input-help" aria-invalid="false"></label>
+                      <span id="group-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Purchase date</legend>
+                      <label for="purchase-date">Purchase date<input type="button" name="purchase-date" id="purchase-date" class="slide--two" value="03/10/2000" aria-describedby="purchase-date-input-help" aria-invalid="false"></label>
+                      <span id="purchase-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset class="half">
+                      <legend>Attachments</legend>
+                      <label for="attachments">Attachments<span class="attachments-number">3</span><input type="button" name="attachments" id="attachments" class="attachments slide--three" value="Add Attachments" aria-describedby="attachments-date-input-help" aria-invalid="false"></label>
+                      <span id="attachments-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button save--stuff" role="button"><span class="button-label">Save</span></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="slide two">
+                <a class="back--two"><i class="la la-angle-left"></i></a>
+                <div class="text"><h1>Purchase date</h1></div>
+                <div class="date-picker">
+                  <div class="picks">
+                    <div class="pick month">
+                      <p>Pick a month</p>
+                      <ul>
+                        <li><a>January</a></li>
+                        <li><a>February</a></li>
+                        <li><a>March</a></li>
+                        <li><a>April</a></li>
+                        <li><a>May</a></li>
+                        <li><a>June</a></li>
+                        <li><a>July</a></li>
+                        <li><a>August</a></li>
+                        <li><a>September</a></li>
+                        <li><a>October</a></li>
+                        <li><a>November</a></li>
+                        <li><a>December</a></li>
+                      </ul>
+                    </div>
+                    <div class="pick day">
+                      <p>Pick a day</p>
+                      <ul>
+                        <li><a>01</a></li>
+                        <li><a>02</a></li>
+                        <li><a>03</a></li>
+                        <li><a>04</a></li>
+                        <li><a>05</a></li>
+                        <li><a>06</a></li>
+                        <li><a>07</a></li>
+                        <li><a>08</a></li>
+                        <li><a>09</a></li>
+                        <li><a>10</a></li>
+                        <li><a>11</a></li>
+                        <li><a>12</a></li>
+                        <li><a>13</a></li>
+                        <li><a>14</a></li>
+                        <li><a>15</a></li>
+                        <li><a>16</a></li>
+                        <li><a>17</a></li>
+                        <li><a>18</a></li>
+                        <li><a>19</a></li>
+                        <li><a>20</a></li>
+                        <li><a>21</a></li>
+                        <li><a>22</a></li>
+                        <li><a>23</a></li>
+                        <li><a>24</a></li>
+                        <li><a>25</a></li>
+                        <li><a>26</a></li>
+                        <li><a>27</a></li>
+                        <li><a>28</a></li>
+                        <li><a>29</a></li>
+                        <li><a>31</a></li>
+                        <li><a>31</a></li>
+                      </ul>
+                    </div>
+                    <div class="pick year">
+                      <p>Pick a year</p>
+                      <ul>
+                        <li><a>2019</a></li>
+                        <li><a>2018</a></li>
+                        <li><a>2017</a></li>
+                        <li><a>2016</a></li>
+                        <li><a>2015</a></li>
+                        <li><a>2014</a></li>
+                        <li><a>2013</a></li>
+                        <li><a>2012</a></li>
+                        <li><a>2011</a></li>
+                        <li><a>2010</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>2009</a></li>
+                        <li><a>2008</a></li>
+                        <li><a>2007</a></li>
+                        <li><a>2006</a></li>
+                        <li><a>2005</a></li>
+                        <li><a>2004</a></li>
+                        <li><a>2003</a></li>
+                        <li><a>2002</a></li>
+                        <li><a>2001</a></li>
+                        <li><a>2000</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1999</a></li>
+                        <li><a>1998</a></li>
+                        <li><a>1997</a></li>
+                        <li><a>1996</a></li>
+                        <li><a>1995</a></li>
+                        <li><a>1994</a></li>
+                        <li><a>1993</a></li>
+                        <li><a>1992</a></li>
+                        <li><a>1991</a></li>
+                        <li><a>1990</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1989</a></li>
+                        <li><a>1988</a></li>
+                        <li><a>1987</a></li>
+                        <li><a>1986</a></li>
+                        <li><a>1985</a></li>
+                        <li><a>1984</a></li>
+                        <li><a>1983</a></li>
+                        <li><a>1982</a></li>
+                        <li><a>1981</a></li>
+                        <li><a>1980</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1979</a></li>
+                        <li><a>1978</a></li>
+                        <li><a>1977</a></li>
+                        <li><a>1976</a></li>
+                        <li><a>1975</a></li>
+                        <li><a>1974</a></li>
+                        <li><a>1973</a></li>
+                        <li><a>1972</a></li>
+                        <li><a>1971</a></li>
+                        <li><a>1970</a></li>
+                      </ul>
+                      <ul>
+                        <li><a>1969</a></li>
+                        <li><a>1968</a></li>
+                        <li><a>1967</a></li>
+                        <li><a>1966</a></li>
+                        <li><a>1965</a></li>
+                        <li><a>1964</a></li>
+                        <li><a>1963</a></li>
+                        <li><a>1962</a></li>
+                        <li><a>1961</a></li>
+                        <li><a>1960</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide three">
+                <a class="back--three"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Attachments</h1>
+                  <div class="button-box">
+                    <span class="button add--attachment" role="button"><input type="file" id="files" name="files[]"><span class="button-label">Add Attachment<span class="post"><i class="la la-paperclip"></i></span></span></span>
+                  </div>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Attachment name</legend>
+                      <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                      <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Attachment type</legend>
+                      <label for="attachment-type">Attachment type
+                        <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                          <option value="0">Attachment type</option>
+                          <option value="Photo">Photo</option>
+                          <option value="Manual">Manual</option>
+                          <option value="Receipt">Receipt</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </label>
+                      <span class="select-icon"><i class="la la-angle-down"></i></span>
+                      <span id="attachment-type-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button add--another" role="button"><span class="button-label">Add Another?</span></a>
+                      <a class="text-button back--done">Done</a>
+                    </div>
+                  </form>
+                </div>
+                <div class="text">
+                  <h2>This stuff's attachments</h2>
+                  <a class="slide--four"><div class="summary attachment">
+                    <ul>
+                      <li class="thumbnail"><img src="../../src/images/intro-f-min.png" alt="Attachment thumbnail"></li>
+                      <li class="name"><span>Name</span>Attachment name</li>
+                      <li class="type"><span>Type</span>Attachment type</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary attachment">
+                    <ul>
+                      <li class="thumbnail"><img src="../../src/images/intro-f-min.png" alt="Attachment thumbnail"></li>
+                      <li class="name"><span>Name</span><span class="overflow">A very long attachment name</span></li>
+                      <li class="type"><span>Type</span>Attachment type</li>
+                    </ul>
+                  </div></a>
+                  <a><div class="summary attachment">
+                    <ul>
+                      <li class="thumbnail"><img src="../../src/images/intro-f-min.png" alt="Attachment thumbnail"></li>
+                      <li class="name"><span>Name</span><span class="overflow">A very long attachment name</span></li>
+                      <li class="type"><span>Type</span>Attachment type</li>
+                    </ul>
+                  </div></a>
+                </div>
+              </div>
+              <div class="slide four">
+                <a class="back--four"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Edit attachment</h1>
+                </div>
+                <div class="form-container">
+                  <figure><img src="../../src/images/intro-f-min.png" align="Attachment thumbnail"></figure>
+                  <form>
+                    <fieldset>
+                      <legend>Attachment name</legend>
+                      <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" value="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                      <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Attachment type</legend>
+                      <label for="attachment-type">Attachment type
+                        <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                          <option value="Photo">Photo</option>
+                          <option value="0">Attachment type</option>
+                          <option value="Manual">Manual</option>
+                          <option value="Receipt">Receipt</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </label>
+                      <span class="select-icon"><i class="la la-angle-down"></i></span>
+                      <span id="attachment-type-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button attachment--save" role="button"><span class="button-label">Save</span></a>
+                      <a class="text-button attachment--cancel">Cancel</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-qa="profile-page" class="profile-page">
+          <div class="slider ext">
+            <div class="slider int">
+              <div class="slide one">
+                <div class="text">
+                  <h1>My Profile</h1>
+                  <ul>
+                    <li><span class="label">Name</span>First Last Name<a class="edit--name">Edit</a></li>
+                    <li><span class="label">Email</span>email@address.com<a class="edit--email">Edit</a></li>
+                    <li><span class="label">Password</span>Password<a class="edit--password">Edit</a></li>
+                  </ul>
+                  <div class="button-box" style="justify-content: flex-end;">
+                    <a class="text-button">Sign Out</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide two">
+                <a class="back--two"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Edit your name</h1>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Name</legend>
+                      <label for="name">Name&#42;<input type="text" name="name" id="name" placeholder="Enter your name" value="First Last Name" aria-describedby="name-input-help" aria-invalid="false"></label>
+                      <span id="name-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button disabled save--name" role="button"><span class="button-label">Save</span></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="slide three">
+                <a class="back--three"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Edit your email address</h1>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Email</legend>
+                      <label for="name">Email address&#42;<input type="email" name="email" id="email" placeholder="Enter your email address" value="email@address.com" aria-describedby="email-input-help" aria-invalid="false"></label>
+                      <span id="email-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button disabled save--email" role="button"><span class="button-label">Save</span></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="slide four">
+                <a class="back--four"><i class="la la-angle-left"></i></a>
+                <div class="text">
+                  <h1>Change your password</h1>
+                </div>
+                <div class="form-container">
+                  <form>
+                    <fieldset>
+                      <legend>Current Password</legend>
+                      <label for="current-password">Current Password&#42;<input type="password" name="current-password" id="current-password" placeholder="Enter your current password" value="password" aria-describedby="current-password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <span toggle="#current-password" class="la la-eye-slash show-hide-password"></span>
+                      <span id="current-password-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>New Password</legend>
+                      <label for="new-password">New Password&#42;<input type="password" name="new-password" id="new-password" placeholder="Enter your new password" aria-describedby="new-password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <span toggle="#new-password" class="la la-eye-slash show-hide-password"></span>
+                      <span id="new-password-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Confirm New Password</legend>
+                      <label for="confirm-password">Confirm New Password&#42;<input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your new password" aria-describedby="confirm-password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <span toggle="#confirm-password" class="la la-eye-slash show-hide-password"></span>
+                      <span id="confirm-password-input-help" class="error-message" role="alert">This is where the error message goes</span>
+                    </fieldset>
+                    <div class="button-box">
+                      <a class="button disabled save--password" role="button"><span class="button-label">Save</span></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>  
+        <section data-qa="loading" class="loading">
+          <div class="logo animated fadeInUp">
+            <svg xmlns="http://www.w3.org/2000/svg" title="My Stuff loading screen logo" description="My Stuff loading screen logo" viewBox="0 0 424 200"><path d="M165 140.77c9-36 10.5-40.11 10.69-43.68 0-2.24-2.25-3.56-4.32-3.56-6.18 0-16.68 36.74-27.37 36.74-5.43 0 6.19-26.62 7.88-30 1.31-2.25 2.81-5.06-1.5-5.06-7.5 0-15.75 25.49-16.31 30.93-.94 8.62 3.75 11.25 9.56 11.25 6.75 0 11.43-4.69 15.37-9.57l-3.56 12.75c-19.87 2.06-38.62 27-38.62 45.92 0 8.44 4.68 13.5 13.12 13.5 11.44 0 20.06-15.74 23.62-24.37 3.38-8.24 8.06-21.37 9.56-27a37.86 37.86 0 0 1 9.57 3.94c3.18 1.87 6-4.88 3-7.31a20.16 20.16 0 0 0-10.69-4.48zm-35.43 50.79c-10.88 0 2.81-39.17 24.18-42.92-2.08 5.06-14.46 42.92-24.2 42.92zm8.81-138.51c-5.81 32.05-16.13 63.54-30.75 105.34-1.5 4.31-2.62 10.5-8.44 10.5-3 0-6-2.82-5.81-5.44 1.69-2.25 25.12-76.48 28.5-88.85 1.87-6.93 17.62-65.42 2.06-65.42-6.18 0-12.56 6.38-16.31 10.5C86.24 42.74 72.37 75.16 62.43 105c-1.31 3.56-1.5 9.93-7.31 9.93a4.87 4.87 0 0 1-5.06-4.93c0-2.25 1.12-5.06 1.68-6.94 3.38-11.24 7.13-24.74 7.13-37.3 0-3.75-.75-9.37-3.94-9.37-16.87 0-38.62 46.67-41.06 77.41-.37 5.44-5.43 6-7.12 6-5.06 0-6.75-3.75-6.75-7.12 0-4.13 2.06-8.06 3.19-12.56 6.93-28.3 19.12-54.73 27-83.22 1.13-5.44 1.32-12.19 7.32-12.19 2.62 0 5.43 1.5 5.43 4.88a44.5 44.5 0 0 1-.94 6c-1.69 8.27-3.94 16.33-6.38 24.41 5.06-5.62 12-11.25 20.25-11.25 7.68 0 11.43 6.94 12.18 14.06 7.88-16.12 16.69-31.86 28.31-45.73C103.11 9.18 112.86 0 123.92 0c4.88 0 10.5 1.69 12.94 6.37 6.37 12.19 4.14 32.81 1.5 46.68zm284-20.44c1.5-3.18 3.56-9.74-2.25-9.74-7.31 0-15 20.8-18.74 28.68-9.94 12.74-20.39 26.61-33.75 36.17 4.87-15.37 10.12-31.49 18-45.36.93-1.69 2.62-3.56 2.62-5.81 0-1.87-1.69-2.81-3.37-2.81-8.25 0-25.5 53.42-27.75 59.61-2.06.75-5.81 1.31-5.81 4.12 0 2.06 2.62 3.56 2.62 4.5 0 1.29-.95 4.31-2.4 8.4a.89.89 0 0 0-1.16 0c-6.56 6.19-20.62 20.43-28.68 20.43-6.38 0-1.13-15.74 3.56-23.05 1.31-1.88 2.81-4.5 1.31-6.56a5.89 5.89 0 0 0-5.43-1.69c-2.82.75-4.88 6.37-6.38 8.25-3.75 5.06-10.5 19.68-18.93 19.68-5.63 0 3.37-17.24 6-22.68.93-2.06 1.68-3.56-2.07-4.31-1.68-.38-3.18.37-4.5 1.87-5.06 5.44-11.62 21.56-8.81 28.12 1.88 3.94 6.38 4.5 10.5 3.56 5.25-1.12 9.37-4.87 12.94-8.43-.75 5.24.93 12.18 9.56 12.18 9 0 20.51-8 28.55-17.73-5.18 14.06-11.87 32.81-11.87 44.53 0 5.44 2.25 11.44 8.81 11.44 16.32 0 22.13-48 22.13-60.17 0-5.44.18-11.81-2.63-16.68 10.88-8.06 21.94-16.87 28.87-27.37l-6.75 20.06c-2.81.37-15.56.37-15.56 5.62 0 .75 6.57 8.25 10.69 10.68-3.7 11.28-34.7 85.32-13.7 85.32 18.38 0 26.25-52.3 25.69-69.35-.19-5.25-.56-10.69-2.25-15.94.94-3.18 1.69-6.93 2.81-9.93 7.31-.19 12.19-.38 18.19-.38 4.31 0 6.93-6.74 2.81-6.74-6.56 0-13.31.56-18.94.56 2.82-9.75 10.32-33.74 15.75-41.61 3.76-5.63 7.51-11.25 10.32-17.44zM345.7 167c-5.24 0 9.57-41.8 14.25-55.86 1.32 10.51-4.68 55.86-14.25 55.86zm24.56 15c1.13-15.75 11.63-42.37 16.5-57.36-.19 20.63-8.43 52.12-16.5 57.36zM264.9 155c-.56 1.32 0 .94.75 1.88a2.68 2.68 0 0 1 .19 2.06c-1.31 3.19-3.19 5.44-6.56 6a5.53 5.53 0 0 1-4.87-1.5c-1.32-1.5-.75-3.38-.38-5.06.94-3.75 2.06-7.5 3.19-11.25l7.31-24.74c4.87-16.5 9.93-33 15-49.3-7.69 0-15.75-.37-23.63-.37-1.87 0-3.74.18-5.24-1.13a3.26 3.26 0 0 1 0-4.68c1.5-1.13 3.37-1.13 5.24-1.13 24.38 0 25.88.19 25.88.19L288 48c1.13-3.18 2.82-8.24 7.5-5.62 1.88 1.13 1.88 2.63 1.31 4.5L291 66c9.94.19 27 0 31.31 0 7.5 0 10.5 7.12 0 7.12-2.62 0-26.06.38-33.74.19-4.32 16.49-10.13 33.74-14.81 50.23zm-9.18-27.55c0 16.49-26.62 36.36-46.87 36.36-4.13 0-15-1.12-14.62-6.18.18-2.25 2.62-3.56 4.87-3.56 2.06 0 4.12.93 6.37.93 10.88 0 38.62-12.55 38.62-27.92 0-9.56-11.24-15.19-18.74-18.94-15.38-7.68-40.5-14.8-40.5-36.92 0-25.87 32.43-64.67 64.68-64.67 8.81 0 17.25 3 21.19 11.25A21.85 21.85 0 0 1 273 28.12c0 6.93-1.5 21-7.88 21-2.44 0-5.62-1.13-4.5-4.69 1.69-5.43 3-10.49 3-16.3 0-9.94-6-13.69-14.43-13.69-20.63 0-53.43 31.31-53.43 56.42-.03 26.42 59.96 25.14 59.96 56.6z"/></svg>
+          </div>
+          <div class="indicator animated fadeInUp delay-1s">
+            <div class="indicator-gauge">
+              <span></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <nav class="start" aria-label="Main Menu">
+      <ul>
+        <li><a class=""><span class="icon"><i class="la la-home"></i></span>Home</a></li>
+        <li><a class=""><span class="icon"><i class="la la-archive"></i></span>Stuff</a></li>
+        <li><a class=""><span class="icon"><i class="la la-user"></i></span>Profile</a></li>
+      </ul>
+    </nav>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../../src/scripts/mystuffapp.js"></script>
+  </body>
+</html>
