@@ -22,7 +22,7 @@ main {padding: 0;}
 
 // PAGE TRANSITIONS
 .welcome, .sign-in-page, .sign-up-page, .introduction-page,
-.home-page, .stuff-page, .add-stuff-page, .profile-page {
+.home-page, .stuff-page, .add-stuff-page, .profile-page, .sign-out-page {
   justify-content: flex-start;
   position: absolute;
   top: 0;
@@ -35,7 +35,7 @@ main {padding: 0;}
 }
 
 .welcome.show, .sign-in-page.show, .sign-up-page.show, .introduction-page.show,
-.home-page.show, .stuff-page.show, .add-stuff-page.show, .profile-page.show {
+.home-page.show, .stuff-page.show, .add-stuff-page.show, .profile-page.show, .sign-out-page.show {
   max-height: 500rem;
   min-height: 100vh;
   @include transform(translateY(0rem));

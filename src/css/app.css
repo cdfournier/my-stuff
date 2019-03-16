@@ -320,6 +320,12 @@ nav ul li a.active { color: #808080; }
 
 .sign-in-page .slider.int.slide-three { -webkit-transform: translateX(-66.6%); -moz-transform: translateX(-66.6%); -ms-transform: translateX(-66.6%); -o-transform: translateX(-66.6%); transform: translateX(-66.6%); }
 
+.sign-out-page .slider.int { min-width: 300%; }
+
+.sign-out-page .slider.int.slide-two { -webkit-transform: translateX(-33.3%); -moz-transform: translateX(-33.3%); -ms-transform: translateX(-33.3%); -o-transform: translateX(-33.3%); transform: translateX(-33.3%); }
+
+.sign-out-page .slider.int.slide-three { -webkit-transform: translateX(-66.6%); -moz-transform: translateX(-66.6%); -ms-transform: translateX(-66.6%); -o-transform: translateX(-66.6%); transform: translateX(-66.6%); }
+
 .sign-up-page .slider.int { min-width: 200%; }
 
 .sign-up-page .slider.int.slide-two { -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); }
@@ -470,9 +476,9 @@ main { padding: 0; }
 
 .content { display: block; width: 100%; max-width: 100%; min-width: 100%; overflow: hidden; }
 
-.welcome, .sign-in-page, .sign-up-page, .introduction-page, .home-page, .stuff-page, .add-stuff-page, .profile-page { justify-content: flex-start; position: absolute; top: 0; left: 0; width: 100%; max-height: 0; padding-bottom: 4rem; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; -webkit-transform: translateY(-200rem); -moz-transform: translateY(-200rem); -ms-transform: translateY(-200rem); -o-transform: translateY(-200rem); transform: translateY(-200rem); }
+.welcome, .sign-in-page, .sign-up-page, .introduction-page, .home-page, .stuff-page, .add-stuff-page, .profile-page, .sign-out-page { justify-content: flex-start; position: absolute; top: 0; left: 0; width: 100%; max-height: 0; padding-bottom: 4rem; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; -webkit-transform: translateY(-200rem); -moz-transform: translateY(-200rem); -ms-transform: translateY(-200rem); -o-transform: translateY(-200rem); transform: translateY(-200rem); }
 
-.welcome.show, .sign-in-page.show, .sign-up-page.show, .introduction-page.show, .home-page.show, .stuff-page.show, .add-stuff-page.show, .profile-page.show { max-height: 500rem; min-height: 100vh; -webkit-transform: translateY(0rem); -moz-transform: translateY(0rem); -ms-transform: translateY(0rem); -o-transform: translateY(0rem); transform: translateY(0rem); }
+.welcome.show, .sign-in-page.show, .sign-up-page.show, .introduction-page.show, .home-page.show, .stuff-page.show, .add-stuff-page.show, .profile-page.show, .sign-out-page.show { max-height: 500rem; min-height: 100vh; -webkit-transform: translateY(0rem); -moz-transform: translateY(0rem); -ms-transform: translateY(0rem); -o-transform: translateY(0rem); transform: translateY(0rem); }
 
 .welcome.show { justify-content: center; min-height: 80vh; }
 

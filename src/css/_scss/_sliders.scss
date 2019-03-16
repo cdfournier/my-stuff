@@ -56,6 +56,12 @@
 .sign-in-page .slider.int.slide-three {@include transform(translateX(-66.6%));}
 
 
+// SIGN OUT SLIDER
+.sign-out-page .slider.int {min-width: 300%;}
+.sign-out-page .slider.int.slide-two {@include transform(translateX(-33.3%));}
+.sign-out-page .slider.int.slide-three {@include transform(translateX(-66.6%));}
+
+
 // SIGN UP SLIDER
 .sign-up-page .slider.int {min-width: 200%;}
 .sign-up-page .slider.int.slide-two {@include transform(translateX(-50%));}
