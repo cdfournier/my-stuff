@@ -39,6 +39,11 @@ $('nav .nav--stuff').click(function() {
   $('.home-page').removeClass('show');
   $('.add-stuff-page').removeClass('show');
   $('.profile-page').removeClass('show');
+  $('.stuff-page .slider.int').removeClass('slide-two');
+  $('.stuff-page .slider.int').removeClass('slide-three');
+  $('.stuff-page .slider.int').removeClass('slide-four');
+  $('.stuff-page .slider.int').removeClass('slide-five');
+  $('.stuff-page .slider.int').addClass('slide-one');
   $('.stuff-page').addClass('show');
   $('.stuff-page .text.add-more-stuff').addClass('animated fadeInDown delay-1s');
   setTimeout(function() {$('.stuff-page .text.add-more-stuff').removeClass('animated fadeInDown delay-1s')}, 2000);
@@ -191,6 +196,7 @@ $('.stuff-page .add--stuff').click(function() {
 // STUFF SLIDES
 $('.stuff-page .slide--two').click(function() {
   $('.stuff-page .slider.int').addClass('slide-two');
+  $('.stuff-page .slider.int').removeClass('slide-one');
 });
 $('.stuff-page .slide--three').click(function() {
   $('.stuff-page .slider.int').addClass('slide-three');
