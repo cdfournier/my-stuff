@@ -29,7 +29,7 @@
 
 .loading .logo svg {fill: $color-white;}
 
-.loading.loaded {@include transform(translateY(-100%));}
+.loading.loaded {@include transform(translateY(-100rem));}
 
 
 // WELCOME
@@ -119,6 +119,7 @@
 .introduction-page .slide figure {
   display: grid;
   width: 45%;
+  max-width: 14rem;
   margin: 0 auto;
   padding: 0 0 1rem;
 }

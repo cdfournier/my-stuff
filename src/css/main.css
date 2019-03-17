@@ -426,7 +426,7 @@ nav ul li a.active { color: #808080; }
 
 .loading .logo svg { fill: #ffffff; }
 
-.loading.loaded { -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); }
+.loading.loaded { -webkit-transform: translateY(-100rem); -moz-transform: translateY(-100rem); -ms-transform: translateY(-100rem); -o-transform: translateY(-100rem); transform: translateY(-100rem); }
 
 .welcome-page { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 0 auto; padding: 0; }
 
@@ -454,7 +454,7 @@ nav ul li a.active { color: #808080; }
 
 .introduction-page .text.skip a:hover, .introduction-page .text.skip a:focus { color: var(--color-two); }
 
-.introduction-page .slide figure { display: grid; width: 45%; margin: 0 auto; padding: 0 0 1rem; }
+.introduction-page .slide figure { display: grid; width: 45%; max-width: 14rem; margin: 0 auto; padding: 0 0 1rem; }
 
 .home-page .text.add-more-stuff { position: absolute; top: 0; right: 0; text-align: right; }
 

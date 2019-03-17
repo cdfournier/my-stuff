@@ -1,3 +1,9 @@
+// BASE
+html {font-size: 0.75rem;}
+
+@media (min-width: 22.75rem) {html {font-size: calc(1rem + 8 * ((100vw - 32rem) / 680));}}
+
+
 // NAVIGATION
 nav {@include transition(all, 0.325s, ease);}
 nav.start {
@@ -49,6 +55,14 @@ main {padding: 0;}
 
 // SLIDER
 .slider {position: static;}
+
+
+// WELCOME
+.welcome-page .button-box {justify-content: center;}
+
+.welcome-page .button-box .button:first-of-type {margin: 2rem 1rem 0 0;}
+
+.welcome-page .button-box .button:last-of-type {margin: 2rem 0 0 1rem;}
 
 
 // ADD STUFF

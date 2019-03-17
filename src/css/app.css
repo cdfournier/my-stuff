@@ -426,7 +426,7 @@ nav ul li a.active { color: #808080; }
 
 .loading .logo svg { fill: #ffffff; }
 
-.loading.loaded { -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -o-transform: translateY(-100%); transform: translateY(-100%); }
+.loading.loaded { -webkit-transform: translateY(-100rem); -moz-transform: translateY(-100rem); -ms-transform: translateY(-100rem); -o-transform: translateY(-100rem); transform: translateY(-100rem); }
 
 .welcome-page { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 0 auto; padding: 0; }
 
@@ -454,7 +454,7 @@ nav ul li a.active { color: #808080; }
 
 .introduction-page .text.skip a:hover, .introduction-page .text.skip a:focus { color: var(--color-two); }
 
-.introduction-page .slide figure { display: grid; width: 45%; margin: 0 auto; padding: 0 0 1rem; }
+.introduction-page .slide figure { display: grid; width: 45%; max-width: 14rem; margin: 0 auto; padding: 0 0 1rem; }
 
 .home-page .text.add-more-stuff { position: absolute; top: 0; right: 0; text-align: right; }
 
@@ -469,6 +469,10 @@ nav ul li a.active { color: #808080; }
 .profile-page ul li a { position: absolute; right: 0; font-size: 0.75rem; text-transform: uppercase; }
 
 .profile-page ul li:after { display: block; width: 100%; padding: 1rem 0 0; border-bottom: 1px solid #808080; content: ""; }
+
+html { font-size: 0.75rem; }
+
+@media (min-width: 22.75rem) { html { font-size: calc(1rem + 8 * ((100vw - 32rem) / 680)); } }
 
 nav { -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
 
@@ -485,6 +489,12 @@ main { padding: 0; }
 .welcome-page.show { justify-content: center; min-height: 80vh; }
 
 .slider { position: static; }
+
+.welcome-page .button-box { justify-content: center; }
+
+.welcome-page .button-box .button:first-of-type { margin: 2rem 1rem 0 0; }
+
+.welcome-page .button-box .button:last-of-type { margin: 2rem 0 0 1rem; }
 
 .add-stuff-page { margin-bottom: 4rem; }
 
