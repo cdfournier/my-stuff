@@ -174,6 +174,7 @@ $('.introduction-page .slide--five').click(function() {
 $('.introduction-page .slide--six').click(function() {
   $('.introduction-page .slider.int').addClass('slide-six');
   $('.introduction-page .slider.int').removeClass('slide-five');
+  $('.introduction-page .text.skip').addClass('animated fadeOutLeft delay-0.5s');
   $('.introduction-page .slide.six figure').addClass('animated fadeInRight');
   setTimeout(function() {$('.introduction-page .slide.six figure').removeClass('animated fadeInRight')}, 2000);
 });
