@@ -53,12 +53,12 @@
                   <form>
                     <fieldset>
                       <legend>Email address</legend>
-                      <label for="email">Email address<input type="email" name="email" id="email" placeholder="Enter your email address" aria-describedby="email-input-help" aria-invalid="false"></label>
+                      <label for="sign-in-email">Email address<input type="email" name="sign-in-email" id="sign-in-email" placeholder="Enter your email address" aria-describedby="email-input-help" aria-invalid="false"></label>
                       <span id="email-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Password</legend>
-                      <label for="password">Password<input type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <label for="password">Password<input type="password" name="sign-in-password" id="sign-in-password" placeholder="Enter your password" aria-describedby="password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
                       <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
                       <span id="password-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
@@ -84,7 +84,7 @@
                   <form>
                     <fieldset>
                       <legend>Email address</legend>
-                      <label for="email">Email address&#42;<input type="email" name="email" id="email" placeholder="Enter your email address" aria-describedby="forgot-password-help" aria-invalid="false"></label>
+                      <label for="sign-in-forgot-password-email">Email address&#42;<input type="email" name="sign-in-forgot-password-" id="sign-in-forgot-password-" placeholder="Enter your email address" aria-describedby="forgot-password-help" aria-invalid="false"></label>
                       <span id="forgot-password-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <div class="button-box">
@@ -115,17 +115,17 @@
                   <form>
                     <fieldset>
                       <legend>Name</legend>
-                      <label for="name">Name&#42;<input type="text" name="name" id="name" placeholder="Enter your name" aria-describedby="name-input-help" aria-invalid="false"></label>
+                      <label for="sign-up-name">Name&#42;<input type="text" name="sign-up-name" id="sign-up-name" placeholder="Enter your name" aria-describedby="name-input-help" aria-invalid="false"></label>
                       <span id="name-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Email address</legend>
-                      <label for="email">Email address&#42;<input type="email" name="email" id="email" placeholder="Enter your email address" aria-describedby="email-input-help" aria-invalid="false"></label>
+                      <label for="sign-up-email">Email address&#42;<input type="email" name="sign-up-email" id="sign-up-email" placeholder="Enter your email address" aria-describedby="email-input-help" aria-invalid="false"></label>
                       <span id="email-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Password</legend>
-                      <label for="password">Password&#42;<input type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <label for="sign-up-password">Password&#42;<input type="password" name="sign-up-password" id="sign-up-password" placeholder="Enter your password" aria-describedby="password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
                       <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
                       <span id="password-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
@@ -417,23 +417,23 @@
                   <form class="wrap">
                     <fieldset>
                       <legend>Description</legend>
-                      <label for="description">Description&#42;<input type="text" name="description" id="description" placeholder="Describe your stuff" value="Product description" aria-describedby="description-input-help" aria-invalid="false"></label>
+                      <label for="stuff-description">Description&#42;<input type="text" name="stuff-description" id="stuff-description" placeholder="Describe your stuff" value="Product description" aria-describedby="description-input-help" aria-invalid="false"></label>
                       <span id="description-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset class="half">
                       <legend>Value</legend>
-                      <label for="value">Value&#42;<input type="text" name="value" id="value" placeholder="Value" value="&#36;000.00" aria-describedby="value-input-help" aria-invalid="false"></label>
+                      <label for="stuff-value">Value&#42;<input type="text" name="stuff-value" id="stuff-value" placeholder="Value" value="&#36;000.00" aria-describedby="value-input-help" aria-invalid="false"></label>
                       <span id="value-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset class="half">
                       <legend>Quantity</legend>
-                      <label for="quantity">Quantity&#42;<input type="number" name="quantity" id="quantity" placeholder="Quantity" value="00" aria-describedby="quantity-input-help" aria-invalid="false"></label>
+                      <label for="stuff-quantity">Quantity&#42;<input type="number" name="stuff-quantity" id="stuff-quantity" placeholder="Quantity" value="00" aria-describedby="quantity-input-help" aria-invalid="false"></label>
                       <span id="quantity-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Condition</legend>
-                      <label for="condition">Condition&#42;
-                        <select name="condition" id="condition" aria-describedby="condition-input-help" aria-invalid="false">
+                      <label for="stuff-condition">Condition&#42;
+                        <select name="stuff-condition" id="stuff-condition" aria-describedby="condition-input-help" aria-invalid="false">
                           <option value="New">New</option>
                           <option value="0">Choose a condition</option>
                           <option value="Excellent">Excellent</option>
@@ -447,17 +447,17 @@
                     </fieldset>
                     <fieldset>
                       <legend>Group</legend>
-                      <label for="group">Group<input type="text" name="group" id="group" placeholder="Add a group?" value="Group name" aria-describedby="group-input-help" aria-invalid="false"></label>
+                      <label for="stuff-group">Group<input type="text" name="stuff-group" id="stuff-group" placeholder="Add a group?" value="Group name" aria-describedby="group-input-help" aria-invalid="false"></label>
                       <span id="group-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset class="half">
                       <legend>Purchase date</legend>
-                      <label for="purchase-date">Purchase date<input type="button" name="purchase-date" id="purchase-date" class="slide--three" value="03/10/2000" aria-describedby="purchase-date-input-help" aria-invalid="false"></label>
+                      <label for="stuff-purchase-date">Purchase date<input type="button" name="stuff-purchase-date" id="stuff-purchase-date" class="slide--three" value="03/10/2000" aria-describedby="purchase-date-input-help" aria-invalid="false"></label>
                       <span id="purchase-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset class="half">
                       <legend>Attachments</legend>
-                      <label for="attachments">Attachments<span class="attachments-number">3</span><input type="button" name="attachments" id="attachments" class="attachments slide--four" value="Attachments" aria-describedby="attachments-date-input-help" aria-invalid="false"></label>
+                      <label for="stuff-attachments">Attachments<span class="attachments-number">3</span><input type="button" name="stuff-attachments" id="stuff-attachments" class="attachments slide--four" value="Attachments" aria-describedby="attachments-date-input-help" aria-invalid="false"></label>
                       <span id="attachments-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <div class="button-box">
@@ -615,13 +615,13 @@
                   <form>
                     <fieldset>
                       <legend>Attachment name</legend>
-                      <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                      <label for="stuff-attachment-name">Attachment name<input type="text" name="stuff-attachment-name" id="stuff-attachment-name" placeholder="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
                       <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Attachment type</legend>
-                      <label for="attachment-type">Attachment type
-                        <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                      <label for="stuff-attachment-type">Attachment type
+                        <select name="stuff-attachment-type" id="stuff-attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
                           <option value="0">Attachment type</option>
                           <option value="Photo">Photo</option>
                           <option value="Manual">Manual</option>
@@ -673,13 +673,13 @@
                   <form>
                     <fieldset>
                       <legend>Attachment name</legend>
-                      <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" value="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                      <label for="stuff-edit-attachment-name">Attachment name<input type="text" name="stuff-edit-attachment-name" id="stuff-edit-attachment-name" placeholder="Attachment name" value="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
                       <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Attachment type</legend>
-                      <label for="attachment-type">Attachment type
-                        <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                      <label for="stuff-edit-attachment-type">Attachment type
+                        <select name="stuff-edit-attachment-type" id="stuff-edit-attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
                           <option value="Photo">Photo</option>
                           <option value="0">Attachment type</option>
                           <option value="Manual">Manual</option>
@@ -709,23 +709,23 @@
                   <form class="wrap">
                     <fieldset>
                       <legend>Description</legend>
-                      <label for="description">Description&#42;<input type="text" name="description" id="description" placeholder="Describe your stuff" aria-describedby="description-input-help" aria-invalid="false"></label>
+                      <label for="add-stuff-description">Description&#42;<input type="text" name="add-stuff-description" id="add-stuff-description" placeholder="Describe your stuff" aria-describedby="description-input-help" aria-invalid="false"></label>
                       <span id="description-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset class="half">
                       <legend>Value</legend>
-                      <label for="value">Value&#42;<input type="text" name="value" id="value" placeholder="Value" aria-describedby="value-input-help" aria-invalid="false"></label>
+                      <label for="add-stuff-value">Value&#42;<input type="text" name="add-stuff-value" id="add-stuff-value" placeholder="Value" aria-describedby="value-input-help" aria-invalid="false"></label>
                       <span id="value-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset class="half">
                       <legend>Quantity</legend>
-                      <label for="quantity">Quantity&#42;<input type="number" name="quantity" id="quantity" placeholder="Quantity" aria-describedby="quantity-input-help" aria-invalid="false"></label>
+                      <label for="add-stuff-quantity">Quantity&#42;<input type="number" name="add-stuff-quantity" id="add-stuff-quantity" placeholder="Quantity" aria-describedby="quantity-input-help" aria-invalid="false"></label>
                       <span id="quantity-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Condition</legend>
-                      <label for="condition">Condition&#42;
-                        <select name="condition" id="condition" aria-describedby="condition-input-help" aria-invalid="false">
+                      <label for="add-stuff-condition">Condition&#42;
+                        <select name="add-stuff-condition" id="add-stuff-condition" aria-describedby="condition-input-help" aria-invalid="false">
                           <option value="0">Choose a condition</option>
                           <option value="New">New</option>
                           <option value="Excellent">Excellent</option>
@@ -739,17 +739,17 @@
                     </fieldset>
                     <fieldset>
                       <legend>Group</legend>
-                      <label for="group">Group<input type="text" name="group" id="group" placeholder="Add a group?" aria-describedby="group-input-help" aria-invalid="false"></label>
+                      <label for="add-stuff-group">Group<input type="text" name="add-stuff-group" id="add-stuff-group" placeholder="Add a group?" aria-describedby="group-input-help" aria-invalid="false"></label>
                       <span id="group-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset class="half">
                       <legend>Purchase date</legend>
-                      <label for="purchase-date">Purchase date<input type="button" name="purchase-date" id="purchase-date" class="slide--two" value="mm/dd/YYYY" aria-describedby="purchase-date-input-help" aria-invalid="false"></label>
+                      <label for="add-stuff-purchase-date">Purchase date<input type="button" name="add-stuff-purchase-date" id="add-stuff-purchase-date" class="slide--two" value="mm/dd/YYYY" aria-describedby="purchase-date-input-help" aria-invalid="false"></label>
                       <span id="purchase-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset class="half">
                       <legend>Attachments</legend>
-                      <label for="attachments">Attachments<span class="attachments-number">0</span><input type="button" name="attachments" id="attachments" class="attachments slide--three" value="Add Attachments" aria-describedby="attachments-date-input-help" aria-invalid="false"></label>
+                      <label for="add-stuff-attachments">Attachments<span class="attachments-number">0</span><input type="button" name="add-stuff-attachments" id="add-stuff-attachments" class="attachments slide--three" value="Add Attachments" aria-describedby="attachments-date-input-help" aria-invalid="false"></label>
                       <span id="attachments-date-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <div class="button-box">
@@ -906,13 +906,13 @@
                   <form>
                     <fieldset>
                       <legend>Attachment name</legend>
-                      <label for="attachment-name">Attachment name<input type="text" name="attachment-name" id="attachment-name" placeholder="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
+                      <label for="add-stuff-attachment-name">Attachment name<input type="text" name="add-stuff-attachment-name" id="add-stuff-attachment-name" placeholder="Attachment name" aria-describedby="attachment-name-input-help" aria-invalid="false"></label>
                       <span id="attachment-name-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Attachment type</legend>
-                      <label for="attachment-type">Attachment type
-                        <select name="attachment-type" id="attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
+                      <label for="add-stuff-attachment-type">Attachment type
+                        <select name="add-stuff-attachment-type" id="add-stuff-attachment-type" aria-describedby="attachment-type-input-help" aria-invalid="false">
                           <option value="0">Attachment type</option>
                           <option value="Photo">Photo</option>
                           <option value="Manual">Manual</option>
@@ -958,7 +958,7 @@
                   <form>
                     <fieldset>
                       <legend>Name</legend>
-                      <label for="name">Name&#42;<input type="text" name="name" id="name" placeholder="Enter your name" value="First Last Name" aria-describedby="name-input-help" aria-invalid="false"></label>
+                      <label for="profile-name">Name&#42;<input type="text" name="profile-name" id="profile-name" placeholder="Enter your name" value="First Last Name" aria-describedby="name-input-help" aria-invalid="false"></label>
                       <span id="name-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <div class="button-box">
@@ -976,7 +976,7 @@
                   <form>
                     <fieldset>
                       <legend>Email</legend>
-                      <label for="name">Email address&#42;<input type="email" name="email" id="email" placeholder="Enter your email address" value="email@address.com" aria-describedby="email-input-help" aria-invalid="false"></label>
+                      <label for="profile-edit-email">Email address&#42;<input type="email" name="profile-edit-email" id="profile-edit-email" placeholder="Enter your email address" value="email@address.com" aria-describedby="email-input-help" aria-invalid="false"></label>
                       <span id="email-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <div class="button-box">
@@ -1031,12 +1031,12 @@
                   <form>
                     <fieldset>
                       <legend>Email address</legend>
-                      <label for="email">Email address<input type="email" name="email" id="email" placeholder="Enter your email address" aria-describedby="email-input-help" aria-invalid="false"></label>
+                      <label for="sign-out-email">Email address<input type="email" name="sign-out-email" id="sign-out-email" placeholder="Enter your email address" aria-describedby="email-input-help" aria-invalid="false"></label>
                       <span id="email-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <fieldset>
                       <legend>Password</legend>
-                      <label for="password">Password<input type="password" name="password" id="password" placeholder="Enter your password" aria-describedby="password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
+                      <label for="sign-out-password">Password<input type="password" name="sign-out-password" id="sign-out-password" placeholder="Enter your password" aria-describedby="password-input-help" aria-invalid="false"><span class="is-valid"></span></label>
                       <span toggle="#password" class="la la-eye-slash show-hide-password"></span>
                       <span id="password-input-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
@@ -1058,7 +1058,7 @@
                   <form>
                     <fieldset>
                       <legend>Email address</legend>
-                      <label for="email">Email address&#42;<input type="email" name="email" id="email" placeholder="Enter your email address" aria-describedby="forgot-password-help" aria-invalid="false"></label>
+                      <label for="sign-out-forgot-password-email">Email address&#42;<input type="email" name="sign-out-forgot-password-email" id="sign-out-forgot-password-email" placeholder="Enter your email address" aria-describedby="forgot-password-help" aria-invalid="false"></label>
                       <span id="forgot-password-help" class="error-message" role="alert">This is where the error message goes</span>
                     </fieldset>
                     <div class="button-box">

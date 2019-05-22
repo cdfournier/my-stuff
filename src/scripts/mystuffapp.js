@@ -1,11 +1,11 @@
 // SHOW/HIDE PASSWORDS
-$(".show-hide-password").click(function() {
-  $(this).toggleClass("la-eye-slash la-eye");
-  var input = $($(this).attr("toggle"));
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
+$('.show-hide-password').click(function() {
+  $(this).toggleClass('la-eye-slash la-eye');
+  var input = $($(this).attr('toggle'));
+  if (input.attr('type') == 'password') {
+    input.attr('type', 'text');
   } else {
-    input.attr("type", "password");
+    input.attr('type', 'password');
   }
 });
 
